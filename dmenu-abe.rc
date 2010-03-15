@@ -1,0 +1,110 @@
+# Browsers
+Opera => opera
+Kazehakase => kazehakase
+Firefox / Iceweasel => iceweasel
+Netsurf => netsurf
+Links2 => links2 -g
+wApua => wapua
+Liferea => liferea
+#Dillo => dillo
+Conkeror => env EDITOR='emacsclient -a emacs' conkeror
+Conkeror (Gecko 1.9.1.x) => env EDITOR='emacsclient -a emacs' xulrunner-1.9.1 /usr/share/conkeror/application.ini
+Conkeror (Gecko 1.9.2.x) => env EDITOR='emacsclient -a emacs' xulrunner-1.9.2 /usr/share/conkeror/application.ini
+Midori  => midori
+Arora => arora
+Google Chrome => google-chrome
+Chromium => chromium-browser
+#Chimera 2 => chimera2
+
+# Editors
+GNU Emacs => emacs
+#GNU Emacs 22 => emacs22
+#GNU Emacs 23 => emacs23
+#GNU Emacs Snapshot => emacs-snapshot
+#OpenOffice.org => ooo
+
+# Graphics
+#Evolvotron => evolvotron
+#XV => xv
+#XZGV => xzgv
+#feh => feh
+#Gaia => gaia
+#Earth3D => earth3d
+#Google Earth => googleearth
+
+# Terminals
+XTerm => xterm
+UXTerm => uxterm
+Yeah Console => yeahconsole
+RXVT => rxvt
+URXVT => urxvt
+#ATerm => aterm
+
+# Games
+#Flight of the Amazon Queen => /usr/games/scummvm -p /usr/share/scummvm/flight-of-the-amazon-queen queen
+Flobopuyo => flobopuyo
+Icebreaker => icebreaker
+Ace of Penguins: Mastermind => ace_mastermind
+Ace of Penguins: Canfield => ace_canfield
+Ace of Penguins: Golf => ace_golf
+Ace of Penguins: Merlin => ace_merlin
+Ace of Penguins: Pegged => ace_pegged
+Ace of Penguins: Taipei => ace_taipei
+Ace of Penguins: Thornq => ace_thornq
+Ace of Penguins: Freecell => ace_freecell
+Ace of Penguins: Minesweeper => ace_minesweeper
+Ace of Penguins: Solitaire => ace_solitaire
+XPatience 2 => xpat2
+XPuyoPuyo => xpuyopuyo
+SpaceHero => spacehero
+
+# Aufloesung leider zu klein
+#Cuyo => cuyo
+#XFRisk (localhost) => xfrisk localhost
+#Battle of Wesnoth => wesnoth
+
+# Tools
+#Unison 2.13.16 (GTK) => unison-2.13.16-gtk
+Unison 2.27.57 (GTK) => unison-2.27.57-gtk
+XGnokii => xgnokii
+Wireshark / Ethereal => wireshark
+XKeyCaps => xkeycaps
+XFontSel => xfontsel
+XColorSel => xcolorsel
+XClipboard => xclipboard
+Procmeter => procmeter3
+XOSView => xosview
+GRandR => grandr
+LXRandR => lxrandr
+ARandR => arandr
+LX Appearance => lxappearance
+
+# GNOME
+GNOME Character Map => gucharmap
+GNOME Control Center => gnome-control-center
+
+# Mail, Chat und so
+Thunderbird / Icedove => icedove
+#Sunbird / Iceowl => iceowl
+Pidgin / GAIM => pidgin
+#Twitux => twitux
+
+# Sound & Video
+ALSA Mixer (GUI) => alsamixergui
+ALSA Player => alsaplayer
+Audacious => audacious
+#GMPlayer => gmplayer
+#GXine => gxine
+VLC => vlc
+#Rhythmbox => rhythmbox
+Vagalume (Last.fm) => vagalume
+MPlayer on Webcam => mplayer -fps 60 tv://
+
+# Screensaver
+XTR Lock => xtrlock
+XScreenSaver (Start) => xscreensaver
+XScreenSaver (Prefs) => xscreensaver-command -prefs
+XScreenSaver (Blank) => xscreensaver-command -activate
+XScreenSaver (Lock) => xscreensaver-command -lock
+XScreenSaver (Exit) => xscreensaver-command -exit
+XScreenSaver (Restart) => xscreensaver-command -restart

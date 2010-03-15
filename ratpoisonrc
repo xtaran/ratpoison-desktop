@@ -1,0 +1,117 @@
+#startup_message off
+set fgcolor orange
+set bgcolor black
+set border 0
+set font -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1
+set resizeunit 1
+set bargravity c
+set wingravity c
+set winname title
+set maxsizegravity c
+set historyexpansion 1
+set historycompaction 1
+set historysize 100
+
+# Problematic with xterms with disabled AllowSendEvents
+#escape C-z
+
+#bind c exec uxterm
+#bind C-c exec uxterm
+bind C exec urxvt
+bind d exec /home/abe/bin/dmenu-for-ratpoison.sh
+bind C-d exec /home/abe/bin/dmenu-abe.pl
+#bind slash exec /usr/bin/xtrlock
+#bind C-slash exec /usr/bin/xtrlock
+#bind backslash exec /usr/bin/xtrlock
+#bind C-backslash exec /usr/bin/xtrlock
+#bind x exec /usr/bin/xtrlock
+#bind C-x exec /usr/bin/xtrlock
+bind slash exec /usr/bin/xscreensaver-command -lock
+bind C-slash exec /usr/bin/xscreensaver-command -lock
+bind backslash exec /usr/bin/xscreensaver-command -lock
+bind C-backslash exec /usr/bin/xscreensaver-command -lock
+bind x exec /usr/bin/xscreensaver-command -lock
+bind C-x exec /usr/bin/xscreensaver-command -lock
+bind X swap
+bind h describekey root
+bind C-h describekey root
+bind w exec /home/abe/bin/ratpoison-interactive-window-list.pl
+bind C-w exec /home/abe/bin/ratpoison-interactive-window-list.pl
+bind W windows
+bind e exec emacsclient -e '(raise-frame)' || emacs
+bind C-e exec emacsclient -e '(raise-frame)' || emacs
+bind E exec emacsclient.emacs22 -e '(raise-frame)' || emacs22
+bind l exec lxpanelctl menu
+#bind . exec /etc/X11/ratpoison/ratpoisonmenu debian.menu
+bind C-b banishrel
+bind bar hsplit
+bind Print exec cd ~/Screenshots; scrot
+bind D dedicate
+bind y ratclick 2
+bind C-y exec conkeror "`xclip -o`"
+bind C-n cnext
+bind C-p cprev
+bind S-tab focusprev
+
+bind C-0 select 10
+bind C-1 select 11
+bind C-2 select 12
+bind C-3 select 13
+bind C-4 select 14
+bind C-5 select 15
+bind C-6 select 16
+bind C-7 select 17
+bind C-8 select 18
+bind C-9 select 19
+
+bind M-0 select 20
+bind M-1 select 21
+bind M-2 select 22
+bind M-3 select 23
+bind M-4 select 24
+bind M-5 select 25
+bind M-6 select 26
+bind M-7 select 27
+bind M-8 select 28
+bind M-9 select 29
+
+bind C-M-0 select 30
+bind C-M-1 select 31
+bind C-M-2 select 32
+bind C-M-3 select 33
+bind C-M-4 select 34
+bind C-M-5 select 35
+bind C-M-6 select 36
+bind C-M-7 select 37
+bind C-M-8 select 38
+bind C-M-9 select 39
+
+# Audacious doesn't work well with ratpoisons idea of window
+# management.
+unmanage Audacious
+unmanage Audacious Equalizer
+unmanage Audacious Playlist Editor
+
+# xv doesn't make sense to be resized
+unmanage xv 3.10a(PNG) <unregistered>
+
+# ProcMeter even fights with ratpoison
+unmanage ProcMeter V3.5a
+unmanage XBomb V2.1a
+
+# Let ratpoison ignore the trayer / lxpanel
+#set padding 0 0 0 26
+#set padding 0 0 0 34
+set padding 0 0 0 8
+unmanage panel
+
+# Grub Choose Default doesn't work good with ratpoison 
+unmanage grub choose default
+
+# GNOME MouseTrap
+#unmanage mouseTrap
+#unmanage mouseTrap Preferences
+unmanage Clicks Panel
+
+# MPlayer
+unmanage MPlayer

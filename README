@@ -12,5 +12,7 @@ symlinks are necessary:
 ~/bin/dmenu-for-ratpoison.sh 		   → dmenu-for-ratpoison.sh
 ~/bin/ratpoison-interactive-window-list.pl → ratpoison-interactive-window-list.pl
 ~/.dmenu-abe.rc 			   → dmenu-abe.rc
+~/.i3statusrc 				   → i3statusrc
 ~/.ratpoisonrc 				   → ratpoisonrc
+~/.xmobarrc-low				   → xmobarrc-low
 ~/.xsession 				   → xsession

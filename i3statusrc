@@ -1,0 +1,93 @@
+general {
+#	output_format = "none"
+	output_format = "xmobar"
+	colors = true
+	interval = 1
+}
+
+wireless ath0 {
+	format_up = "%essid: %quality %ip"
+	format_down = "W: down"
+}
+
+ethernet eth0 {
+	# if you use %speed, i3status requires root privileges
+	format_up = "E: %ip (%speed)"
+	format_down = "E: -"
+}
+
+#ethernet usb0 {
+#	# if you use %speed, i3status requires root privileges
+#	format_up = "U: %ip (%speed)"
+#	format_down = "U: -"
+#}
+
+battery 0 {
+	format = "%status %percentage"
+	last_full_capacity = yes
+}
+
+time {
+	format = "%Y-%m-%d %H:%M:%S"
+}
+
+load {
+	format = "%5min %10min %15min"
+}
+
+cpu_temperature 0 {
+	format = "%degrees°C"
+}
+
+disk "/" {
+	format = "Free: %free"
+}
+
+#order += "ipv6"
+#order += "run_watch DHCP"
+#order += "run_watch VPN"
+order  = "wireless ath0"
+order += "ethernet eth0"
+#order += "ethernet usb0"
+order += "battery 0"
+order += "cpu_temperature 0"
+order += "load"
+order += "disk /"
+#order += "time"
+
+
+### # Name of wlan/ethernet devices
+### wlan ath0
+### eth eth0
+### #eth usb0
+### 
+### # Path to wmii (not relevant for dzen mode)
+### #wmii_path /mnt/wmii/rbar/
+### 
+### # Format of date/time, see strftime(3)
+### #time_format %d.%m.%Y %H:%M:%S
+### 
+### # Use battery 0,f to use the last full capacity instead of the design capacity
+### battery 0,f
+### 
+### # Check if DHCP/VPN clients are running
+### #run_watch Privoxy /var/run/privoxy.pid
+### #run_watch DHCP /var/run/dhclient*.pid
+### #run_watch VPN /var/run/vpnc/pid
+### 
+### order run,wlan,eth,battery,load
+### 
+### #,time
+### 
+### # Specifies background and border color
+### normcolors #000000 #333333
+### 
+### # Enables colors
+### color
+### 
+### # Checks ethernet interface speed (this needs root privileges)
+### get_ethspeed
+### 
+### # Checks CPU temp
+### #get_cpu_temperature
+### 

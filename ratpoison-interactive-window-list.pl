@@ -47,6 +47,6 @@ if ($#windowlist == 0 and $windowlist[0] !~ /^\d/) {
     }
     $io = 1 unless $found;
 
-#    exec('ratmenu', @ratmenu_options, '-io', $io, @windowlist);
-    exec('ratmen', @ratmen_options, '-i', $io, @windowlist);
+    exec('ratmenu', @ratmenu_options, '-io', $io, @windowlist);
+#    exec('ratmen', @ratmen_options, '-i', $io, @windowlist);
 }

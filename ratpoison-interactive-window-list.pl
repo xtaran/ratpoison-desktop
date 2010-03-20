@@ -8,6 +8,8 @@
 #
 # Copyright (C) 2008-2010 by Axel Beckert, licensed under the GPLv3
 
+use strict;
+
 ### CONFIG
 
 my @ratmenu_options = (qw(-font -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1),

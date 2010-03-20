@@ -17,7 +17,7 @@ my @ratmenu_options = (qw(-font -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-
 		       '-label', 'ratmenu: ratpoison window list');
 my @ratmen_options = (qw(-F -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1),
 		      qw(--foreground orange --background black -s dreary),
-		      '-t', 'ratmenu: ratpoison window list');
+		      '-t', 'ratmen: ratpoison window list');
 
 ### CODE
 

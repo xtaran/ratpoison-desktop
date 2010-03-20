@@ -1,9 +1,12 @@
 #!/usr/bin/perl -w
 
 # Interactive window list replacement for ratpoison's "windows"
-# command
+# command, needs either ratmenu or ratmen. For UTF-8 support either
+# ratmenu version 2.3.20 or higher, or ratmen with the UTF-8 patch
+# from http://www.rubyist.net/~rubikitch/computer/ratmen/i18n.patch
+# are necessary.
 #
-# Copyright (C) 2008 by Axel Beckert, licensed under the GPLv3
+# Copyright (C) 2008-2010 by Axel Beckert, licensed under the GPLv3
 
 ### CONFIG
 

@@ -15,17 +15,3 @@ Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
        , alignSep = "}{"
        , template = " %iplet% <fc=#333333>|</fc> %StdinReader% <fc=#333333>|</fc> %TZ00% <fc=#333333>|</fc> %cpu% <fc=#333333>|</fc> }{%uname% <fc=#333333>|</fc> %LSZH% <fc=#333333>|</fc> %date% "
        }
-
-# -misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1
-# position = Static { xpos = 0, ypos = 446, width = 800, height = 8 }
-
-# -misc-fixed-*-*-*-*-6-*-*-*-*-*-iso10646-1
-# position = Static { xpos = 0, ypos = 447, width = 800, height = 7 }
-
-# -xos4-terminus-*-*-*-*-12-120-*-*-*-60-iso10646-1
-# position = Static { xpos = 0, ypos = 440, width = 800, height = 14 }
-
-# -adobe-helvetica-medium-r-normal-*-8-*-*-*-*-*-iso10646-1
-# position = Static { xpos = 0, ypos = 468, width = 800, height = 12 }
-
-# %d-%b-%Y

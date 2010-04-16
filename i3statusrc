@@ -7,7 +7,7 @@ general {
 
 wireless ath0 {
 	format_up = "%essid: %quality %ip"
-	format_down = "W: down"
+	format_down = "W: -"
 }
 
 ethernet eth0 {
@@ -23,7 +23,7 @@ ethernet eth0 {
 #}
 
 battery 0 {
-	format = "%status %percentage"
+	format = "%status %percentage %emptytime"
 	last_full_capacity = yes
 }
 
@@ -32,7 +32,7 @@ time {
 }
 
 load {
-	format = "%5min %10min %15min"
+	format = "%1min %5min %15min"
 }
 
 cpu_temperature 0 {
@@ -40,7 +40,7 @@ cpu_temperature 0 {
 }
 
 disk "/" {
-	format = "SDD: %avail"
+	format = "SDD: %free"
 }
 
 #order += "ipv6"

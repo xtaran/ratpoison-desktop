@@ -6,18 +6,19 @@ general {
 }
 
 wireless ath0 {
+	# if you use %speed, i3status requires root privileges or netcap
 	format_up = "%essid: %quality %ip %bitrate"
 	format_down = "W: -"
 }
 
 ethernet eth0 {
-	# if you use %speed, i3status requires root privileges
+	# if you use %speed, i3status requires root privileges or netcap
 	format_up = "E: %ip (%speed)"
 	format_down = "E: -"
 }
 
 #ethernet usb0 {
-#	# if you use %speed, i3status requires root privileges
+#	# if you use %speed, i3status requires root privileges or netcap
 #	format_up = "U: %ip (%speed)"
 #	format_down = "U: -"
 #}

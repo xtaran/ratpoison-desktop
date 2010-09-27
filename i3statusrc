@@ -23,7 +23,7 @@ ethernet eth0 {
 #}
 
 battery 0 {
-	format = "%status %percentage %emptytime"
+	format = "%status %percentage"
 	last_full_capacity = yes
 }
 

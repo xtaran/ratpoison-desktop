@@ -2,7 +2,7 @@
 
 # Keyboard and X configuration
 xmodmap ~/.xmodmap-`uname -n`
-xrdb -merge ~/.Xresources
+xrdb -merge ~/.ratpoison/Xresources
 
 # Background
 xsetroot -solid black

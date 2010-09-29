@@ -57,6 +57,17 @@ Rxvt*scrollstyle:   xterm
 Rxvt*loginShell:    True
 Rxvt*scrollBar:      False
 
+! Load some urxvt plugins
+URxvt.perl-ext-common: default,matcher,selection-autotransform
+
+! Open links in conkeroor on middle click
+URxvt.urlLauncher: conkeror
+URxvt.colorUL: white
+! Useful selection stuff from urxvtperl(3)
+URxvt.selection-autotransform.0: s/^([^:[:space:]]+):(\\d+):?$/zile +$2 \\Q$1\\E\\x0d/
+URxvt.selection.pattern-0: ( at .*? line \\d+[,.])
+URxvt.selection-autotransform.1: s/^ at (.*?) line (\\d+)[,.]$/zile +$2 \\Q$1\\E\\x0d/
+
 !yeahconsole*term: uxterm
 yeahconsole*term: urxvt
 yeahconsole*consoleHeight: 9

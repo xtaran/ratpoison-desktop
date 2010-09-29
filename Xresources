@@ -1,0 +1,145 @@
+XTerm*Font: fixed
+Aterm*font: -xos4-terminus-medium-*-*-*-*-*-*-*-*-60-iso10646-1
+Rxvt*Font:  -xos4-terminus-medium-*-*-*-*-*-*-*-*-60-iso10646-1
+
+!XTerm*font: -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1
+XTerm*font1: -misc-fixed-medium-r-*-*-12-*-*-*-*-60-iso10646-1
+XTerm*font2: -misc-fixed-medium-r-*-*-14-*-*-*-*-70-iso10646-1
+XTerm*font3: -misc-fixed-medium-r-*-*-15-*-*-*-*-90-iso10646-1
+XTerm*font4: -misc-fixed-medium-r-*-*-18-*-*-*-*-80-iso10646-1
+XTerm*font5: -misc-fixed-medium-r-*-*-20-*-*-*-*-100-iso10646-1
+XTerm*font6: -xos4-terminus-medium-r-*-*-32-*-*-*-*-*-iso10646-1
+XTerm*internalBorder: 1
+! Needed for ratpoison passing Ctrl-T to terminals, but disables window title manipulation
+!XTerm*allowSendEvents: true
+XTerm*allowTitleOps: true
+XTerm*maximized: true
+XTerm*utf8Title: true
+XTerm*scrollBar:      False
+XTerm*saveLines:      2048
+XTerm*rightScrollBar: True
+XTerm*loginShell:     True
+
+UXTerm*font: -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1
+UXTerm*font1: -misc-fixed-medium-r-*-*-12-*-*-*-*-60-iso10646-1
+UXTerm*font2: -misc-fixed-medium-r-*-*-14-*-*-*-*-70-iso10646-1
+UXTerm*font3: -misc-fixed-medium-r-*-*-15-*-*-*-*-90-iso10646-1
+UXTerm*font4: -misc-fixed-medium-r-*-*-18-*-*-*-*-80-iso10646-1
+UXTerm*font5: -misc-fixed-medium-r-*-*-20-*-*-*-*-100-iso10646-1
+UXTerm*font6: -xos4-terminus-medium-r-*-*-32-*-*-*-*-*-iso10646-1
+UXTerm*internalBorder: 1
+! Needed for ratpoison passing Ctrl-T to terminals, but disables window title manipulation
+!UXTerm*allowSendEvents: true
+UXTerm*allowTitleOps: true
+UXTerm*maximized: true
+UXTerm*utf8Title: true
+UXTerm*scrollBar:      False
+UXTerm*saveLines:      2048
+UXTerm*rightScrollBar: True
+UXTerm*loginShell:     True
+
+Emacs*font: -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1
+
+Aterm*transparent:    True
+Aterm*tinting:        #7f7f7f
+Aterm*tintingType:    true
+Aterm*backgroundType: cut
+Aterm*scrollBar:      False
+Aterm*loginShell:     True
+Aterm*fading:         80
+
+Rxvt*tintColor:     black
+Rxvt*shading:       50
+Rxvt*reverseVideo:  True
+Rxvt*inheritPixmap: True
+Rxvt*fading:        0
+Rxvt*scrollstyle:   xterm
+Rxvt*loginShell:    True
+Rxvt*scrollBar:      False
+
+!yeahconsole*term: uxterm
+yeahconsole*term: urxvt
+yeahconsole*consoleHeight: 9
+yeahconsole*toggleKey: ControlAlt+z
+
+xosview*background:      Black
+xosview*meterLabelColor: White
+xosview*usedLabelColor:  Orange
+xosview*foreground:      White
+xosview*font:            -misc-fixed-medium-r-normal-*-*-80-*-*-c-*-iso8859-15
+xosview*geometry:        273x165+1165+609
+
+xosview*interrupts:     False
+xosview*intOnColor:     Orange
+xosview*intOffColor:    DimGray
+
+xosview*load:                   True
+xosview*loadPriority:           1
+xosview*loadProcColor:          Orange
+xosview*loadWarnColor:          Red
+xosview*loadIdleColor:          DimGray
+xosview*loadAlarmThreshold:     2
+
+xosview*cpu:                    True
+xosview*cpuUserColor:           Orange
+xosview*cpuNiceColor:           DarkOrange
+xosview*cpuSystemColor:         OrangeRed
+xosview*cpuInterruptColor:      Red
+xosview*cpuFreeColor:           DimGray
+xosview*cpuPriority:            200
+xosview*cpuGraph:               True
+
+xosview*mem:                    True
+xosview*memUsedColor:           Orange
+xosview*memSharedColor:         DarkOrange
+xosview*memBufferColor:         Red
+xosview*memFreeColor:           DimGray
+xosview*memPriority:            100
+xosview*memDecay:               True
+
+xosview*swap:                   True
+xosview*swapUsedColor:          Orange
+xosview*swapFreeColor:          DimGray
+xosview*swapPriority:           20
+xosview*swapDecay:              True
+
+xosview*net:                    True
+xosview*netInColor:             Orange
+xosview*netOutColor:            OrangeRed
+xosview*netBackground:          DimGray
+xosview*netGraph:               True
+
+xosview*page:                   True
+xosview*pageInColor:            Orange
+xosview*pageOutColor:           OrangeRed
+xosview*pageIdleColor:          DimGray
+xosview*pageGraph:               True
+
+xosview*battery:                True
+xosview*batteryLeftColor:       Orange
+xosview*batteryUsedColor:       DimGray
+
+xosview*disk:                   True
+xosview*diskReadColor:          Orange
+xosview*diskWriteColor:         OrangeRed
+xosview*diskIdleColor:          DimGray
+xosview*diskGraph:              True
+
+xosview*irqrate: True
+xosview*gfx: True
+xosview*lmstemp: False
+
+xosview*serial1: False
+xosview*serial2: False
+xosview*serial3: False
+xosview*serial4: False
+
+!xkeycaps*Keyboard.keyboard:             L102DE
+xkeycaps*Keyboard.Key.highlight:        Orange
+xkeycaps*Keyboard.Key.keycapColor:      Black
+xkeycaps*Keyboard.Key.keycodeColor:     Black
+xkeycaps*Keyboard.Key.borderColor:      Black
+
+UXTerm*printerAutoClose: false
+UXTerm*printerCommand: /home/abe/bin/notifier.sh
+UXTerm*printerExtent: true

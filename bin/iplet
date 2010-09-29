@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ -n "$1" ]; then
+   sleep $1;
+fi
+
+GET http://checkip.dyndns.org/ | sed -e 's|^.*<body>Current IP Address: ||;s|</body>.*$||;s|^500 .*|N/A|;'

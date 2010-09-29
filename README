@@ -5,7 +5,7 @@ Axel's ratpoison setup
 These files are needed to get the setup running as I have it on my
 ASUS EeePC 701 running Debian Sid.
 
-Sice they're usually not expected to reside in .ratpoison, some
+Since they're usually not expected to reside in .ratpoison, some
 symlinks are necessary:
 
 ~/bin/dmenu-abe.pl			   → dmenu-abe.pl

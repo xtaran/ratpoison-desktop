@@ -2,11 +2,11 @@
 
 # Config file wrapper around dmenu
 #
-# Copyright (C) 2008 by Axel Beckert, licensed under the GPLv3
+# Copyright (C) 2008, 2010 by Axel Beckert, licensed under the GPLv3
 
 ### CONFIG
 
-my $config = "$ENV{HOME}/.dmenu-abe.rc";
+my $config = "$ENV{HOME}/.ratpoison/dmenu-abe.rc";
 my @dmenu_options = qw(-p » -i -b -fn fixed -nb black -nf orange -sb orange -sf black);
 
 ### INIT

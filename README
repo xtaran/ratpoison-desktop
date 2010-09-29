@@ -8,11 +8,6 @@ ASUS EeePC 701 running Debian Sid.
 Since they're usually not expected to reside in .ratpoison, some
 symlinks are necessary:
 
-~/bin/dmenu-abe.pl			   → dmenu-abe.pl
-~/bin/dmenu-for-ratpoison.sh 		   → dmenu-for-ratpoison.sh
-~/bin/ratpoison-interactive-window-list.pl → ratpoison-interactive-window-list.pl
-~/.dmenu-abe.rc 			   → dmenu-abe.rc
-~/.i3statusrc 				   → i3statusrc
 ~/.ratpoisonrc 				   → ratpoisonrc
-~/.xmobarrc-low				   → xmobarrc-low
 ~/.xsession 				   → xsession
+~/bin/xrandr-vga-off.sh			   → bin/xrandr-vga-off.sh

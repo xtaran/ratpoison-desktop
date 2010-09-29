@@ -141,5 +141,5 @@ xkeycaps*Keyboard.Key.keycodeColor:     Black
 xkeycaps*Keyboard.Key.borderColor:      Black
 
 UXTerm*printerAutoClose: false
-UXTerm*printerCommand: /home/abe/bin/notifier.sh
+UXTerm*printerCommand: /home/abe/.ratpoison/bin/notifier.sh
 UXTerm*printerExtent: true

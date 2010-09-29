@@ -18,8 +18,8 @@ set historysize 100
 #bind c exec uxterm
 #bind C-c exec uxterm
 bind C exec urxvt
-bind d exec /home/abe/bin/dmenu-for-ratpoison.sh
-bind C-d exec /home/abe/bin/dmenu-abe.pl
+bind d exec /home/abe/.ratpoison/bin/dmenu-for-ratpoison.sh
+bind C-d exec /home/abe/.ratpoison/bin/dmenu-abe.pl
 #bind slash exec /usr/bin/xtrlock
 #bind C-slash exec /usr/bin/xtrlock
 #bind backslash exec /usr/bin/xtrlock
@@ -35,8 +35,8 @@ bind C-x exec /usr/bin/xscreensaver-command -lock
 bind X swap
 bind h describekey root
 bind C-h describekey root
-bind w exec /home/abe/bin/ratpoison-interactive-window-list.pl
-bind C-w exec /home/abe/bin/ratpoison-interactive-window-list.pl
+bind w exec /home/abe/.ratpoison/bin/ratpoison-interactive-window-list.pl
+bind C-w exec /home/abe/.ratpoison/bin/ratpoison-interactive-window-list.pl
 bind W windows
 bind e exec emacsclient -e '(raise-frame)' || emacs
 bind C-e exec emacsclient -e '(raise-frame)' || emacs

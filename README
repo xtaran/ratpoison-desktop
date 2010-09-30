@@ -30,3 +30,4 @@ Needs at least the following Debian packages to be installed:
 * xterm and/or urxvt
 * keynav
 * xrandr
+* xcompmgr

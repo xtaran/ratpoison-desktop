@@ -11,3 +11,22 @@ symlinks are necessary:
 ~/.ratpoisonrc 				   → ratpoisonrc
 ~/.xsession 				   → xsession
 ~/bin/xrandr-vga-off.sh			   → bin/xrandr-vga-off.sh
+
+Needs at least the following Debian packages to be installed:
+
+* ratpoison
+* i3status >= 2.2
+* xmobar
+* dwm-tools or suckless-tools
+* ratmenu
+* conkeror or some other web browser
+* xclip
+* autocutsel
+* unclutter
+* openssh-client
+* xscreensaver or xtrlock
+* hsetroot
+* yeahconsole
+* xterm and/or urxvt
+* keynav
+* xrandr

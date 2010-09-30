@@ -61,7 +61,7 @@ Rxvt*scrollBar:      False
 URxvt.perl-ext-common: default,matcher,selection-autotransform
 
 ! Open links in conkeroor on middle click
-URxvt.urlLauncher: conkeror
+URxvt.urlLauncher: sensible-browser
 URxvt.colorUL: white
 ! Useful selection stuff from urxvtperl(3)
 URxvt.selection-autotransform.0: s/^([^:[:space:]]+):(\\d+):?$/zile +$2 \\Q$1\\E\\x0d/

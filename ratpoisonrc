@@ -48,7 +48,7 @@ bind bar hsplit
 bind Print exec cd ~/Screenshots; scrot
 bind D dedicate
 bind y ratclick 2
-bind C-y exec conkeror "`xclip -o`"
+bind C-y exec sensible-browser "`xclip -o`"
 bind C-n cnext
 bind C-p cprev
 bind S-tab focusprev

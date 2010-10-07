@@ -12,6 +12,9 @@ symlinks are necessary:
 ~/.xsession 				   → xsession
 ~/bin/xrandr-vga-off.sh			   → bin/xrandr-vga-off.sh
 
+Sources available via http://github.com/xtaran/ratpoison-desktop and
+http://git.noone.org/?p=ratpoison.git
+
 Needs at least the following Debian packages to be installed:
 
 * ratpoison

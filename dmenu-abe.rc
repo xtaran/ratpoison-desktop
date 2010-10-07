@@ -12,7 +12,7 @@ Conkeror (Gecko 1.9.1.x) => env EDITOR='emacsclient -a emacs' xulrunner-1.9.1 /u
 Conkeror (Gecko 1.9.2.x) => env EDITOR='emacsclient -a emacs' xulrunner-1.9.2 /usr/share/conkeror/application.ini
 Midori  => midori
 Arora => arora
-Google Chrome => google-chrome
+#Google Chrome => google-chrome
 Chromium => chromium-browser
 #Chimera 2 => chimera2
 

@@ -36,3 +36,4 @@ Needs at least the following Debian packages to be installed:
 * xcompmgr
 * xrootconsole
 * inotail
+* transset-df

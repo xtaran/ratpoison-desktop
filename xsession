@@ -37,7 +37,8 @@ fi
 # daemon.
 yeahconsole &
 
-(logread; logread -f) | root-tail --color white --update --cont + --cont-color blue --justify --outline --noflicker --interval 1 -fn '-xos4-terminus-*-r-*-*-12-120-*-*-*-60-iso10646-1' -g '798x454+2+0' -,darkorange,'System Log' ${HOME}/.xsession-errors,white,'X session errors' &
+#(logread; logread -f) | root-tail --color white --update --cont + --cont-color blue --justify --outline --noflicker --interval 1 -fn '-xos4-terminus-*-r-*-*-12-120-*-*-*-60-iso10646-1' -g '798x454+2+0' -,darkorange,'System Log' ${HOME}/.xsession-errors,white,'X session errors' &
+(logread; logread -f & inotail -f .xsession-errors) | xrootconsole -fg white -fn '-xos4-terminus-*-*-*-*-12-120-*-*-*-60-iso10646-1' -geometry '133x39+2+2' &
 
 # Trayer needs to be started after ratpoison
 ( sleep 1; \
@@ -52,7 +53,6 @@ yeahconsole &
   #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn '-xos4-terminus-*-*-*-*-12-120-*-*-*-60-iso10646-1' -m -y 440 &
   #i3status-xmobar -c ~/.i3statusrc | env PATH="/home/abe/bin:$PATH" xmobar ~/.xmobarrc &
   i3status -c ~/.ratpoison/i3statusrc | env PATH="/home/abe/.ratpoison/bin:/home/abe/bin:$PATH" xmobar ~/.ratpoison/xmobarrc &
-  #(logread; logread -f) | xrootconsole -fg white -fn '-xos4-terminus-*-*-*-*-12-120-*-*-*-60-iso10646-1' -geometry '133x36+2+2' &
   #sleep 1;
   #nm-applet &
   #parcellite &

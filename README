@@ -34,3 +34,5 @@ Needs at least the following Debian packages to be installed:
 * keynav
 * xrandr
 * xcompmgr
+* xrootconsole
+* inotail

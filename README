@@ -15,18 +15,19 @@ symlinks are necessary:
 Sources available via http://github.com/xtaran/ratpoison-desktop and
 http://git.noone.org/?p=ratpoison.git
 
-Needs at least the following Debian packages to be installed:
+Needs at least the following Debian packages (besides essential
+packages) to be installed:
 
+* x11-xserver-utils (for xmodmap, xrdb and xsetroot)
 * ratpoison
 * i3status >= 2.2
 * xmobar
-* dwm-tools or suckless-tools
-* ratmenu
+* dwm-tools or suckless-tools (for dmenu)
+* ratmenu >= 2.3.20
 * conkeror or some other web browser
 * xclip
 * autocutsel
 * unclutter
-* openssh-client
 * xscreensaver or xtrlock
 * hsetroot
 * yeahconsole
@@ -37,3 +38,17 @@ Needs at least the following Debian packages to be installed:
 * xrootconsole
 * inotail
 * transset-df
+* xserver-xorg-input-synaptics (for syndaemon)
+* gnome-keyring (for gnome-settings-daemon)
+* busybox-syslogd (for logread)
+* emacs (for emacs and emacsclient)
+
+Recommended or used in commented stuff:
+
+* openssh-client (for ssh-add and ssh-agent)
+* Alternative window and session managers:
+  * lxsession
+  * stumpwm
+  * flwm
+  * fvwm
+* root-tail

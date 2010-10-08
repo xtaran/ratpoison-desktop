@@ -8,8 +8,8 @@ xrdb -merge ~/.ratpoison/Xresources
 
 # Background
 xsetroot -solid black
-#hsetroot -tile ~/.backgrounds/mathe_wall.png 
-#hsetroot -full ~/.backgrounds/emu.800x480.jpg 
+#hsetroot -tile ~/.backgrounds/mathe_wall.png
+#hsetroot -full ~/.backgrounds/emu.800x480.jpg
 hsetroot -full ~/.backgrounds/hintergrundbild_04_16-10.800x480-crop.png
 
 # Daemons (ssh-agent started from session management)

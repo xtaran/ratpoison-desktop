@@ -1,16 +1,19 @@
 #!/bin/sh
 
+RP=$(dirname "$(readlink "$0")")
+BG=$HOME/.backgrounds
+
 # Keyboard and X configuration
-if [ -r ~/.ratpoison/xmodmap-`uname -n` ]; then
-    xmodmap ~/.ratpoison/xmodmap-`uname -n`
+if [ -r $RP/xmodmap-`uname -n` ]; then
+    xmodmap $RP/xmodmap-`uname -n`
 fi
-xrdb -merge ~/.ratpoison/Xresources
+xrdb -merge $RP/Xresources
 
 # Background
 xsetroot -solid black
-#hsetroot -tile ~/.backgrounds/mathe_wall.png
-#hsetroot -full ~/.backgrounds/emu.800x480.jpg
-hsetroot -full ~/.backgrounds/hintergrundbild_04_16-10.800x480-crop.png
+#hsetroot -tile $BG/mathe_wall.png
+#hsetroot -full $BG/emu.800x480.jpg
+hsetroot -full $BG/hintergrundbild_04_16-10.800x480-crop.png
 
 # Daemons (ssh-agent started from session management)
 eval `gpg-agent --daemon`
@@ -54,7 +57,7 @@ yeahconsole &
   # Alternative font: -misc-fixed-medium-r-*-*-12-*-*-*-*-60-iso10646-1
   #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn '-xos4-terminus-*-*-*-*-12-120-*-*-*-60-iso10646-1' -m -y 440 &
   #i3status-xmobar -c ~/.i3statusrc | env PATH="/home/abe/bin:$PATH" xmobar ~/.xmobarrc &
-  i3status -c ~/.ratpoison/i3statusrc | env PATH="/home/abe/.ratpoison/bin:/home/abe/bin:$PATH" xmobar ~/.ratpoison/xmobarrc &
+  i3status -c $RP/i3statusrc | env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc &
   #sleep 1;
   #nm-applet &
   #parcellite &

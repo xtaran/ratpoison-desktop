@@ -47,34 +47,18 @@ yeahconsole &
 
 # Trayer needs to be started after ratpoison
 ( sleep 1; \
-#  trayer --align right --edge bottom --distance 0 --expand true \
-#         --transparent true --alpha 128 --tint 0 \
-#         --SetDockType true --SetPartialStrut true &
-## --heighttype percent --height 100 --widthtype request
-  #lxpanel &
   #xterm &
   urxvt &
   # Alternative font: -misc-fixed-medium-r-*-*-12-*-*-*-*-60-iso10646-1
   #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn '-xos4-terminus-*-*-*-*-12-120-*-*-*-60-iso10646-1' -m -y 440 &
-  #i3status-xmobar -c ~/.i3statusrc | env PATH="/home/abe/bin:$PATH" xmobar ~/.xmobarrc &
   i3status -c $RP/i3statusrc | env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc &
   #sleep 1;
-  #nm-applet &
-  #parcellite &
   unclutter &
   #sleep 10;
-  #wicd-client &
-  #osd_clock -c orange -o 6 -f fixed -F '%A, %e. %B %Y, %T' &
   #conkeror &
   #sleep 3
   #emacs &
 ) &
-
-#while :; do
-#  uptime | sed -e 's/load average: //;s/^.*up //;' | \
-#    osd_cat -c orange -p bottom -A center -f fixed -o -44 -d 5.1 - &
-#  sleep 5;
-#done &
 
 xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
 

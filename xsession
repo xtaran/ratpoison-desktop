@@ -1,7 +1,9 @@
 #!/bin/sh
 
 # Keyboard and X configuration
-xmodmap ~/.xmodmap-`uname -n`
+if [ -r ~/.ratpoison/xmodmap-`uname -n` ]; then
+    xmodmap ~/.ratpoison/xmodmap-`uname -n`
+fi
 xrdb -merge ~/.ratpoison/Xresources
 
 # Background

@@ -31,7 +31,7 @@ xscreensaver -no-splash &
 # Unlock SSH Keys -- now done ondemand with GNOME Keyring
 #ssh-add
 
-if [ -e "$HOME/.zsh/zsh.d/60-debian" ]; then
+if [ -r "$HOME/.zsh/zsh.d/60-debian" ]; then
     . "$HOME/.zsh/zsh.d/60-debian"
 fi
 

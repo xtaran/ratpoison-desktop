@@ -42,6 +42,7 @@ packages) to be installed:
 * gnome-keyring (for gnome-settings-daemon)
 * busybox-syslogd (for logread)
 * emacs (for emacs and emacsclient)
+* wget (needed by iplet)
 
 Recommended or used in commented stuff:
 

@@ -73,7 +73,7 @@ yeahconsole &
 #  sleep 5;
 #done &
 
-xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F &
+xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
 
 #exec lxsession -session ratpoison
 exec ratpoison

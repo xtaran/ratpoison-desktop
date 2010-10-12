@@ -117,15 +117,25 @@ a history-back
 #n cell-select 3x3      # down-right
 #period cell-select 2x2 # center
 
-# Axel
+# Also use cursor keys
 Left cut-left
 Down cut-down
 Up cut-up
 Right cut-right
+shift+Left move-left
+shift+Down move-down
+shift+Up move-up
+shift+Right move-right
 
+# Emacs-like keybindings
 ctrl+n cut-down
 ctrl+f cut-left
 ctrl+p cut-up
 ctrl+b cut-left
 
+# Emacs- and shell-like quit
+ctrl+g end
+ctrl+c end
+
+# Use Enter like Space
 Return warp,click 1,end

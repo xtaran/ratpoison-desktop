@@ -63,7 +63,7 @@ yeahconsole &
 xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
 
 #exec lxsession -session ratpoison
-exec ratpoison
+exec ratpoison -f $RP/ratpoisonrc
 #exec stumpwm
 #exec flwm -g 800x454+0+0 -fg orange -bg black -cfg orange -bfg black
 #exec fvwm

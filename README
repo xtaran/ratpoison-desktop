@@ -9,6 +9,7 @@ Since they're usually not expected to reside in .ratpoison, some
 symlinks are necessary:
 
 ~/.ratpoisonrc 				   → ratpoisonrc
+~/.keynavrc 				   → keynavrc
 ~/.xsession 				   → xsession
 ~/bin/xrandr-vga-off.sh			   → bin/xrandr-vga-off.sh
 

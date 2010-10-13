@@ -2,18 +2,24 @@
 Axel's ratpoison setup
 ======================
 
-These files are needed to get the setup running as I have it on my
-ASUS EeePC 701 running Debian Sid.
+On my ASUS EeePC 701 I run Debian GNU/Linux Sid with a more less
+unusual “desktop”: I use the ratpoison window manager (windows are
+made fullscreen by default and keybindings are nearly identical to GNU
+Screen) and the xmobar text status bar, filled with data by i3status.
 
-Since they're usually not expected to reside in .ratpoison, some
-symlinks are necessary:
+These files are needed to get the setup running.
+
+Since most of the configuration files included are not expected to
+reside in .ratpoison, some symlinks are necessary:
 
 ~/.keynavrc 				   → keynavrc
+~/.gitconfig 				   → gitconfig
 ~/.xsession 				   → xsession
 ~/bin/xrandr-vga-off.sh			   → bin/xrandr-vga-off.sh
 
-Sources available via http://github.com/xtaran/ratpoison-desktop and
-http://git.noone.org/?p=ratpoison.git
+Sources available via http://git.noone.org/?p=ratpoison.git,
+http://gitorious.org/abe-ratpoison-desktop, and
+http://github.com/xtaran/ratpoison-desktop.
 
 Needs at least the following Debian packages (besides essential
 packages) to be installed:

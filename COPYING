@@ -1,0 +1,17 @@
+Except the files listed below, all files and code in this project is
+licensed under the GPL version 2 or any later version (at your option)
+and is Copyright © 2008-2010 by Axel Beckert
+<abe@deuxchevaux.org>. See /usr/share/common-licenses/GPL-2 and
+/usr/share/common-licenses/GPL-3 on a Debian or Ubuntu system.
+
+keynavrc is based on the example configuration at
+/usr/share/doc/keynav/keynavrc (on a Debian or Ubuntu system),
+Copyright © 2007-2010, Jordan Sissel and licensed under a BSD-like
+license, see /usr/share/doc/keynav/copyright on a Debian or Ubuntu
+system.
+
+colortail.conf is based on the colortail example configuration at
+/usr/share/doc/colortail/examples/conf.messages (on a Debian or Ubuntu
+system), Copyright © 1999, 2009 by Joakim Andersson and the Free
+Software Foundation, and licensed unter the GPL version 2, see
+/usr/share/doc/colortail/copyright on a Debian or Ubuntu system.

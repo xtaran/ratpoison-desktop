@@ -20,18 +20,12 @@ set historysize 100
 bind C exec urxvt
 bind d exec /home/abe/.ratpoison/bin/dmenu-for-ratpoison.sh
 bind C-d exec /home/abe/.ratpoison/bin/dmenu-abe.pl
-#bind slash exec /usr/bin/xtrlock
-#bind C-slash exec /usr/bin/xtrlock
-#bind backslash exec /usr/bin/xtrlock
-#bind C-backslash exec /usr/bin/xtrlock
-#bind x exec /usr/bin/xtrlock
-#bind C-x exec /usr/bin/xtrlock
-bind slash exec /usr/bin/xscreensaver-command -lock
-bind C-slash exec /usr/bin/xscreensaver-command -lock
-bind backslash exec /usr/bin/xscreensaver-command -lock
-bind C-backslash exec /usr/bin/xscreensaver-command -lock
-bind x exec /usr/bin/xscreensaver-command -lock
-bind C-x exec /usr/bin/xscreensaver-command -lock
+bind slash exec if [ -x /usr/bin/xscreensaver-command ]; then /usr/bin/xscreensaver-command -lock; else xtrlock; fi
+bind C-slash exec if [ -x /usr/bin/xscreensaver-command ]; then /usr/bin/xscreensaver-command -lock; else xtrlock; fi
+bind backslash exec if [ -x /usr/bin/xscreensaver-command ]; then /usr/bin/xscreensaver-command -lock; else xtrlock; fi
+bind C-backslash exec if [ -x /usr/bin/xscreensaver-command ]; then /usr/bin/xscreensaver-command -lock; else xtrlock; fi
+bind x exec if [ -x /usr/bin/xscreensaver-command ]; then /usr/bin/xscreensaver-command -lock; else xtrlock; fi
+bind C-x exec if [ -x /usr/bin/xscreensaver-command ]; then /usr/bin/xscreensaver-command -lock; else xtrlock; fi
 bind X swap
 bind h describekey root
 bind C-h describekey root

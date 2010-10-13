@@ -27,7 +27,7 @@ test -x /usr/bin/syndaemon && syndaemon -i 1 -d
 # gnome-settings-daemon, but not both at the same time, because
 # gnome-settings-daemon starts xscreensaver, too.)
 eval `gnome-keyring-daemon -s`
-xscreensaver -no-splash &
+test -x /usr/bin/xscreensaver && xscreensaver -no-splash &
 #gnome-settings-daemon
 #/usr/lib/gnome-volume-manager/gnome-volume-manager &
 

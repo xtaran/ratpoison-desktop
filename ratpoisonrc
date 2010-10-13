@@ -100,7 +100,7 @@ unmanage XBomb V2.1a
 # Let ratpoison ignore the trayer / lxpanel
 #set padding 0 0 0 26
 #set padding 0 0 0 34
-set padding 0 0 0 8
+set padding 0 0 0 11
 unmanage panel
 
 # Grub Choose Default doesn't work good with ratpoison 

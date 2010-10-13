@@ -13,7 +13,11 @@ xrdb -merge $RP/Xresources
 xsetroot -solid black
 #hsetroot -tile $BG/mathe_wall.png
 #hsetroot -full $BG/emu.800x480.jpg
-hsetroot -full $BG/hintergrundbild_04_16-10.800x480-crop.png
+for image in $BG/`uname -n`.{full,fill,tile}; do
+    if [ -r "$image" ]; then
+	hsetroot -`echo "$image" | sed -e 's/^.*\.\([^.]*\)$/\1/'` "$image"
+    fi
+done
 
 # Daemons (ssh-agent started from session management)
 eval `gpg-agent --daemon`

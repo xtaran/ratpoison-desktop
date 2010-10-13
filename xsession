@@ -13,9 +13,10 @@ xrdb -merge $RP/Xresources
 xsetroot -solid black
 #hsetroot -tile $BG/mathe_wall.png
 #hsetroot -full $BG/emu.800x480.jpg
-for image in $BG/`uname -n`.{full,fill,tile}; do
-    if [ -r "$image" ]; then
-	hsetroot -`echo "$image" | sed -e 's/^.*\.\([^.]*\)$/\1/'` "$image"
+imageprefix=$BG/`uname -n`
+for imagesuffix in full fill tile; do
+    if [ -r "$imageprefix.$imagesuffix" ]; then
+	hsetroot -$imagesuffix "$imageprefix.$imagesuffix"
     fi
 done
 

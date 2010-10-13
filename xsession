@@ -2,6 +2,10 @@
 
 RP=$(dirname "$(readlink "$0")")
 BG=$HOME/.backgrounds
+W=`xwininfo -root | fgrep Width: | awk '{print $2}'`
+H=`xwininfo -root | fgrep Height: | awk '{print $2}'`
+WT=`expr $W / 6`
+HT=`expr $H / 12 - 1`
 
 # Keyboard and X configuration
 if [ -r $RP/xmodmap-`uname -n` ]; then
@@ -48,7 +52,7 @@ fi
 yeahconsole &
 
 #(logread; logread -f) | root-tail --color white --update --cont + --cont-color blue --justify --outline --noflicker --interval 1 -fn '-xos4-terminus-*-r-*-*-12-120-*-*-*-60-iso10646-1' -g '798x454+2+0' -,darkorange,'System Log' ${HOME}/.xsession-errors,white,'X session errors' &
-(logread; logread -f & inotail -f .xsession-errors) | xrootconsole -fg white -fn '-xos4-terminus-*-*-*-*-12-120-*-*-*-60-iso10646-1' -geometry '133x39+2+2' &
+(logread|tail -100; logread -f & inotail -f .xsession-errors) | xrootconsole -fg white -fn '-xos4-terminus-*-*-*-*-12-120-*-*-*-60-iso10646-1' -geometry "${WT}x${HT}+2+1" &
 
 # Trayer needs to be started after ratpoison
 ( sleep 1; \

@@ -1,7 +1,7 @@
 Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
        , bgColor = "black"
        , fgColor = "white"
-       , position = Static { xpos = 0, ypos = 472, width = 800, height = 8 }
+       , position = Bottom
        , lowerOnStart = False
        , commands = [ Run Weather "LSZH" ["-t","ZH: <tempC>°C <rh>%","-L","16","-H","24","--normal","green","--high","red","--low","lightblue"] 12000
                     , Run Cpu ["-t","CPU: <total>","-L","3","-H","50","--normal","green","--high","red"] 5

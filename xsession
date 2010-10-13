@@ -21,7 +21,7 @@ eval `gpg-agent --daemon`
 # Tools for a better X experience
 keynav &
 autocutsel &
-syndaemon -i 1 -d
+test -x /usr/bin/syndaemon && syndaemon -i 1 -d
 
 # Some GNOME stuff I need (use either xscreensaver or
 # gnome-settings-daemon, but not both at the same time, because

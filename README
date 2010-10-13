@@ -38,13 +38,12 @@ packages) to be installed:
 * xrootconsole
 * inotail
 * transset-df
-* xserver-xorg-input-synaptics (for syndaemon)
 * gnome-keyring (for gnome-settings-daemon)
 * busybox-syslogd (for logread)
 * emacs (for emacs and emacsclient)
 * wget (needed by iplet)
 
-Recommended or used in commented stuff:
+Recommended, used in optional or commented stuff:
 
 * openssh-client (for ssh-add and ssh-agent)
 * Alternative window and session managers:
@@ -54,3 +53,4 @@ Recommended or used in commented stuff:
   * fvwm
 * root-tail
 * colortail
+* xserver-xorg-input-synaptics (for syndaemon)

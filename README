@@ -47,6 +47,7 @@ packages) to be installed:
 * busybox-syslogd (for logread)
 * emacs (for emacs and emacsclient)
 * wget (needed by iplet)
+* scrot
 
 Recommended, used in optional or commented stuff:
 

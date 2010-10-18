@@ -41,7 +41,7 @@ cpu_temperature 0 {
 }
 
 disk "/" {
-	format = "SDD: %avail"
+	format = "/ %avail"
 }
 
 #order += "ipv6"

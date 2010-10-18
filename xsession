@@ -47,6 +47,14 @@ if [ -r "$HOME/.zsh/zsh.d/60-debian" ]; then
     . "$HOME/.zsh/zsh.d/60-debian"
 fi
 
+if which gnome-settings-daemon > /dev/null; then
+    gnome-settings-daemon &
+fi
+
+if which gnome-power-manager > /dev/null; then
+    gnome-power-manager
+fi
+
 # Yeahconsole with Ctrl-Alt-Z, needs to come after the gnome keyring
 # daemon.
 yeahconsole &

@@ -24,7 +24,7 @@ http://github.com/xtaran/ratpoison-desktop.
 Needs at least the following Debian packages (besides essential
 packages) to be installed:
 
-* x11-xserver-utils (for xmodmap, xrdb and xsetroot)
+* x11-xserver-utils (for xmodmap, xrdb, xrandr and xsetroot)
 * ratpoison
 * i3status >= 2.2
 * xmobar
@@ -39,7 +39,6 @@ packages) to be installed:
 * yeahconsole
 * xterm and/or urxvt
 * keynav
-* xrandr
 * xcompmgr
 * xrootconsole
 * inotail

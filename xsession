@@ -52,14 +52,21 @@ fi
 yeahconsole &
 
 #(logread; logread -f) | root-tail --color white --update --cont + --cont-color blue --justify --outline --noflicker --interval 1 -fn '-xos4-terminus-*-r-*-*-12-120-*-*-*-60-iso10646-1' -g '798x454+2+0' -,darkorange,'System Log' ${HOME}/.xsession-errors,white,'X session errors' &
-(logread|tail -100; logread -f & inotail -f .xsession-errors) | xrootconsole -fg white -fn '-xos4-terminus-*-*-*-*-12-120-*-*-*-60-iso10646-1' -geometry "${WT}x${HT}+2+1" &
+( if which logread > /dev/null; then
+    logread | tail -100;
+    logread -f
+  else
+    tail -F /var/log/syslog
+  fi &
+  inotail -f .xsession-errors ) | \
+    xrootconsole -fg white -fn '-xos4-terminus-*-r-*-*-12-120-*-*-*-60-iso10646-1' -geometry "${WT}x${HT}+2+1" &
 
 # Trayer needs to be started after ratpoison
 ( sleep 1; \
   #xterm &
   urxvt &
   # Alternative font: -misc-fixed-medium-r-*-*-12-*-*-*-*-60-iso10646-1
-  #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn '-xos4-terminus-*-*-*-*-12-120-*-*-*-60-iso10646-1' -m -y 440 &
+  #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn '-xos4-terminus-*-r-*-*-12-120-*-*-*-60-iso10646-1' -m -y 440 &
   i3status -c $RP/i3statusrc | env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc &
   #sleep 1;
   unclutter &

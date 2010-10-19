@@ -9,7 +9,7 @@ WT=`expr $W / 6`
 HT=`expr $H / 12 - 1`
 
 # Define some environment variables used by programs called by this script
-WLAN_IF="wireless "`iwconfig 2>&1 | fgrep 'IEEE 802.11' | awk '{print $1}'`
+WLAN_IF="wireless "`iwconfig 2>&1 | fgrep 'IEEE 802.11' | awk '{print $1} | head -1'`
 export WLAN_IF
 
 # Keyboard and X configuration

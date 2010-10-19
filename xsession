@@ -1,11 +1,16 @@
 #!/bin/sh
 
+# Define some variables used within this script
 RP=$(dirname "$(readlink "$0")")
 BG=$HOME/.backgrounds
 W=`xwininfo -root | fgrep Width: | awk '{print $2}'`
 H=`xwininfo -root | fgrep Height: | awk '{print $2}'`
 WT=`expr $W / 6`
 HT=`expr $H / 12 - 1`
+
+# Define some environment variables used by programs called by this script
+WLAN_IF="wireless "`iwconfig 2>&1 | fgrep 'IEEE 802.11' | awk '{print $1}'`
+export WLAN_IF
 
 # Keyboard and X configuration
 if [ -r $RP/xmodmap-`uname -n` ]; then

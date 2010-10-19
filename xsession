@@ -14,7 +14,10 @@ export WLAN_IF
 
 # Keyboard and X configuration
 if [ -r $RP/xmodmap-`uname -n` ]; then
-    xmodmap -merge $RP/xmodmap-`uname -n`
+    xmodmap $RP/xmodmap-`uname -n`
+fi
+if [ -r $RP/Xresources-`uname -n` ]; then
+    xrdb -merge $RP/Xresources-`uname -n`
 fi
 xrdb -merge $RP/Xresources
 

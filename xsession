@@ -36,7 +36,7 @@ done
 eval `gpg-agent --daemon`
 
 # Tools for a better X experience
-keynav &
+keynav "loadconfig $RP/keynavrc" &
 autocutsel &
 test -x /usr/bin/syndaemon && syndaemon -i 1 -d
 

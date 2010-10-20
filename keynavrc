@@ -137,5 +137,5 @@ ctrl+b cut-left
 ctrl+g end
 ctrl+c end
 
-# Use Enter like Space
-Return warp,click 1,end
+# r for restart / reload config
+r restart

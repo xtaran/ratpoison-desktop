@@ -12,7 +12,6 @@ These files are needed to get the setup running.
 Since most of the configuration files included are not expected to
 reside in .ratpoison, some symlinks are necessary:
 
-~/.keynavrc 				   → keynavrc
 ~/.gitconfig 				   → gitconfig
 ~/.xsession 				   → xsession
 ~/bin/xrandr-vga-off.sh			   → bin/xrandr-vga-off.sh
@@ -38,7 +37,7 @@ packages) to be installed:
 * hsetroot
 * yeahconsole
 * xterm and/or urxvt
-* keynav
+* keynav >= 0.20101014.3067
 * xcompmgr
 * xrootconsole
 * inotail

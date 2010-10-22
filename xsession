@@ -79,7 +79,7 @@ yeahconsole &
       ccze -A -o noscroll || \
       colortail -k $RP/colortail.conf -q -f /dev/stdin || \
       lwatch -i- ) | \
-    xrootconsole -fg white -fn '-xos4-terminus-*-r-*-*-12-120-*-*-*-60-iso10646-1' -geometry "${WT}x${HT}+2+1" &
+    xrootconsole -fg white -fn '-xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1' -geometry "${WT}x${HT}+2+1" &
 
 # Trayer needs to be started after ratpoison
 ( sleep 1; \

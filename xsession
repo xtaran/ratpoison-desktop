@@ -74,7 +74,7 @@ yeahconsole &
   else
     tail -F /var/log/syslog
   fi &
-  inotail -f .xsession-errors ) | \
+  inotail -f $HOME/.xsession-errors ) | \
     ( loco || \
       ccze -A -o noscroll || \
       colortail -k $RP/colortail.conf -q -f /dev/stdin || \

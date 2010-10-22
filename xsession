@@ -6,7 +6,7 @@ BG=$HOME/.backgrounds
 W=`xwininfo -root | fgrep Width: | awk '{print $2}'`
 H=`xwininfo -root | fgrep Height: | awk '{print $2}'`
 WT=`expr $W / 6`
-HT=`expr $H / 12 - 1`
+HT=`expr $H / 11 - 1`
 
 # Define some environment variables used by programs called by this script
 WLAN_IF="wireless "`/sbin/iwconfig 2>&1 | fgrep 'IEEE 802.11' | awk '{print $1}' | head -1`

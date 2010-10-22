@@ -47,7 +47,6 @@ packages) to be installed:
 * emacs (for emacs and emacsclient)
 * wget (needed by iplet)
 * scrot
-* loco, ccze, lwatch, or colortail
 
 Recommended, used in optional or commented stuff:
 
@@ -57,5 +56,6 @@ Recommended, used in optional or commented stuff:
   * stumpwm
   * flwm
   * fvwm
+* loco, ccze, lwatch, or colortail
 * root-tail
 * xserver-xorg-input-synaptics (for syndaemon)

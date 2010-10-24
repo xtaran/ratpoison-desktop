@@ -19,21 +19,30 @@ my @ratmen_options = (qw(-F -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1),
 		      qw(--foreground orange --background black -s dreary),
 		      '-t', 'ratmen: ratpoison window list');
 
+### COMMANDLINE OPTIONS
+
+my $type = 'windows';
+my $select = 'select';
+if ($ARGV[0] and $ARGV[0] eq '-g') {
+    $type = 'groups';
+    $select = 'gselect';
+}
+
 ### CODE
 
 # Read original window list -- Could be done more elegant
-my @windowlist = split(/\n/, `ratpoison -c windows`);
+my @windowlist = split(/\n/, `ratpoison -c $type`);
 
 # Check if there are any windows, if not simulate ratpoison's
 # behaviour
 
 if ($#windowlist == 0 and $windowlist[0] !~ /^\d/) {
-    exec('ratpoison', '-c', 'echo No managed windows');
+    exec('ratpoison', '-c', 'echo No managed $type');
 
 # Else create a window list sorted and suitable for ratmenu
 } else {
     my %windowlist = map { /^(\d+)/ => $_ } @windowlist;
-    @windowlist = map { $windowlist{$_} => "ratpoison -c 'select $_'" }
+    @windowlist = map { $windowlist{$_} => "ratpoison -c '$select $_'" }
 		  sort { $a <=> $b }
 		  keys %windowlist;
 

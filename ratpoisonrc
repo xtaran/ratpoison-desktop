@@ -114,3 +114,11 @@ unmanage Clicks Panel
 
 # MPlayer
 unmanage MPlayer
+
+# Grouping
+bind g exec /home/abe/.ratpoison/bin/ratpoison-interactive-window-list.pl -g
+bind s-n gnext
+bind s-p gprev
+bind G gmove
+bind s-c gnew
+addhook switchgroup next

@@ -124,6 +124,7 @@ bind s-n gnext
 bind s-p gprev
 bind G gmove
 bind s-c gnew
+bind s-g gnew
 addhook switchgroup next
 
 # Some toplevel keybindings in the style of awesome, i3 and scrotwm

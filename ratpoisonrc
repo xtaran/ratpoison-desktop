@@ -172,4 +172,4 @@ definekey top s-space dedicate
 definekey top s-Insert dedicate
 
 # Helper for nawm stuff
-addhook switchwin banishrel
+addhook switchwin banish

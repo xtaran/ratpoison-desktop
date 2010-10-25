@@ -37,7 +37,7 @@ my @windowlist = split(/\n/, `ratpoison -c $type`);
 # behaviour
 
 if ($#windowlist == 0 and $windowlist[0] !~ /^\d/) {
-    exec('ratpoison', '-c', 'echo No managed $type');
+    exec('ratpoison', '-c', "echo No managed $type");
 
 # Else create a window list sorted and suitable for ratmenu
 } else {

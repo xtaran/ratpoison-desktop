@@ -1,0 +1,18 @@
+window newwin;
+window lastwin;
+leave {
+    #put "Leave "+name(pointerwindow())+" ("+name(currentwindow)+")";
+    lastwin = currentwindow;
+}
+enter {
+    #system "sleep 2";
+    newwin = pointerwindow();
+    #put "Enter "+name(newwin)+" ("+name(currentwindow)+")";
+    if (name(newwin) != "" && newwin != lastwin) {
+	#grab;
+	#unfocus;
+	raise newwin;
+	sync;
+	#ungrab;
+    }
+}

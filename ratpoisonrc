@@ -125,3 +125,47 @@ bind s-p gprev
 bind G gmove
 bind s-c gnew
 addhook switchgroup next
+
+# Some toplevel keybindings in the style of awesome, i3 and scrotwm
+definekey top s-0 select 0
+definekey top s-1 select 1
+definekey top s-2 select 2
+definekey top s-3 select 3
+definekey top s-4 select 4
+definekey top s-5 select 5
+definekey top s-6 select 6
+definekey top s-7 select 7
+definekey top s-8 select 8
+definekey top s-9 select 9
+definekey top s-Tab focus
+definekey top s-M-Tab focuslast
+definekey top s-C-Left exchangeleft
+definekey top s-C-Right exchangeright
+definekey top s-C-Up exchangeup
+definekey top s-C-Down exchangedown
+definekey top s-Left focusleft
+definekey top s-Right focusright
+definekey top s-Up focusup
+definekey top s-Down focusdown
+definekey top s-Q only
+definekey top s-q only
+definekey top s-n next
+definekey top s-p prev
+definekey top s-N inext
+definekey top s-P iprev
+definekey top s-C-n cnext
+definekey top s-C-p cprev
+definekey top s-z swap
+definekey top s-s split
+definekey top s-S hsplit
+definekey top s-bar hsplit
+definekey top s-t other
+definekey top s-h describekey top
+definekey top s-w exec /home/abe/.ratpoison/bin/ratpoison-interactive-window-list.pl
+definekey top s-C-w exec /home/abe/.ratpoison/bin/ratpoison-interactive-window-list.pl
+definekey top s-W windows
+definekey top s-g exec /home/abe/.ratpoison/bin/ratpoison-interactive-window-list.pl -g
+definekey top s-Return exec x-terminal-emulator
+definekey top s-c exec x-terminal-emulator
+definekey top s-space dedicate
+definekey top s-Insert dedicate

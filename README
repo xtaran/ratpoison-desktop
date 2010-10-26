@@ -17,7 +17,7 @@ reside in .ratpoison, some symlinks are necessary:
 ~/bin/xrandr-vga-off.sh			   → bin/xrandr-vga-off.sh
 
 Sources available via http://git.noone.org/?p=ratpoison.git,
-http://gitorious.org/abe-ratpoison-desktop, and
+http://gitorious.org/abe/ratpoison-desktop, and
 http://github.com/xtaran/ratpoison-desktop.
 
 Needs at least the following Debian packages (besides essential

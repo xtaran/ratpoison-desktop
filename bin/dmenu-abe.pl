@@ -7,6 +7,7 @@
 ### CONFIG
 
 my $config = "$ENV{HOME}/.ratpoison/dmenu-abe.rc";
+my $cache  = "$ENV{HOME}/.dmenu_cache";
 my @dmenu_options = qw(-p » -i -b -fn fixed -nb black -nf orange -sb orange -sf black);
 
 ### INIT
@@ -14,13 +15,28 @@ my @dmenu_options = qw(-p » -i -b -fn fixed -nb black -nf orange -sb orange -sf
 use IPC::Open2;
 
 my %command;
+my %whichcache;
 
 ### CHECK
 
 die "$config not found or unreadable" unless (-f $config &&  -r _);
 
-### READ
+### CHECK AND READ CACHE
+if (!-e $cache) {
+    system("dmenu_path > /dev/null");
+    if (!-e $cache) {
+	die "Couldn't create cache file $cache: $!";
+    }
+}
 
+open(CACHE, '<', $cache) or die "Can't open $cache: $!";
+while ($_ = <CACHE>) {
+    chomp;
+    $whichcache{$_} = 1;
+}
+close(CACHE);
+
+### READ
 open(CONFIG, '<', $config) or die "Can't open $config: $!";
 while ($_ =<CONFIG>) {
     next if /^\s*$|^\#/;
@@ -28,6 +44,8 @@ while ($_ =<CONFIG>) {
     die "Wrong syntax in $config, should be 'description => command', found:
 Line $.: $_" unless /=>/;
     my ($desc, $call) = split(/\s*=>\s*/);
+    my ($program, @args) = split(/\s/, $call);
+    next unless $whichcache{$program};
     $command{$desc} = $call;
 }
 close(CONFIG);

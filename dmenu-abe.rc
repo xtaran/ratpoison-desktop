@@ -1,36 +1,38 @@
 # Browsers
 Opera => opera
-Kazehakase => kazehakase
-Firefox / Iceweasel => iceweasel
+Kazehakase (Gecko) => kazehakase
+Firefox / Iceweasel (Gecko) => iceweasel
 Netsurf => netsurf
 Links2 => links2 -g
 wApua => wapua
-Liferea => liferea
-#Dillo => dillo
-Conkeror => env EDITOR='emacsclient -a emacs' conkeror
+Liferea (WebKit) => liferea
+Dillo => dillo
+Conkeror (Gecko) => env EDITOR='emacsclient -a emacs' conkeror
+Conkeror (Gecko 1.9.0.x) => env EDITOR='emacsclient -a emacs' xulrunner-1.9 /usr/share/conkeror/application.ini
 Conkeror (Gecko 1.9.1.x) => env EDITOR='emacsclient -a emacs' xulrunner-1.9.1 /usr/share/conkeror/application.ini
 Conkeror (Gecko 1.9.2.x) => env EDITOR='emacsclient -a emacs' xulrunner-1.9.2 /usr/share/conkeror/application.ini
-Midori  => midori
-Arora => arora
-#Google Chrome => google-chrome
-Chromium => chromium-browser
-#Chimera 2 => chimera2
+Midori (Gtk WebKit)  => midori
+Arora (Qt WebKit) => arora
+Google Chrome (WebKit+V8) => google-chrome
+Chromium (WebKit+V8) => chromium
+Chimera 2 => chimera2
 
 # Editors
 GNU Emacs => emacs
-#GNU Emacs 22 => emacs22
-#GNU Emacs 23 => emacs23
-#GNU Emacs Snapshot => emacs-snapshot
-#OpenOffice.org => ooo
+GNU Emacs 22 => emacs22
+GNU Emacs 23 => emacs23
+GNU Emacs Snapshot => emacs-snapshot
+OpenOffice.org => openoffice.org
+LibreOffice => libreoffice
 
 # Graphics
-#Evolvotron => evolvotron
-#XV => xv
-#XZGV => xzgv
-#feh => feh
-#Gaia => gaia
-#Earth3D => earth3d
-#Google Earth => googleearth
+Evolvotron => evolvotron
+XV => xv
+XZGV => xzgv
+feh => feh
+Gaia => gaia
+Earth3D => earth3d
+Google Earth => googleearth
 
 # Terminals
 XTerm => xterm
@@ -38,10 +40,11 @@ UXTerm => uxterm
 Yeah Console => yeahconsole
 RXVT => rxvt
 URXVT => urxvt
-#ATerm => aterm
+ATerm => aterm
 
 # Games
-#Flight of the Amazon Queen => /usr/games/scummvm -p /usr/share/scummvm/flight-of-the-amazon-queen queen
+Flight of the Amazon Queen => queen
+Beneath a Steel Sky (BASS) => sky
 Flobopuyo => flobopuyo
 Icebreaker => icebreaker
 Ace of Penguins: Mastermind => ace_mastermind
@@ -59,12 +62,12 @@ XPuyoPuyo => xpuyopuyo
 SpaceHero => spacehero
 
 # Aufloesung leider zu klein
-#Cuyo => cuyo
-#XFRisk (localhost) => xfrisk localhost
-#Battle of Wesnoth => wesnoth
+Cuyo => cuyo
+XFRisk (localhost) => xfrisk localhost
+Battle of Wesnoth => wesnoth
 
 # Tools
-#Unison 2.13.16 (GTK) => unison-2.13.16-gtk
+Unison 2.13.16 (GTK) => unison-2.13.16-gtk
 Unison 2.27.57 (GTK) => unison-2.27.57-gtk
 XGnokii => xgnokii
 Wireshark / Ethereal => wireshark
@@ -93,10 +96,10 @@ Pidgin / GAIM => pidgin
 ALSA Mixer (GUI) => alsamixergui
 ALSA Player => alsaplayer
 Audacious => audacious
-#GMPlayer => gmplayer
-#GXine => gxine
+GMPlayer => gmplayer
+GXine => gxine
 VLC => vlc
-#Rhythmbox => rhythmbox
+Rhythmbox => rhythmbox
 Vagalume (Last.fm) => vagalume
 MPlayer on Webcam => mplayer -fps 60 tv://
 

@@ -1,4 +1,4 @@
-Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
+Config { font = "-xos4-terminus-bold-r-*-*-12-120-*-*-*-60-iso10646-1"
        , bgColor = "black"
        , fgColor = "white"
        , position = Bottom
@@ -6,13 +6,16 @@ Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
        , commands = [ Run Weather "LSZH" ["-t","ZH: <tempC>°C <rh>%","-L","16","-H","24","--normal","green","--high","red","--low","lightblue"] 12000
                     , Run Cpu ["-t","CPU: <total>","-L","3","-H","50","--normal","green","--high","red"] 5
 		    , Run StdinReader
+                    , Run Network "re0" ["-t","<dev>: <rx>—<tx>","-L","0","-H","32","--normal","green","--high","red"] 1
+                    , Run Cpu ["-t","<total>","-L","3","-H","50","--normal","green","--high","red"] 1
+                    , Run Memory ["-t","Mem: <usedratio>% U:<used>M C:<cache>M B:<buffer>M"] 5
 		    , Run Thermal "TZ00" ["-t","<temp>°C"] 10
-                    , Run Com "uname" ["-r"] "" 36000
+                    , Run Com "uname" ["-s","-r"] "" 36000
                     , Run Com "iplet" ["2"] "" 3000
-                    , Run Date "%H:%M:%S" "date" 10
+		    , Run Date "%a %d-%b-%Y %H:%M:%S" "date" 10
 		    , Run CpuFreq ["-t","<cpu0> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " %iplet% <fc=#333333>|</fc> %StdinReader% <fc=#333333>|</fc> %cpu% <fc=#333333>|</fc> %cpufreq% <fc=#333333>|</fc> }{%uname% <fc=#333333>|</fc> %LSZH% <fc=#333333>|</fc> %date% "
+       , template = " %StdinReader%}{%cpu% <fc=#333333>|</fc> %memory% <fc=#333333>|</fc> %re0% <fc=#333333>|</fc> %iplet% <fc=#333333>|</fc> %TZ00% <fc=#333333>|</fc> %LSZH% <fc=#333333>|</fc> %date% <fc=#333333>|</fc> %uname% "
        }

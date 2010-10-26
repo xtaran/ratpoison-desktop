@@ -105,7 +105,9 @@ yeahconsole &
   #emacs &
 ) &
 
-xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
+if [ "`hostname`" != 'metisse' ]; then
+    xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
+fi
 
 #exec lxsession -session ratpoison
 exec ratpoison -f $RP/ratpoisonrc

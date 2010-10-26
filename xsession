@@ -14,8 +14,10 @@ wh() {
 }
 
 # Define some environment variables used by programs called by this script
-WLAN_IF="wireless "`/sbin/iwconfig 2>&1 | fgrep 'IEEE 802.11' | awk '{print $1}' | head -1`
-export WLAN_IF
+if wh iwconfig; then
+    WLAN_IF="wireless "`/sbin/iwconfig 2>&1 | fgrep 'IEEE 802.11' | awk '{print $1}' | head -1`
+    export WLAN_IF
+fi
 
 # Allow Ctrl-Alt-Backspace to kill the X server
 setxkbmap -option terminate:ctrl_alt_bksp
@@ -109,7 +111,7 @@ yeahconsole &
   #emacs &
 ) &
 
-if [ "`hostname`" != 'metisse' ]; then
+if wh xcompmgr && [ "`hostname`" != 'metisse' ]; then
     xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
 fi
 

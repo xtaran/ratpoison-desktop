@@ -8,9 +8,16 @@ H=`xwininfo -root | fgrep Height: | awk '{print $2}'`
 WT=`expr $W / 6`
 HT=`expr $H / 11 - 1`
 
+# Define some functions
+wh() {
+    which "$@" > /dev/null
+}
+
 # Define some environment variables used by programs called by this script
-WLAN_IF="wireless "`/sbin/iwconfig 2>&1 | fgrep 'IEEE 802.11' | awk '{print $1}' | head -1`
-export WLAN_IF
+if wh iwconfig; then
+    WLAN_IF="wireless "`/sbin/iwconfig 2>&1 | fgrep 'IEEE 802.11' | awk '{print $1}' | head -1`
+    export WLAN_IF
+fi
 
 # Allow Ctrl-Alt-Backspace to kill the X server
 setxkbmap -option terminate:ctrl_alt_bksp
@@ -47,13 +54,13 @@ eval `gpg-agent --daemon`
 # Tools for a better X experience
 keynav "loadconfig $RP/keynavrc" &
 autocutsel &
-test -x /usr/bin/syndaemon && syndaemon -i 1 -d
+wh syndaemon && syndaemon -i 1 -d
 
 # Some GNOME stuff I need (use either xscreensaver or
 # gnome-settings-daemon, but not both at the same time, because
 # gnome-settings-daemon starts xscreensaver, too.)
 eval `gnome-keyring-daemon -s`
-test -x /usr/bin/xscreensaver && xscreensaver -no-splash &
+wh xscreensaver && xscreensaver -no-splash &
 #gnome-settings-daemon
 #/usr/lib/gnome-volume-manager/gnome-volume-manager &
 
@@ -64,26 +71,25 @@ if [ -r "$HOME/.zsh/zsh.d/60-debian" ]; then
     . "$HOME/.zsh/zsh.d/60-debian"
 fi
 
-if which gnome-settings-daemon > /dev/null; then
-    gnome-settings-daemon &
-fi
-
-if which gnome-power-manager > /dev/null; then
-    gnome-power-manager
-fi
+wh gnome-settings-daemon && gnome-settings-daemon &
+wh gnome-power-manager && gnome-power-manager
 
 # Yeahconsole with Ctrl-Alt-Z, needs to come after the gnome keyring
 # daemon.
 yeahconsole &
 
 #(logread; logread -f) | root-tail --color white --update --cont + --cont-color blue --justify --outline --noflicker --interval 1 -fn '-xos4-terminus-*-r-*-*-12-120-*-*-*-60-iso10646-1' -g '798x454+2+0' -,darkorange,'System Log' ${HOME}/.xsession-errors,white,'X session errors' &
-( if which logread > /dev/null; then
+( if wh logread; then
     logread | tail -100;
     logread -f
   else
     tail -F /var/log/syslog
   fi &
-  inotail -f $HOME/.xsession-errors ) | \
+  if wh inotail; then
+      inotail -f $HOME/.xsession-errors
+  else
+      tail -f $HOME/.xsession-errors
+  fi ) | \
 #    ( loco || \
 #      ccze -A -o noscroll || \
 #      colortail -k $RP/colortail.conf -q -f /dev/stdin || \
@@ -98,14 +104,16 @@ yeahconsole &
   #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn '-xos4-terminus-*-r-*-*-12-120-*-*-*-60-iso10646-1' -m -y 440 &
   i3status -c $RP/i3statusrc | env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc &
   #sleep 1;
-  which unclutter > /dev/null && unclutter -keystroke -idle 2 &
+  wh unclutter && unclutter -keystroke -idle 2 &
   #sleep 10;
   #conkeror &
   #sleep 3
   #emacs &
 ) &
 
-xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
+if wh xcompmgr && [ "`hostname`" != 'metisse' ]; then
+    xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
+fi
 nawm -f $RP/nawmrc &
 
 #exec lxsession -session ratpoison

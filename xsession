@@ -7,6 +7,7 @@ W=`xwininfo -root | fgrep Width: | awk '{print $2}'`
 H=`xwininfo -root | fgrep Height: | awk '{print $2}'`
 WT=`expr $W / 6`
 HT=`expr $H / 11 - 1`
+FONT='-xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1'
 
 # Define some functions
 wh() {
@@ -78,7 +79,7 @@ wh gnome-power-manager && gnome-power-manager
 # daemon.
 yeahconsole &
 
-#(logread; logread -f) | root-tail --color white --update --cont + --cont-color blue --justify --outline --noflicker --interval 1 -fn '-xos4-terminus-*-r-*-*-12-120-*-*-*-60-iso10646-1' -g '798x454+2+0' -,darkorange,'System Log' ${HOME}/.xsession-errors,white,'X session errors' &
+#(logread; logread -f) | root-tail --color white --update --cont + --cont-color blue --justify --outline --noflicker --interval 1 -fn "$FONT" -g '798x454+2+0' -,darkorange,'System Log' ${HOME}/.xsession-errors,white,'X session errors' &
 ( if wh logread; then
     logread | tail -100;
     logread -f
@@ -94,14 +95,14 @@ yeahconsole &
 #      ccze -A -o noscroll || \
 #      colortail -k $RP/colortail.conf -q -f /dev/stdin || \
 #      lwatch -i- ) | \
-    xrootconsole -fg white -fn '-xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1' -geometry "${WT}x${HT}+2+1" &
+    xrootconsole -fg white -fn "$FONT" -geometry "${WT}x${HT}+2+1" &
 
 # Trayer needs to be started after ratpoison
 ( sleep 1; \
   #xterm &
   urxvt &
   # Alternative font: -misc-fixed-medium-r-*-*-12-*-*-*-*-60-iso10646-1
-  #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn '-xos4-terminus-*-r-*-*-12-120-*-*-*-60-iso10646-1' -m -y 440 &
+  #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn "$FONT" -m -y 440 &
   i3status -c $RP/i3statusrc | env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc &
   #sleep 1;
   wh unclutter && unclutter -keystroke -idle 2 &

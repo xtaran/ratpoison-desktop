@@ -170,3 +170,6 @@ definekey top s-Return exec x-terminal-emulator
 definekey top s-c exec x-terminal-emulator
 definekey top s-space dedicate
 definekey top s-Insert dedicate
+
+# Helper for nawm stuff
+addhook switchwin exec if [ `ratpoison -c fdump | fgrep -o "frame" | wc -l` -gt 1 ]; then ratpoison -c banish; fi

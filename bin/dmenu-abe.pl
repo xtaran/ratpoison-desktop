@@ -38,7 +38,7 @@ close(CACHE);
 
 ### READ
 open(CONFIG, '<', $config) or die "Can't open $config: $!";
-while ($_ =<CONFIG>) {
+while ($_ = <CONFIG>) {
     next if /^\s*$|^\#/;
     chomp;
     die "Wrong syntax in $config, should be 'description => command', found:

@@ -12,6 +12,9 @@ HT=`expr $H / 11 - 1`
 WLAN_IF="wireless "`/sbin/iwconfig 2>&1 | fgrep 'IEEE 802.11' | awk '{print $1}' | head -1`
 export WLAN_IF
 
+# Allow Ctrl-Alt-Backspace to kill the X server
+setxkbmap -option terminate:ctrl_alt_bksp
+
 # Keyboard and X configuration
 if [ -r $RP/xmodmap-`uname -n` ]; then
     xmodmap $RP/xmodmap-`uname -n`
@@ -20,6 +23,9 @@ if [ -r $RP/Xresources-`uname -n` ]; then
     xrdb -merge $RP/Xresources-`uname -n`
 fi
 xrdb -merge $RP/Xresources
+
+# Audio settings
+#xset b 100 1200 240
 
 # Background
 xsetroot -solid black
@@ -34,6 +40,9 @@ done
 
 # Daemons (ssh-agent started from session management)
 eval `gpg-agent --daemon`
+
+# Needs ssh around it.
+#synergyc snitch
 
 # Tools for a better X experience
 keynav "loadconfig $RP/keynavrc" &
@@ -89,7 +98,7 @@ yeahconsole &
   #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn '-xos4-terminus-*-r-*-*-12-120-*-*-*-60-iso10646-1' -m -y 440 &
   i3status -c $RP/i3statusrc | env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc &
   #sleep 1;
-  unclutter &
+  which unclutter > /dev/null && unclutter -keystroke -idle 2 &
   #sleep 10;
   #conkeror &
   #sleep 3
@@ -103,3 +112,6 @@ exec ratpoison -f $RP/ratpoisonrc
 #exec stumpwm
 #exec flwm -g 800x454+0+0 -fg orange -bg black -cfg orange -bfg black
 #exec fvwm
+#exec i3
+#exec awesome
+#exec scrotwm

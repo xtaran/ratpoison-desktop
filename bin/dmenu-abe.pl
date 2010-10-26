@@ -44,6 +44,7 @@ while ($_ =<CONFIG>) {
     die "Wrong syntax in $config, should be 'description => command', found:
 Line $.: $_" unless /=>/;
     my ($desc, $call) = split(/\s*=>\s*/);
+    # TODO: Make this parse "env BLA='foo bar' command" calls properly
     my ($program, @args) = split(/\s/, $call);
     next unless $whichcache{$program};
     $command{$desc} = $call;

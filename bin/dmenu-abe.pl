@@ -80,9 +80,24 @@ chomp($result);
 
 ### EXECUTE
 
+my $xmessage;
+foreach  my $xm (qw(gmessage xmessage gxmessage)) {
+    if ($whichcache{$xm}) {
+	$xmessage = $xm;
+	last;
+    }
+}
+
 fork && exit;
-system($command{$result} || $result) &&
-    system('xmessage',
-	   "Couldn't execute ".
-	   ($command{$result} || $result).
-	   ": $!");
+if (system($command{$result} || $result)) {
+    my $message =
+	"Couldn't execute ".
+	($command{$result} || $result).
+	": $!";
+
+    if ($xmessage) {
+	system($xmessage, $message);
+    } else {
+	die $message;
+    }
+}

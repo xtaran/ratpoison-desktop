@@ -47,6 +47,7 @@ packages) to be installed:
 * emacs (for emacs and emacsclient)
 * wget (needed by iplet)
 * scrot
+* xmessage or gxmessage
 
 Recommended, used in optional or commented stuff:
 

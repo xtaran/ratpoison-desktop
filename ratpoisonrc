@@ -54,6 +54,7 @@ bind C-plus exec transset-df -p -m .7 -x .9
 bind M shrink
 bind z swap
 bind q only
+bind T number
 
 bind C-0 select 10
 bind C-1 select 11

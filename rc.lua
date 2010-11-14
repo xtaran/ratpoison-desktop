@@ -41,27 +41,31 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 layouts =
 {
-    awful.layout.suit.floating,
-    awful.layout.suit.tile,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier
+    awful.layout.suit.tile,            --  1
+    awful.layout.suit.tile.left,       --  2
+    awful.layout.suit.tile.bottom,     --  3
+    awful.layout.suit.tile.top,        --  4
+    awful.layout.suit.fair,            --  5
+    awful.layout.suit.fair.horizontal, --  6
+    awful.layout.suit.spiral,          --  7
+    awful.layout.suit.spiral.dwindle,  --  8
+    awful.layout.suit.max,             --  9
+    awful.layout.suit.max.fullscreen,  -- 10
+    awful.layout.suit.magnifier,       -- 11
+    awful.layout.suit.floating         -- 12
 }
 -- }}}
 
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
-tags = {}
+tags = {
+  names  = { "Shell", "Web", "RSS", "Dev", 5, 6, 7, 8, 9 },
+  layout = { layouts[1], layouts[1], layouts[9], layouts[1], layouts[1],
+             layouts[1], layouts[1], layouts[1], layouts[1] }
+}
 for s = 1, screen.count() do
-    -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+  -- Each screen has its own tag table.
+  tags[s] = awful.tag(tags.names, s, tags.layout)
 end
 -- }}}
 

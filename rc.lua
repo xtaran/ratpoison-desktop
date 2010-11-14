@@ -2,6 +2,7 @@
 require("awful")
 require("awful.autofocus")
 require("awful.rules")
+require("awful.remote")
 -- Theme handling library
 require("beautiful")
 -- Notification library
@@ -10,14 +11,25 @@ require("naughty")
 -- Load Debian menu entries
 require("debian.menu")
 
+-- Load obvious stuff
+require("obvious.battery")
+require("obvious.volume_alsa")
+
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+--for s = 1, screen.count() do
+--    awful.util.spawn("awsetbg -l", false, s)
+--end
 
 -- This is used later as the default terminal and editor to run.
 terminal = "x-terminal-emulator"
-editor = os.getenv("EDITOR") or "editor"
-editor_cmd = terminal .. " -e " .. editor
+editor = "emacsclient -a emacs"
+editor_cmd = "emacsclient -a emacs"
+screen_cmd = terminal .. " -e screen -R"
+browser = "sensible-browser"
+xlock = "xscreensaver-command -activate || xtrlock"
+amixer = "amixer"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -148,6 +160,7 @@ for s = 1, screen.count() do
             layout = awful.widget.layout.horizontal.leftright
         },
         mylayoutbox[s],
+	obvious.battery(),
         mytextclock,
         s == 1 and mysystray or nil,
         mytasklist[s],
@@ -180,7 +193,7 @@ globalkeys = awful.util.table.join(
             awful.client.focus.byidx(-1)
             if client.focus then client.focus:raise() end
         end),
-    awful.key({ modkey,           }, "w", function () mymainmenu:show({keygrabber=true}) end),
+    awful.key({ modkey,           }, "w", function () mymainmenu:show({keygrabber=false}) end),
 
     -- Layout manipulation
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end),
@@ -302,8 +315,12 @@ awful.rules.rules = {
     { rule = { class = "gimp" },
       properties = { floating = true } },
     -- Set Firefox to always map on tags number 2 of screen 1.
-    -- { rule = { class = "Firefox" },
-    --   properties = { tag = tags[1][2] } },
+    { rule = { class = "Firefox" },
+      properties = { tag = tags[1][2] } },
+    { rule = { class = "Conkeror" },
+      properties = { tag = tags[1][2] } },
+    { rule = { class = "Emacs" },
+      properties = { tag = tags[1][4] } },
 }
 -- }}}
 

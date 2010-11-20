@@ -1,5 +1,5 @@
 echo "Willkommen zu Axels .screenrc"
-activity "Aktivit‰ten in Fenster %"
+activity "Aktivit√§ten in Fenster %"
 autodetach on
 bell "Klingel in Fenster %~"
 hardstatus alwayslastline "%H: %n %t | %w | %l | %c:%s"

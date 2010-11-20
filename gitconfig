@@ -10,6 +10,7 @@
 [alias]
 	st = status
 	d = diff
+	dc = diff --cached
 	ci = commit -v
 	co = checkout
 	undo = reset --hard

@@ -1,0 +1,17 @@
+echo "Willkommen zu Axels .screenrc"
+activity "Aktivitäten in Fenster %"
+autodetach on
+bell "Klingel in Fenster %~"
+hardstatus alwayslastline "%H: %n %t | %w | %l | %c:%s"
+startup_message off
+
+#screen 0
+#screen 2
+#screen 1 emacs -nw
+#screen 3 irssi
+#screen 3 ssh -C -c none localhost -l fsinfo
+#screen 4 w3m http://fsinfo.cs.uni-sb.de/~abe/Links/#start
+#screen 5 tin
+#screen 6 /home/abe/bin/tailminusfprocmaillogandicq.sh
+
+#screen 2 ssh sycorax /home/abe/bin/mutt-screen-start

@@ -6,4 +6,4 @@ hardstatus alwayslastline "%H: %n %t | %w | %l | %c:%s"
 startup_message off
 
 defbce on
-term screen-bce
+term screen-256color-bce

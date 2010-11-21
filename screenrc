@@ -4,3 +4,6 @@ autodetach on
 bell "Klingel in Fenster %~"
 hardstatus alwayslastline "%H: %n %t | %w | %l | %c:%s"
 startup_message off
+
+defbce on
+term screen-256color-bce

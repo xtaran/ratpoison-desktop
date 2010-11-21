@@ -158,3 +158,6 @@ UXTerm*printerExtent: true
 XTerm*printerAutoClose: false
 XTerm*printerCommand: /home/abe/.ratpoison/bin/notifier.sh
 XTerm*printerExtent: true
+
+UXTerm*termName: xterm-256color
+XTerm*termName: xterm-256color

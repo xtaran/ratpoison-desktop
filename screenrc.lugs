@@ -1,0 +1,8 @@
+source screenrc
+
+screen -t kiva  0 ssh root@kiva
+screen -t kiva1 1 ssh root@kiva1
+screen -t kiva2 2 ssh root@kiva2
+screen -t kiva3 3 ssh root@kiva3
+screen -t kiva4 3 ssh root@kiva4
+screen -t kiva5 3 ssh root@kiva5

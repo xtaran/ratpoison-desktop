@@ -1,0 +1,7 @@
+source screenrc
+
+screen -t io:sid           0 ssh root@io       -t dchroot sid
+screen -t asdfasdf:sid     1 ssh root@asdfasdf -t dchroot sid
+screen -t io:squeeze       2 ssh root@io       -t dchroot squeeze
+screen -t asdfasdf:squeeze 3 ssh root@asdfasdf -t dchroot squeeze
+screen -t io:experimental  4 ssh root@io       -t dchroot experimental

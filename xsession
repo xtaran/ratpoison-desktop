@@ -8,15 +8,11 @@ H=`xwininfo -root | fgrep Height: | awk '{print $2}'`
 WT=`expr $W / 6`
 HT=`expr $H / 11 - 1`
 FONT='-xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1'
-
-# Define some functions
-wh() {
-    which "$@" > /dev/null
-}
+PATH="${PATH}:/sbin:/usr/sbin:${RP}/bin"
 
 # Define some environment variables used by programs called by this script
 if wh iwconfig; then
-    WLAN_IF="wireless "`/sbin/iwconfig 2>&1 | fgrep 'IEEE 802.11' | awk '{print $1}' | head -1`
+    WLAN_IF="wireless "`iwconfig 2>&1 | fgrep 'IEEE 802.11' | awk '{print $1}' | head -1`
     export WLAN_IF
 fi
 

@@ -298,6 +298,36 @@ for i = 1, keynumber do
                       end
                   end))
 end
+
+
+globalkeys = awful.util.table.join(globalkeys,
+    awful.key({ modkey }, "#19",
+              function ()
+                    local screen = mouse.screen
+                    if tags[screen][10] then
+                        awful.tag.viewonly(tags[screen][10])
+                    end
+              end),
+    awful.key({ modkey, "Control" }, "#19",
+              function ()
+                  local screen = mouse.screen
+                  if tags[screen][10] then
+                      awful.tag.viewtoggle(tags[screen][10])
+                  end
+              end),
+    awful.key({ modkey, "Shift" }, "#19",
+              function ()
+                  if client.focus and tags[client.focus.screen][10] then
+                      awful.client.movetotag(tags[client.focus.screen][10])
+                  end
+              end),
+    awful.key({ modkey, "Control", "Shift" }, "#19",
+              function ()
+                  if client.focus and tags[client.focus.screen][10] then
+                      awful.client.toggletag(tags[client.focus.screen][10])
+                  end
+              end))
+
 for i = 11, 22 do
     globalkeys = awful.util.table.join(globalkeys,
         awful.key({ modkey }, "F" .. i - 10,

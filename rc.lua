@@ -60,9 +60,13 @@ layouts =
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {
-  names  = { "Shell", "Web", "RSS", "Dev", 5, 6, 7, 8, 9 },
+  names  = { "Shell:1", "Web:2", "RSS:3", "Dev:4", "IM:5", 6, 7, 8, 9,
+	     10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 },
   layout = { layouts[1], layouts[1], layouts[9], layouts[1], layouts[1],
-             layouts[1], layouts[1], layouts[1], layouts[1] }
+             layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
+             layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
+             layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
+             layouts[1], layouts[1] }
 }
 for s = 1, screen.count() do
   -- Each screen has its own tag table.
@@ -294,6 +298,35 @@ for i = 1, keynumber do
                       end
                   end))
 end
+for i = 11, 22 do
+    globalkeys = awful.util.table.join(globalkeys,
+        awful.key({ modkey }, "F" .. i - 10,
+                  function ()
+                        local screen = mouse.screen
+                        if tags[screen][i] then
+                            awful.tag.viewonly(tags[screen][i])
+                        end
+                  end),
+        awful.key({ modkey, "Control" }, "F" .. i - 10,
+                  function ()
+                      local screen = mouse.screen
+                      if tags[screen][i] then
+                          awful.tag.viewtoggle(tags[screen][i])
+                      end
+                  end),
+        awful.key({ modkey, "Shift" }, "F" .. i - 10,
+                  function ()
+                      if client.focus and tags[client.focus.screen][i] then
+                          awful.client.movetotag(tags[client.focus.screen][i])
+                      end
+                  end),
+        awful.key({ modkey, "Control", "Shift" }, "F" .. i - 10,
+                  function ()
+                      if client.focus and tags[client.focus.screen][i] then
+                          awful.client.toggletag(tags[client.focus.screen][i])
+                      end
+                  end))
+ end
 
 clientbuttons = awful.util.table.join(
     awful.button({ }, 1, function (c) client.focus = c; c:raise() end),

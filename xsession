@@ -74,7 +74,7 @@ if [ -r "$HOME/.zsh/zsh.d/60-debian" ]; then
 fi
 
 wh gnome-settings-daemon && gnome-settings-daemon &
-wh gnome-power-manager && gnome-power-manager
+wh gnome-power-manager && gnome-power-manager &
 
 # Yeahconsole with Ctrl-Alt-Z, needs to come after the gnome keyring
 # daemon.

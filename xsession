@@ -117,11 +117,15 @@ if wh xcompmgr && [ "`hostname`" != 'metisse' ]; then
     xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
 fi
 
+if [ `uname -n` = nemo ]; then
+    exec ratpoison -f $RP/ratpoisonrc
+else
+    exec awesome
+fi
+
 #exec lxsession -session ratpoison
-exec ratpoison -f $RP/ratpoisonrc
 #exec stumpwm
 #exec flwm -g 800x454+0+0 -fg orange -bg black -cfg orange -bfg black
 #exec fvwm
 #exec i3
-#exec awesome
 #exec scrotwm

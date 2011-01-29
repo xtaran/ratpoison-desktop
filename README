@@ -37,7 +37,7 @@ packages) to be installed:
 * xscreensaver or xtrlock
 * hsetroot
 * yeahconsole
-* xterm and/or urxvt
+* xterm and/or rxvt-unicode
 * keynav >= 0.20101014.3067
 * xcompmgr
 * xrootconsole
@@ -48,7 +48,7 @@ packages) to be installed:
 * emacs (for emacs and emacsclient)
 * wget (needed by iplet)
 * scrot
-* xmessage or gxmessage
+* x11-utils (for xmessage) or gxmessage
 
 Recommended, used in optional or commented stuff:
 

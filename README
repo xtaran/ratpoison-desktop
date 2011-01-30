@@ -68,6 +68,7 @@ tedious to always type them:
 ~/.xsession 				   → xsession
 ~/.screenrc 				   → screenrc
 ~/bin/xrandr-vga-off.sh			   → bin/xrandr-vga-off.sh
+~/bin/terms				   → bin/terms
 
 Sources available via http://git.noone.org/?p=ratpoison.git,
 http://gitorious.org/abe/ratpoison-desktop, and
@@ -101,6 +102,8 @@ packages) to be installed:
 * wget (needed by iplet)
 * scrot
 * x11-utils (for xmessage) or gxmessage
+* libfile-slurp-perl
+* libfile-temp-perl
 
 Recommended, used in optional or commented stuff:
 

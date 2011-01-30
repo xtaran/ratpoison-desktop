@@ -1,6 +1,0 @@
-source screenrc
-
-screen -t hz         0 ssh root@hz
-screen -t dynax      1 ssh root@dynax
-screen -t loadrunner 2 ssh root@loadrunner
-

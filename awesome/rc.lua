@@ -17,7 +17,7 @@ require("obvious.volume_alsa")
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/home/abe/.config/awesome/theme.lua")
+beautiful.init((os.getenv("RP") or (os.getenv("HOME") .."/.config")) .. "/awesome/theme.lua")
 for s = 1, screen.count() do
 --    awful.util.spawn("awsetbg -l", false, s)
    awful.screen.padding( screen[s], { bottom = 11 } )

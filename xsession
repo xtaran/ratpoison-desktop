@@ -74,7 +74,7 @@ if [ -r "$HOME/.zsh/zsh.d/60-debian" ]; then
 fi
 
 wh gnome-settings-daemon && gnome-settings-daemon &
-wh gnome-power-manager && gnome-power-manager
+wh gnome-power-manager && gnome-power-manager &
 
 # Yeahconsole with Ctrl-Alt-Z, needs to come after the gnome keyring
 # daemon.
@@ -117,11 +117,16 @@ if wh xcompmgr && [ "`hostname`" != 'metisse' ]; then
     xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
 fi
 
+if [ `uname -n` = nemo ]; then
+    exec ratpoison -f $RP/ratpoisonrc
+else
+    exec awesome -c $RP/awesome/rc.lua
+fi
+
 #exec lxsession -session ratpoison
-exec ratpoison -f $RP/ratpoisonrc
 #exec stumpwm
 #exec flwm -g 800x454+0+0 -fg orange -bg black -cfg orange -bfg black
 #exec fvwm
 #exec i3
-#exec awesome
 #exec scrotwm
+#exec tritium

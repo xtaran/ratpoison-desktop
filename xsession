@@ -119,7 +119,7 @@ fi
 
 if [ `uname -n` = nemo ]; then
     # Call nawm for focus follows mouse with ratpoison
-    nawm -f $RP/nawmrc &
+    wh nawm && nawm -f $RP/nawmrc &
     exec ratpoison -f $RP/ratpoisonrc
 else
     wh wmname && wmname awesome

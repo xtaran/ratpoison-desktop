@@ -31,6 +31,7 @@ screen_cmd = terminal .. " -e screen -R"
 browser = "sensible-browser"
 xlock = "xscreensaver-command -activate || xtrlock"
 amixer = "amixer"
+ffm = (os.getenv("RP") or (os.getenv("HOME") .."/.ratpoison"))  .. "/bin/focus-follows-mouse-on-tag-change.sh"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -188,8 +189,17 @@ root.buttons(awful.util.table.join(
 
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
-    awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
-    awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
+    awful.key({ modkey, "Control" }, "apostrophe", awful.tag.viewnone),
+    awful.key({ modkey,           }, "Left",
+	function ()
+	    awful.tag.viewprev()
+	    awful.util.spawn(ffm)
+	end),
+    awful.key({ modkey,           }, "Right",
+	function ()
+	    awful.tag.viewnext()
+	    awful.util.spawn(ffm)
+	end),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
 
     awful.key({ modkey,           }, "j",
@@ -276,6 +286,7 @@ for i = 1, keynumber do
                         local screen = mouse.screen
                         if tags[screen][i] then
                             awful.tag.viewonly(tags[screen][i])
+			    awful.util.spawn(ffm)
                         end
                   end),
         awful.key({ modkey, "Control" }, "#" .. i + 9,
@@ -306,6 +317,7 @@ for i = 11, 22 do
                         local screen = mouse.screen
                         if tags[screen][i] then
                             awful.tag.viewonly(tags[screen][i])
+			    awful.util.spawn(ffm)
                         end
                   end),
         awful.key({ modkey, "Control" }, "F" .. i - 10,

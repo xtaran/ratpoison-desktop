@@ -116,3 +116,4 @@ Recommended, used in optional or commented stuff:
 * root-tail
 * xserver-xorg-input-synaptics (for syndaemon)
 * screen
+* nawm (no more in Debian, maybe I use xdotool or xautomation later instead)

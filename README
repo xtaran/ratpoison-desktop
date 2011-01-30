@@ -60,13 +60,14 @@ Installation
 These files are needed to get the setup running.
 
 Since most of the configuration files included are not expected to
-reside in .ratpoison, some symlinks are necessary:
+reside in .ratpoison, some symlinks are necessary where config file
+paths cannot be set via command line options or where it would be to
+tedious to always type them:
 
 ~/.gitconfig 				   → gitconfig
 ~/.xsession 				   → xsession
 ~/.screenrc 				   → screenrc
 ~/bin/xrandr-vga-off.sh			   → bin/xrandr-vga-off.sh
-~/.config/awesome/			   → awesome/
 
 Sources available via http://git.noone.org/?p=ratpoison.git,
 http://gitorious.org/abe/ratpoison-desktop, and

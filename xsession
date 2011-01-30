@@ -120,7 +120,7 @@ fi
 if [ `uname -n` = nemo ]; then
     exec ratpoison -f $RP/ratpoisonrc
 else
-    exec awesome
+    exec awesome -c $RP/awesome/rc.lua
 fi
 
 #exec lxsession -session ratpoison

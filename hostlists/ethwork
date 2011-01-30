@@ -3,4 +3,4 @@
 2	snidget		ssh snitch -t ssh root@snidget
 3	time1		ssh snitch -t ssh root@time1
 4	time2		ssh snitch -t ssh root@time2
-5	kiva1		ssh snitch -t ssh root@kiva1
+5	sid		ssh snitch -t ssh root@sid

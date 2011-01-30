@@ -1,0 +1,48 @@
+#!/usr/bin/perl
+
+# Reads host list, fields delimited by /\t+/, starts screen or terminals
+# 1st column: screen number (ignored for x-terminal-emulators
+# 2nd column: window title
+# 3rd column: command
+
+# Config
+
+my $rp  = "$ENV{HOME}/.ratpoison";
+my $dir = "$rp/hostlists";
+
+# Libs
+use File::Slurp;
+use File::Temp qw(tempfile);
+
+# Init
+my $type = 'xterm';
+
+# Syntax check
+die "Usage: $0 <type> <hostlist>" unless $ARGV[1];
+
+# Determine host list file and read it.
+my $file = $ARGV[1] =~ m(/) ? $ARGV[1] : "$dir/$ARGV[1]";
+my @hostlist = grep { !/^\s*$/ && !/^\#/ } read_file($file);
+
+my $type = $ARGV[0];
+
+if ($type eq 'screen') {
+    my $screenrc = "source $rp/screenrc\n";
+    foreach my $line (@hostlist) {
+	chomp($line);
+	my @line = split(/\t+/, $line);
+	$screenrc .= qq(screen -t "$line[1]" $line[0] $line[2]\n);
+    }
+    my ($fh, $filename) = tempfile('terms.XXXXXXXXXXXXXXXXXXX',
+				   DIR => ($ENV{TMP} || '/tmp'),
+				   SUFFIX => '.screenrc');
+    write_file($fh, $screenrc);
+    system(qw(screen -c), $filename);
+    unlink($filename);
+} else {
+    foreach my $line (@hostlist) {
+	chomp($line);
+	my @line = split(/\t+/, $line);
+	system("$type -T '$line[1]' -e '$line[2]' &");
+    }
+}

@@ -102,7 +102,6 @@ packages) to be installed:
 * wget (needed by iplet)
 * scrot
 * x11-utils (for xmessage) or gxmessage
-* x11-xkb-utils (for setxkbmap)
 * libfile-slurp-perl
 * libfile-temp-perl
 
@@ -118,6 +117,7 @@ Recommended, used in optional or commented stuff:
   * tritium (or not yet packaged: anion3 and notion)
 * loco, ccze, lwatch, or colortail
 * root-tail
+* x11-xkb-utils (for setxkbmap)
 * xserver-xorg-input-synaptics (for syndaemon)
 * screen
 * nawm (no more in Debian, maybe I use xdotool or xautomation later instead)

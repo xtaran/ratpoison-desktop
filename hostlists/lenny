@@ -1,0 +1,3 @@
+0	virt2	ssh root@virt2
+1	sym	ssh root@sym
+2	jumper	ssh root@jumper

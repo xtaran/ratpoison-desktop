@@ -129,3 +129,4 @@ fi
 #exec fvwm
 #exec i3
 #exec scrotwm
+#exec tritium

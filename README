@@ -110,6 +110,8 @@ Recommended, used in optional or commented stuff:
   * stumpwm
   * flwm
   * fvwm
+  * scrotwm
+  * tritium (or not yet packaged: anion3 and notion)
 * loco, ccze, lwatch, or colortail
 * root-tail
 * xserver-xorg-input-synaptics (for syndaemon)

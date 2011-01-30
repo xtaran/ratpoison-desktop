@@ -122,6 +122,7 @@ if [ `uname -n` = nemo ]; then
     nawm -f $RP/nawmrc &
     exec ratpoison -f $RP/ratpoisonrc
 else
+    wh wmname && wmname awesome
     exec awesome -c $RP/awesome/rc.lua
 fi
 

@@ -81,7 +81,7 @@ packages) to be installed:
 * ratpoison or awesome
 * i3status >= 2.2
 * xmobar
-* dwm-tools >= 31-1 or suckless-tools (for dmenu and tabbed)
+* dwm-tools >= 31-1 or suckless-tools (for dmenu, tabbed and wmname)
 * ratmenu >= 2.3.20
 * conkeror or some other web browser
 * xclip

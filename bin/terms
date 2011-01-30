@@ -39,6 +39,18 @@ if ($type eq 'screen') {
     write_file($fh, $screenrc);
     system(qw(screen -c), $filename);
     unlink($filename);
+} elsif ($type =~ /^tabbed(d?):(.*)$/) {
+    my $tabbed = 'tabbed' . ($1 ? ' -d' : '');
+    my $type = $2;
+    open(TABBED, '-|', $tabbed) or die "Couldn't fork tabbed: $!";
+    my $windowid = <TABBED>;
+    chomp($windowid);
+    foreach my $line (@hostlist) {
+	chomp($line);
+	my @line = split(/\t+/, $line);
+	system("$type -into $windowid -T '$line[1]' -e '$line[2]' &");
+    }
+    close TABBED;
 } else {
     foreach my $line (@hostlist) {
 	chomp($line);

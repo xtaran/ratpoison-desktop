@@ -49,13 +49,19 @@ if ($type eq 'screen') {
     foreach my $line (@hostlist) {
 	chomp($line);
 	my @line = split(/\t+/, $line);
-	system("$type -into $windowid -T '$line[1]' -e '$line[2]' &");
+	system("$type -".
+	       ($type =~ /rxvt/ ? 'embed': 'into')." $windowid ".
+	       "-T '$line[1]' ".
+	       '-e '.($type =~ /rxvt/ ? $line[2] : "'$line[2]'").
+	       ' &');
     }
     close TABBED;
 } else {
     foreach my $line (@hostlist) {
 	chomp($line);
 	my @line = split(/\t+/, $line);
-	system("$type -T '$line[1]' -e '$line[2]' &");
+	system("$type -T '$line[1]' -e ".(
+		   $type =~ /rxvt/ ? $line[2] : "'$line[2]'"
+	       ).' &');
     }
 }

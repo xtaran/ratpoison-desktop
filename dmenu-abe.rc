@@ -11,6 +11,7 @@ Conkeror (Gecko) => env EDITOR='emacsclient -a emacs' conkeror
 Conkeror (Gecko 1.9.0.x) => env EDITOR='emacsclient -a emacs' xulrunner-1.9 /usr/share/conkeror/application.ini
 Conkeror (Gecko 1.9.1.x) => env EDITOR='emacsclient -a emacs' xulrunner-1.9.1 /usr/share/conkeror/application.ini
 Conkeror (Gecko 1.9.2.x) => env EDITOR='emacsclient -a emacs' xulrunner-1.9.2 /usr/share/conkeror/application.ini
+Conkeror (Gecko 2.0bx) => env EDITOR='emacsclient -a emacs' xulrunner-2.0 /usr/share/conkeror/application.ini
 Midori (Gtk WebKit)  => midori
 Arora (Qt WebKit) => arora
 Google Chrome (WebKit+V8) => google-chrome

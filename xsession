@@ -1,14 +1,14 @@
 #!/bin/sh
 
 # Define some variables used within this script
-RP=$(dirname "$(readlink "$0")")
+export RP=$(dirname "$(readlink "$0")")
 BG=$HOME/.backgrounds
 W=`xwininfo -root | fgrep Width: | awk '{print $2}'`
 H=`xwininfo -root | fgrep Height: | awk '{print $2}'`
 WT=`expr $W / 6`
 HT=`expr $H / 11 - 1`
 FONT='-xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1'
-PATH="${PATH}:/sbin:/usr/sbin:${RP}/bin"
+export PATH="${PATH}:/sbin:/usr/sbin:${RP}/bin"
 
 # Define some functions
 wh() {
@@ -22,7 +22,10 @@ if wh iwconfig; then
 fi
 
 # Allow Ctrl-Alt-Backspace to kill the X server
-setxkbmap -option terminate:ctrl_alt_bksp
+wh setxkbmap && setxkbmap -option terminate:ctrl_alt_bksp
+
+# We don't want no capslock
+wh setxkbmap && setxkbmap -option ctrl:nocaps
 
 # Keyboard and X configuration
 if [ -r $RP/xmodmap-`uname -n` ]; then

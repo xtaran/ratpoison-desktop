@@ -7,6 +7,7 @@
 #	status = auto
 [core]
         pager = less -XF
+	excludesfile = ~/.ratpoison/gitignore
 [alias]
 	st = status
 	d = diff

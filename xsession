@@ -116,9 +116,9 @@ yeahconsole &
   #emacs &
 ) &
 
-if wh xcompmgr && [ "`hostname`" != 'metisse' ]; then
-    xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
-fi
+#if wh xcompmgr && [ "`hostname`" != 'metisse' ]; then
+#    xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
+#fi
 
 if [ `uname -n` = nemo ]; then
     # Call nawm for focus follows mouse with ratpoison

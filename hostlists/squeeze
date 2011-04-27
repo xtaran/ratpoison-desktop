@@ -1,3 +1,6 @@
 0	xenlink		ssh root@xenlink
 1	c-crosser	ssh root@c-crosser
 2	kiva1		ssh snitch -t ssh root@kiva1
+2	kiva5		ssh snitch -t ssh root@kiva5
+3	virt2		ssh root@virt2
+4	jumper		ssh root@jumper

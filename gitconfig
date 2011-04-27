@@ -29,7 +29,7 @@
 	stat = status -s
 	unadd = rm --cached
 	dlog = log --decorate
-	graph = log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative
+	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	logdiff = log -p -U0
 
 # Siehe auch

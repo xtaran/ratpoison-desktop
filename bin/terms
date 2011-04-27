@@ -56,6 +56,16 @@ if ($type eq 'screen') {
 	       ' &');
     }
     close TABBED;
+} elsif ($type =~ /^rsc:(.*)$/) {
+    my $type = $1;
+    foreach my $line (@hostlist) {
+	chomp($line);
+	my @line = split(/\t+/, $line);
+	my $command = "$line[2] -t screen -RdU";
+	system("$type -T '$line[1]' -e ".(
+		   $type =~ /rxvt/ ? $command : "'$command'"
+	       ).' &');
+    }
 } else {
     foreach my $line (@hostlist) {
 	chomp($line);

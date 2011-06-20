@@ -126,6 +126,8 @@ if [ `uname -n` = nemo ]; then
     exec ratpoison -f $RP/ratpoisonrc
 else
     wh wmname && wmname awesome
+    wh nm-applet && nm-applet &
+    wh wicd-gtk && wicd-gitk &
     exec awesome -c $RP/awesome/rc.lua
 fi
 

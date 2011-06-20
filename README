@@ -123,3 +123,4 @@ Recommended, used in optional or commented stuff:
 * x11-xkb-utils (for setxkbmap)
 * xserver-xorg-input-synaptics (for syndaemon)
 * screen
+* nm-applet and wicd-gtk are used in the awesome setup if found

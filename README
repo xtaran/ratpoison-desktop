@@ -57,7 +57,9 @@ relation to the window manager of this name, the name is still fitting
 Installation
 ------------
 
-These files are needed to get the setup running.
+These files are needed to get the setup running. The setup currently
+runs on Debian Sid and Squeeze as well as Ubuntu Natty. It probably
+also runs on older Ubuntu releases.
 
 Since most of the configuration files included are not expected to
 reside in .ratpoison, some symlinks are necessary where config file

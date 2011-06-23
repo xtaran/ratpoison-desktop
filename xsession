@@ -12,7 +12,10 @@ export PATH="${PATH}:/sbin:/usr/sbin:${RP}/bin"
 
 # Define some functions
 wh() {
-    which "$@" > /dev/null
+    which "$1" > /dev/null
+}
+whe() {
+    wh "$1" && "$@"
 }
 
 # Define some environment variables used by programs called by this script
@@ -59,13 +62,13 @@ eval `gpg-agent --daemon`
 # Tools for a better X experience
 keynav "loadconfig $RP/keynavrc" &
 autocutsel &
-wh syndaemon && syndaemon -i 1 -d
+whe syndaemon -i 1 -d
 
 # Some GNOME stuff I need (use either xscreensaver or
 # gnome-settings-daemon, but not both at the same time, because
 # gnome-settings-daemon starts xscreensaver, too.)
 eval `gnome-keyring-daemon -s`
-wh xscreensaver && xscreensaver -no-splash &
+whe xscreensaver -no-splash &
 #gnome-settings-daemon
 #/usr/lib/gnome-volume-manager/gnome-volume-manager &
 
@@ -76,8 +79,8 @@ if [ -r "$HOME/.zsh/zsh.d/60-debian" ]; then
     . "$HOME/.zsh/zsh.d/60-debian"
 fi
 
-wh gnome-settings-daemon && gnome-settings-daemon &
-wh gnome-power-manager && gnome-power-manager &
+whe gnome-settings-daemon &
+whe gnome-power-manager &
 
 # Yeahconsole with Ctrl-Alt-Z, needs to come after the gnome keyring
 # daemon.
@@ -109,7 +112,7 @@ yeahconsole &
   #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn "$FONT" -m -y 440 &
   i3status -c $RP/i3statusrc | env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc &
   #sleep 1;
-  wh unclutter && unclutter -keystroke -idle 2 &
+  whe unclutter -keystroke -idle 2 &
   #sleep 10;
   #conkeror &
   #sleep 3
@@ -122,12 +125,12 @@ yeahconsole &
 
 if [ `uname -n` = nemo ]; then
     # Call nawm for focus follows mouse with ratpoison
-    wh nawm && nawm -f $RP/nawmrc &
+    whe nawm -f $RP/nawmrc &
     exec ratpoison -f $RP/ratpoisonrc
 else
-    wh wmname && wmname awesome
-    wh nm-applet && nm-applet &
-    wh wicd-gtk && wicd-gitk &
+    whe wmname awesome
+    whe nm-applet &
+    whe wicd-gitk &
     exec awesome -c $RP/awesome/rc.lua
 fi
 

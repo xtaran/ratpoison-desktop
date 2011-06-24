@@ -133,6 +133,7 @@ else
     whe wmname awesome
     whe nm-applet &
     whe wicd-gitk &
+    whe update-notifier &
     exec awesome -c $RP/awesome/rc.lua
 fi
 

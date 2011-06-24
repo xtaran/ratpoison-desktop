@@ -79,35 +79,35 @@ http://github.com/xtaran/ratpoison-desktop.
 Needs at least the following Debian packages (besides essential
 packages) to be installed:
 
-* x11-xserver-utils (for xmodmap, xrdb, xrandr and xsetroot)
-* ratpoison or awesome
-* i3status >= 2.2
-* xmobar
-* ratmenu >= 2.3.20
-* conkeror or some other web browser
-* xscreensaver or xtrlock
-* hsetroot
-* xterm and/or rxvt-unicode
-* gnome-keyring (for gnome-settings-daemon)
 * busybox-syslogd (for logread)
+* conkeror or some other web browser
 * emacs (for emacs and emacsclient)
-* wget (needed by iplet)
-* x11-utils (for xmessage) or gxmessage
+* gnome-keyring (for gnome-settings-daemon)
+* hsetroot
+* i3status >= 2.2
 * libfile-slurp-perl
 * libfile-temp-perl
+* ratmenu >= 2.3.20
+* ratpoison or awesome
+* wget (needed by iplet)
+* x11-utils (for xmessage) or gxmessage
+* x11-xserver-utils (for xmodmap, xrdb, xrandr and xsetroot)
+* xmobar
+* xscreensaver or xtrlock
+* xterm and/or rxvt-unicode
 * For Focus-Follows-Mouse:
   * for awesome: xdotool
   * for ratpoison: nawm (no more in Debian, maybe I use xautomation later instead)
 Used if available but except the system tray stuff recommended anyway:
 
 * autocutsel
-* unclutter
-* yeahconsole
-* keynav >= 0.20101014.3067
-* xrootconsole
 * inotail
+* keynav >= 0.20101014.3067
+* unclutter
 * x11-xkb-utils (for setxkbmap)
+* xrootconsole
 * xserver-xorg-input-synaptics (for syndaemon)
+* yeahconsole
 * System tray applets for use with awesome:
   * nm-applet
   * wicd-gtk
@@ -115,21 +115,22 @@ Used if available but except the system tray stuff recommended anyway:
 
 Only used in non-necessary scripts or keybindings:
 
+* dwm-tools >= 31-1 or suckless-tools (for dmenu, tabbed and wmname)
 * openssh-client (for ssh-add and ssh-agent)
 * screen
 * scrot
-* dwm-tools >= 31-1 or suckless-tools (for dmenu, tabbed and wmname)
+* transset-df
 * xclip
 
 Only in commented code (i.e currently not used):
 
-* xcompmgr
 * Alternative window and session managers:
-  * lxsession
-  * stumpwm
   * flwm
   * fvwm
+  * lxsession
   * scrotwm
+  * stumpwm
   * tritium (or not yet packaged: anion3 and notion)
-* root-tail
 * loco, ccze, lwatch, or colortail
+* root-tail
+* xcompmgr

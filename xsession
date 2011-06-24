@@ -60,8 +60,8 @@ eval `gpg-agent --daemon`
 #synergyc snitch
 
 # Tools for a better X experience
-keynav "loadconfig $RP/keynavrc" &
-autocutsel &
+whe keynav "loadconfig $RP/keynavrc" &
+whe autocutsel &
 whe syndaemon -i 1 -d
 
 # Some GNOME stuff I need (use either xscreensaver or
@@ -84,7 +84,7 @@ whe gnome-power-manager &
 
 # Yeahconsole with Ctrl-Alt-Z, needs to come after the gnome keyring
 # daemon.
-yeahconsole &
+whe yeahconsole &
 
 #(logread; logread -f) | root-tail --color white --update --cont + --cont-color blue --justify --outline --noflicker --interval 1 -fn "$FONT" -g '798x454+2+0' -,darkorange,'System Log' ${HOME}/.xsession-errors,white,'X session errors' &
 ( if wh logread; then
@@ -102,7 +102,7 @@ yeahconsole &
 #      ccze -A -o noscroll || \
 #      colortail -k $RP/colortail.conf -q -f /dev/stdin || \
 #      lwatch -i- ) | \
-    xrootconsole -fg white -fn "$FONT" -geometry "${WT}x${HT}+2+1" &
+    whe xrootconsole -fg white -fn "$FONT" -geometry "${WT}x${HT}+2+1" &
 
 # Trayer needs to be started after ratpoison
 ( sleep 1; \

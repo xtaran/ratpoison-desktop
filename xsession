@@ -25,10 +25,10 @@ if wh iwconfig; then
 fi
 
 # Allow Ctrl-Alt-Backspace to kill the X server
-wh setxkbmap && setxkbmap -option terminate:ctrl_alt_bksp
+whe setxkbmap -option terminate:ctrl_alt_bksp
 
 # We don't want no capslock
-wh setxkbmap && setxkbmap -option ctrl:nocaps
+whe setxkbmap && setxkbmap -option ctrl:nocaps
 
 # Keyboard and X configuration
 if [ -r $RP/xmodmap-`uname -n` ]; then

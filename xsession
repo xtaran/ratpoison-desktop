@@ -54,7 +54,9 @@ for imagesuffix in full fill tile; do
 done
 
 # Daemons (ssh-agent started from session management)
-eval `gpg-agent --daemon`
+if [ -n "$GPG_AGENT_INFO" ]; then
+    eval `gpg-agent --daemon`
+fi
 
 # Needs ssh around it.
 #synergyc snitch

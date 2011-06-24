@@ -4,7 +4,8 @@ if [ -n "$1" ]; then
    sleep $1;
 fi
 
-( wget -O- -T2 -q http://www.whatismyip.org/ || \
+( wget -O- -T2 -q http://noone.org/cgi-bin/whatsmyip.cgi || \
+  wget -O- -T2 -q http://www.whatismyip.org/ || \
   wget -O- -T2 -q http://v4.showip.spamt.net/ || \
   wget -O- -T2 -q http://checkip.dyndns.org/ | sed -e 's|^.*<body>Current IP Address: ||;s|</body>.*$||;s|^500 .*|N/A|;' || \
   wget -O- -T2 -q -4 http://myip.dolphins.ch/ | egrep -o '\[.*\]' | sed -e 's/[][]//g' ) | \

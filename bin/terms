@@ -1,0 +1,77 @@
+#!/usr/bin/perl
+
+# Reads host list, fields delimited by /\t+/, starts screen or terminals
+# 1st column: screen number (ignored for x-terminal-emulators
+# 2nd column: window title
+# 3rd column: command
+
+# Config
+
+my $rp  = "$ENV{HOME}/.ratpoison";
+my $dir = "$rp/hostlists";
+
+# Libs
+use File::Slurp;
+use File::Temp qw(tempfile);
+
+# Init
+my $type = shift;
+
+# Syntax check
+die "Usage: $0 <type> <hostlist> [<hostlist2> ...]" unless @ARGV;
+
+my @hostlist = ();
+# Determine host list files and read them.
+foreach my $file (@ARGV) {
+    $file = $file =~ m(/) ? $file : "$dir/$file";
+    push(@hostlist, grep { !/^\s*$/ && !/^\#/ } read_file($file));
+}
+
+if ($type eq 'screen') {
+    my $screenrc = "source $rp/screenrc\n";
+    foreach my $line (@hostlist) {
+	chomp($line);
+	my @line = split(/\t+/, $line);
+	$screenrc .= qq(screen -t "$line[1]" $line[0] $line[2]\n);
+    }
+    my ($fh, $filename) = tempfile('terms.XXXXXXXXXXXXXXXXXXX',
+				   DIR => ($ENV{TMP} || '/tmp'),
+				   SUFFIX => '.screenrc');
+    write_file($fh, $screenrc);
+    system(qw(screen -c), $filename);
+    unlink($filename);
+} elsif ($type =~ /^tabbed(d?):(.*)$/) {
+    my $tabbed = 'tabbed' . ($1 ? ' -d' : '');
+    my $type = $2;
+    open(TABBED, '-|', $tabbed) or die "Couldn't fork tabbed: $!";
+    my $windowid = <TABBED>;
+    chomp($windowid);
+    foreach my $line (@hostlist) {
+	chomp($line);
+	my @line = split(/\t+/, $line);
+	system("$type -".
+	       ($type =~ /rxvt/ ? 'embed': 'into')." $windowid ".
+	       "-T '$line[1]' ".
+	       '-e '.($type =~ /rxvt/ ? $line[2] : "'$line[2]'").
+	       ' &');
+    }
+    close TABBED;
+} elsif ($type =~ /^rsc:(.*)$/) {
+    my $type = $1;
+    foreach my $line (@hostlist) {
+	chomp($line);
+	my @line = split(/\t+/, $line);
+	my $command = "$line[2] -t screen -RdU";
+	system("$type -T '$line[1]' -e ".(
+		   $type =~ /rxvt/ ? $command : "'$command'"
+	       ).' &');
+    }
+} else {
+    foreach my $line (@hostlist) {
+	chomp($line);
+	my @line = split(/\t+/, $line);
+	system("$type -T '$line[1]' -e ".(
+		   $type =~ /rxvt/ ? $line[2] : "'$line[2]'"
+	       ).' &');
+    }
+}

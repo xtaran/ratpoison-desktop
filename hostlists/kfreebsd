@@ -1,0 +1,5 @@
+0	io:sid			ssh root@io       -t dchroot sid
+1	asdfasdf:sid		ssh root@asdfasdf -t dchroot sid
+2	io:squeeze		ssh root@io       -t dchroot squeeze
+3	asdfasdf:squeeze	ssh root@asdfasdf -t dchroot squeeze
+4	io:experimental		ssh root@io       -t dchroot experimental

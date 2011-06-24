@@ -10,7 +10,8 @@ XTerm*font4: -misc-fixed-medium-r-*-*-18-*-*-*-*-80-iso10646-1
 XTerm*font5: -misc-fixed-medium-r-*-*-20-*-*-*-*-100-iso10646-1
 XTerm*font6: -xos4-terminus-medium-r-*-*-32-*-*-*-*-*-iso10646-1
 XTerm*internalBorder: 1
-! Needed for ratpoison passing Ctrl-T to terminals, but disables window title manipulation
+! Needed for ratpoison passing Ctrl-T to terminals, but disables
+! window title manipulation, see http://bugs.debian.org/531597
 !XTerm*allowSendEvents: true
 XTerm*allowTitleOps: true
 XTerm*maximized: true
@@ -28,7 +29,8 @@ UXTerm*font4: -misc-fixed-medium-r-*-*-18-*-*-*-*-80-iso10646-1
 UXTerm*font5: -misc-fixed-medium-r-*-*-20-*-*-*-*-100-iso10646-1
 UXTerm*font6: -xos4-terminus-medium-r-*-*-32-*-*-*-*-*-iso10646-1
 UXTerm*internalBorder: 1
-! Needed for ratpoison passing Ctrl-T to terminals, but disables window title manipulation
+! Needed for ratpoison passing Ctrl-T to terminals, but disables
+! window title manipulation, see http://bugs.debian.org/531597
 !UXTerm*allowSendEvents: true
 UXTerm*allowTitleOps: true
 UXTerm*maximized: true
@@ -159,5 +161,6 @@ XTerm*printerAutoClose: false
 XTerm*printerCommand: /home/abe/.ratpoison/bin/notifier.sh
 XTerm*printerExtent: true
 
+URxvt*termName: xterm-256color
 UXTerm*termName: xterm-256color
 XTerm*termName: xterm-256color

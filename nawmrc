@@ -1,14 +1,18 @@
 window newwin;
 window lastwin;
+int ox;
+int oy;
 leave {
     #put "Leave "+name(pointerwindow())+" ("+name(currentwindow)+")";
     lastwin = currentwindow;
+    ox = px();
+    oy = py();
 }
 enter {
     #system "sleep 2";
     newwin = pointerwindow();
     #put "Enter "+name(newwin)+" ("+name(currentwindow)+")";
-    if (name(newwin) != "" && newwin != lastwin) {
+    if (name(newwin) != "" && newwin != lastwin && ox == px() && oy == py()) {
 	#grab;
 	#unfocus;
 	raise newwin;

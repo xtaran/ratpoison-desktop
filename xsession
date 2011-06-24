@@ -24,11 +24,8 @@ if wh iwconfig; then
     export WLAN_IF
 fi
 
-# Allow Ctrl-Alt-Backspace to kill the X server
-whe setxkbmap -option terminate:ctrl_alt_bksp
-
-# We don't want no capslock
-whe setxkbmap && setxkbmap -option ctrl:nocaps
+# Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK
+whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps
 
 # Keyboard and X configuration
 if [ -r $RP/xmodmap-`uname -n` ]; then

@@ -10,6 +10,10 @@
 my $rp  = "$ENV{HOME}/.ratpoison";
 my $dir = "$rp/hostlists";
 
+# Pragma
+use strict;
+use warnings;
+
 # Libs
 use File::Slurp;
 use File::Temp qw(tempfile);

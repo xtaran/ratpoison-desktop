@@ -40,6 +40,15 @@ if ($type eq 'screen') {
     write_file($fh, $screenrc);
     system(qw(screen -c), $filename);
     unlink($filename);
+} elsif ($type eq 'tmux') {
+    system(qw(tmux new-session -d -s), "terms.$$");
+    foreach my $line (@hostlist) {
+	chomp($line);
+	my @line = split(/\t+/, $line);
+	system(qw(tmux new-window -t), "terms.$$:".$line[0], '-n', "$line[1]",
+	       "$line[2]");
+    }
+    system(qw(tmux attach-session -t), "terms.$$");
 } elsif ($type =~ /^tabbed(d?):(.*)$/) {
     my $tabbed = 'tabbed' . ($1 ? ' -d' : '');
     my $type = $2;

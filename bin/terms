@@ -75,6 +75,16 @@ if ($type eq 'screen') {
 		   $type =~ /rxvt/ ? $command : "'$command'"
 	       ).' &');
     }
+} elsif ($type eq 'mssh') {
+    my @params = ();
+    foreach my $line (@hostlist) {
+	chomp($line);
+	my @line = split(/\t+/, $line);
+	die "mssh does only support ssh logins"
+	    unless $line[2] =~ /^ssh (\w+@[\w.]+)$/;
+	push(@params, $1);
+    }
+    system('mssh', @params);
 } else {
     foreach my $line (@hostlist) {
 	chomp($line);

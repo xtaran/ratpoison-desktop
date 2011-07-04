@@ -79,16 +79,26 @@ if ($type eq 'screen') {
 		   $type =~ /rxvt/ ? $command : "'$command'"
 	       ).' &');
     }
-} elsif ($type eq 'mssh') {
+} elsif ($type =~ /^(m(ssh)?|p(c(onsole)?)?)(:(\w+))?$/) {
+    my $command = '';
+    if ($type =~ /^m(ssh)?$/) {
+	$type = 'mssh';
+	$command = 'mssh';
+    } else {
+	$type = 'pconsole';
+	$command = '/usr/share/doc/pconsole/examples/pconsole.sh';
+	$ENV{P_CONNECT_CMD} = "/usr/share/doc/pconsole/examples/ssh.sh";
+	$ENV{P_TERM} = $6 if $6;
+    }
     my @params = ();
     foreach my $line (@hostlist) {
 	chomp($line);
 	my @line = split(/\t+/, $line);
-	die "mssh does only support ssh logins"
+	die "$type does only support ssh logins"
 	    unless $line[2] =~ /^ssh (\w+@[\w.]+)$/;
 	push(@params, $1);
     }
-    system('mssh', @params);
+    system($command, @params);
 } else {
     foreach my $line (@hostlist) {
 	chomp($line);

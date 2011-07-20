@@ -4,13 +4,13 @@ Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
        , position = Bottom
        , lowerOnStart = False
        , commands = [ Run Weather "LSZH" ["-t","ZH: <tempC>C <rh>%","-L","16","-H","24","--normal","green","--high","red","--low","lightblue"] 12000
-                    , Run Cpu ["-t","CPU: <total>","-L","3","-H","50","--normal","green","--high","red"] 5
+                    , Run Cpu ["-t","CPU: <total>%","-L","3","-H","50","--normal","green","--high","red"] 5
 		    , Run StdinReader
 		    , Run Thermal "TZ00" ["-t","<temp>C"] 10
                     , Run Com "uname" ["-r"] "" 36000
                     , Run Com "iplet" ["2"] "" 600
                     , Run Date "%H:%M:%S" "date" 10
-		    , Run CpuFreq ["-t","<cpu0> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1
+		    , Run CpuFreq ["-t","<cpu0>", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1
                     ]
        , sepChar = "%"
        , alignSep = "}{"

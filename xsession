@@ -125,7 +125,11 @@ whe yeahconsole &
 # If resolution is less than 1024 pixels wide, then use ratpoison, else awesome
 if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 ]; then
     # Call nawm for focus follows mouse with ratpoison
-    whe nawm -f $RP/nawmrc &
+    if wh xdotool; then
+	while :; do xdotool search . behave %@ mouse-enter windowfocus > /dev/null 2>&1; done &
+    else
+	whe nawm -f $RP/nawmrc &
+    fi
     exec ratpoison -f $RP/ratpoisonrc
 else
     whe wmname awesome

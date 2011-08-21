@@ -87,6 +87,18 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+bindsym $mod+F1 workspace 11
+bindsym $mod+F2 workspace 12
+bindsym $mod+F3 workspace 13
+bindsym $mod+F4 workspace 14
+bindsym $mod+F5 workspace 15
+bindsym $mod+F6 workspace 16
+bindsym $mod+F7 workspace 17
+bindsym $mod+F8 workspace 18
+bindsym $mod+F9 workspace 19
+bindsym $mod+F10 workspace 20
+bindsym $mod+F11 workspace 21
+bindsym $mod+F12 workspace 22
 
 # move focused container to workspace
 bindsym $mod+Shift+exclam move workspace 1
@@ -99,6 +111,18 @@ bindsym $mod+Shift+ampersand move workspace 7
 bindsym $mod+Shift+asterisk move workspace 8
 bindsym $mod+Shift+parenleft move workspace 9
 bindsym $mod+Shift+parenright move workspace 10
+bindsym $mod+Shift+F1 move workspace 11
+bindsym $mod+Shift+F2 move workspace 12
+bindsym $mod+Shift+F3 move workspace 13
+bindsym $mod+Shift+F4 move workspace 14
+bindsym $mod+Shift+F5 move workspace 15
+bindsym $mod+Shift+F6 move workspace 16
+bindsym $mod+Shift+F7 move workspace 17
+bindsym $mod+Shift+F8 move workspace 18
+bindsym $mod+Shift+F9 move workspace 19
+bindsym $mod+Shift+F10 move workspace 20
+bindsym $mod+Shift+F11 move workspace 21
+bindsym $mod+Shift+F12 move workspace 22
 
 # reload the configuration file
 bindsym $mod+Shift+C reload

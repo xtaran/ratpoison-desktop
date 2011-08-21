@@ -18,10 +18,11 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec /usr/bin/urxvt
+bindsym $mod+Return exec /usr/bin/x-terminal-emulator
+bindsym $mod+c exec /usr/bin/x-terminal-emulator
 
 # kill focused window
-bindsym $mod+Shift+Q kill
+bindsym $mod+Shift+C kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec /usr/bin/dmenu_run
@@ -61,8 +62,8 @@ bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, default)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout default
+bindsym $mod+t layout tabbed
+bindsym $mod+q layout default
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -125,11 +126,11 @@ bindsym $mod+Shift+F11 move workspace 21
 bindsym $mod+Shift+F12 move workspace 22
 
 # reload the configuration file
-bindsym $mod+Shift+C reload
+bindsym $mod+Shift+R reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+R restart
+bindsym $mod+Ctrl+Shift+R restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+E exit
+bindsym $mod+Ctrl+Shift+Q exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

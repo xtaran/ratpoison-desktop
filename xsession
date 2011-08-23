@@ -24,9 +24,6 @@ if wh iwconfig; then
     export WLAN_IF
 fi
 
-# Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK
-whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps
-
 # Keyboard and X configuration
 if [ -r $RP/xmodmap-`uname -n` ]; then
     xmodmap $RP/xmodmap-`uname -n`
@@ -35,6 +32,9 @@ if [ -r $RP/Xresources-`uname -n` ]; then
     xrdb -merge $RP/Xresources-`uname -n`
 fi
 xrdb -merge $RP/Xresources
+
+# Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK
+whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps
 
 # Audio settings
 #xset b 100 1200 240

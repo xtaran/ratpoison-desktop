@@ -172,6 +172,7 @@ definekey top s-Return exec x-terminal-emulator
 definekey top s-c exec x-terminal-emulator
 definekey top s-space dedicate
 definekey top s-Insert dedicate
+definekey top s-e exec emacsclient -e '(raise-frame)' || emacs
 
 # Helper for nawm stuff
 addhook switchwin exec if which nawm > /dev/null && [ `ratpoison -c fdump | fgrep -o "frame" | wc -l` -gt 1 ]; then ratpoison -c banish; fi

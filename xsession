@@ -27,9 +27,6 @@ if wh iwconfig; then
     export WLAN_IF
 fi
 
-# Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK
-whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps
-
 # Keyboard and X configuration
 if [ -r $RP/xmodmap-`uname -n` ]; then
     xmodmap $RP/xmodmap-`uname -n`
@@ -38,6 +35,9 @@ if [ -r $RP/Xresources-`uname -n` ]; then
     xrdb -merge $RP/Xresources-`uname -n`
 fi
 xrdb -merge $RP/Xresources
+
+# Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK
+whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps
 
 # Audio settings
 #xset b 100 1200 240
@@ -128,7 +128,11 @@ whe yeahconsole &
 # If resolution is less than 1024 pixels wide, then use ratpoison, else awesome
 if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 ]; then
     # Call nawm for focus follows mouse with ratpoison
-    whe nawm -f $RP/nawmrc &
+    if wh xdotool; then
+	while :; do xdotool search . behave %@ mouse-enter windowfocus > /dev/null 2>&1; done &
+    else
+	whe nawm -f $RP/nawmrc &
+    fi
     exec ratpoison -f $RP/ratpoisonrc
 else
     whe wmname awesome

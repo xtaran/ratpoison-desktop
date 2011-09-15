@@ -97,7 +97,7 @@ packages) to be installed:
 * xterm and/or rxvt-unicode
 * For Focus-Follows-Mouse:
   * for awesome: xdotool
-  * for ratpoison: nawm (no more in Debian, maybe I use xautomation later instead)
+  * for ratpoison: xdotool or nawm (no more in Debian)
 Used if available but except the system tray stuff recommended anyway:
 
 * autocutsel

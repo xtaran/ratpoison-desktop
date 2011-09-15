@@ -10,6 +10,9 @@ HT=`expr $H / 11 - 1`
 FONT='-xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1'
 export PATH="${PATH}:/sbin:/usr/sbin:${RP}/bin"
 
+# Locales
+export LANG=en_US.UTF-8
+
 # Define some functions
 wh() {
     which "$1" > /dev/null

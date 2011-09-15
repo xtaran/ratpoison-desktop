@@ -10,6 +10,9 @@ HT=`expr $H / 11 - 1`
 FONT='-xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1'
 export PATH="${PATH}:/sbin:/usr/sbin:${RP}/bin"
 
+# Locales
+export LANG=en_US.UTF-8
+
 # Define some functions
 wh() {
     which "$1" > /dev/null
@@ -35,6 +38,9 @@ xrdb -merge $RP/Xresources
 
 # Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK
 whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps
+
+# Use redshift if installed
+whe gtk-redshift -l 47.399453:8.507232 || whe redshift -l 47.399453:8.507232 &
 
 # Audio settings
 #xset b 100 1200 240

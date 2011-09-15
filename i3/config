@@ -17,6 +17,10 @@ font -misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Default Workspace Layout
+
+workspace_layout tabbed
+
 # start a terminal
 bindsym $mod+Return exec /usr/bin/x-terminal-emulator
 bindsym $mod+c exec /usr/bin/x-terminal-emulator

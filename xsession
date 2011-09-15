@@ -39,6 +39,9 @@ xrdb -merge $RP/Xresources
 # Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK
 whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps
 
+# Use redshift if installed
+whe gtk-redshift -l 47.399453:8.507232 || whe redshift -l 47.399453:8.507232 &
+
 # Audio settings
 #xset b 100 1200 240
 

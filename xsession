@@ -117,7 +117,7 @@ whe yeahconsole &
   #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn "$FONT" -m -y 440 &
   i3status -c $RP/i3statusrc | env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc &
   #sleep 1;
-  whe unclutter -keystroke -idle 2 &
+  whe unclutter -keystroke -idle 2 -grab &
   #sleep 10;
   #conkeror &
   #sleep 3

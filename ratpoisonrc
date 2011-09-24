@@ -174,5 +174,17 @@ definekey top s-space dedicate
 definekey top s-Insert dedicate
 definekey top s-e exec emacsclient -e '(raise-frame)' || emacs
 
+# Keymap for cpufreq
+newkmap cpufreq
+definekey cpufreq 1 exec /home/abe/.ratpoison/bin/eeepc-701-setfreq.sh 1
+definekey cpufreq 2 exec /home/abe/.ratpoison/bin/eeepc-701-setfreq.sh 2
+definekey cpufreq 3 exec /home/abe/.ratpoison/bin/eeepc-701-setfreq.sh 3
+definekey cpufreq 4 exec /home/abe/.ratpoison/bin/eeepc-701-setfreq.sh 4
+definekey cpufreq 5 exec /home/abe/.ratpoison/bin/eeepc-701-setfreq.sh 5
+definekey cpufreq 6 exec /home/abe/.ratpoison/bin/eeepc-701-setfreq.sh 6
+definekey cpufreq 7 exec /home/abe/.ratpoison/bin/eeepc-701-setfreq.sh 7
+definekey cpufreq 9 exec /home/abe/.ratpoison/bin/eeepc-701-setfreq.sh 9
+bind H readkey cpufreq
+
 # Helper for nawm stuff
 addhook switchwin exec if which nawm > /dev/null && [ `ratpoison -c fdump | fgrep -o "frame" | wc -l` -gt 1 ]; then ratpoison -c banish; fi

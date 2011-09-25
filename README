@@ -42,6 +42,10 @@ In general I liked the idea of using the -- on Linux mostly unused --
 Windows key as window manager meta key. I even configured my ratpoison
 to use that in addition to the original Ctrl-T prefix.
 
+You will also find some configuration for i3 (version 4 and upwards)
+in the repo as I also experiment with i3's tree-based layout to see if
+I can workaround some of awesome's shortcomings by using i3 instead.
+
 
 Repository Name and URLs
 ------------------------
@@ -125,6 +129,7 @@ Only used in non-necessary scripts or keybindings:
 Only in commented code (i.e currently not used):
 
 * Alternative window and session managers:
+  * i3
   * flwm
   * fvwm
   * lxsession

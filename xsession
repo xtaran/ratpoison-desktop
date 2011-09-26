@@ -123,7 +123,11 @@ whee yeahconsole
       i3status -c $RP/i3statusrc.`uname -n`
   else
       i3status -c $RP/i3statusrc
-  fi | env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc &
+  fi | if [ -r $RP/xmobarrc.`uname -n` ]; then
+      env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc.`uname -n`
+  else
+      env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc
+  fi &
   #sleep 1;
   whee unclutter -keystroke -idle 2 -grab
   #sleep 10;

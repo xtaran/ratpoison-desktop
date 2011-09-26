@@ -26,7 +26,7 @@ load {
 }
 
 disk "/" {
-	format = "/ %avail"
+	format = "/ %free"
 }
 
 order = "run_watch DHCP"

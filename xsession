@@ -132,7 +132,7 @@ whee yeahconsole
 #    xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
 #fi
 
-if [ -x $RM/xsession.`uname -n` ]; then
+if [ -x $RP/xsession.`uname -n` ]; then
     . $RP/xsession.`uname -n`
 fi
 

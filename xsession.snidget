@@ -1,21 +1,6 @@
 #!/bin/sh
 
-# Global Resources
-if [ -f $HOME/.Xdefaults ]; then
-    /usr/bin/X11/xrdb -merge $HOME/.Xdefaults
-fi
-if [ -f $HOME/.Xdefaults.`uname -n` ]; then
-    /usr/bin/X11/xrdb -merge $HOME/.Xdefaults.`uname -n`
-fi
-if [ -f $HOME/.xmodmap ]; then
-    /usr/bin/X11/xmodmap $HOME/.xmodmap
-fi
-if [ -f $HOME/.xmodmap.`uname -n` ]; then
-    /usr/bin/X11/xmodmap $HOME/.xmodmap.`uname -n`
-fi
-
-test -f /usr/bin/unclutter && /usr/bin/unclutter -keystroke -idle 2 &
-
+# Set the background image for all available displays
 for d in :0.0 :0.1 :0.2 :0.3 ; do
     if xset -display $d q > /dev/null 2>&1 ; then
 	( DISPLAY=$d
@@ -32,57 +17,18 @@ synergys
 # ssh-add is needed at least before mutt tries to connect to wiggis
 ssh-add < /dev/null
 
-# Run gpg-agent
-#eval `gpg-agent --daemon`
-
-# 1. virtueller Desktop oben links
-#uxterm -fn fixed -geometry 80x62+0+0 &
-#uxterm -fn fixed -geometry 80x62+509+0 &
-
-# xosview unten rechts (sticky via .fvwm2rc)
-#if [ x`uname -n` = xsnitch ]; then
-#    xosview -geometry 272x240+1646+834 &
-#else
-#    xosview -geometry 131x179+1467+895 &
-#fi
-
+# Start xscreensaver logger
 xscreensaver-command -watch >> $HOME/.xscreensaver.`uname -n`.log &
-
-# Hintergrundbild
-#fvwm-root -r $HOME/.backgrounds/Evolvotron/1600x1200_2.png
-#fvwm-root -r $HOME/.backgrounds/Evolvotron/1600x1200_4_2.png
 
 ##################
 ### 1. Desktop ###
 ##################
 
-# 1. virtueller Desktop, rechts Spalte
-#uxterm -fn fixed -geometry 80x26+629+833 &
-#uxterm -fn fixed -geometry 80x26+1138+833 &
-
 # Start mutt
 $HOME/bin/muttstart.sh
-
-# 2. virtueller Desktop
-#uxterm -fn fixed -geometry 80x90+2550+0 &
-#uxterm -fn fixed -geometry 80x90+3058+0 &
 /usr/bin/emacs -fn fixed ~/xchange/note.txt &
 
-#/usr/bin/galeon -l ~/.galeon/sessions/start &
-
 uxterm -fn fixed -geometry 32x19+0+835 +sb -T "XScreenSaver Log" -e tail -f $HOME/.xscreensaver.`uname -n`.log &
-yeahconsole &
-
-# Top Right
-#uxterm -fn fixed -geometry 230x90+7680+0 &
-#uxterm -fn fixed -geometry 80x25+9091+0 &
-#uxterm -fn fixed -geometry 80x36+9091+342 &
-
-# Middle Right
-#uxterm +sb -fn fixed -geometry 80x90+7680+1200 &
-#uxterm +sb -fn fixed -geometry 80x90+8174+1200 &
-#uxterm +sb -fn fixed -geometry 80x90+8668+1200 &
-#uxterm +sb -fn fixed -geometry 71x61+9160+1200 &
 
 ######################
 ### 2. Desktop: RT ###
@@ -99,13 +45,9 @@ yeahconsole &
 ############################
 
 export DISPLAY=:0.2
-#nice -n 1 kazehakase &
-#nice -n 1 galeon &
 arora &
 uxterm -fn fixed -geometry 60x14+810+1261 &
 $HOME/bin/ircstart.sh -geometry 130x25+0+1261
 yeahconsole &
-
-#root-tail -g 167x57+10+10 -noinitial /var/log/messages,white &
 
 exec awesome

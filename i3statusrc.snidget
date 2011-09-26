@@ -31,8 +31,8 @@ disk "/" {
 
 order = "run_watch DHCP"
 order += "ethernet eth0"
+order += "ipv6"
 order += "load"
 order += "disk /"
 #order += "time"
-order += "ipv6"
 

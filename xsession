@@ -7,6 +7,7 @@ W=`xwininfo -root | fgrep Width: | awk '{print $2}'`
 H=`xwininfo -root | fgrep Height: | awk '{print $2}'`
 WT=`expr $W / 6`
 HT=`expr $H / 11 - 1`
+HOSTNAME=`uname -n`
 FONT='-xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1'
 export PATH="${PATH}:/sbin:/usr/sbin:${RP}/bin"
 
@@ -31,11 +32,11 @@ if wh iwconfig; then
 fi
 
 # Keyboard and X configuration
-if [ -r $RP/xmodmap-`uname -n` ]; then
-    xmodmap $RP/xmodmap-`uname -n`
+if [ -r $RP/xmodmap-$HOSTNAME ]; then
+    xmodmap $RP/xmodmap-$HOSTNAME
 fi
-if [ -r $RP/Xresources-`uname -n` ]; then
-    xrdb -merge $RP/Xresources-`uname -n`
+if [ -r $RP/Xresources-$HOSTNAME ]; then
+    xrdb -merge $RP/Xresources-$HOSTNAME
 fi
 xrdb -merge $RP/Xresources
 
@@ -52,7 +53,7 @@ whe gtk-redshift -l 47.399453:8.507232 || whe redshift -l 47.399453:8.507232 &
 xsetroot -solid black
 #hsetroot -tile $BG/mathe_wall.png
 #hsetroot -full $BG/emu.800x480.jpg
-imageprefix=$BG/`uname -n`
+imageprefix=$BG/$HOSTNAME
 for imagesuffix in full fill tile; do
     if [ -r "$imageprefix.$imagesuffix" ]; then
 	hsetroot -$imagesuffix "$imageprefix.$imagesuffix"
@@ -119,12 +120,12 @@ whee yeahconsole
   urxvt &
   # Alternative font: -misc-fixed-medium-r-*-*-12-*-*-*-*-60-iso10646-1
   #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn "$FONT" -m -y 440 &
-  if [ -r $RP/i3statusrc.`uname -n` ]; then
-      i3status -c $RP/i3statusrc.`uname -n`
+  if [ -r $RP/i3statusrc.$HOSTNAME ]; then
+      i3status -c $RP/i3statusrc.$HOSTNAME
   else
       i3status -c $RP/i3statusrc
-  fi | if [ -r $RP/xmobarrc.`uname -n` ]; then
-      env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc.`uname -n`
+  fi | if [ -r $RP/xmobarrc.$HOSTNAME ]; then
+      env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc.$HOSTNAME
   else
       env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc
   fi &
@@ -140,8 +141,8 @@ whee yeahconsole
 #    xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
 #fi
 
-if [ -x $RP/xsession.`uname -n` ]; then
-    . $RP/xsession.`uname -n`
+if [ -x $RP/xsession.$HOSTNAME ]; then
+    . $RP/xsession.$HOSTNAME
 fi
 
 # If resolution is less than 1024 pixels wide, then use ratpoison, else awesome

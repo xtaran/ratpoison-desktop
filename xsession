@@ -2,6 +2,7 @@
 
 # Define some variables used within this script
 export RP=$(dirname "$(readlink "$0")")
+PH=$RP/per-host
 BG=$HOME/.backgrounds
 W=`xwininfo -root | fgrep Width: | awk '{print $2}'`
 H=`xwininfo -root | fgrep Height: | awk '{print $2}'`
@@ -32,11 +33,11 @@ if wh iwconfig; then
 fi
 
 # Keyboard and X configuration
-if [ -r $RP/xmodmap-$HOSTNAME ]; then
-    xmodmap $RP/xmodmap-$HOSTNAME
+if [ -r $PH/xmodmap.$HOSTNAME ]; then
+    xmodmap $PH/xmodmap.$HOSTNAME
 fi
-if [ -r $RP/Xresources-$HOSTNAME ]; then
-    xrdb -merge $RP/Xresources-$HOSTNAME
+if [ -r $PH/Xresources.$HOSTNAME ]; then
+    xrdb -merge $PH/Xresources.$HOSTNAME
 fi
 xrdb -merge $RP/Xresources
 
@@ -120,12 +121,12 @@ whee yeahconsole
   urxvt &
   # Alternative font: -misc-fixed-medium-r-*-*-12-*-*-*-*-60-iso10646-1
   #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn "$FONT" -m -y 440 &
-  if [ -r $RP/i3statusrc.$HOSTNAME ]; then
-      i3status -c $RP/i3statusrc.$HOSTNAME
+  if [ -r $PH/i3statusrc.$HOSTNAME ]; then
+      i3status -c $PH/i3statusrc.$HOSTNAME
   else
       i3status -c $RP/i3statusrc
-  fi | if [ -r $RP/xmobarrc.$HOSTNAME ]; then
-      env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc.$HOSTNAME
+  fi | if [ -r $PH/xmobarrc.$HOSTNAME ]; then
+      env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $PH/xmobarrc.$HOSTNAME
   else
       env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc
   fi &
@@ -141,8 +142,8 @@ whee yeahconsole
 #    xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
 #fi
 
-if [ -x $RP/xsession.$HOSTNAME ]; then
-    . $RP/xsession.$HOSTNAME
+if [ -x $PH/xsession.$HOSTNAME ]; then
+    . $PH/xsession.$HOSTNAME
 fi
 
 # If resolution is less than 1024 pixels wide, then use ratpoison, else awesome

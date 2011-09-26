@@ -1,0 +1,38 @@
+general {
+#	output_format = "none"
+	output_format = "xmobar"
+	colors = true
+	interval = 1
+}
+
+run_watch DHCP {
+	  pidfile = "/var/run/dhclient*.pid"
+}
+
+ethernet eth0 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "E: %ip %speed"
+	format_down = "E"
+}
+
+ipv6 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "%ip"
+	format_down = "no IPv6"
+}
+
+load {
+	format = "%1min %5min %15min"
+}
+
+disk "/" {
+	format = "/ %avail"
+}
+
+order = "run_watch DHCP"
+order += "ethernet eth0"
+order += "load"
+order += "disk /"
+#order += "time"
+order += "ipv6"
+

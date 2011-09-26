@@ -77,8 +77,6 @@ whe syndaemon -i 1 -d
 # gnome-settings-daemon starts xscreensaver, too.)
 eval `gnome-keyring-daemon -s`
 whee xscreensaver -no-splash
-#gnome-settings-daemon
-#/usr/lib/gnome-volume-manager/gnome-volume-manager &
 
 # Unlock SSH Keys -- now done ondemand with GNOME Keyring
 #ssh-add

@@ -108,6 +108,7 @@ Used if available but except the system tray stuff recommended anyway:
 * autocutsel
 * inotail
 * keynav >= 0.20101014.3067
+* redshift
 * unclutter
 * x11-xkb-utils (for setxkbmap)
 * xrootconsole
@@ -117,6 +118,7 @@ Used if available but except the system tray stuff recommended anyway:
   * nm-applet
   * wicd-gtk
   * update-notifier
+  * gtk-redshift
 
 Only used in non-necessary scripts or keybindings:
 

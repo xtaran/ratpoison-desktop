@@ -1,0 +1,13 @@
+!
+! This is an `xmodmap' input file for 
+!   PC 104 key, wide Delete, short Enter (XFree86; US) keyboards.
+! Automatically generated on Sat Apr 18 23:01:47 2009 by abe with
+! XKeyCaps 2.47; Copyright (c) 1991-1999 Jamie Zawinski; 2005-2006 Christoph Berg.
+! http://www.jwz.org/xkeycaps/
+!
+! This file presupposes that the keyboard is in the default state, and
+! may malfunction if it is not.
+!
+
+! Make Win_R Compose
+keycode 0x74 =  Multi_key

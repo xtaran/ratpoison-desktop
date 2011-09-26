@@ -102,6 +102,7 @@ packages) to be installed:
 * For Focus-Follows-Mouse:
   * for awesome: xdotool
   * for ratpoison: xdotool or nawm (no more in Debian)
+
 Used if available but except the system tray stuff recommended anyway:
 
 * autocutsel

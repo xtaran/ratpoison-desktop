@@ -23,4 +23,12 @@ whe() {
 killall -INT i3status xmobar
 
 # From xsession, too
-i3status -c $RP/i3statusrc | env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc &
+if [ -r $RP/i3statusrc.`uname -n` ]; then
+    i3status -c $RP/i3statusrc.`uname -n`
+else
+    i3status -c $RP/i3statusrc
+fi | if [ -r $RP/xmobarrc.`uname -n` ]; then
+    env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc.`uname -n`
+else
+    env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc
+fi &

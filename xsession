@@ -10,6 +10,7 @@ WT=`expr $W / 6`
 HT=`expr $H / 11 - 1`
 HOSTNAME=`uname -n`
 FONT='-xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1'
+LOC='47.399453:8.507232'
 export PATH="${PATH}:/sbin:/usr/sbin:${RP}/bin"
 
 # Locales
@@ -45,7 +46,7 @@ xrdb -merge $RP/Xresources
 whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps
 
 # Use redshift if installed
-whe gtk-redshift -l 47.399453:8.507232 || whe redshift -l 47.399453:8.507232 &
+whe gtk-redshift -l $LOC || whe redshift -l $LOC &
 
 # Audio settings
 #xset b 100 1200 240

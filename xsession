@@ -80,10 +80,13 @@ whe xscreensaver -no-splash &
 # Unlock SSH Keys -- now done ondemand with GNOME Keyring
 #ssh-add
 
+# Set hostname based environment variables for devscripts, namely
+# $DEBEMAIL and the default package signing key.
 if [ -r "$HOME/.zsh/zsh.d/60-debian" ]; then
     . "$HOME/.zsh/zsh.d/60-debian"
 fi
 
+# Start some GNOME foo if installed
 whe gnome-settings-daemon &
 whe gnome-power-manager &
 

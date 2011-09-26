@@ -132,7 +132,7 @@ whe yeahconsole &
 #fi
 
 if [ -x $RM/xsession.`uname -n` ]; then
-    exec $RP/xsession.`uname -n`
+    . $RP/xsession.`uname -n`
 fi
 
 # If resolution is less than 1024 pixels wide, then use ratpoison, else awesome

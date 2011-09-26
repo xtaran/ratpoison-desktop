@@ -20,6 +20,9 @@ wh() {
 whe() {
     wh "$1" && "$@"
 }
+whee() {
+    wh "$1" && exec "$@" &
+}
 
 # Define some environment variables used by programs called by this script
 if wh iwconfig; then
@@ -65,15 +68,15 @@ fi
 #synergyc snitch
 
 # Tools for a better X experience
-whe keynav "loadconfig $RP/keynavrc" &
-whe autocutsel &
+whee keynav "loadconfig $RP/keynavrc"
+whee autocutsel
 whe syndaemon -i 1 -d
 
 # Some GNOME stuff I need (use either xscreensaver or
 # gnome-settings-daemon, but not both at the same time, because
 # gnome-settings-daemon starts xscreensaver, too.)
 eval `gnome-keyring-daemon -s`
-whe xscreensaver -no-splash &
+whee xscreensaver -no-splash
 #gnome-settings-daemon
 #/usr/lib/gnome-volume-manager/gnome-volume-manager &
 
@@ -87,12 +90,12 @@ if [ -r "$HOME/.zsh/zsh.d/60-debian" ]; then
 fi
 
 # Start some GNOME foo if installed
-whe gnome-settings-daemon &
-whe gnome-power-manager &
+whee gnome-settings-daemon
+whee gnome-power-manager
 
 # Yeahconsole with Ctrl-Alt-Z, needs to come after the gnome keyring
 # daemon.
-whe yeahconsole &
+whee yeahconsole
 
 #(logread; logread -f) | root-tail --color white --update --cont + --cont-color blue --justify --outline --noflicker --interval 1 -fn "$FONT" -g '798x454+2+0' -,darkorange,'System Log' ${HOME}/.xsession-errors,white,'X session errors' &
 ( if wh logread; then
@@ -110,7 +113,7 @@ whe yeahconsole &
 #      ccze -A -o noscroll || \
 #      colortail -k $RP/colortail.conf -q -f /dev/stdin || \
 #      lwatch -i- ) | \
-    whe xrootconsole -fg white -fn "$FONT" -geometry "${WT}x${HT}+2+1" &
+    whee xrootconsole -fg white -fn "$FONT" -geometry "${WT}x${HT}+2+1"
 
 # Trayer needs to be started after ratpoison
 ( sleep 1; \
@@ -120,7 +123,7 @@ whe yeahconsole &
   #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn "$FONT" -m -y 440 &
   i3status -c $RP/i3statusrc | env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc &
   #sleep 1;
-  whe unclutter -keystroke -idle 2 -grab &
+  whee unclutter -keystroke -idle 2 -grab
   #sleep 10;
   #conkeror &
   #sleep 3
@@ -141,14 +144,14 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 ]; then
 #    if wh xdotool; then
 #	while :; do xdotool search . behave %@ mouse-enter windowfocus > /dev/null 2>&1; done &
 #    else
-	whe nawm -f $RP/nawmrc &
+	whee nawm -f $RP/nawmrc
 #    fi
     exec ratpoison -f $RP/ratpoisonrc
 else
     whe wmname awesome
-    whe nm-applet &
-    whe wicd-gitk &
-    whe update-notifier &
+    whee nm-applet
+    whee wicd-gitk
+    whee update-notifier
     exec awesome -c $RP/awesome/rc.lua
 fi
 

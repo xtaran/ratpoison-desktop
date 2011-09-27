@@ -2,6 +2,7 @@
 
 # Define some variables used within this script
 export RP=$(dirname "$0")/..
+PH=$RP/per-host
 
 # TODO: Refactoring due to code duplication
 BG=$HOME/.backgrounds
@@ -23,12 +24,12 @@ whe() {
 killall -INT i3status xmobar
 
 # From xsession, too
-if [ -r $RP/i3statusrc.`uname -n` ]; then
-    i3status -c $RP/i3statusrc.`uname -n`
+if [ -r $PH/i3statusrc.`uname -n` ]; then
+    i3status -c $PH/i3statusrc.`uname -n`
 else
     i3status -c $RP/i3statusrc
-fi | if [ -r $RP/xmobarrc.`uname -n` ]; then
-    env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc.`uname -n`
+fi | if [ -r $PH/xmobarrc.`uname -n` ]; then
+    env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $PH/xmobarrc.`uname -n`
 else
     env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc
 fi &

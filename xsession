@@ -2,36 +2,8 @@
 
 # Define some variables used within this script
 export RP=$(dirname "$(readlink "$0")")
-PH=$RP/per-host
-BG=$HOME/.backgrounds
-W=`xwininfo -root | fgrep Width: | awk '{print $2}'`
-H=`xwininfo -root | fgrep Height: | awk '{print $2}'`
-WT=`expr $W / 6`
-HT=`expr $H / 11 - 1`
-HOSTNAME=`uname -n`
-FONT='-xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1'
-LOC='47.399453:8.507232'
-export PATH="${PATH}:/sbin:/usr/sbin:${RP}/bin"
 
-# Locales
-export LANG=en_US.UTF-8
-
-# Define some functions
-wh() {
-    which "$1" > /dev/null
-}
-whe() {
-    wh "$1" && "$@"
-}
-whee() {
-    wh "$1" && exec "$@" &
-}
-
-# Define some environment variables used by programs called by this script
-if wh iwconfig; then
-    WLAN_IF="wireless "`iwconfig 2>&1 | fgrep 'IEEE 802.11' | awk '{print $1}' | head -1`
-    export WLAN_IF
-fi
+. $RP/common/commons.sh
 
 # Keyboard and X configuration
 if [ -r $PH/xmodmap.$HOSTNAME ]; then
@@ -52,15 +24,7 @@ whe gtk-redshift -l $LOC || whe redshift -l $LOC &
 #xset b 100 1200 240
 
 # Background
-xsetroot -solid black
-#hsetroot -tile $BG/mathe_wall.png
-#hsetroot -full $BG/emu.800x480.jpg
-imageprefix=$BG/$HOSTNAME
-for imagesuffix in full fill tile; do
-    if [ -r "$imageprefix.$imagesuffix" ]; then
-	hsetroot -$imagesuffix "$imageprefix.$imagesuffix"
-    fi
-done
+set_background
 
 # Daemons (ssh-agent started from session management)
 if [ -n "$GPG_AGENT_INFO" ]; then
@@ -120,17 +84,7 @@ whee yeahconsole
 ( sleep 1; \
   #xterm &
   urxvt &
-  # Alternative font: -misc-fixed-medium-r-*-*-12-*-*-*-*-60-iso10646-1
-  #i3status -c .i3statusrc | dzen2 -p 3 -fg white -bg black -fn "$FONT" -m -y 440 &
-  if [ -r $PH/i3statusrc.$HOSTNAME ]; then
-      i3status -c $PH/i3statusrc.$HOSTNAME
-  else
-      i3status -c $RP/i3statusrc
-  fi | if [ -r $PH/xmobarrc.$HOSTNAME ]; then
-      env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $PH/xmobarrc.$HOSTNAME
-  else
-      env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc
-  fi &
+  start_bar &
   #sleep 1;
   whee unclutter -keystroke -idle 2 -grab
   #sleep 10;

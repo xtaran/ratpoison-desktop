@@ -30,7 +30,7 @@ disk "/" {
 }
 
 disk "/tmp" {
-	format = "/scratch %free"
+	format = "/tmp %free"
 }
 
 disk "/scratch" {

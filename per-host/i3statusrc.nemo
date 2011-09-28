@@ -39,7 +39,7 @@ load {
 }
 
 cpu_temperature 0 {
-	format = "%degreesC"
+	format = "%degrees°C"
 }
 
 disk "/" {

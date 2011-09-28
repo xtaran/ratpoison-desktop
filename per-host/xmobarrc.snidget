@@ -6,11 +6,12 @@ Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
        , commands = [ Run Weather "LSZH" ["-t","ZH: <tempC>°C <rh>%","-L","16","-H","24","--normal","green","--high","red","--low","lightblue"] 12000
                     , Run Cpu ["-t","CPU: <total>%","-L","3","-H","50","--normal","green","--high","red"] 5
 		    , Run StdinReader
+		    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C ²<core2>°C ³<core3>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1
                     , Run Com "uname" ["-rv"] "" 86400
                     , Run Date "%H:%M:%S" "date" 10
 		    , Run CpuFreq ["-t","<cpu0>", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " %StdinReader% <fc=#333333>|</fc> %cpu% <fc=#333333>|</fc>}{%uname% <fc=#333333>|</fc> %LSZH% <fc=#333333>|</fc> %date% "
+       , template = " %StdinReader% <fc=#333333>|</fc> %coretemp% <fc=#333333>|</fc> %cpu% <fc=#333333>|</fc>}{%uname% <fc=#333333>|</fc> %LSZH% <fc=#333333>|</fc> %date% "
        }

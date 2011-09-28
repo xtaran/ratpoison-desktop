@@ -6,7 +6,7 @@ Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
        , commands = [ Run Weather "LSZH" ["-t","ZH: <tempC>°C <rh>%","-L","16","-H","24","--normal","green","--high","red","--low","lightblue"] 12000
                     , Run Cpu ["-t","CPU: <total>%","-L","3","-H","50","--normal","green","--high","red"] 5
 		    , Run StdinReader
-		    , Run CoreTemp ["-t","<core0>°C + <core1>°C"] 1
+		    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C"] 1
 		    , Run Thermal "THM0" ["-t","<temp>°C"] 1
 		    , Run Thermal "THM1" ["-t","<temp>°C"] 1
                     , Run Com "iplet" ["2"] "" 600
@@ -16,5 +16,5 @@ Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " %iplet% <fc=#333333>|</fc> %StdinReader% <fc=#333333>|</fc> %coretemp% <fc=#333333>|</fc> %THM0% + %THM1% <fc=#333333>|</fc> %cpu% <fc=#333333>|</fc> %cpufreq% <fc=#333333>|</fc>}{%uname% <fc=#333333>|</fc> %LSZH% <fc=#333333>|</fc> %date% "
+       , template = " %iplet% <fc=#333333>|</fc> %StdinReader% <fc=#333333>|</fc> %coretemp% <fc=#333333>|</fc> ⁰%THM0% ¹%THM1% <fc=#333333>|</fc> %cpu% <fc=#333333>|</fc> %cpufreq% <fc=#333333>|</fc>}{%uname% <fc=#333333>|</fc> %LSZH% <fc=#333333>|</fc> %date% "
        }

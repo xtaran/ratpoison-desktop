@@ -120,6 +120,12 @@ Used if available but except the system tray stuff recommended anyway:
   * update-notifier
   * gtk-redshift
 
+Linux kernel modules which may be used by some features of xmobar, but
+do not seem to be loaded automatically (write them into /etc/modules):
+
+* acpi_cpufreq
+* coretemp
+
 Only used in non-necessary scripts or keybindings:
 
 * dwm-tools >= 31-1 or suckless-tools (for dmenu, tabbed and wmname)

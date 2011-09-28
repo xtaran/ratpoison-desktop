@@ -12,7 +12,7 @@ Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
                     , Run Com "iplet" ["2"] "" 600
                     , Run Com "uname" ["-r"] "" 86400
                     , Run Date "%H:%M:%S" "date" 10
-		    , Run CpuFreq ["-t","<cpu0> GHz + <cpu1> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1
+		    , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1
                     ]
        , sepChar = "%"
        , alignSep = "}{"

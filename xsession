@@ -63,22 +63,24 @@ whee gnome-power-manager
 whee yeahconsole
 
 #(logread; logread -f) | root-tail --color white --update --cont + --cont-color blue --justify --outline --noflicker --interval 1 -fn "$FONT" -g '798x454+2+0' -,darkorange,'System Log' ${HOME}/.xsession-errors,white,'X session errors' &
-( if wh logread; then
-    logread | tail -100;
-    logread -f
-  else
-    tail -F /var/log/syslog
-  fi &
-  if wh inotail; then
-      inotail -f $HOME/.xsession-errors
-  else
-      tail -f $HOME/.xsession-errors
-  fi ) | \
-#    ( loco || \
-#      ccze -A -o noscroll || \
-#      colortail -k $RP/colortail.conf -q -f /dev/stdin || \
-#      lwatch -i- ) | \
-    whee xrootconsole -fg white -fn "$FONT" -geometry "${WT}x${HT}+2+1"
+if wh xrootconsole; then
+    ( if wh logread; then
+        logread | tail -100;
+	logread -f
+      else
+        tail -F /var/log/syslog
+      fi &
+      if wh inotail; then
+	  inotail -f $HOME/.xsession-errors
+      else
+	  tail -f $HOME/.xsession-errors
+      fi ) | \
+#     ( loco || \
+#       ccze -A -o noscroll || \
+#       colortail -k $RP/colortail.conf -q -f /dev/stdin || \
+#       lwatch -i- ) | \
+    xrootconsole -fg white -fn "$FONT" -geometry "${WT}x${HT}+2+1" &
+fi
 
 # Trayer needs to be started after ratpoison
 ( sleep 1; \

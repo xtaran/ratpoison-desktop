@@ -42,6 +42,10 @@ In general I liked the idea of using the -- on Linux mostly unused --
 Windows key as window manager meta key. I even configured my ratpoison
 to use that in addition to the original Ctrl-T prefix.
 
+You will also find some configuration for i3 (version 4 and upwards)
+in the repo as I also experiment with i3's tree-based layout to see if
+I can workaround some of awesome's shortcomings by using i3 instead.
+
 
 Repository Name and URLs
 ------------------------
@@ -97,12 +101,14 @@ packages) to be installed:
 * xterm and/or rxvt-unicode
 * For Focus-Follows-Mouse:
   * for awesome: xdotool
-  * for ratpoison: nawm (no more in Debian, maybe I use xautomation later instead)
+  * for ratpoison: xdotool or nawm (no more in Debian)
+
 Used if available but except the system tray stuff recommended anyway:
 
 * autocutsel
 * inotail
 * keynav >= 0.20101014.3067
+* redshift
 * unclutter
 * x11-xkb-utils (for setxkbmap)
 * xrootconsole
@@ -112,6 +118,13 @@ Used if available but except the system tray stuff recommended anyway:
   * nm-applet
   * wicd-gtk
   * update-notifier
+  * gtk-redshift
+
+Linux kernel modules which may be used by some features of xmobar, but
+do not seem to be loaded automatically (write them into /etc/modules):
+
+* acpi_cpufreq
+* coretemp
 
 Only used in non-necessary scripts or keybindings:
 
@@ -125,6 +138,7 @@ Only used in non-necessary scripts or keybindings:
 Only in commented code (i.e currently not used):
 
 * Alternative window and session managers:
+  * i3
   * flwm
   * fvwm
   * lxsession

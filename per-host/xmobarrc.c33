@@ -1,4 +1,4 @@
-Config { font = "-xos4-terminus-bold-r-*-*-12-120-*-*-*-60-iso10646-1"
+Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
        , bgColor = "black"
        , fgColor = "white"
        , position = Bottom
@@ -6,8 +6,7 @@ Config { font = "-xos4-terminus-bold-r-*-*-12-120-*-*-*-60-iso10646-1"
        , commands = [ Run Weather "LSZH" ["-t","ZH: <tempC>°C <rh>%","-L","16","-H","24","--normal","green","--high","red","--low","lightblue"] 12000
                     , Run Cpu ["-t","CPU: <total>%","-L","3","-H","50","--normal","green","--high","red"] 5
 		    , Run StdinReader
-                    , Run Memory ["-t","Mem: <usedratio>% U:<used>M C:<cache>M B:<buffer>M"] 5
-		    , Run CoreTemp ["-t","<core0>°C"] 1
+		    , Run Battery ["-t","<left>"] 1
                     , Run Com "iplet" ["2"] "" 600
                     , Run Com "uname" ["-r"] "" 86400
                     , Run Date "%H:%M:%S" "date" 10
@@ -15,5 +14,5 @@ Config { font = "-xos4-terminus-bold-r-*-*-12-120-*-*-*-60-iso10646-1"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " %iplet% <fc=#333333>|</fc> %StdinReader% <fc=#333333>|</fc> %cpufreq% <fc=#333333>|</fc> %memory% <fc=#333333>|</fc> %coretemp% <fc=#333333>|</fc> %cpu% <fc=#333333>|</fc>}{%uname% <fc=#333333>|</fc> %LSZH% <fc=#333333>|</fc> %date% "
+       , template = " %iplet% <fc=#333333>|</fc> %StdinReader% <fc=#333333>|</fc> %cpufreq% <fc=#333333>|</fc>  %battery% <fc=#333333>|</fc> %cpu% <fc=#333333>|</fc>}{%uname% <fc=#333333>|</fc> %LSZH% <fc=#333333>|</fc> %date% "
        }

@@ -10,6 +10,10 @@
 my $rp  = "$ENV{HOME}/.ratpoison";
 my $dir = "$rp/hostlists";
 
+# Pragma
+use strict;
+use warnings;
+
 # Libs
 use File::Slurp;
 use File::Temp qw(tempfile);
@@ -27,6 +31,7 @@ foreach my $file (@ARGV) {
     push(@hostlist, grep { !/^\s*$/ && !/^\#/ } read_file($file));
 }
 
+# If we should use screen, we generate a temporary screerc
 if ($type eq 'screen') {
     my $screenrc = "source $rp/screenrc\n";
     foreach my $line (@hostlist) {
@@ -40,6 +45,20 @@ if ($type eq 'screen') {
     write_file($fh, $screenrc);
     system(qw(screen -c), $filename);
     unlink($filename);
+
+# If we should use tmux, we sequentially build up a tmux session
+} elsif ($type eq 'tmux') {
+    system(qw(tmux new-session -d -s), "terms.$$");
+    foreach my $line (@hostlist) {
+	chomp($line);
+	my @line = split(/\t+/, $line);
+	system(qw(tmux new-window -t), "terms.$$:".$line[0], '-n', "$line[1]",
+	       "$line[2]");
+    }
+    system(qw(tmux attach-session -t), "terms.$$");
+
+# If we should use suckless' tabbed, we sequentially start and embed
+# xterms or rxvts
 } elsif ($type =~ /^tabbed(d?):(.*)$/) {
     my $tabbed = 'tabbed' . ($1 ? ' -d' : '');
     my $type = $2;
@@ -56,6 +75,8 @@ if ($type eq 'screen') {
 	       ' &');
     }
     close TABBED;
+
+# Shall we start screen remotely? (works like xterm or rxvt below)
 } elsif ($type =~ /^rsc:(.*)$/) {
     my $type = $1;
     foreach my $line (@hostlist) {
@@ -66,6 +87,30 @@ if ($type eq 'screen') {
 		   $type =~ /rxvt/ ? $command : "'$command'"
 	       ).' &');
     }
+
+# Shall we use mssh or pconsole for parallel interactive sessions?
+} elsif ($type =~ /^(m(ssh)?|p(c(onsole)?)?)(:(\w+))?$/) {
+    my $command = '';
+    if ($type =~ /^m(ssh)?$/) {
+	$type = 'mssh';
+	$command = 'mssh';
+    } else {
+	$type = 'pconsole';
+	$command = '/usr/share/doc/pconsole/examples/pconsole.sh';
+	$ENV{P_CONNECT_CMD} = "/usr/share/doc/pconsole/examples/ssh.sh";
+	$ENV{P_TERM} = $6 if $6;
+    }
+    my @params = ();
+    foreach my $line (@hostlist) {
+	chomp($line);
+	my @line = split(/\t+/, $line);
+	die "$type does only support ssh logins"
+	    unless $line[2] =~ /^ssh (\w+@[\w.]+)$/;
+	push(@params, $1);
+    }
+    system($command, @params);
+
+# Else expect type to be a terminal emulator like (u)rxvt or xterm
 } else {
     foreach my $line (@hostlist) {
 	chomp($line);

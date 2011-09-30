@@ -1,0 +1,53 @@
+#!/bin/sh
+
+# Set the background image for all available displays
+for d in :0.0 :0.1 :0.2 :0.3 ; do
+    if xset -display $d q > /dev/null 2>&1 ; then
+	( DISPLAY=$d
+	  fvwm-root -r $HOME/.backgrounds/mathe_wall.png
+	  xset b 100 1200 240
+	)
+    fi
+done
+
+# Switch to main display
+export DISPLAY=:0.0
+synergys
+
+# ssh-add is needed at least before mutt tries to connect to wiggis
+ssh-add < /dev/null
+
+# Start xscreensaver logger
+xscreensaver-command -watch >> $HOME/.xscreensaver.`uname -n`.log &
+
+##################
+### 1. Desktop ###
+##################
+
+# Start mutt
+$HOME/bin/muttstart.sh
+/usr/bin/emacs -fn fixed ~/xchange/note.txt &
+
+uxterm -fn fixed -geometry 32x19+0+835 +sb -T "XScreenSaver Log" -e tail -f $HOME/.xscreensaver.`uname -n`.log &
+
+######################
+### 2. Desktop: RT ###
+######################
+
+export DISPLAY=:0.1
+#env OPERA_PLUGIN_PATH=/dev/null opera &
+conkeror &
+uxterm -fn fixed -geometry 68x7+486+1479 &
+yeahconsole &
+
+############################
+### 2. Desktop: BB + IRC ###
+############################
+
+export DISPLAY=:0.2
+arora &
+uxterm -fn fixed -geometry 60x14+810+1261 &
+$HOME/bin/ircstart.sh -geometry 130x25+0+1261
+yeahconsole &
+
+exec awesome

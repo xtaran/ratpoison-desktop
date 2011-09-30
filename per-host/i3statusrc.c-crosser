@@ -29,15 +29,14 @@ ipv6 {
 	format_down = "no IPv6"
 }
 
-#ethernet usb0 {
-#	# if you use %speed, i3status requires root privileges or netcap
-#	format_up = "U: %ip (%speed)"
-#	format_down = "U: -"
-#}
-
 battery 0 {
-	format = "%status %percentage"
-	last_full_capacity = yes
+	format = "%status %percentage %remaining"
+	last_full_capacity = no
+}
+
+battery 1 {
+	format = "Bay: %status %percentage %remaining"
+	last_full_capacity = no
 }
 
 time {
@@ -52,11 +51,16 @@ disk "/" {
 	format = "/ %free"
 }
 
-order += "run_watch DHCP"
+disk "/home" {
+	format = "/home %free"
+}
+
 order  = ${WLAN_IF}
 order += "ethernet eth0"
 order += "battery 0"
+order += "battery 1"
 order += "load"
 order += "disk /"
+order += "disk /home"
 #order += "time"
 order += "ipv6"

@@ -7,13 +7,13 @@ general {
 
 wireless ath0 {
 	# if you use %speed, i3status requires root privileges or netcap
-	format_up = "%essid: %ip %quality"
+	format_up = "%essid: %ip %quality %bitrate"
 	format_down = "W"
 }
 
 wireless wlan0 {
 	# if you use %speed, i3status requires root privileges or netcap
-	format_up = "%essid: %ip %quality"
+	format_up = "%essid: %ip %quality %bitrate"
 	format_down = "W"
 }
 
@@ -21,12 +21,6 @@ ethernet eth0 {
 	# if you use %speed, i3status requires root privileges or netcap
 	format_up = "E: %ip %speed"
 	format_down = "E"
-}
-
-ipv6 {
-	# if you use %speed, i3status requires root privileges or netcap
-	format_up = "%ip"
-	format_down = "no IPv6"
 }
 
 #ethernet usb0 {
@@ -40,23 +34,24 @@ battery 0 {
 	last_full_capacity = yes
 }
 
-time {
-	format = "%Y-%m-%d %H:%M:%S"
-}
-
 load {
 	format = "%1min %5min %15min"
 }
 
-disk "/" {
-	format = "/ %free"
+cpu_temperature 0 {
+	format = "%degrees°C"
 }
 
-order += "run_watch DHCP"
+disk "/" {
+	format = "/ %avail"
+}
+
+#order += "run_watch DHCP"
+#order += "run_watch VPN"
 order  = ${WLAN_IF}
 order += "ethernet eth0"
+#order += "ethernet usb0"
 order += "battery 0"
+order += "cpu_temperature 0"
 order += "load"
 order += "disk /"
-#order += "time"
-order += "ipv6"

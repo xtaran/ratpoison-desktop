@@ -63,22 +63,22 @@ cpu_temperature 0 {
 :NEMO]
 
 disk "/" {
-	format = "/ %[!SID:free:!SID][SID!:avail:SID!]"
+	format = "/ %[SQUEEZE!:free:SQUEEZE!][LUCID!:free:LUCID!][NATTY!:avail:NATTY!][ONEIRIC!:avail:ONEIRIC!][SID!:avail:SID!]"
 }
 
 [C_CROSSER+JUMPER+HZ:
 disk "/home" {
-	format = "/home %[!SID:free:!SID][SID!:avail:SID!]"
+	format = "/home %[SQUEEZE!:free:SQUEEZE!][LUCID!:free:LUCID!][NATTY!:avail:NATTY!][ONEIRIC!:avail:ONEIRIC!][SID!:avail:SID!]"
 }
 :C_CROSSER+JUMPER+HZ]
 
 [SNIDGET:
 disk "/tmp" {
-	format = "/tmp %[!SID:free:!SID][SID!:avail:SID!]"
+	format = "/tmp %[SQUEEZE!:free:SQUEEZE!][LUCID!:free:LUCID!][NATTY!:avail:NATTY!][ONEIRIC!:avail:ONEIRIC!][SID!:avail:SID!]"
 }
 
 disk "/scratch" {
-	format = "/scratch %[!SID:free:!SID][SID!:avail:SID!]"
+	format = "/scratch %[SQUEEZE!:free:SQUEEZE!][LUCID!:free:LUCID!][NATTY!:avail:NATTY!][ONEIRIC!:avail:ONEIRIC!][SID!:avail:SID!]"
 }
 :SNIDGET]
 

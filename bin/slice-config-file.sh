@@ -3,4 +3,4 @@
 HOSTNAME=`( test -z "$2" && uname -n || echo $2 ) | tr a-z- A-Z_`
 DIST=`( test -z "$3" && lsb_release -cs || echo $3 ) | tr a-z- A-Z_`
 
-slice -o "UNDEF+$HOSTNAME+$DIST+NOT*-NOT$DIST-NOT$HOSTNAME:-" $1
+slice -o "(UNDEF+$HOSTNAME+$DIST+NOT*)-NOT$DIST-NOT$HOSTNAME:-" $1

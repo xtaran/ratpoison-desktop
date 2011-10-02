@@ -1,0 +1,18 @@
+Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
+       , bgColor = "black"
+       , fgColor = "white"
+       , position = Bottom
+       , lowerOnStart = False
+       , commands = [ Run Weather "LSZH" ["-t","ZH: <tempC>°C <rh>%","-L","16","-H","24","--normal","green","--high","red","--low","lightblue"] 12000
+                    , Run Cpu ["-t","CPU: <total>","-L","3","-H","50","--normal","green","--high","red"] 5
+		    , Run StdinReader
+		    , Run Thermal "THRM" ["-t","<temp>°C"] 10
+                    , Run Com "iplet" ["2"] "" 600
+                    , Run Com "uname" ["-r"] "" 86400
+                    , Run Date "%H:%M:%S" "date" 10
+		    , Run CpuFreq ["-t","<cpu0>", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " %iplet% <fc=#333333>|</fc> %StdinReader% <fc=#333333>|</fc> %cpufreq% <fc=#333333>|</fc> %THRM% <fc=#333333>|</fc> %coretemp% <fc=#333333>|</fc> %cpu% <fc=#333333>|</fc>}{%uname% <fc=#333333>|</fc> %LSZH% <fc=#333333>|</fc> %date% "
+       }

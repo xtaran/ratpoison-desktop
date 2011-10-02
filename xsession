@@ -115,7 +115,7 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 ]; then
 else
     whe wmname awesome
     whee nm-applet
-    whee wicd-gitk
+    whee wicd-gtk
     whee update-notifier
     exec awesome -c $RP/awesome/rc.lua
 fi

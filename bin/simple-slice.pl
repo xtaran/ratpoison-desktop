@@ -11,16 +11,16 @@ my $contents = <STDIN>;
 # Find all [XXX!:...:XXX!] ("only") slices
 while ($contents =~ m(\[([^!:]+)!:.*?:\1!\])gs) {
     my $slice = $1;
-    if (grep { $_ eq $slice } @ARGV) {
-	$contents =~ s(\[$slice!:(.*?):$slice!\])($1)gs;
+    if (grep { $slice =~ /^(.*\+)?$_(\+.*)?$/ } @ARGV) {
+	$contents =~ s(\[\Q$slice\E!:(.*?):\Q$slice\E!\])($1)gs;
     } else {
-	$contents =~ s(\[$slice!:.*?:$slice!\])()gs;
+	$contents =~ s(\[\Q$slice\E!:.*?:\Q$slice\E!\])()gs;
     }
 }
 
 # Find all [!XXX:...:!XXX] ("not") slices
 foreach my $slice (@ARGV) {
-    $contents =~ s(\[!$slice:.*?:!$slice\])()gs;
+    $contents =~ s(\[!(([^:]+\+)?$slice(\+[^:]+)?):.*?:!\1\])()gs;
 }
 $contents =~ s(\[!([^!:]+):(.*?):!\1\])($2)gs;
 

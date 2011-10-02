@@ -38,12 +38,12 @@ ipv6 {
 }
 :!NEMO]
 
-[C_CROSSER+C33+LOADRUNNER+NEMO:
+[C_CROSSER+LOADRUNNER+NEMO:
 battery 0 {
 	format = "%status %percentage[!NEMO: %remaining:!NEMO]"
 	last_full_capacity = [!NEMO:no:!NEMO][NEMO!:yes:NEMO!]
 }
-:C_CROSSER+C33+LOADRUNNER+NEMO]
+:C_CROSSER+LOADRUNNER+NEMO]
 
 [C_CROSSER:
 battery 1 {
@@ -86,7 +86,7 @@ order  = ""
 [SNIDGET:order += "run_watch DHCP":SNIDGET]
 [NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI:order += ${WLAN_IF}:NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI]
 order += "ethernet eth0"
-[NEMO+C_CROSSER+C33+LOADRUNNER:order += "battery 0":NEMO+C_CROSSER+C33+LOADRUNNER]
+[NEMO+C_CROSSER+LOADRUNNER:order += "battery 0":NEMO+C_CROSSER+LOADRUNNER]
 [C_CROSSER:order += "battery 1":C_CROSSER]
 [NEMO:order += "cpu_temperature 0":NEMO]
 order += "load"

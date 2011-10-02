@@ -4,7 +4,7 @@ general {
 	interval = 1
 }
 
-[NEMO:[C_CROSSER:[C33:[LOADRUNNER:[C2:[EISBAERLI:
+[NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI:
 wireless ath0 {
 	# if you use %speed, i3status requires root privileges or netcap
 	format_up = "%essid: %ip %quality[SID: %bitrate:SID]"
@@ -16,13 +16,13 @@ wireless wlan0 {
 	format_up = "%essid: %ip %quality[SID: %bitrate:SID]"
 	format_down = "W"
 }
-:]:]:]:]:]:]
+:NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI]
 
 [SNIDGET:
 run_watch DHCP {
 	pidfile = "/var/run/dhclient*.pid"
 }
-:]
+:SNIDGET]
 
 ethernet eth0 {
 	# if you use %speed, i3status requires root privileges or netcap
@@ -30,27 +30,27 @@ ethernet eth0 {
 	format_down = "E"
 }
 
-[NOTNEMO:
+[!NEMO:
 ipv6 {
 	# if you use %speed, i3status requires root privileges or netcap
 	format_up = "%ip"
 	format_down = "no IPv6"
 }
-:]
+:!NEMO]
 
-[C_CROSSER:[C33:[LOADRUNNER:[NEMO:
+[C_CROSSER+C33+LOADRUNNER+NEMO:
 battery 0 {
-	format = "%status %percentage:] %remaining[NEMO:"
-	last_full_capacity = :]no:]:]:][NEMO:yes[C_CROSSER:[C33:[LOADRUNNER:
+	format = "%status %percentage[!NEMO: %remaining:!NEMO]"
+	last_full_capacity = [!NEMO:no:!NEMO][NEMO!:yes:NEMO!]
 }
-:]:]:]:]
+:C_CROSSER+C33+LOADRUNNER+NEMO]
 
 [C_CROSSER:
 battery 1 {
 	format = "Bay: %status %percentage %remaining"
 	last_full_capacity = no
 }
-:]
+:C_CROSSER]
 
 load {
 	format = "%1min %5min %15min"
@@ -60,38 +60,38 @@ load {
 cpu_temperature 0 {
 	format = "%degrees°C"
 }
-:]
+:NEMO]
 
 disk "/" {
-	format = "/ %[NOTSID:free:][SID:avail:]"
+	format = "/ %[!SID:free:!SID][SID!:avail:SID!]"
 }
 
-[C_CROSSER:[JUMPER:[HZ:
+[C_CROSSER+JUMPER+HZ:
 disk "/home" {
-	format = "/home %:]free:]:][HZ:avail[C_CROSSER:[JUMPER:"
+	format = "/home %[!SID:free:!SID][SID!:avail:SID!]"
 }
-:]:]:]
+:C_CROSSER+JUMPER+HZ]
 
 [SNIDGET:
 disk "/tmp" {
-	format = "/tmp %free"
+	format = "/tmp %[!SID:free:!SID][SID!:avail:SID!]"
 }
 
 disk "/scratch" {
-	format = "/scratch %free"
+	format = "/scratch %[!SID:free:!SID][SID!:avail:SID!]"
 }
-:]
+:SNIDGET]
 
 order  = ""
-[SNIDGET:order += "run_watch DHCP":]
-[NEMO:[C_CROSSER:[C33:[LOADRUNNER:[C2:[EISBAERLI:order += ${WLAN_IF}:]:]:]:]:]:]
+[SNIDGET:order += "run_watch DHCP":SNIDGET]
+[NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI:order += ${WLAN_IF}:NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI]
 order += "ethernet eth0"
-[NEMO:[C_CROSSER:[C33:[LOADRUNNER:order += "battery 0":]:]:]:]
-[C_CROSSER:order += "battery 1":]
-[NEMO:order += "cpu_temperature 0":]
+[NEMO+C_CROSSER+C33+LOADRUNNER:order += "battery 0":NEMO+C_CROSSER+C33+LOADRUNNER]
+[C_CROSSER:order += "battery 1":C_CROSSER]
+[NEMO:order += "cpu_temperature 0":NEMO]
 order += "load"
 order += "disk /"
-[C_CROSSER:order += "disk /home":]
-[SNIDGET:order += "disk /tmp":]
-[SNIDGET:order += "disk /scratch":]
-[NOTNEMO:order += "ipv6":]
+[C_CROSSER:order += "disk /home":C_CROSSER]
+[SNIDGET:order += "disk /tmp":SNIDGET]
+[SNIDGET:order += "disk /scratch":SNIDGET]
+[!NEMO:order += "ipv6":!NEMO]

@@ -33,10 +33,6 @@ battery 0 {
 	last_full_capacity = yes
 }
 
-time {
-	format = "%Y-%m-%d %H:%M:%S"
-}
-
 load {
 	format = "%1min %5min %15min"
 }

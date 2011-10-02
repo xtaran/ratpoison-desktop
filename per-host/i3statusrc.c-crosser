@@ -50,7 +50,8 @@ disk "/home" {
 	format = "/home %free"
 }
 
-order  = ${WLAN_IF}
+order  = ""
+order += ${WLAN_IF}
 order += "ethernet eth0"
 order += "battery 0"
 order += "battery 1"

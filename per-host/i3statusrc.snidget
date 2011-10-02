@@ -36,10 +36,11 @@ disk "/scratch" {
 	format = "/scratch %free"
 }
 
-order = "run_watch DHCP"
+order  = ""
+order += "run_watch DHCP"
 order += "ethernet eth0"
-order += "ipv6"
 order += "load"
 order += "disk /"
 order += "disk /tmp"
 order += "disk /scratch"
+order += "ipv6"

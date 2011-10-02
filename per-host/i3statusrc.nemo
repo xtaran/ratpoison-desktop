@@ -39,7 +39,8 @@ disk "/" {
 	format = "/ %avail"
 }
 
-order  = ${WLAN_IF}
+order  = ""
+order += ${WLAN_IF}
 order += "ethernet eth0"
 order += "battery 0"
 order += "cpu_temperature 0"

@@ -52,7 +52,7 @@ disk "/" {
 	format = "/ %free"
 }
 
-order += "run_watch DHCP"
+#order += "run_watch DHCP"
 order  = ${WLAN_IF}
 order += "ethernet eth0"
 order += "battery 0"

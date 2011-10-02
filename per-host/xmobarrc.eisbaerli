@@ -14,5 +14,5 @@ Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " %iplet% <fc=#333333>|</fc> %StdinReader% <fc=#333333>|</fc> %cpufreq% <fc=#333333>|</fc> %THRM% <fc=#333333>|</fc> %coretemp% <fc=#333333>|</fc> %cpu% <fc=#333333>|</fc>}{%uname% <fc=#333333>|</fc> %LSZH% <fc=#333333>|</fc> %date% "
+       , template = " %iplet% <fc=#333333>|</fc> %StdinReader% <fc=#333333>|</fc> %cpufreq% <fc=#333333>|</fc> %THRM% <fc=#333333>|</fc> %cpu% <fc=#333333>|</fc>}{%uname% <fc=#333333>|</fc> %LSZH% <fc=#333333>|</fc> %date% "
        }

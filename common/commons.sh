@@ -29,7 +29,7 @@ whee() {
 
 # Define some environment variables used by programs called by this script
 if wh iwconfig; then
-    WLAN_IF="wireless "`iwconfig 2>&1 | fgrep 'IEEE 802.11' | awk '{print $1}' | head -1`
+    WLAN_IF="wireless "`iwconfig 2>&1 | egrep 'IEEE 802.11|Ralink' | awk '{print $1}' | head -1`
     export WLAN_IF
 fi
 

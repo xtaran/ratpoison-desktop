@@ -28,11 +28,6 @@ ipv6 {
 	format_down = "no IPv6"
 }
 
-battery 0 {
-	format = "%status %percentage"
-	last_full_capacity = no
-}
-
 load {
 	format = "%1min %5min %15min"
 }
@@ -41,7 +36,8 @@ disk "/" {
 	format = "/ %avail"
 }
 
-order  = ${WLAN_IF}
+order  = ""
+order += ${WLAN_IF}
 order += "ethernet eth0"
 order += "load"
 order += "disk /"

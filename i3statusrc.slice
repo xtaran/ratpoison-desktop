@@ -1,0 +1,97 @@
+general {
+	output_format = "xmobar"
+	colors = true
+	interval = 1
+}
+
+[NEMO:[C_CROSSER:[C33:[LOADRUNNER:[C2:[EISBAERLI:
+wireless ath0 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "%essid: %ip %quality[SID: %bitrate:SID]"
+	format_down = "W"
+}
+
+wireless wlan0 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "%essid: %ip %quality[SID: %bitrate:SID]"
+	format_down = "W"
+}
+:]:]:]:]:]:]
+
+[SNIDGET:
+run_watch DHCP {
+	pidfile = "/var/run/dhclient*.pid"
+}
+:]
+
+ethernet eth0 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "E: %ip %speed"
+	format_down = "E"
+}
+
+[NOTNEMO:
+ipv6 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "%ip"
+	format_down = "no IPv6"
+}
+:]
+
+[C_CROSSER:[C33:[LOADRUNNER:[NEMO:
+battery 0 {
+	format = "%status %percentage:] %remaining[NEMO:"
+	last_full_capacity = :]no:]:]:][NEMO:yes[C_CROSSER:[C33:[LOADRUNNER:
+}
+:]:]:]:]
+
+[C_CROSSER:
+battery 1 {
+	format = "Bay: %status %percentage %remaining"
+	last_full_capacity = no
+}
+:]
+
+load {
+	format = "%1min %5min %15min"
+}
+
+[NEMO:
+cpu_temperature 0 {
+	format = "%degrees°C"
+}
+:]
+
+disk "/" {
+	format = "/ %[NOTSID:free:][SID:avail:]"
+}
+
+[C_CROSSER:[JUMPER:[HZ:
+disk "/home" {
+	format = "/home %:]free:]:][HZ:avail[C_CROSSER:[JUMPER:"
+}
+:]:]:]
+
+[SNIDGET:
+disk "/tmp" {
+	format = "/tmp %free"
+}
+
+disk "/scratch" {
+	format = "/scratch %free"
+}
+:]
+
+order  = ""
+[SNIDGET:order += "run_watch DHCP":]
+[NEMO:[C_CROSSER:[C33:[LOADRUNNER:[C2:[EISBAERLI:order += ${WLAN_IF}:]:]:]:]:]:]
+order += "ethernet eth0"
+[NEMO:[C_CROSSER:[C33:[LOADRUNNER:order += "battery 0":]:]:]:]
+[C_CROSSER:order += "battery 1":]
+[NEMO:order += "cpu_temperature 0":]
+order += "load"
+order += "disk /"
+[C_CROSSER:order += "disk /home":]
+[SNIDGET:order += "disk /tmp":]
+[SNIDGET:order += "disk /scratch":]
+[NOTNEMO:order += "ipv6":]

@@ -1,5 +1,4 @@
 general {
-#	output_format = "none"
 	output_format = "xmobar"
 	colors = true
 	interval = 1
@@ -44,5 +43,3 @@ order += "load"
 order += "disk /"
 order += "disk /tmp"
 order += "disk /scratch"
-#order += "time"
-

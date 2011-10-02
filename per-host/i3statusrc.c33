@@ -1,5 +1,4 @@
 general {
-#	output_format = "none"
 	output_format = "xmobar"
 	colors = true
 	interval = 1
@@ -28,12 +27,6 @@ ipv6 {
 	format_up = "%ip"
 	format_down = "no IPv6"
 }
-
-#ethernet usb0 {
-#	# if you use %speed, i3status requires root privileges or netcap
-#	format_up = "U: %ip (%speed)"
-#	format_down = "U: -"
-#}
 
 battery 0 {
 	format = "%status %percentage"

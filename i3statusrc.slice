@@ -7,13 +7,13 @@ general {
 [NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI:
 wireless ath0 {
 	# if you use %speed, i3status requires root privileges or netcap
-	format_up = "%essid: %ip %quality[SID: %bitrate:SID]"
+	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+SID: %bitrate:NATTY+ONEIRIC+SID]"
 	format_down = "W"
 }
 
 wireless wlan0 {
 	# if you use %speed, i3status requires root privileges or netcap
-	format_up = "%essid: %ip %quality[SID: %bitrate:SID]"
+	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+SID: %bitrate:NATTY+ONEIRIC+SID]"
 	format_down = "W"
 }
 :NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI]

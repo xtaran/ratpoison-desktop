@@ -24,7 +24,9 @@ while ($contents =~ m(\[([^!:]+)!:.*?:\1!\])gs) {
 foreach my $slice (@ARGV) {
     $contents =~ s(\[!(([^:]+\+)?$slice(\+[^:]+)?):.*?:!\1\])()gs;
 }
-$contents =~ s(\[!([^!:]+):(.*?):!\1\])($2)gs;
+while ($contents =~ m(\[!([^!:]+):.*?:!\1\])s) {
+    $contents =~ s(\[!([^!:]+):(.*?):!\1\])($2)gs;
+}
 
 # Find all top level slices
 foreach my $slice (@ARGV) {

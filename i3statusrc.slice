@@ -4,19 +4,29 @@ general {
 	interval = 1
 }
 
-[NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI:
+[ATH0:
 wireless ath0 {
 	# if you use %speed, i3status requires root privileges or netcap
 	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+SID: %bitrate:NATTY+ONEIRIC+SID]"
 	format_down = "W"
 }
+:ATH0]
 
+[WLAN0:
 wireless wlan0 {
 	# if you use %speed, i3status requires root privileges or netcap
 	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+SID: %bitrate:NATTY+ONEIRIC+SID]"
 	format_down = "W"
 }
-:NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI]
+:WLAN0]
+
+[WLAN1:
+wireless wlan1 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+SID: %bitrate:NATTY+ONEIRIC+SID]"
+	format_down = "W"
+}
+:WLAN1]
 
 [SNIDGET:
 run_watch DHCP {
@@ -24,11 +34,21 @@ run_watch DHCP {
 }
 :SNIDGET]
 
+[ETH0:
 ethernet eth0 {
 	# if you use %speed, i3status requires root privileges or netcap
 	format_up = "E: %ip %speed"
 	format_down = "E"
 }
+:ETH0]
+
+[ETH1:
+ethernet eth1 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "E: %ip %speed"
+	format_down = "E"
+}
+:ETH1]
 
 [!NEMO:
 ipv6 {
@@ -84,8 +104,11 @@ disk "/scratch" {
 
 order = {}
 [SNIDGET:order += "run_watch DHCP":SNIDGET]
-[NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI:order += ${WLAN_IF}:NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI]
-order += "ethernet eth0"
+[ATH0:order += "wireless ath0":ATH0]
+[WLAN0:order += "wireless wlan0":WLAN0]
+[WLAN1:order += "wireless wlan1":WLAN1]
+[ETH0:order += "ethernet eth0":ETH0]
+[ETH1:order += "ethernet eth0":ETH1]
 [NEMO+C_CROSSER+LOADRUNNER:order += "battery 0":NEMO+C_CROSSER+LOADRUNNER]
 [C_CROSSER:order += "battery 1":C_CROSSER]
 [NEMO:order += "cpu_temperature 0":NEMO]

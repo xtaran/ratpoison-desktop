@@ -27,12 +27,6 @@ whee() {
     wh "$1" && exec "$@" &
 }
 
-# Define some environment variables used by programs called by this script
-if wh iwconfig; then
-    WLAN_IF="wireless "`iwconfig 2>&1 | egrep 'IEEE 802.11|Ralink' | awk '{print $1}' | head -1`
-    export WLAN_IF
-fi
-
 set_background() {
     xsetroot -solid black
     #hsetroot -tile $BG/mathe_wall.png

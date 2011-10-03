@@ -94,7 +94,6 @@ packages) to be installed:
 * lsb-release
 * ratmenu >= 2.3.20
 * ratpoison or awesome
-* slice
 * wget (needed by iplet)
 * x11-utils (for xmessage) or gxmessage
 * x11-xserver-utils (for xmodmap, xrdb, xrandr and xsetroot)

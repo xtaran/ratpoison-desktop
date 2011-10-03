@@ -39,6 +39,7 @@ start_bar() {
     fi | if [ -r $PH/xmobarrc.$HOSTNAME ]; then
 	env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $PH/xmobarrc.$HOSTNAME
     else
+	$RP/bin/slice-config-file.sh $RP/xmobarrc.slice > $RP/xmobarrc
 	env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $RP/xmobarrc
     fi
 }

@@ -82,7 +82,7 @@ disk "/scratch" {
 }
 :SNIDGET]
 
-order  = ""
+order = {}
 [SNIDGET:order += "run_watch DHCP":SNIDGET]
 [NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI:order += ${WLAN_IF}:NEMO+C_CROSSER+C33+LOADRUNNER+C2+EISBAERLI]
 order += "ethernet eth0"

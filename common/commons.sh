@@ -49,6 +49,7 @@ start_bar() {
     if [ -r $PH/i3statusrc.$HOSTNAME ]; then
 	i3status -c $PH/i3statusrc.$HOSTNAME
     else
+	$RP/bin/slice-config-file.sh $RP/i3statusrc.slice > $RP/i3statusrc
 	i3status -c $RP/i3statusrc
     fi | if [ -r $PH/xmobarrc.$HOSTNAME ]; then
 	env PATH="$RP/bin:/home/abe/bin:$PATH" xmobar $PH/xmobarrc.$HOSTNAME

@@ -1,5 +1,9 @@
 #!/bin/sh
 
+BIN=$(dirname $0)
+
+. $BIN/../common/commons.sh
+
 HOSTNAME=`( test -z "$2" && uname -n || echo $2 ) | tr a-z- A-Z_`
 DIST=`( test -z "$3" && lsb_release -cs || echo $3 ) | tr a-z- A-Z_`
 ETHERNET=`( test -z "$4" && \
@@ -8,5 +12,9 @@ ETHERNET=`( test -z "$4" && \
     awk '!/^$/ {printf $0}; /^$/ {print}' | \
     egrep 'Ethernet' | \
     awk '{print $1}' || echo $4 ) | tr a-z- A-Z_`
+BATTERY=`( test -z "$5" && wh acpi && \
+    acpi -V | \
+    awk -F'[ :]' '/^Battery/ {print $1$2}' | \
+    sort -u || echo $5 ) | tr a-z- A-Z_`
 
-$(dirname $0)/simple-slice.pl $HOSTNAME $DIST $ETHERNET < $1
+$BIN/simple-slice.pl $HOSTNAME $DIST $ETHERNET $BATTERY < $1

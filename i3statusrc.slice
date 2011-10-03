@@ -58,19 +58,19 @@ ipv6 {
 }
 :!NEMO]
 
-[C_CROSSER+LOADRUNNER+NEMO:
+[BATTERY0:
 battery 0 {
 	format = "%status %percentage[!NEMO: %remaining:!NEMO]"
 	last_full_capacity = [!NEMO:no:!NEMO][NEMO!:yes:NEMO!]
 }
-:C_CROSSER+LOADRUNNER+NEMO]
+:BATTERY0]
 
-[C_CROSSER:
+[BATTERY1:
 battery 1 {
 	format = "Bay: %status %percentage %remaining"
 	last_full_capacity = no
 }
-:C_CROSSER]
+:BATTERY1]
 
 load {
 	format = "%1min %5min %15min"
@@ -109,8 +109,8 @@ order = {}
 [WLAN1:order += "wireless wlan1":WLAN1]
 [ETH0:order += "ethernet eth0":ETH0]
 [ETH1:order += "ethernet eth0":ETH1]
-[NEMO+C_CROSSER+LOADRUNNER:order += "battery 0":NEMO+C_CROSSER+LOADRUNNER]
-[C_CROSSER:order += "battery 1":C_CROSSER]
+[BATTERY0:order += "battery 0":BATTERY0]
+[BATTERY1:order += "battery 1":BATTERY1]
 [NEMO:order += "cpu_temperature 0":NEMO]
 order += "load"
 order += "disk /"

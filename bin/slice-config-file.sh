@@ -16,5 +16,8 @@ BATTERY=`( test -z "$5" && wh acpi && \
     acpi -V | \
     awk -F'[ :]' '/^Battery/ {print $1$2}' | \
     sort -u || echo $5 ) | tr a-z- A-Z_`
+CORE=`test -z "$6" && \
+    awk '/^processor/ {print "CORE"$3}' /proc/cpuinfo | \
+    tail -1 || echo $6`
 
-$BIN/simple-slice.pl $HOSTNAME $DIST $ETHERNET $BATTERY < $1
+$BIN/simple-slice.pl $HOSTNAME $DIST $ETHERNET $BATTERY $CORE < $1

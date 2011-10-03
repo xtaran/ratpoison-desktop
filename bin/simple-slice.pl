@@ -1,4 +1,6 @@
 #!/usr/bin/perl
+# Inspired by RSE's slice, it's way simpler, but supports negation in
+# the input.
 
 use strict;
 use warnings;

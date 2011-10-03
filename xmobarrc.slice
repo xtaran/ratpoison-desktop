@@ -6,12 +6,12 @@ Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
        , commands = [ Run Weather "LSZH" ["-t","ZH: <tempC>°C <rh>%","-L","16","-H","24","--normal","green","--high","red","--low","lightblue"] 12000
 		    , Run Cpu ["-t","CPU: <total>[!C_CROSSER:%:!C_CROSSER]","-L","3","-H","50","--normal","green","--high","red"] 5
 		    , Run StdinReader
-[CORE0:[!NEMO+C33+EISBAERLI:, Run CoreTemp ["-t","<core0>°C"] 1:!NEMO+C33+EISBAERLI]:CORE0]
-[CORE1:		    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C"] 1:CORE1]
-[CORE3:		    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C ²<core2>°C ³<core3>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1:CORE3]
-[C_CROSSER:	    , Run Thermal "THM0" ["-t","<temp>°C"] 1
-		    , Run Thermal "THM1" ["-t","<temp>°C"] 1:C_CROSSER]
-[EISBAERLI:	    , Run Thermal "THRM" ["-t","<temp>°C"] 1:EISBAERLI]
+[CORE0:[!NEMO+C33+EISBAERLI:, Run CoreTemp ["-t","<core0>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:!NEMO+C33+EISBAERLI]:CORE0]
+[CORE1:		    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:CORE1]
+[CORE3:		    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C ²<core2>°C ³<core3>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:CORE3]
+[C_CROSSER:	    , Run Thermal "THM0" ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1
+		    , Run Thermal "THM1" ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1:C_CROSSER]
+[EISBAERLI:	    , Run Thermal "THRM" ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1:EISBAERLI]
 [C33:		    , Run Battery ["-t","<left>"] 1:C33]
 [!SNIDGET:	    , Run Com "iplet" ["2"] "" 600:!SNIDGET]
 [!NEMO:		    , Run Com "uname" ["-r[SNIDGET:v:SNIDGET]"] "" 86400:!NEMO]

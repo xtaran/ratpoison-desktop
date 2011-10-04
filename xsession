@@ -3,7 +3,7 @@
 # Define some variables used within this script
 export RP=$(dirname "$(readlink "$0")")
 
-. $RP/common/commons.sh
+. $RP/common/init.sh
 
 # Keyboard and X configuration
 if [ -r $PH/xmodmap.$HOSTNAME ]; then

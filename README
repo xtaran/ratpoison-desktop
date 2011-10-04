@@ -91,6 +91,7 @@ packages) to be installed:
 * i3status >= 2.2
 * libfile-slurp-perl
 * libfile-temp-perl
+* lsb-release
 * ratmenu >= 2.3.20
 * ratpoison or awesome
 * wget (needed by iplet)

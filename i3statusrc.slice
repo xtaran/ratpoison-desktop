@@ -135,4 +135,4 @@ order += "disk /"
 [C_CROSSER:order += "disk /home":C_CROSSER]
 [SNIDGET:order += "disk /tmp":SNIDGET]
 [SNIDGET:order += "disk /scratch":SNIDGET]
-[!NEMO:order += "ipv6":!NEMO]
+[!NEMO+JUMPER:order += "ipv6":!NEMO+JUMPER]

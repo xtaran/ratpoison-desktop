@@ -4,7 +4,7 @@ Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
        , position = Bottom
        , lowerOnStart = False
        , commands = [ Run Weather "LSZH" ["-t","ZH: <tempC>°C <rh>%","-L","16","-H","24","--normal","green","--high","red","--low","lightblue"] 12000
-		    , Run Cpu ["-t","CPU: <total>[!C_CROSSER:%:!C_CROSSER]","-L","3","-H","50","--normal","green","--high","red"] 5
+		    , Run Cpu ["-t","CPU: <total>[!C_CROSSER+JUMPER:%:!C_CROSSER+JUMPER]","-L","3","-H","50","--normal","green","--high","red"] 5
 		    , Run StdinReader
 [CORE0:[!NEMO+C33+EISBAERLI:, Run CoreTemp ["-t","<core0>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:!NEMO+C33+EISBAERLI]:CORE0]
 [CORE1+JUMPER:	    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:CORE1+JUMPER]
@@ -18,9 +18,9 @@ Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
 		    , Run Date "%H:%M:%S" "date" 10
 [CORE0:		    , Run CpuFreq ["-t","<cpu0>", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:CORE0]
 [CORE1:		    , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:CORE1]
-[CORE3:		    , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz ²<cpu2> GHz ³<cpu2> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:CORE3]
+[CORE3:[!JUMPER:    , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz ²<cpu2> GHz ³<cpu2> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!JUMPER]:CORE3]
 		    ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "[!NEMO: :!NEMO][!SNIDGET:%iplet% <fc=#333333>|</fc> :!SNIDGET]%StdinReader% <fc=#333333>|</fc> [!NEMO+EISBAERLI:[!C33:Core: %coretemp%:!C33][C33:%battery%:C33] <fc=#333333>|</fc> :!NEMO+EISBAERLI][C_CROSSER:TZ: ⁰%THM0% ¹%THM1% <fc=#333333>|</fc> :C_CROSSER][EISBAERLI:%THRM% <fc=#333333>|</fc> :EISBAERLI]%cpu% <fc=#333333>|</fc> %cpufreq% <fc=#333333>|</fc>}{[!NEMO:%uname% <fc=#333333>|</fc> :!NEMO]%LSZH% <fc=#333333>|</fc> %date%[!NEMO: :!NEMO]"
+       , template = "[!NEMO+JUMPER: :!NEMO+JUMPER][!SNIDGET:%iplet% <fc=#333333>|</fc> :!SNIDGET]%StdinReader% <fc=#333333>|</fc> [!NEMO+EISBAERLI:[!C33:Core: %coretemp%:!C33][C33:%battery%:C33] <fc=#333333>|</fc> :!NEMO+EISBAERLI][C_CROSSER:TZ: ⁰%THM0% ¹%THM1% <fc=#333333>|</fc> :C_CROSSER][EISBAERLI:%THRM% <fc=#333333>|</fc> :EISBAERLI]%cpu% <fc=#333333>|</fc> %cpufreq% <fc=#333333>|</fc>}{[!NEMO+JUMPER:%uname% <fc=#333333>|</fc> :!NEMO+JUMPER]%LSZH% <fc=#333333>|</fc> %date%[!NEMO+JUMPER: :!NEMO+JUMPER]"
        }

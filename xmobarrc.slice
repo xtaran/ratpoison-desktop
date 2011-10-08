@@ -16,7 +16,7 @@ Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
 [!SNIDGET:	    , Run Com "iplet" ["2"] "" 600:!SNIDGET]
 [!NEMO:		    , Run Com "uname" ["-r[SNIDGET:v:SNIDGET]"] "" 86400:!NEMO]
 		    , Run Date "%H:%M:%S" "date" 10
-[CORE0:		    , Run CpuFreq ["-t","<cpu0>", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:CORE0]
+[CORE0:[!NEMO:	    , Run CpuFreq ["-t","<cpu0>", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!NEMO]:CORE0]
 [CORE1:		    , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:CORE1]
 [CORE3:[!JUMPER:    , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz ²<cpu2> GHz ³<cpu2> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!JUMPER]:CORE3]
 		    ]

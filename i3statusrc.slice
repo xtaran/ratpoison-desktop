@@ -50,6 +50,22 @@ ethernet eth1 {
 }
 :ETH1]
 
+[ETH2:
+ethernet eth2 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "E: %ip %speed"
+	format_down = "E"
+}
+:ETH2]
+
+[ETH3:
+ethernet eth3 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "E: %ip %speed"
+	format_down = "E"
+}
+:ETH3]
+
 [!NEMO:
 ipv6 {
 	# if you use %speed, i3status requires root privileges or netcap
@@ -109,6 +125,8 @@ order = {}
 [WLAN1:order += "wireless wlan1":WLAN1]
 [ETH0:order += "ethernet eth0":ETH0]
 [ETH1:order += "ethernet eth1":ETH1]
+[ETH2:order += "ethernet eth2":ETH2]
+[ETH3:order += "ethernet eth3":ETH3]
 [BATTERY0:order += "battery 0":BATTERY0]
 [BATTERY1:order += "battery 1":BATTERY1]
 [NEMO:order += "cpu_temperature 0":NEMO]

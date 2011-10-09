@@ -1,0 +1,7 @@
+# see /etc/colordiff for defaults and hints
+# consult man colordiff
+
+newtext=green
+oldtext=red
+diffstuff=darkblue
+cvsstuff=darkyellow

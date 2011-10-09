@@ -73,6 +73,7 @@ tedious to always type them:
 ~/.gitconfig 				   → gitconfig
 ~/.xsession 				   → xsession
 ~/.screenrc 				   → screenrc
+~/.colordiffrc 				   → colordiffrc
 ~/bin/xrandr-vga-off.sh			   → bin/xrandr-vga-off.sh
 ~/bin/terms				   → bin/terms
 
@@ -135,6 +136,7 @@ Only used in non-necessary scripts or keybindings:
 * scrot
 * transset-df
 * xclip
+* colordiff
 
 Only in commented code (i.e currently not used):
 

@@ -17,9 +17,6 @@ xrdb -merge $RP/Xresources
 # Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK
 whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps
 
-# Use redshift if installed
-whe gtk-redshift -l $LOC || whe redshift -l $LOC &
-
 # Audio settings
 #xset b 100 1200 240
 
@@ -111,12 +108,18 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 ]; then
 #    else
 	whee nawm -f $RP/nawmrc
 #    fi
+
+    # Use redshift if installed
+    whee redshift -l $LOC
+
     exec ratpoison -f $RP/ratpoisonrc
 else
     whe wmname awesome
     whee nm-applet
     whee wicd-gtk
     whee update-notifier
+    # Use redshift if installed
+    whe gtk-redshift -l $LOC || whe redshift -l $LOC &
     exec awesome -c $RP/awesome/rc.lua
 fi
 

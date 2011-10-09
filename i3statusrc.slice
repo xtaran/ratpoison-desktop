@@ -1,0 +1,138 @@
+general {
+	output_format = "xmobar"
+	colors = true
+	interval = 1
+}
+
+[ATH0:
+wireless ath0 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+SID: %bitrate:NATTY+ONEIRIC+SID]"
+	format_down = "W"
+}
+:ATH0]
+
+[WLAN0:
+wireless wlan0 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+SID: %bitrate:NATTY+ONEIRIC+SID]"
+	format_down = "W"
+}
+:WLAN0]
+
+[WLAN1:
+wireless wlan1 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+SID: %bitrate:NATTY+ONEIRIC+SID]"
+	format_down = "W"
+}
+:WLAN1]
+
+[SNIDGET:
+run_watch DHCP {
+	pidfile = "/var/run/dhclient*.pid"
+}
+:SNIDGET]
+
+[ETH0:
+ethernet eth0 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "E: %ip %speed"
+	format_down = "E"
+}
+:ETH0]
+
+[ETH1:
+ethernet eth1 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "E: %ip %speed"
+	format_down = "E"
+}
+:ETH1]
+
+[ETH2:
+ethernet eth2 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "E: %ip %speed"
+	format_down = "E"
+}
+:ETH2]
+
+[ETH3:
+ethernet eth3 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "E: %ip %speed"
+	format_down = "E"
+}
+:ETH3]
+
+[!NEMO:
+ipv6 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "%ip"
+	format_down = "no IPv6"
+}
+:!NEMO]
+
+[BATTERY0:
+battery 0 {
+	format = "%status %percentage[!NEMO: %remaining:!NEMO]"
+	last_full_capacity = [!NEMO:no:!NEMO][NEMO!:yes:NEMO!]
+}
+:BATTERY0]
+
+[BATTERY1:
+battery 1 {
+	format = "Bay: %status %percentage %remaining"
+	last_full_capacity = no
+}
+:BATTERY1]
+
+load {
+	format = "%1min %5min %15min"
+}
+
+[NEMO:
+cpu_temperature 0 {
+	format = "%degrees°C"
+}
+:NEMO]
+
+disk "/" {
+	format = "/ %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+SID!:avail:NATTY+ONEIRIC+SID!]"
+}
+
+[C_CROSSER+JUMPER+HZ:
+disk "/home" {
+	format = "/home %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+SID!:avail:NATTY+ONEIRIC+SID!]"
+}
+:C_CROSSER+JUMPER+HZ]
+
+[SNIDGET:
+disk "/tmp" {
+	format = "/tmp %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+SID!:avail:NATTY+ONEIRIC+SID!]"
+}
+
+disk "/scratch" {
+	format = "/scratch %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+SID!:avail:NATTY+ONEIRIC+SID!]"
+}
+:SNIDGET]
+
+order = {}
+[SNIDGET:order += "run_watch DHCP":SNIDGET]
+[ATH0:order += "wireless ath0":ATH0]
+[WLAN0:order += "wireless wlan0":WLAN0]
+[WLAN1:order += "wireless wlan1":WLAN1]
+[ETH0:order += "ethernet eth0":ETH0]
+[ETH1:order += "ethernet eth1":ETH1]
+[ETH2:order += "ethernet eth2":ETH2]
+[ETH3:order += "ethernet eth3":ETH3]
+[BATTERY0:order += "battery 0":BATTERY0]
+[BATTERY1:order += "battery 1":BATTERY1]
+[NEMO:order += "cpu_temperature 0":NEMO]
+order += "load"
+order += "disk /"
+[C_CROSSER+JUMPER+HZ:order += "disk /home":C_CROSSER+JUMPER+HZ]
+[SNIDGET:order += "disk /tmp":SNIDGET]
+[SNIDGET:order += "disk /scratch":SNIDGET]
+[!NEMO+JUMPER:order += "ipv6":!NEMO+JUMPER]

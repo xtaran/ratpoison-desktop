@@ -1,0 +1,26 @@
+Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1"
+       , bgColor = "black"
+       , fgColor = "white"
+       , position = Bottom
+       , lowerOnStart = False
+       , commands = [ Run Weather "LSZH" ["-t","ZH: <tempC>°C <rh>%","-L","16","-H","24","--normal","green","--high","red","--low","lightblue"] 12000
+		    , Run Cpu ["-t","CPU: <total>[!C_CROSSER+JUMPER:%:!C_CROSSER+JUMPER]","-L","3","-H","50","--normal","green","--high","red"] 5
+		    , Run StdinReader
+[CORE0:[!NEMO+C33+EISBAERLI:, Run CoreTemp ["-t","<core0>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:!NEMO+C33+EISBAERLI]:CORE0]
+[CORE1+JUMPER:	    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:CORE1+JUMPER]
+[CORE3:[!JUMPER:    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C ²<core2>°C ³<core3>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:!JUMPER]:CORE3]
+[C_CROSSER:	    , Run Thermal "THM0" ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1
+		    , Run Thermal "THM1" ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1:C_CROSSER]
+[EISBAERLI:	    , Run Thermal "THRM" ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1:EISBAERLI]
+[C33:		    , Run Battery ["-t","<left>"] 1:C33]
+[!SNIDGET:	    , Run Com "iplet" ["2"] "" 600:!SNIDGET]
+[!NEMO+JUMPER:	    , Run Com "uname" ["-r[SNIDGET:v:SNIDGET]"] "" 86400:!NEMO+JUMPER]
+		    , Run Date "%H:%M:%S" "date" 10
+[CORE0:[!NEMO:	    , Run CpuFreq ["-t","<cpu0>", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!NEMO]:CORE0]
+[CORE1:		    , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:CORE1]
+[CORE3:[!JUMPER:    , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz ²<cpu2> GHz ³<cpu2> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!JUMPER]:CORE3]
+		    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "[!NEMO+JUMPER: :!NEMO+JUMPER][!SNIDGET:%iplet% <fc=#333333>|</fc> :!SNIDGET]%StdinReader% <fc=#333333>|</fc> [!NEMO+EISBAERLI:[!C33:Core: %coretemp%:!C33][C33:%battery%:C33] <fc=#333333>|</fc> :!NEMO+EISBAERLI][C_CROSSER:TZ: ⁰%THM0% ¹%THM1% <fc=#333333>|</fc> :C_CROSSER][EISBAERLI:%THRM% <fc=#333333>|</fc> :EISBAERLI]%cpu% <fc=#333333>|</fc>[!NEMO+JUMPER: %cpufreq% <fc=#333333>|</fc>:!NEMO+JUMPER]}{[!NEMO+JUMPER:%uname% <fc=#333333>|</fc> :!NEMO+JUMPER]%LSZH% <fc=#333333>|</fc> %date%[!NEMO+JUMPER: :!NEMO+JUMPER]"
+       }

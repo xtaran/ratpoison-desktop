@@ -2,7 +2,7 @@
 
 export RP=$(dirname "$0")/..
 
-. $RP/common/commons.sh
+. $RP/common/init.sh
 
 killall -INT i3status xmobar
 

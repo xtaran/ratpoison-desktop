@@ -1,4 +1,5 @@
-[METISSE+SNIDGET!:Config { font = "-xos4-terminus-bold-r-*-*-12-120-*-*-*-60-iso10646-1":METISSE+SNIDGET!]
+[SNIDGET!:Config { font = "xft:M+ 2p-8:normal":SNIDGET!]
+[METISSE!:Config { font = "-xos4-terminus-bold-r-*-*-12-120-*-*-*-60-iso10646-1":METISSE!]
 [!METISSE+SNIDGET:Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1":!METISSE+SNIDGET]
        , bgColor = "black"
        , fgColor = "white"

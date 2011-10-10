@@ -3,7 +3,7 @@
        , bgColor = "black"
        , fgColor = "white"
        , position = Bottom
-       , lowerOnStart = False
+       , lowerOnStart = True
        , commands = [ Run Weather "LSZH" ["-t","ZH: <tempC>°C <rh>%","-L","16","-H","24","--normal","green","--high","red","--low","lightblue"] 12000
 		    , Run Cpu ["-t","CPU: <total>[!C_CROSSER+JUMPER:%:!C_CROSSER+JUMPER]","-L","3","-H","50","--normal","green","--high","red"] 5
 		    , Run StdinReader

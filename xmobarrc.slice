@@ -1,6 +1,7 @@
+[NEMO!:Config { font = "xft:Droid-6:normal":NEMO!]
 [SNIDGET!:Config { font = "xft:M+ 2p-8:normal":SNIDGET!]
 [METISSE!:Config { font = "-xos4-terminus-bold-r-*-*-12-120-*-*-*-60-iso10646-1":METISSE!]
-[!METISSE+SNIDGET:Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1":!METISSE+SNIDGET]
+[!METISSE+SNIDGET+NEMO:Config { font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1":!METISSE+SNIDGET+NEMO]
        , bgColor = "black"
        , fgColor = "white"
        , position = Bottom

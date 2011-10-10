@@ -108,6 +108,7 @@ packages) to be installed:
 Fonts used for xmobar:
 
 * ttf-mplus | fonts-mplus
+* ttf-droid | fonts-droid
 * xfonts-terminus
 
 Used if available but except the system tray stuff recommended anyway:

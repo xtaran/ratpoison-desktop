@@ -6,7 +6,7 @@
        , position = Bottom
        , lowerOnStart = True
        , commands = [ Run Weather "LSZH" ["-t","ZH: <tempC>°C <rh>%","-L","16","-H","24","--normal","green","--high","red","--low","lightblue"] 12000
-		    , Run Cpu ["-t","CPU: <total>[!C_CROSSER+JUMPER:%:!C_CROSSER+JUMPER]","-L","3","-H","50","--normal","green","--high","red"] 5
+		    , Run Cpu ["-t","CPU: <total>[!C_CROSSER+JUMPER+SNIDGET:%:!C_CROSSER+JUMPER+SNIDGET]","-L","3","-H","50","--normal","green","--high","red"] 5
 		    , Run StdinReader
 [CORE0:[!NEMO+C33+EISBAERLI:, Run CoreTemp ["-t","<core0>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:!NEMO+C33+EISBAERLI]:CORE0]
 [CORE1+JUMPER:[!METISSE:	    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:!METISSE]:CORE1+JUMPER]

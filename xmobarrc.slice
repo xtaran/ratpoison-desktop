@@ -16,7 +16,7 @@
 [EISBAERLI:	    , Run Thermal "THRM" ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1:EISBAERLI]
 [C33:		    , Run Battery ["-t","<left>"] 1:C33]
 [!SNIDGET:	    , Run Com "iplet" ["2"] "" 600:!SNIDGET]
-[!NEMO+JUMPER:	    , Run Com "uname" ["-[METISSE!:s:METISSE!]r[SNIDGET!:v:SNIDGET!]"] "" 86400:!NEMO+JUMPER]
+[!NEMO+JUMPER:	    , Run Com "uname" ["-[METISSE+SNIDGET!:s:METISSE+SNIDGET!]r[SNIDGET!:v:SNIDGET!]"] "" 86400:!NEMO+JUMPER]
 		    , Run Date "[METISSE+SNIDGET!:%a %d-%b-%Y :METISSE+SNIDGET!]%H:%M:%S" "date" 10
 [CORE0:[!NEMO:	    , Run CpuFreq ["-t","<cpu0>", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!NEMO]:CORE0]
 [CORE1:[!METISSE:   , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!METISSE]:CORE1]

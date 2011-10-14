@@ -85,7 +85,7 @@ fi
   urxvt &
   start_bar &
   #sleep 1;
-  whee unclutter -keystroke -idle 2 -grab
+  whee unclutter -keystroke -idle 2
   #sleep 10;
   #conkeror &
   #sleep 3

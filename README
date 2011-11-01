@@ -117,6 +117,7 @@ Used if available but except the system tray stuff recommended anyway:
 * inotail
 * keynav >= 0.20101014.3067
 * redshift
+* shutter
 * unclutter
 * x11-xkb-utils (for setxkbmap)
 * xrootconsole

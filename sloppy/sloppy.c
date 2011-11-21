@@ -6,12 +6,12 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2, or (at your option)
  * any later version.
- * 
+ *
  * sloppy is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this software; see the file COPYING.  If not, write to
  * the Free Software Foundation, Inc., 59 Temple Place, Suite 330,
@@ -42,7 +42,7 @@ spawn(char *cmd)
   int pid;
 
   pid = fork();
-  if (pid == 0) 
+  if (pid == 0)
     {
       execl("/bin/sh", "sh", "-c", cmd, 0);
       _exit(EXIT_FAILURE);
@@ -70,17 +70,17 @@ main (int argc, char **argv)
     {
       unsigned int j, nwins;
       Window dw1, dw2, *wins;
-      
+
       XSelectInput(display,RootWindow(display, i), SubstructureNotifyMask);
       XQueryTree(display, RootWindow(display, i), &dw1, &dw2, &wins, &nwins);
       for (j=0; j<nwins; j++)
 	XSelectInput(display, wins[j], EnterWindowMask);
     }
 
-  while (1) 
+  while (1)
     {
       XEvent event;
-      do 
+      do
 	{
 	  XNextEvent(display,&event);
 	  if (event.type == CreateNotify)

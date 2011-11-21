@@ -187,4 +187,4 @@ definekey cpufreq 9 exec /home/abe/.ratpoison/bin/eeepc-701-setfreq.sh 9
 bind H readkey cpufreq
 
 # Helper for nawm stuff
-addhook switchwin exec if which nawm > /dev/null && [ `ratpoison -c fdump | fgrep -o "frame" | wc -l` -gt 1 ]; then ratpoison -c banish; fi
+#addhook switchwin exec if which nawm > /dev/null && [ `ratpoison -c fdump | fgrep -o "frame" | wc -l` -gt 1 ]; then ratpoison -c banish; fi

@@ -106,7 +106,7 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 ]; then
 #    if wh xdotool; then
 #	while :; do xdotool search . behave %@ mouse-enter windowfocus > /dev/null 2>&1; done &
 #    else
-	whee nawm -f $RP/nawmrc
+#	whee nawm -f $RP/nawmrc
 #    fi
 
     # Use redshift if installed

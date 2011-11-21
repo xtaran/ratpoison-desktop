@@ -7,8 +7,8 @@ my %data = (
     q/.* - Conkeror$/ => 1,
     q/abe@nemo: autossh -t sym 'screen -RdU'/ => 2,
     q/abe@nemo: autossh -t (kiva6|virt2) 'screen -RdU'/ => 3,
-    q(ftp\.ch\.debian\.org: rsync/ftpsync log$) => 4,
-    q(abe@nemo: logread -f) => 5,
+    q(abe@nemo: logread -f) => 4,
+    q(ftp\.ch\.debian\.org: rsync/ftpsync log$) => 5,
     q/emacs\@nemo\.deuxchevaux\.org$/ => 10,
 );
 

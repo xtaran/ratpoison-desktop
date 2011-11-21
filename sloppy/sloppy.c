@@ -90,7 +90,7 @@ main (int argc, char **argv)
       /* A window was entered. select it. */
       {
         char shell[256];
-        snprintf (shell, 255, "[ `$RATPOISON -c fdump | fgrep -o frame | wc -l` -gt 1 ] && $RATPOISON -c \"select `$RATPOISON -c 'windows %%i %%n' | grep '%ld' | awk '{print $2}'`\" || $RATPOISON -c banish", event.xcrossing.window);
+        snprintf (shell, 255, "$RATPOISON -c \"select $($RATPOISON -c 'windows %%i %%n %%f' | grep '%ld' | awk '$3 != '$($RATPOISON -c curframe)' && $3 != \"\" {print $2}')\"", event.xcrossing.window);
         printf ("%s\n", shell);
         spawn (shell);
         wait (NULL);

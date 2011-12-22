@@ -94,7 +94,7 @@ packages) to be installed:
 * libfile-temp-perl
 * lsb-release
 * ratmenu >= 2.3.20
-* ratpoison or awesome
+* ratpoison or awesome + awesome-extra
 * wget (needed by iplet)
 * x11-utils (for xmessage) or gxmessage
 * x11-xserver-utils (for xmodmap, xrdb, xrandr and xsetroot)

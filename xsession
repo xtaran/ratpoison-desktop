@@ -118,6 +118,7 @@ else
     whee nm-applet
     whee wicd-gtk
     whee update-notifier
+    whee fdpowermon
     whee shutter --min_at_startup
     # Use redshift if installed
     whe gtk-redshift -l $LOC || whe redshift -l $LOC &

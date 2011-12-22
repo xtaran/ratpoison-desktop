@@ -116,7 +116,7 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 ]; then
 else
     whe wmname awesome
     whee nm-applet
-    whee wicd-gtk
+    whee wicd-gtk -t
     whee update-notifier
     whee fdpowermon
     whee shutter --min_at_startup

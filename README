@@ -94,7 +94,7 @@ packages) to be installed:
 * libfile-temp-perl
 * lsb-release
 * ratmenu >= 2.3.20
-* ratpoison or awesome
+* ratpoison or awesome + awesome-extra
 * wget (needed by iplet)
 * x11-utils (for xmessage) or gxmessage
 * x11-xserver-utils (for xmodmap, xrdb, xrandr and xsetroot)
@@ -128,6 +128,7 @@ Used if available but except the system tray stuff recommended anyway:
   * wicd-gtk
   * update-notifier
   * gtk-redshift
+  * fdpowermon
 
 Linux kernel modules which may be used by some features of xmobar, but
 do not seem to be loaded automatically (write them into /etc/modules):

@@ -14,6 +14,8 @@
 	st = status
 	d = diff
 	dc = diff --cached
+	wdc = diff --cached --color-words
+	bdc = diff --cached --color-words=.
 	ci = commit -v
 	co = checkout
 	undo = reset --hard
@@ -24,11 +26,13 @@
 	# Von tokkee:
 	wdiff = diff --color-words
 	cdiff = diff --cached
+	wcdiff = diff --cached --color-words
 	bdiff = diff --color-words=.
+	bcdiff = diff --cached --color-words=.
 	wshow = show --color-words
 	stat = status -s
 	unadd = rm --cached
-	dlog = log --decorate
+	dlog = log --decorate=full
 	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	logdiff = log -p -U0
 

@@ -1,0 +1,67 @@
+Source: abe-desktop
+Maintainer: Axel Beckert <abe@deuxchevaux.org>
+Section: metapackages
+Priority: extra
+Homepage: https://github.com/xtaran/ratpoison-desktop
+Standards-Version: 3.9.2
+Version: 0
+Copyright: /usr/share/common-licenses/GPL-3
+Changelog: changelog
+Readme: README.source
+
+Package: abe-desktop-common
+Depends: i3status (>= 2.2), xmobar,
+	 busybox-syslogd, lsb-release, wget,
+	 emacs, zile,
+	 gxmessage | x11-utils, x11-xserver-utils,
+	 libfile-slurp-perl, libfile-temp-perl,
+	 xscreensaver | xtrlock | xlockmore | xlockmore-gl,
+	 xterm | rxvt-unicode, yeahconsole,
+	 conkeror | www-browser,
+	 fonts-mplus | ttf-mplus, fonts-droid | ttf-droid, xfonts-terminus,
+	 colordiff, git
+Recommends: xscreensaver, xtrlock,
+	    xterm, rxvt-unicode,
+	    x11-xkb-utils, xserver-xorg-input-synaptics,
+	    autocutsel, keynav (>= 0.20101014.3067), unclutter,
+	    inotail, xrootconsole | root-tail,
+	    openssh-client | dropbear, zsh,
+	    gitk, equivs,
+	    hsetroot, xdotool
+Suggests: screen | tmux, nvi,
+	  openssh-server | dropbear,
+	  transset-df | xcompmgr, ccze | loco | lwatch | colortail
+Architecture: all
+Description: Common packages for all of Axel's desktop setups
+ Depends on packages common for all of Axel's desktop setups.
+
+Package: abe-desktop-ratpoison
+Depends: ratpoison, ratmenu (>= 2.3.20), abe-desktop-common,
+	 nawm | xdotool
+Recommends: redshift,
+	    suckless-tools | dwm-tools (>= 31-1),
+	    xclip,
+	    wicd-curses | network-manager (>= 0.8.0.999-1) | cnetworkmanager,
+Suggests: transset-df | xcompmgr
+Architecture: all
+Description: Packages necessary for Axel's ratpoison desktop
+ Depends on packages common for Axel's ratpoison based desktop setup.
+
+Package: abe-desktop-awesome
+Depends: awesome (>= 3), awesome-extra, abe-desktop-common,
+	 hsetroot, xdotool
+Recommends: gtk-redshift, fdpowermon,
+	    wicd-gtk | nm-applet,
+Suggests: shutter, update-notifier
+Architecture: all
+Description: Packages necessary for Axel's awesome desktop
+ Depends on packages common for Axel's awesome based desktop setup.
+
+Package: abe-desktop
+Depends: abe-desktop-ratpoison, abe-desktop-awesome
+Recommends: i3-wm, flwm, scrotwm, stumpwm,
+	    lxsession
+Suggests: tritium, clfswm, herbstluftwm, fvwm, anion3, notion
+Architecture: all
+Description: Packages helpful for Axel's desktop setup
+ Depends on packages common for Axel's desktop setups.

@@ -1,0 +1,6 @@
+This package is to be generated with equivs-build-multi from
+http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=323648#10 since
+equivs itself doesn't support multiple binary packages per source
+package.
+
+ -- Axel Beckert <abe@debian.org>, Sat, 24 Dec 2011 14:33:35 +0100

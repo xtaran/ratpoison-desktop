@@ -3,4 +3,4 @@ build-stamp: control changelog README.source
 	touch build-stamp
 
 clean:
-	rm -vf *.deb *.dsc *.changes build-stamp
+	rm -vf *.deb *.dsc *.changes build-stamp *~

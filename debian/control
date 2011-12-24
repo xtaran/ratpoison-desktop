@@ -51,7 +51,7 @@ Package: abe-desktop-awesome
 Depends: awesome (>= 3), awesome-extra, abe-desktop-common,
 	 hsetroot, xdotool
 Recommends: gtk-redshift, fdpowermon,
-	    wicd-gtk | nm-applet,
+	    wicd-gtk | network-manager-gnome,
 Suggests: shutter, update-notifier
 Architecture: all
 Description: Packages necessary for Axel's awesome desktop

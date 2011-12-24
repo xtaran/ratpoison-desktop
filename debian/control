@@ -4,21 +4,20 @@ Section: metapackages
 Priority: extra
 Homepage: https://github.com/xtaran/ratpoison-desktop
 Standards-Version: 3.9.2
-Version: 0
 Copyright: /usr/share/common-licenses/GPL-3
 Changelog: changelog
 Readme: README.source
 
 Package: abe-desktop-common
 Depends: i3status (>= 2.2), xmobar,
-	 busybox-syslogd, lsb-release, wget,
+	 busybox-syslogd | system-log-daemon, lsb-release, wget,
 	 emacs, zile,
 	 gxmessage | x11-utils, x11-xserver-utils,
 	 libfile-slurp-perl, libfile-temp-perl,
 	 xscreensaver | xtrlock | xlockmore | xlockmore-gl,
 	 xterm | rxvt-unicode, yeahconsole,
 	 conkeror | www-browser,
-	 fonts-mplus | ttf-mplus, fonts-droid | ttf-droid, xfonts-terminus,
+	 fonts-droid | ttf-droid, xfonts-terminus,
 	 colordiff, git
 Recommends: xscreensaver, xtrlock,
 	    xterm, rxvt-unicode,
@@ -27,6 +26,7 @@ Recommends: xscreensaver, xtrlock,
 	    inotail, xrootconsole | root-tail,
 	    openssh-client | dropbear, zsh,
 	    gitk, equivs,
+	    fonts-mplus | ttf-mplus,
 	    hsetroot, xdotool
 Suggests: screen | tmux, nvi,
 	  openssh-server | dropbear,

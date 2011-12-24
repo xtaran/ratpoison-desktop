@@ -1,3 +1,17 @@
+abe-desktop (2) unstable; urgency=low
+
+  * Allow other syslog daemons besides busybox-syslogd as Ubuntu's meta
+    packages hardcode rsyslog.
+
+ -- Axel Beckert <abe@debian.org>  Sat, 24 Dec 2011 15:49:58 +0100
+
+abe-desktop (1) unstable; urgency=low
+
+  * Make mplus fonts optional as they're not in use everywhere.
+  * Get version from changelog instead of control file.
+
+ -- Axel Beckert <abe@deuxchevaux.org>  Sat, 24 Dec 2011 15:33:16 +0100
+
 abe-desktop (0) unstable; urgency=low
 
   * Initial package

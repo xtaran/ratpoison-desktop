@@ -1,8 +1,10 @@
-abe-desktop (3) UNRELEASED; urgency=low
+abe-desktop (3) unstable; urgency=low
 
   * nm-applet is no separate package but part of network-manager-gnome
+  * Loosen dependencies on *-droid and i3status >= 2.2 as those are not
+    available in squeeze (and partially not even in squeeze backports)
 
- -- Axel Beckert <abe@debian.org>  Sat, 24 Dec 2011 16:12:25 +0100
+ -- Axel Beckert <abe@debian.org>  Tue, 27 Dec 2011 19:17:51 +0100
 
 abe-desktop (2) unstable; urgency=low
 

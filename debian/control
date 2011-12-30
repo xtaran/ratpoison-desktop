@@ -9,7 +9,7 @@ Changelog: changelog
 Readme: README.source
 
 Package: abe-desktop-common
-Depends: i3status (>= 2.2), xmobar,
+Depends: i3status, xmobar,
 	 busybox-syslogd | system-log-daemon, lsb-release, wget,
 	 emacs, zile,
 	 gxmessage | x11-utils, x11-xserver-utils,
@@ -17,16 +17,16 @@ Depends: i3status (>= 2.2), xmobar,
 	 xscreensaver | xtrlock | xlockmore | xlockmore-gl,
 	 xterm | rxvt-unicode, yeahconsole,
 	 conkeror | www-browser,
-	 fonts-droid | ttf-droid, xfonts-terminus,
+	 xfonts-terminus,
 	 colordiff, git
-Recommends: xscreensaver, xtrlock,
+Recommends: i3status (>= 2.2), xscreensaver, xtrlock,
 	    xterm, rxvt-unicode,
 	    x11-xkb-utils, xserver-xorg-input-synaptics,
 	    autocutsel, keynav (>= 0.20101014.3067), unclutter,
 	    inotail, xrootconsole | root-tail,
 	    openssh-client | dropbear, zsh,
 	    gitk, equivs,
-	    fonts-mplus | ttf-mplus,
+	    fonts-droid | ttf-droid, fonts-mplus | ttf-mplus,
 	    hsetroot, xdotool
 Suggests: screen | tmux, nvi,
 	  openssh-server | dropbear,

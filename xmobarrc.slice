@@ -23,8 +23,8 @@ Config {
 [!SNIDGET:	    , Run Com "iplet" ["2"] "" 600:!SNIDGET]
 [!JUMPER:	    , Run Com "uname" ["-[METISSE+SNIDGET!:s:METISSE+SNIDGET!]r[SNIDGET!:v:SNIDGET!]"] "" 86400:!JUMPER]
 		    , Run Date "[METISSE+SNIDGET!:%a %d-%b-%Y :METISSE+SNIDGET!]%H:%M:%S" "date" 10
-[CORE0:[!NEMO:	    , Run CpuFreq ["-t","<cpu0>", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!NEMO]:CORE0]
-[CORE1:[!METISSE:   , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!METISSE]:CORE1]
+[CORE0+DS3:[!NEMO:	    , Run CpuFreq ["-t","<cpu0>", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!NEMO]:CORE0+DS3]
+[CORE1:[!METISSE+DS3:   , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!METISSE+DS3]:CORE1]
 [CORE3:[!JUMPER:    , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz ²<cpu2> GHz ³<cpu2> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!JUMPER]:CORE3]
 		    ]
        , sepChar = "%"

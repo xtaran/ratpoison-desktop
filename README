@@ -121,7 +121,7 @@ Used if available but except the system tray stuff recommended anyway:
 * unclutter
 * x11-xkb-utils (for setxkbmap)
 * xrootconsole
-* xserver-xorg-input-synaptics (for syndaemon)
+* xserver-xorg-input-synaptics (for synclient+syndaemon)
 * yeahconsole
 * System tray applets for use with awesome:
   * nm-applet

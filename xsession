@@ -86,6 +86,7 @@ fi
   start_bar &
   #sleep 1;
   whee unclutter -keystroke -idle 2
+  whe synclient TapButton1=1 HorizTwoFingerScroll=1 VerTwoFingerScroll=1
   #sleep 10;
   #conkeror &
   #sleep 3

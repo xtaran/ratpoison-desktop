@@ -1,3 +1,9 @@
+abe-desktop (4) UNRELEASED; urgency=low
+
+  * Suggest radiotray in abe-desktop-awesome.
+
+ -- Axel Beckert <abe@debian.org>  Mon, 02 Jan 2012 05:41:36 +0100
+
 abe-desktop (3) unstable; urgency=low
 
   * nm-applet is no separate package but part of network-manager-gnome

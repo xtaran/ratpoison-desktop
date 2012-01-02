@@ -129,6 +129,7 @@ Used if available but except the system tray stuff recommended anyway:
   * update-notifier
   * gtk-redshift
   * fdpowermon
+  * radiotray
 
 Linux kernel modules which may be used by some features of xmobar, but
 do not seem to be loaded automatically (write them into /etc/modules):

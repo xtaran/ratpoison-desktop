@@ -122,6 +122,7 @@ else
     whee wicd-gtk -t
     whee update-notifier
     whee fdpowermon
+    whee radiotray
     whee shutter --min_at_startup
     # Use redshift if installed
     whe gtk-redshift -l $LOC || whe redshift -l $LOC &

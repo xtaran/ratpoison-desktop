@@ -117,7 +117,6 @@ Used if available but except the system tray stuff recommended anyway:
 * inotail
 * keynav >= 0.20101014.3067
 * redshift
-* shutter
 * unclutter
 * x11-xkb-utils (for setxkbmap)
 * xrootconsole
@@ -130,6 +129,7 @@ Used if available but except the system tray stuff recommended anyway:
   * gtk-redshift
   * fdpowermon
   * radiotray
+  * shutter
 
 Linux kernel modules which may be used by some features of xmobar, but
 do not seem to be loaded automatically (write them into /etc/modules):

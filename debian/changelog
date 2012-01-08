@@ -2,6 +2,7 @@ abe-desktop (4) UNRELEASED; urgency=low
 
   * Suggest radiotray, yarssr and qasmixer | volumeicon-alsa in
     abe-desktop-awesome.
+  * Suggest audacious and audacious-plugins in abe-desktop-common
 
  -- Axel Beckert <abe@debian.org>  Mon, 02 Jan 2012 05:41:36 +0100
 

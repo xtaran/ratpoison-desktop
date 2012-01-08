@@ -30,7 +30,8 @@ Recommends: i3status (>= 2.2), xscreensaver, xtrlock,
 	    hsetroot, xdotool
 Suggests: screen | tmux, nvi,
 	  openssh-server | dropbear,
-	  transset-df | xcompmgr, ccze | loco | lwatch | colortail
+	  transset-df | xcompmgr, ccze | loco | lwatch | colortail,
+	  audacious, audacious-plugins
 Architecture: all
 Description: Common packages for all of Axel's desktop setups
  Depends on packages common for all of Axel's desktop setups.

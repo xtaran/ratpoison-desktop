@@ -52,7 +52,7 @@ Depends: awesome (>= 3), awesome-extra, abe-desktop-common,
 	 hsetroot, xdotool
 Recommends: gtk-redshift, fdpowermon,
 	    wicd-gtk | network-manager-gnome,
-Suggests: shutter, update-notifier, radiotray, yarssr, volumeicon-alsa
+Suggests: shutter, update-notifier, radiotray, yarssr, qasmixer | volumeicon-alsa
 Architecture: all
 Description: Packages necessary for Axel's awesome desktop
  Depends on packages common for Axel's awesome based desktop setup.

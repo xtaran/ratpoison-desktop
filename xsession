@@ -121,7 +121,7 @@ else
     whee update-notifier
     whee fdpowermon
     whee radiotray
-    whee volumeicon
+    whe qasmixer -t || whe volumeicon &
     whee yarssr
     whee shutter --min_at_startup
     # Use redshift if installed

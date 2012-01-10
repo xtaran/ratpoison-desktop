@@ -51,9 +51,9 @@ layouts =
     awful.layout.suit.fair.horizontal, --  6
     awful.layout.suit.spiral,          --  7
     awful.layout.suit.spiral.dwindle,  --  8
-    awful.layout.suit.max,             --  9
+    awful.layout.suit.magnifier,       --  9
     awful.layout.suit.max.fullscreen,  -- 10
-    awful.layout.suit.magnifier,       -- 11
+    awful.layout.suit.max,             -- 11
     awful.layout.suit.floating         -- 12
 }
 -- }}}
@@ -61,9 +61,9 @@ layouts =
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {
-  names  = { "Shell:1", "Web:2", "RSS:3", "Dev:4", "IM:5", 6, 7, 8, 9,
+  names  = { 1, 2, 3, 4, 5, 6, 7, 8, 9,
 	     10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 },
-  layout = { layouts[1], layouts[1], layouts[9], layouts[1], layouts[1],
+  layout = { layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
              layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
              layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
              layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],

@@ -102,7 +102,7 @@ if [ -x $PH/xsession.$HOSTNAME ]; then
 fi
 
 # If resolution is less than 1024 pixels wide, then use ratpoison, else awesome
-if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 ]; then
+if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME" = "jumper" ]; then
     # Call nawm for focus follows mouse with ratpoison
     if [ -x $RP/sloppy/sloppy ]; then
 	$RP/sloppy/sloppy &
@@ -123,7 +123,7 @@ else
     whee update-notifier
     whee fdpowermon
     whee radiotray
-    whee volumeicon
+    whe qasmixer -t || whe volumeicon &
     whee yarssr
     whee shutter --min_at_startup
     # Use redshift if installed

@@ -44,8 +44,8 @@ modkey = "Mod4"
 layouts =
 {
     awful.layout.suit.tile,            --  1
-    awful.layout.suit.tile.left,       --  2
-    awful.layout.suit.tile.bottom,     --  3
+    awful.layout.suit.tile.bottom,     --  2
+    awful.layout.suit.tile.left,       --  3
     awful.layout.suit.tile.top,        --  4
     awful.layout.suit.fair,            --  5
     awful.layout.suit.fair.horizontal, --  6
@@ -98,8 +98,11 @@ mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
 -- Create a textclock widget
 mytextclock = awful.widget.textclock({ align = "right" })
 
--- Create a systray
-mysystray = widget({ type = "systray" })
+-- Create a systray for each screen
+mysystray = {}
+for s = 1, screen.count() do
+   mysystray[s] = widget({ type = "systray" })
+end
 
 -- Create a wibox for each screen and add it
 mywibox = {}
@@ -172,7 +175,7 @@ for s = 1, screen.count() do
         mylayoutbox[s],
 	obvious.battery(),
         mytextclock,
-        s == 1 and mysystray or nil,
+        mysystray[s],
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
     }

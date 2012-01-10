@@ -117,17 +117,7 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME"
 
     exec ratpoison -f $RP/ratpoisonrc
 else
-    whe wmname awesome
-    whee nm-applet
-    whee wicd-gtk -t
-    whee update-notifier
-    whee fdpowermon
-    whee radiotray
-    whe qasmixer -t || whe volumeicon &
-    whee yarssr
-    whee shutter --min_at_startup
-    # Use redshift if installed
-    whe gtk-redshift -l $LOC || whe redshift -l $LOC &
+    systray_applets
     exec awesome -c $RP/awesome/rc.lua
 fi
 

@@ -24,6 +24,8 @@ xscreensaver-command -watch >> $HOME/.xscreensaver.`uname -n`.log &
 ### 1. Desktop ###
 ##################
 
+systray_applets
+
 # Start mutt
 $HOME/bin/muttstart.sh
 /usr/bin/emacs -fn fixed ~/xchange/note.txt &

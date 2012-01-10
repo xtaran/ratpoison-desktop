@@ -42,6 +42,8 @@ conkeror &
 uxterm -fn fixed -geometry 68x7+486+1479 &
 yeahconsole &
 
+whee gtk-redshift -l $LOC
+
 ############################
 ### 2. Desktop: BB + IRC ###
 ############################
@@ -51,5 +53,15 @@ chromium-browser &
 uxterm -fn fixed -geometry 60x14+810+1261 &
 $HOME/bin/ircstart.sh -geometry 130x25+0+1261
 yeahconsole &
+
+whee gtk-redshift -l $LOC
+
+###########################
+### 4. Desktop: Nothing ###
+###########################
+
+export DISPLAY=:0.3
+
+whee gtk-redshift -l $LOC
 
 exec awesome

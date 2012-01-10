@@ -84,6 +84,8 @@ for s = 1, screen.count() do
   tags[s] = awful.tag(tags.settings[s].names, s, tags.settings[s].layout)
   -- Proper proportions
 end
+awful.tag.setmwfact(.8, tags[2][1])
+awful.tag.setmwfact(.8, tags[3][1])
 -- }}}
 
 -- {{{ Menu

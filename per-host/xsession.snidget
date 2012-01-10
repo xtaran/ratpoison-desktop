@@ -45,7 +45,7 @@ yeahconsole &
 whee gtk-redshift -l $LOC
 
 ############################
-### 2. Desktop: BB + IRC ###
+### 3. Desktop: BB + IRC ###
 ############################
 
 export DISPLAY=:0.2

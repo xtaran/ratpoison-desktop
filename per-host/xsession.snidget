@@ -24,13 +24,13 @@ xscreensaver-command -watch >> $HOME/.xscreensaver.`uname -n`.log &
 ### 1. Desktop ###
 ##################
 
-systray_applets
-
 # Start mutt
 $HOME/bin/muttstart.sh
 /usr/bin/emacs ~/xchange/note.txt &
 
 uxterm -fn fixed -geometry 32x19+0+835 +sb -T "XScreenSaver Log" -e tail -f $HOME/.xscreensaver.`uname -n`.log &
+
+whee gtk-redshift -l $LOC
 
 ######################
 ### 2. Desktop: RT ###
@@ -42,7 +42,7 @@ conkeror &
 uxterm -fn fixed -geometry 68x7+486+1479 &
 yeahconsole &
 
-whee gtk-redshift -l $LOC
+systray_applets
 
 ############################
 ### 3. Desktop: BB + IRC ###

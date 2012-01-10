@@ -44,8 +44,8 @@ modkey = "Mod4"
 layouts =
 {
     awful.layout.suit.tile,            --  1
-    awful.layout.suit.tile.left,       --  2
-    awful.layout.suit.tile.bottom,     --  3
+    awful.layout.suit.tile.bottom,     --  2
+    awful.layout.suit.tile.left,       --  3
     awful.layout.suit.tile.top,        --  4
     awful.layout.suit.fair,            --  5
     awful.layout.suit.fair.horizontal, --  6

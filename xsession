@@ -101,7 +101,7 @@ if [ -x $PH/xsession.$HOSTNAME ]; then
 fi
 
 # If resolution is less than 1024 pixels wide, then use ratpoison, else awesome
-if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 ]; then
+if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME" = "jumper" ]; then
     # Call nawm for focus follows mouse with ratpoison
 #    if wh xdotool; then
 #	while :; do xdotool search . behave %@ mouse-enter windowfocus > /dev/null 2>&1; done &

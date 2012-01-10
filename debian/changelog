@@ -1,0 +1,36 @@
+abe-desktop (4) UNRELEASED; urgency=low
+
+  * Suggest radiotray, yarssr and qasmixer | volumeicon-alsa in
+    abe-desktop-awesome.
+  * Suggest audacious and audacious-plugins in abe-desktop-common
+
+ -- Axel Beckert <abe@debian.org>  Mon, 02 Jan 2012 05:41:36 +0100
+
+abe-desktop (3) unstable; urgency=low
+
+  * nm-applet is no separate package but part of network-manager-gnome
+  * Loosen dependencies on *-droid and i3status >= 2.2 as those are not
+    available in squeeze (and partially not even in squeeze backports)
+
+ -- Axel Beckert <abe@debian.org>  Tue, 27 Dec 2011 19:17:51 +0100
+
+abe-desktop (2) unstable; urgency=low
+
+  * Allow other syslog daemons besides busybox-syslogd as Ubuntu's meta
+    packages hardcode rsyslog.
+
+ -- Axel Beckert <abe@debian.org>  Sat, 24 Dec 2011 15:49:58 +0100
+
+abe-desktop (1) unstable; urgency=low
+
+  * Make mplus fonts optional as they're not in use everywhere.
+  * Get version from changelog instead of control file.
+
+ -- Axel Beckert <abe@deuxchevaux.org>  Sat, 24 Dec 2011 15:33:16 +0100
+
+abe-desktop (0) unstable; urgency=low
+
+  * Initial package
+
+ -- Axel Beckert <abe@deuxchevaux.org>  Sat, 24 Dec 2011 14:32:20 +0100
+

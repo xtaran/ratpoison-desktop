@@ -1,0 +1,3 @@
+Proper Debian package not depending on equivs (or equives-build-multi)
+Script for initial cloning
+Scripts to create all necessary symlinks for .ratpoison and .zsh

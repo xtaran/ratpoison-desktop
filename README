@@ -94,7 +94,7 @@ packages) to be installed:
 * libfile-temp-perl
 * lsb-release
 * ratmenu >= 2.3.20
-* ratpoison or awesome
+* ratpoison or awesome + awesome-extra
 * wget (needed by iplet)
 * x11-utils (for xmessage) or gxmessage
 * x11-xserver-utils (for xmodmap, xrdb, xrandr and xsetroot)
@@ -117,17 +117,21 @@ Used if available but except the system tray stuff recommended anyway:
 * inotail
 * keynav >= 0.20101014.3067
 * redshift
-* shutter
 * unclutter
 * x11-xkb-utils (for setxkbmap)
 * xrootconsole
-* xserver-xorg-input-synaptics (for syndaemon)
+* xserver-xorg-input-synaptics (for synclient+syndaemon)
 * yeahconsole
 * System tray applets for use with awesome:
   * nm-applet
   * wicd-gtk
   * update-notifier
   * gtk-redshift
+  * fdpowermon
+  * radiotray
+  * shutter
+  * yarssr
+  * qasmixer | volumeicon-alsa
 
 Linux kernel modules which may be used by some features of xmobar, but
 do not seem to be loaded automatically (write them into /etc/modules):

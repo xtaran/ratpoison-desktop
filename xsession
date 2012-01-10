@@ -86,6 +86,7 @@ fi
   start_bar &
   #sleep 1;
   whee unclutter -keystroke -idle 2
+  whe synclient TapButton1=1 HorizTwoFingerScroll=1 VertTwoFingerScroll=1
   #sleep 10;
   #conkeror &
   #sleep 3
@@ -116,8 +117,12 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME"
 else
     whe wmname awesome
     whee nm-applet
-    whee wicd-gtk
+    whee wicd-gtk -t
     whee update-notifier
+    whee fdpowermon
+    whee radiotray
+    whe qasmixer -t || whe volumeicon &
+    whee yarssr
     whee shutter --min_at_startup
     # Use redshift if installed
     whe gtk-redshift -l $LOC || whe redshift -l $LOC &

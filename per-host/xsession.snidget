@@ -28,7 +28,7 @@ systray_applets
 
 # Start mutt
 $HOME/bin/muttstart.sh
-/usr/bin/emacs -fn fixed ~/xchange/note.txt &
+/usr/bin/emacs ~/xchange/note.txt &
 
 uxterm -fn fixed -geometry 32x19+0+835 +sb -T "XScreenSaver Log" -e tail -f $HOME/.xscreensaver.`uname -n`.log &
 

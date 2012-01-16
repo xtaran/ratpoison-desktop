@@ -18,10 +18,10 @@ require("obvious.volume_alsa")
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
 beautiful.init((os.getenv("RP") or (os.getenv("HOME") .."/.config")) .. "/awesome/theme.lua")
-for s = 1, screen.count() do
---    awful.util.spawn("awsetbg -l", false, s)
-   awful.screen.padding( screen[s], { bottom = 16 } )
-end
+-- awful.util.spawn("awsetbg -l", false, s)
+
+-- Only set bottom padding for screen 1
+awful.screen.padding( screen[1], { bottom = 16 } )
 
 -- This is used later as the default terminal and editor to run.
 terminal = "x-terminal-emulator"
@@ -32,6 +32,13 @@ browser = "sensible-browser"
 xlock = "xscreensaver-command -activate || xtrlock"
 amixer = "amixer"
 ffm = (os.getenv("RP") or (os.getenv("HOME") .."/.ratpoison"))  .. "/bin/focus-follows-mouse-on-tag-change.sh"
+
+-- Determine hostname
+local io = { popen = io.popen }
+local f = io.popen("hostname")
+local hostname = f:read("*all")
+f:close()
+hostname = string.gsub(hostname, '[\n\r]+', '')
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -61,17 +68,43 @@ layouts =
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {
-  names  = { 1, 2, 3, 4, 5, 6, 7, 8, 9,
-	     10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 },
-  layout = { layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
-             layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
-             layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
-             layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
-             layouts[1], layouts[1] }
-}
+   settings = {
+      {
+	 names  = { 1, 2, 3, 4, 5, 6, 7, 8, 9,
+		    10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 },
+	 layout = { layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
+		    layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
+		    layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
+		    layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
+		    layouts[1], layouts[1] }
+}}}
+
 for s = 1, screen.count() do
+  -- Fill tag table with potentially host specific stuff
+  if hostname == "snidget" and ( s == 2 or s == 3 ) then
+     tags.settings[s] = {
+	names = { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+	layout = { layouts[2], layouts[2], layouts[2], layouts[2], layouts[2],
+		   layouts[2], layouts[2], layouts[2], layouts[2] }
+     }
+  else
+     if s ~= 1 then
+	tags.settings[s] = tags.settings[1]
+     end
+  end
   -- Each screen has its own tag table.
-  tags[s] = awful.tag(tags.names, s, tags.layout)
+  tags[s] = awful.tag(tags.settings[s].names, s, tags.settings[s].layout)
+  -- On snidget preset specific tag configurations
+  if hostname == "snidget" then
+     awful.tag.setnmaster(2, tags[1][1])
+     awful.tag.setncol(2,    tags[1][1])
+     if s == 2 or s == 3 then
+	awful.tag.setmwfact(.85, tags[s][1])
+     end
+     if s == 4 then
+	awful.tag.setmwfact(.7, tags[s][1])
+     end
+  end
 end
 -- }}}
 

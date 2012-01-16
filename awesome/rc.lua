@@ -94,10 +94,18 @@ for s = 1, screen.count() do
   end
   -- Each screen has its own tag table.
   tags[s] = awful.tag(tags.settings[s].names, s, tags.settings[s].layout)
-  -- Proper proportions
+  -- On snidget preset specific tag configurations
+  if hostname == "snidget" then
+     awful.tag.setnmaster(2, tags[1][1])
+     awful.tag.setncol(2,    tags[1][1])
+     if s == 2 or s == 3 then
+	awful.tag.setmwfact(.85, tags[s][1])
+     end
+     if s == 4 then
+	awful.tag.setmwfact(.7, tags[s][1])
+     end
+  end
 end
-awful.tag.setmwfact(.8, tags[2][1])
-awful.tag.setmwfact(.8, tags[3][1])
 -- }}}
 
 -- {{{ Menu

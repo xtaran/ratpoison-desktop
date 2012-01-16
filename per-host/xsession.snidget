@@ -29,6 +29,7 @@ $HOME/bin/muttstart.sh
 /usr/bin/emacs ~/xchange/note.txt &
 
 uxterm -fn fixed -geometry 32x19+0+835 +sb -T "XScreenSaver Log" -e tail -f $HOME/.xscreensaver.`uname -n`.log &
+uxterm -fn fixed &
 
 whee gtk-redshift -l $LOC
 

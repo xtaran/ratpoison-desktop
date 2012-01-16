@@ -77,16 +77,21 @@ tags = {
 		    layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
 		    layouts[1], layouts[1], layouts[1], layouts[1], layouts[1],
 		    layouts[1], layouts[1] }
-      },
-      {
-	 names  = { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
-	 layout = { layouts[2], layouts[2], layouts[2], layouts[2], layouts[2],
-		    layouts[2], layouts[2], layouts[2], layouts[2] }
 }}}
-tags.settings[3] = tags.settings[2]
-tags.settings[4] = tags.settings[1]
 
 for s = 1, screen.count() do
+  -- Fill tag table with potentially host specific stuff
+  if hostname == "snidget" and ( s == 2 or s == 3 ) then
+     tags.settings[s] = {
+	names = { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+	layout = { layouts[2], layouts[2], layouts[2], layouts[2], layouts[2],
+		   layouts[2], layouts[2], layouts[2], layouts[2] }
+     }
+  else
+     if s ~= 1 then
+	tags.settings[s] = tags.settings[1]
+     end
+  end
   -- Each screen has its own tag table.
   tags[s] = awful.tag(tags.settings[s].names, s, tags.settings[s].layout)
   -- Proper proportions

@@ -33,6 +33,13 @@ xlock = "xscreensaver-command -activate || xtrlock"
 amixer = "amixer"
 ffm = (os.getenv("RP") or (os.getenv("HOME") .."/.ratpoison"))  .. "/bin/focus-follows-mouse-on-tag-change.sh"
 
+-- Determine hostname
+local io = { popen = io.popen }
+local f = io.popen("hostname")
+local hostname = f:read("*all")
+f:close()
+hostname = string.gsub(hostname, '[\n\r]+', '')
+
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
 -- If you do not like this or do not have such a key,

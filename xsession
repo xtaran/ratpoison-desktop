@@ -105,9 +105,9 @@ fi
 if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME" = "jumper" ]; then
     # Call nawm for focus follows mouse with ratpoison
     if [ -x $RP/sloppy/sloppy ]; then
-	env RATPOISON=`which ratpoison` $RP/sloppy/sloppy &
+	( sleep 2 ; env RATPOISON=`which ratpoison` $RP/sloppy/sloppy ) &
     elif [ -x /usr/bin/sloppy ]; then
-	env RATPOISON=`which ratpoison` /usr/bin/sloppy &
+	( sleep 2 ; env RATPOISON=`which ratpoison` /usr/bin/sloppy ) &
     else
 	whee nawm -f $RP/nawmrc
     fi

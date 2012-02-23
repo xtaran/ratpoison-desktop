@@ -112,8 +112,9 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME"
 	whee nawm -f $RP/nawmrc
     fi
 
-    # Use redshift if installed
+    # Use redshift and notification-daemon if installed
     whee redshift -l $LOC
+    whee /usr/lib/notification-daemon/notification-daemon
 
     exec ratpoison -f $RP/ratpoisonrc
 else

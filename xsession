@@ -103,11 +103,14 @@ fi
 
 # If resolution is less than 1024 pixels wide, then use ratpoison, else awesome
 if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME" = "jumper" ]; then
-    # Call nawm for focus follows mouse with ratpoison
+    # Try several variants to get focus follows mouse with ratpoison
+    # 1. local sloppy command until http://bugs.debian.org/649523 is fixed
     if [ -x $RP/sloppy/sloppy ]; then
 	( sleep 2 ; env RATPOISON=`which ratpoison` $RP/sloppy/sloppy ) &
+    # 2. system sloppy command
     elif [ -x /usr/bin/sloppy ]; then
 	( sleep 2 ; env RATPOISON=`which ratpoison` /usr/bin/sloppy ) &
+    # 3. use nawm (if available) else
     else
 	whee nawm -f $RP/nawmrc
     fi

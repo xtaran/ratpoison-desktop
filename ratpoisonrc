@@ -148,8 +148,12 @@ definekey top s-Q only
 definekey top s-q only
 definekey top s-n next
 definekey top s-p prev
+definekey top s-j next
+definekey top s-k prev
 definekey top s-N inext
 definekey top s-P iprev
+definekey top s-J inext
+definekey top s-K iprev
 definekey top s-C-n cnext
 definekey top s-C-p cprev
 definekey top s-z swap

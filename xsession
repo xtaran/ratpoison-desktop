@@ -131,4 +131,5 @@ fi
 #exec fvwm
 #exec i3
 #exec scrotwm
+#exec spectrwm
 #exec tritium

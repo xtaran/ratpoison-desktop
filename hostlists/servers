@@ -1,0 +1,5 @@
+0	xenlink		ssh root@xenlink
+1	sym1		ssh root@sym1
+2	sym2		ssh root@sym2
+3	virt2		ssh root@virt2
+4	jumper		ssh root@jumper

@@ -1,5 +1,6 @@
 *~
 /i3statusrc
 /xmobarrc
+/sloppy/sloppy
 /debian/*.deb
 /debian/build-stamp

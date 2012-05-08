@@ -90,12 +90,6 @@ bind C-M-7 select 37
 bind C-M-8 select 38
 bind C-M-9 select 39
 
-# Audacious doesn't work well with ratpoisons idea of window
-# management.
-unmanage Audacious
-unmanage Audacious Equalizer
-unmanage Audacious Playlist Editor
-
 # xv doesn't make sense to be resized
 unmanage xv 3.10a(PNG) <unregistered>
 
@@ -154,8 +148,12 @@ definekey top s-Q only
 definekey top s-q only
 definekey top s-n next
 definekey top s-p prev
+definekey top s-j next
+definekey top s-k prev
 definekey top s-N inext
 definekey top s-P iprev
+definekey top s-J inext
+definekey top s-K iprev
 definekey top s-C-n cnext
 definekey top s-C-p cprev
 definekey top s-z swap
@@ -187,4 +185,4 @@ definekey cpufreq 9 exec /home/abe/.ratpoison/bin/eeepc-701-setfreq.sh 9
 bind H readkey cpufreq
 
 # Helper for nawm stuff
-addhook switchwin exec if which nawm > /dev/null && [ `ratpoison -c fdump | fgrep -o "frame" | wc -l` -gt 1 ]; then ratpoison -c banish; fi
+#addhook switchwin exec if which nawm > /dev/null && [ `ratpoison -c fdump | fgrep -o "frame" | wc -l` -gt 1 ]; then ratpoison -c banish; fi

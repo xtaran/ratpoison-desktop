@@ -34,9 +34,10 @@ clumsy for more complex window arrangements and multiple virtual
 desktops.
 
 So I looked through the other tiling window managers in Debian, trying
-out i3, scrotwm, wmii and awesome and some ion successors (tritium and
-anion). I finally stuck with awesome, first the 2.x version from
-Debian 5.0 Lenny, now the 3.x version from Debian 6.0 Squeeze.
+out i3, spectrwm (formerly scrotwm), wmii and awesome and some ion
+successors (tritium and anion). I finally stuck with awesome, first
+the 2.x version from Debian 5.0 Lenny, now the 3.x version from Debian
+6.0 Squeeze.
 
 In general I liked the idea of using the -- on Linux mostly unused --
 Windows key as window manager meta key. I even configured my ratpoison
@@ -156,7 +157,7 @@ Only in commented code (i.e currently not used):
   * flwm
   * fvwm
   * lxsession
-  * scrotwm
+  * spectrwm (formerly scrotwm)
   * stumpwm
   * tritium (or not yet packaged: anion3 and notion)
 * loco, ccze, lwatch, or colortail

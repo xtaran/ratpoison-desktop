@@ -39,7 +39,7 @@ whe syndaemon -i 1 -d
 # Some GNOME stuff I need (use either xscreensaver or
 # gnome-settings-daemon, but not both at the same time, because
 # gnome-settings-daemon starts xscreensaver, too.)
-eval `gnome-keyring-daemon -s`
+eval `gnome-keyring-daemon -s -c pkcs11,secrets`
 whee xscreensaver -no-splash
 
 # Unlock SSH Keys -- now done ondemand with GNOME Keyring

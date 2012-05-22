@@ -1,4 +1,6 @@
 #!/bin/bash
+# Ideas from http://pthree.org/2007/03/21/irssi-gui-notify/ and
+# http://thorstenl.blogspot.com/2007/01/thls-irssi-notification-script.html
 #set -x
 cat - | {
 nt_icon="gtk-dialog-info"

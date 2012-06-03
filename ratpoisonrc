@@ -148,6 +148,21 @@ definekey top s-6 select 6
 definekey top s-7 select 7
 definekey top s-8 select 8
 definekey top s-9 select 9
+
+definekey top s-grave select 10
+definekey top s-F1 select 11
+definekey top s-F2 select 12
+definekey top s-F3 select 13
+definekey top s-F4 select 14
+definekey top s-F5 select 15
+definekey top s-F6 select 16
+definekey top s-F7 select 17
+definekey top s-F8 select 18
+definekey top s-F9 select 19
+definekey top s-F10 select 20
+definekey top s-F11 select 21
+definekey top s-F12 select 22
+
 definekey top s-Tab focus
 definekey top s-M-Tab focuslast
 definekey top s-C-Left exchangeleft

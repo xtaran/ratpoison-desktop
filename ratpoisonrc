@@ -57,6 +57,7 @@ bind q only
 bind T number
 bind numbersign exec /home/abe/.ratpoison/bin/renumber-ratpoison-windows.pl
 
+bind grave select 10
 bind F1 select 11
 bind F2 select 12
 bind F3 select 13

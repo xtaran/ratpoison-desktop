@@ -14,6 +14,7 @@
 	st = status
 	d = diff
 	dc = diff --cached
+	wd = diff --color-words
 	wdc = diff --cached --color-words
 	bdc = diff --cached --color-words=.
 	ci = commit -v
@@ -23,7 +24,6 @@
 	k = !gitk --all
 	ranking = "!git shortlog | egrep -v '^ |^$' | sed -e 's/^\\(.*\\) (\\(.*\\)):/\\2 \\1/' | sort -rn"
 	addremove = "!git add . && git ls-files --deleted | xargs --no-run-if-empty git rm"
-	# Von tokkee:
 	wdiff = diff --color-words
 	cdiff = diff --cached
 	wcdiff = diff --cached --color-words
@@ -31,10 +31,16 @@
 	bcdiff = diff --cached --color-words=.
 	wshow = show --color-words
 	stat = status -s
+	rmc = rm --cached
 	unadd = rm --cached
+	clog = log --oneline
+	flog = log --follow
 	dlog = log --decorate=full
 	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	slog = log --decorate=full --stat
+	plog = log --decorate=full --patch
 	logdiff = log -p -U0
+	greplog = log --grep
 
 # Siehe auch
 # http://tomster.org/blog/archive/2009/01/12/git-command-aliases und

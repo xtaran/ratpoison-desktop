@@ -2,5 +2,6 @@
 /i3statusrc
 /xmobarrc
 /sloppy/sloppy
-/debian/*.deb
-/debian/build-stamp
+/abe-desktop/*-stamp
+/abe-desktop-*
+/abe-desktop_*

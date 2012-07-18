@@ -11,7 +11,7 @@ Readme: README.source
 Package: abe-desktop-common
 Depends: i3status, xmobar,
 	 busybox-syslogd | system-log-daemon, lsb-release, wget,
-	 emacs, zile,
+	 emacs | emacsen, zile,
 	 gxmessage | x11-utils, x11-xserver-utils,
 	 libfile-slurp-perl, libfile-temp-perl,
 	 xscreensaver | xtrlock | xlockmore | xlockmore-gl,

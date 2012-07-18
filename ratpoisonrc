@@ -5,7 +5,7 @@ set border 0
 set font -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1
 set resizeunit 1
 set bargravity c
-set wingravity c
+set wingravity n
 set winname title
 set maxsizegravity c
 set historyexpansion 1

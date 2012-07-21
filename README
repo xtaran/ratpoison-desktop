@@ -87,7 +87,7 @@ packages) to be installed:
 
 * busybox-syslogd (for logread)
 * conkeror or some other web browser
-* emacs (for emacs and emacsclient)
+* emacs (or emacsen, for emacs and emacsclient)
 * gnome-keyring (for gnome-settings-daemon)
 * hsetroot
 * i3status >= 2.2

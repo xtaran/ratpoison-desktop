@@ -17,7 +17,8 @@ Depends: ${misc:Depends},
 	 xterm | rxvt-unicode, yeahconsole,
 	 conkeror | www-browser,
 	 xfonts-terminus,
-	 colordiff, git
+	 colordiff, git,
+	 sxiv | xv | feh | xzgv
 Recommends: i3status (>= 2.2), xscreensaver, xtrlock,
 	    xterm, rxvt-unicode,
 	    x11-xkb-utils, xserver-xorg-input-synaptics,

@@ -4,6 +4,7 @@ abe-desktop (5) UNRELEASED; urgency=low
     equivs-build-multi
   * Add my image viewer preferences to abe-desktop-common
   * Add some typical emacs lisp packages to Recommends
+  * Remove anion from Suggests
   * Apply wrap-and-sort to the package
   * Bump Standards-Version to 3.9.3
 

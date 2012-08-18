@@ -162,7 +162,7 @@ Only used in non-necessary scripts or keybindings:
 
 * dwm-tools >= 31-1 or suckless-tools (for dmenu, tabbed and wmname)
 * openssh-client (for ssh-add and ssh-agent)
-* screen
+* screen or tmux
 * scrot
 * transset-df
 * xclip

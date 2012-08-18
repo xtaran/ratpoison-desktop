@@ -12,8 +12,8 @@
 	enabled = true
 [interactive]
 	singlekey = yes
-#[push]
-#	default = current
+[push]
+	default = matching
 [alias]
 	st = status
 	d = diff

@@ -11,7 +11,7 @@ FONT='-xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1'
 LOC='47.399453:8.507232'
 
 # Path
-export PATH="${PATH}:/sbin:/usr/sbin:${RP}/bin"
+export PATH="${PATH}:/sbin:/usr/sbin:${HOME}/${RP}/bin"
 
 # Locales
 export LANG=en_US.UTF-8

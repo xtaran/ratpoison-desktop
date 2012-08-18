@@ -7,45 +7,72 @@ Standards-Version: 3.9.3
 Build-Depends: debhelper (>= 7)
 
 Package: abe-desktop-common
-Depends: ${misc:Depends},
-	 i3status, xmobar,
-	 busybox-syslogd | system-log-daemon, lsb-release, wget,
-	 emacs | emacsen, zile,
-	 gxmessage | x11-utils, x11-xserver-utils,
-	 libfile-slurp-perl, libfile-temp-perl,
-	 xscreensaver | xtrlock | xlockmore | xlockmore-gl,
-	 xterm | rxvt-unicode, yeahconsole,
-	 conkeror | www-browser,
-	 xfonts-terminus,
-	 colordiff, git,
-	 sxiv | xv | feh | xzgv
-Recommends: i3status (>= 2.2), xscreensaver, xtrlock,
-	    xterm, rxvt-unicode,
-	    x11-xkb-utils, xserver-xorg-input-synaptics,
-	    autocutsel, keynav (>= 0.20101014.3067), unclutter,
-	    inotail, xrootconsole | root-tail,
-	    openssh-client | dropbear, zsh,
-	    gitk, equivs,
-	    fonts-droid | ttf-droid, fonts-mplus | ttf-mplus,
-	    hsetroot, xdotool,
-	    emacs-goodies-el, debian-el, dpkg-dev-el, devscripts-el
-Suggests: screen | tmux, nvi,
-	  openssh-server | dropbear,
-	  transset-df | xcompmgr, ccze | loco | lwatch | colortail,
-	  audacious, audacious-plugins
+Depends: busybox-syslogd | system-log-daemon,
+         colordiff,
+         conkeror | www-browser,
+         emacs | emacsen,
+         git,
+         gxmessage | x11-utils,
+         i3status,
+         libfile-slurp-perl,
+         libfile-temp-perl,
+         lsb-release,
+         sxiv | xv | feh | xzgv,
+         wget,
+         x11-xserver-utils,
+         xfonts-terminus,
+         xmobar,
+         xscreensaver | xtrlock | xlockmore | xlockmore-gl,
+         xterm | rxvt-unicode,
+         yeahconsole,
+         zile,
+         ${misc:Depends}
+Recommends: autocutsel,
+            debian-el,
+            devscripts-el,
+            dpkg-dev-el,
+            emacs-goodies-el,
+            equivs,
+            fonts-droid | ttf-droid,
+            fonts-mplus | ttf-mplus,
+            gitk,
+            hsetroot,
+            i3status (>= 2.2),
+            inotail,
+            keynav (>= 0.20101014.3067),
+            openssh-client | dropbear,
+            rxvt-unicode,
+            unclutter,
+            x11-xkb-utils,
+            xdotool,
+            xrootconsole | root-tail,
+            xscreensaver,
+            xserver-xorg-input-synaptics,
+            xterm,
+            xtrlock,
+            zsh
+Suggests: audacious,
+          audacious-plugins,
+          ccze | loco | lwatch | colortail,
+          nvi,
+          openssh-server | dropbear,
+          screen | tmux,
+          transset-df | xcompmgr
 Architecture: all
 Description: Common packages for all of Axel's desktop setups
  This metapackage depends on packages common for all of Axel's desktop
  setups.
 
 Package: abe-desktop-ratpoison
-Depends: ${misc:Depends},
-	 ratpoison, ratmenu (>= 2.3.20), abe-desktop-common,
-	 nawm | xdotool
+Depends: abe-desktop-common,
+         nawm | xdotool,
+         ratmenu (>= 2.3.20),
+         ratpoison,
+         ${misc:Depends}
 Recommends: redshift,
-	    suckless-tools | dwm-tools (>= 31-1),
-	    xclip,
-	    wicd-curses | network-manager (>= 0.8.0.999-1) | cnetworkmanager,
+            suckless-tools | dwm-tools (>= 31-1),
+            wicd-curses | network-manager (>= 0.8.0.999-1) | cnetworkmanager,
+            xclip
 Suggests: transset-df | xcompmgr
 Architecture: all
 Description: Packages necessary for Axel's ratpoison desktop
@@ -53,22 +80,39 @@ Description: Packages necessary for Axel's ratpoison desktop
  based desktop setup.
 
 Package: abe-desktop-awesome
-Depends: ${misc:Depends},
-	 awesome (>= 3), awesome-extra, abe-desktop-common,
-	 hsetroot, xdotool
-Recommends: gtk-redshift, fdpowermon,
-	    wicd-gtk | network-manager-gnome,
-Suggests: shutter, update-notifier, radiotray, yarssr, qasmixer | volumeicon-alsa
+Depends: abe-desktop-common,
+         awesome (>= 3),
+         awesome-extra,
+         hsetroot,
+         xdotool,
+         ${misc:Depends}
+Recommends: fdpowermon,
+            gtk-redshift,
+            wicd-gtk | network-manager-gnome
+Suggests: qasmixer | volumeicon-alsa,
+          radiotray,
+          shutter,
+          update-notifier,
+          yarssr
 Architecture: all
 Description: Packages necessary for Axel's awesome desktop
  This metapackage depends on packages common for Axel's awesome based desktop setup.
 
 Package: abe-desktop
-Depends: ${misc:Depends},
-	 abe-desktop-ratpoison, abe-desktop-awesome
-Recommends: i3-wm, flwm, scrotwm, stumpwm,
-	    lxsession
-Suggests: tritium, clfswm, herbstluftwm, fvwm, anion3, notion
+Depends: abe-desktop-awesome,
+         abe-desktop-ratpoison,
+         ${misc:Depends}
+Recommends: flwm,
+            i3-wm,
+            lxsession,
+            scrotwm,
+            stumpwm
+Suggests: anion3,
+          clfswm,
+          fvwm,
+          herbstluftwm,
+          notion,
+          tritium
 Architecture: all
 Description: Packages helpful for Axel's desktop setup
  This metapackage depends on packages common for Axel's desktop

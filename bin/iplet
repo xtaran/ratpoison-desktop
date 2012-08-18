@@ -4,7 +4,9 @@ if [ -n "$1" ]; then
    sleep $1;
 fi
 
-DNSQUERY=`dig +short myip.opendns.com @resolver1.opendns.com`
+if [ -x /usr/bin/dig ]; then
+    DNSQUERY=`dig +short myip.opendns.com @resolver1.opendns.com`
+fi
 
 if [ -n "$DNSQUERY" ]; then
     echo "$DNSQUERY"

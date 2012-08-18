@@ -107,7 +107,8 @@ packages) to be installed:
 * [ratpoison](http://packages.debian.org/stable/ratpoison) or
   [awesome](http://packages.debian.org/stable/awesome) +
   [awesome-extra](http://packages.debian.org/stable/awesome-extras)
-* [wget](http://packages.debian.org/stable/wget) (needed by `iplet`)
+* [dnsutils](http://packages.debian.org/stable/dnsutils) |
+  [wget](http://packages.debian.org/stable/wget) (needed by `iplet`)
 * [x11-utils](http://packages.debian.org/stable/x11-utils) (for
   `xmessage`) or [gxmessage](http://packages.debian.org/stable/)
 * [x11-xserver-utils](http://packages.debian.org/stable/x11-xserver-utils)

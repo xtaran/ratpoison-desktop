@@ -40,7 +40,7 @@ the 2.x version from Debian 5.0 Lenny, now the 3.x version from Debian
 
 In general I liked the idea of using the -- on Linux mostly unused --
 Windows key as window manager meta key. I even configured my ratpoison
-to use that in addition to the original Ctrl-T prefix.
+to use that in addition to the original `Ctrl-T` prefix.
 
 You will also find some configuration for i3 (version 4 and upwards)
 in the repo as I also experiment with i3's tree-based layout to see if
@@ -66,7 +66,7 @@ runs on Debian Sid and Squeeze as well as Ubuntu Natty. It probably
 also runs on older Ubuntu releases.
 
 Since most of the configuration files included are not expected to
-reside in .ratpoison, some symlinks are necessary where config file
+reside in `.ratpoison`, some symlinks are necessary where config file
 paths cannot be set via command line options or where it would be to
 tedious to always type them:
 
@@ -151,7 +151,7 @@ Used if available but except the system tray stuff recommended anyway:
 ### Kernel Modules
 
 Linux kernel modules which may be used by some features of xmobar, but
-do not seem to be loaded automatically (write them into /etc/modules):
+do not seem to be loaded automatically (write them into `/etc/modules`):
 
 * acpi_cpufreq
 * coretemp

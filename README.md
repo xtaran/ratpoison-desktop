@@ -110,7 +110,7 @@ packages) to be installed:
 * [dnsutils](http://packages.debian.org/stable/dnsutils) |
   [wget](http://packages.debian.org/stable/wget) (needed by `iplet`)
 * [x11-utils](http://packages.debian.org/stable/x11-utils) (for
-  `xmessage`) or [gxmessage](http://packages.debian.org/stable/)
+  `xmessage`) | [gxmessage](http://packages.debian.org/stable/)
 * [x11-xserver-utils](http://packages.debian.org/stable/x11-xserver-utils)
   (for `xmodmap`, `xrdb`, `xrandr` and `xsetroot`)
 * [xmobar](http://packages.debian.org/stable/xmobar)
@@ -155,8 +155,8 @@ Used if available but except the system tray stuff recommended anyway:
   (for `synclient` and `syndaemon`)
 * [yeahconsole](http://packages.debian.org/stable/yeahconsole)
 * System tray applets for use with awesome:
-  * [nm-applet](http://packages.debian.org/stable/nm-applet)
-  * [wicd-gtk](http://packages.debian.org/stable/wicd-gtk)
+  * [nm-applet](http://packages.debian.org/stable/nm-applet) |
+    [wicd-gtk](http://packages.debian.org/stable/wicd-gtk)
   * [update-notifier](http://packages.debian.org/stable/update-notifier)
   * [gtk-redshift](http://packages.debian.org/stable/gtk-redshift)
   * [fdpowermon](http://packages.debian.org/testing/fdpowermon)
@@ -203,9 +203,9 @@ Only in commented code (i.e. currently not used):
   * [stumpwm](http://packages.debian.org/stable/stumpwm)
   * [tritium](http://packages.debian.org/stable/tritium)
   * [notion](http://packages.debian.org/testing/notion)
-* [loco](http://packages.qa.debian.org/loco),
-  [ccze](http://packages.debian.org/stable/ccze),
-  [lwatch](http://packages.debian.org/stable/lwatch), or
+* [loco](http://packages.qa.debian.org/loco) (no more in Debian) |
+  [ccze](http://packages.debian.org/stable/ccze) |
+  [lwatch](http://packages.debian.org/stable/lwatch) |
   [colortail](http://packages.debian.org/stable/colortail)
 * [root-tail](http://packages.debian.org/stable/root-tail)
 * [xcompmgr](http://packages.debian.org/stable/xcompmgr)

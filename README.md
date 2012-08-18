@@ -4,10 +4,11 @@ Axel's Tiling Window Manager Setup
 History, Background and Reasoning
 ---------------------------------
 
-While being a heavy FVWM user for nearly 15 years, I now run tiling
-window managers on all my "desktops" and laptops, ranging from a first
-generation ASUS EeePC 701 4G netbook over a Sun UltraSparc 10 to a
-full-fledged multihead workstation from Dalco at work.
+While being a heavy [FVWM](http://www.fvwm.org/) user for nearly 15
+years, I now run tiling window managers on all my "desktops" and
+laptops, ranging from a first generation ASUS EeePC 701 4G netbook
+over a Sun UltraSparc 10 to a full-fledged multihead workstation from
+[Dalco](http://www.dalco.ch/) at work.
 
 My ASUS EeePC 701 running Debian GNU/Linux Sid was the first box where
 I did not use FVWM anymore, because with a resolution of 800x480 on a
@@ -16,15 +17,18 @@ bars, borders, etc. and b) most of the time anything else than
 fullscreen windows doesn't make sense, moving windows around with the
 mouse makes even less sense.
 
-So I've chosen ratpoison for the EeePC (and still use it on that box)
-since it makes windows fullscreen by default and the keybindings are
-nearly identical to GNU Screen and therefore easy to learn
-respectively I didn't have to learn anything to use it.
+So I've chosen [ratpoison](http://www.nongnu.org/ratpoison/) for the
+EeePC (and still use it on that box) since it makes windows fullscreen
+by default and the keybindings are nearly identical to
+[GNU Screen](http://www.gnu.org/software/screen/) and therefore easy
+to learn respectively I didn't have to learn anything to use it.
 
-After more and more fine tuning involving the xmobar text status bar,
-filled with data by i3status, I started this git repository to track
-my own changes, to share the setup with some other of my boxes (like
-the UltraSparc or my bed-side terminal, an older ThinkPad A31).
+After more and more fine tuning involving the
+[xmobar](http://projects.haskell.org/xmobar/) text status bar, filled
+with data by [i3status](http://i3wm.org/i3status/), I started this git
+repository to track my own changes, to share the setup with some other
+of my boxes (like the UltraSparc or my bed-side terminal, an older
+ThinkPad A31).
 
 Getting used with a fullscreen and tiling setup on the EeePC I more
 and more wanted something for my everyday ThinkPad T61, too. But while
@@ -33,18 +37,24 @@ clumsy for more complex window arrangements and multiple virtual
 desktops.
 
 So I looked through the other tiling window managers in Debian, trying
-out i3, spectrwm (formerly scrotwm), wmii and awesome and some ion
-successors (tritium and anion3). I finally stuck with awesome, first
-the 2.x version from Debian 5.0 Lenny, now the 3.x version from Debian
-6.0 Squeeze.
+out [i3](http://i3wm.org/), scrotwm (nowadays called
+[spectrwm](https://opensource.conformal.com/wiki/spectrwm)),
+[wmii](http://wmii.suckless.org/), [awesome](http://awesome.naquadah.org/)
+
+and some ion successors ([tritium](http://sf.net/projects/tritium/)
+and [anion3](https://code.google.com/p/anion3/) which is now
+superseeded by [notion](http://notion.sourceforge.net/)). I finally
+stuck with awesome, first the 2.x version from Debian 5.0 Lenny, now
+the 3.x version from Debian 6.0 Squeeze and later.
 
 In general I liked the idea of using the -- on Linux mostly unused --
 Windows key as window manager meta key. I even configured my ratpoison
 to use that in addition to the original `Ctrl-T` prefix.
 
-You will also find some configuration for i3 (version 4 and upwards)
-in the repo as I also experiment with i3's tree-based layout to see if
-I can workaround some of awesome's shortcomings by using i3 instead.
+You will also find some configuration for [i3](http://i3wm.org/)
+(version 4 and upwards) in the repo as I also experiment with i3's
+tree-based layout to see if I can workaround some of awesome's
+shortcomings by using i3 instead.
 
 
 Repository Name and URLs
@@ -62,8 +72,8 @@ Installation
 ------------
 
 These files are needed to get the setup running. The setup currently
-runs on Debian Sid and Squeeze as well as Ubuntu Natty. It probably
-also runs on older Ubuntu releases.
+runs on Debian Sid and Squeeze as well as Ubuntu Natty, Oneiric and
+Precise. It probably also runs on older Ubuntu releases.
 
 Since most of the configuration files included are not expected to
 reside in `.ratpoison`, some symlinks are necessary where config file

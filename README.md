@@ -82,6 +82,11 @@ Sources available via http://git.noone.org/?p=ratpoison.git,
 http://gitorious.org/abe/ratpoison-desktop, and
 http://github.com/xtaran/ratpoison-desktop.
 
+Requirements
+------------
+
+### Required Software Packages
+
 Needs at least the following Debian packages (besides essential
 packages) to be installed:
 
@@ -106,11 +111,15 @@ packages) to be installed:
   * for awesome: xdotool
   * for ratpoison: xdotool or nawm (no more in Debian)
 
+### Used Fonts
+
 Fonts used for xmobar:
 
 * ttf-mplus | fonts-mplus
 * ttf-droid | fonts-droid
 * xfonts-terminus
+
+### Optional Software Packages
 
 Used if available but except the system tray stuff recommended anyway:
 
@@ -134,11 +143,15 @@ Used if available but except the system tray stuff recommended anyway:
   * yarssr
   * qasmixer | volumeicon-alsa
 
+### Kernel Modules
+
 Linux kernel modules which may be used by some features of xmobar, but
 do not seem to be loaded automatically (write them into /etc/modules):
 
 * acpi_cpufreq
 * coretemp
+
+### Software Packages used by Scripts or Keybindings
 
 Only used in non-necessary scripts or keybindings:
 
@@ -149,6 +162,8 @@ Only used in non-necessary scripts or keybindings:
 * transset-df
 * xclip
 * colordiff
+
+### Software Packages used in Commented Code
 
 Only in commented code (i.e currently not used):
 

@@ -13,7 +13,7 @@ over a Sun UltraSparc 10 to a full-fledged multihead workstation from
 My ASUS EeePC 701 running Debian GNU/Linux Sid was the first box where
 I did not use FVWM anymore, because with a resolution of 800x480 on a
 7 inch screen, you a) want to waste as few pixels as possible by title
-bars, borders, etc. and b) most of the time anything else than
+bars, borders, … and b) most of the time anything else than
 fullscreen windows doesn't make sense, moving windows around with the
 mouse makes even less sense.
 
@@ -46,7 +46,7 @@ superseeded by [notion](http://notion.sourceforge.net/)). I finally
 stuck with awesome, first the 2.x version from Debian 5.0 Lenny, now
 the 3.x version from Debian 6.0 Squeeze and later.
 
-In general I liked the idea of using the -- on Linux mostly unused --
+In general I liked the idea of using the — on Linux mostly unused —
 Windows key as window manager meta key. I even configured my ratpoison
 to use that in addition to the original `Ctrl-T` prefix.
 

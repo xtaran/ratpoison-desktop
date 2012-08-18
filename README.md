@@ -40,9 +40,8 @@ So I looked through the other tiling window managers in Debian, trying
 out [i3](http://i3wm.org/), scrotwm (nowadays called
 [spectrwm](https://opensource.conformal.com/wiki/spectrwm)),
 [wmii](http://wmii.suckless.org/), [awesome](http://awesome.naquadah.org/)
-
 and some ion successors ([tritium](http://sf.net/projects/tritium/)
-and [anion3](https://code.google.com/p/anion3/) which is now
+and [anion3](https://code.google.com/p/anion3/) the latter now being
 superseeded by [notion](http://notion.sourceforge.net/)). I finally
 stuck with awesome, first the 2.x version from Debian 5.0 Lenny, now
 the 3.x version from Debian 6.0 Squeeze and later.

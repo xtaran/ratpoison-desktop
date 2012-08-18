@@ -2,3 +2,4 @@
 ~/.xsession 				   → xsession
 ~/.screenrc 				   → screenrc
 ~/.colordiffrc 				   → colordiffrc
+~/.emacs 				   → emacs.el

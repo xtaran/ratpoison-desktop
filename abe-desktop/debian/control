@@ -27,7 +27,8 @@ Recommends: i3status (>= 2.2), xscreensaver, xtrlock,
 	    openssh-client | dropbear, zsh,
 	    gitk, equivs,
 	    fonts-droid | ttf-droid, fonts-mplus | ttf-mplus,
-	    hsetroot, xdotool
+	    hsetroot, xdotool,
+	    emacs-goodies-el, debian-el, dpkg-dev-el, devscripts-el
 Suggests: screen | tmux, nvi,
 	  openssh-server | dropbear,
 	  transset-df | xcompmgr, ccze | loco | lwatch | colortail,

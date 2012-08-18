@@ -83,6 +83,7 @@ tedious to always type them:
     ~/.xsession    → xsession
     ~/.screenrc    → screenrc
     ~/.colordiffrc → colordiffrc
+    ~/.emacs       → emacs.el
 
 These symbolic links can also be automatically setup by calling
 bin/setup-symlinks.sh from this repository.
@@ -152,6 +153,8 @@ Fonts used for xmobar:
 Used if available but except the system tray stuff recommended anyway:
 
 * [autocutsel](http://packages.debian.org/stable/autocutsel)
+* [emacs-goodies-el](http://packages.debian.org/stable/emacs-goodies-el)
+  (for `markdown-mode` and others)
 * [inotail](http://packages.debian.org/stable/inotail)
 * [keynav](http://packages.debian.org/stable/keynav) >=
   0.20101014.3067

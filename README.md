@@ -188,6 +188,7 @@ Only used in non-necessary scripts or keybindings:
 * [transset-df](http://packages.debian.org/stable/transset-df)
 * [xclip](http://packages.debian.org/stable/xclip)
 * [colordiff](http://packages.debian.org/stable/colordiff)
+* [git](http://packages.debian.org/stable/git)
 
 ### Software Packages used in Commented Code
 

@@ -34,7 +34,7 @@ desktops.
 
 So I looked through the other tiling window managers in Debian, trying
 out i3, spectrwm (formerly scrotwm), wmii and awesome and some ion
-successors (tritium and anion). I finally stuck with awesome, first
+successors (tritium and anion3). I finally stuck with awesome, first
 the 2.x version from Debian 5.0 Lenny, now the 3.x version from Debian
 6.0 Squeeze.
 

@@ -90,26 +90,37 @@ Requirements
 Needs at least the following Debian packages (besides essential
 packages) to be installed:
 
-* busybox-syslogd (for logread)
-* conkeror or some other web browser
-* emacs (or emacsen, for emacs and emacsclient)
-* gnome-keyring (for gnome-settings-daemon)
-* hsetroot
-* i3status >= 2.2
-* libfile-slurp-perl
-* libfile-temp-perl
-* lsb-release
-* ratmenu >= 2.3.20
-* ratpoison or awesome + awesome-extra
-* wget (needed by iplet)
-* x11-utils (for xmessage) or gxmessage
-* x11-xserver-utils (for xmodmap, xrdb, xrandr and xsetroot)
-* xmobar
-* xscreensaver or xtrlock
-* xterm and/or rxvt-unicode
+* [busybox-syslogd](http://packages.debian.org/stable/busybox-syslogd)
+  (for `logread`)
+* [conkeror](http://packages.debian.org/stable/conkeror) or some other
+  web browser
+* [emacs](http://packages.debian.org/stable/emacs) (or emacsen, for
+  `emacs` and `emacsclient`)
+* [gnome-keyring](http://packages.debian.org/stable/gnome-keyring) (for
+  `gnome-settings-daemon`)
+* [hsetroot](http://packages.debian.org/stable/hsetroot)
+* [i3status](http://packages.debian.org/stable/i3status) >= 2.2
+* [libfile-slurp-perl](http://packages.debian.org/stable/libfile-slurp-perl)
+* [libfile-temp-perl](http://packages.debian.org/stable/libfile-temp-perl)
+* [lsb-release](http://packages.debian.org/stable/lsb-release)
+* [ratmenu](http://packages.debian.org/stable/ratmenu) >= 2.3.20
+* [ratpoison](http://packages.debian.org/stable/ratpoison) or
+  [awesome](http://packages.debian.org/stable/awesome) +
+  [awesome-extra](http://packages.debian.org/stable/awesome-extras)
+* [wget](http://packages.debian.org/stable/wget) (needed by `iplet`)
+* [x11-utils](http://packages.debian.org/stable/x11-utils) (for
+  `xmessage`) or [gxmessage](http://packages.debian.org/stable/)
+* [x11-xserver-utils](http://packages.debian.org/stable/x11-xserver-utils)
+  (for `xmodmap`, `xrdb`, `xrandr` and `xsetroot`)
+* [xmobar](http://packages.debian.org/stable/xmobar)
+* [xscreensaver](http://packages.debian.org/stable/xscreensaver) or
+  [xtrlock](http://packages.debian.org/stable/xtrlock)
+* [xterm](http://packages.debian.org/stable/xterm) and/or
+  [rxvt-unicode](http://packages.debian.org/stable/rxvt-unicode)
 * For Focus-Follows-Mouse:
-  * for awesome: xdotool
-  * for ratpoison: xdotool or nawm (no more in Debian)
+  * for awesome: [xdotool](http://packages.debian.org/stable/xdotool)
+  * for ratpoison: [xdotool](http://packages.debian.org/stable/xdotool) or
+    [nawm](http://packages.qa.debian.org/nawm) (no more in Debian)
 
 The project's subdirectory `abe-desktop` contains a Debian source
 package which can generate a few metapackage .debs which (should)
@@ -120,33 +131,39 @@ via APT from my APT repository at http://noone.org/apt/.
 
 Fonts used for xmobar:
 
-* ttf-mplus | fonts-mplus
-* ttf-droid | fonts-droid
-* xfonts-terminus
+* [ttf-mplus](http://packages.debian.org/stable/ttf-mplus) |
+  [fonts-mplus](http://packages.debian.org/testing/fonts-mplus)
+* [ttf-droid](http://packages.debian.org/squeeze-backports/ttf-droid) |
+  [fonts-droid](http://packages.debian.org/squeeze-backports/fonts-droid)
+* [xfonts-terminus](http://packages.debian.org/stable/xfonts-terminus)
 
 ### Optional Software Packages
 
 Used if available but except the system tray stuff recommended anyway:
 
-* autocutsel
-* inotail
-* keynav >= 0.20101014.3067
-* redshift
-* unclutter
-* x11-xkb-utils (for setxkbmap)
-* xrootconsole
-* xserver-xorg-input-synaptics (for synclient+syndaemon)
-* yeahconsole
+* [autocutsel](http://packages.debian.org/stable/autocutsel)
+* [inotail](http://packages.debian.org/stable/inotail)
+* [keynav](http://packages.debian.org/stable/keynav) >=
+  0.20101014.3067
+* [redshift](http://packages.debian.org/stable/redshift)
+* [unclutter](http://packages.debian.org/stable/unclutter)
+* [x11-xkb-utils](http://packages.debian.org/stable/x11-xkb-utils)
+  (for `setxkbmap`)
+* [xrootconsole](http://packages.debian.org/stable/xrootconsole)
+* [xserver-xorg-input-synaptics](http://packages.debian.org/stable/xserver-xorg-input-synaptics)
+  (for `synclient` and `syndaemon`)
+* [yeahconsole](http://packages.debian.org/stable/yeahconsole)
 * System tray applets for use with awesome:
-  * nm-applet
-  * wicd-gtk
-  * update-notifier
-  * gtk-redshift
-  * fdpowermon
-  * radiotray
-  * shutter
-  * yarssr
-  * qasmixer | volumeicon-alsa
+  * [nm-applet](http://packages.debian.org/stable/nm-applet)
+  * [wicd-gtk](http://packages.debian.org/stable/wicd-gtk)
+  * [update-notifier](http://packages.debian.org/stable/update-notifier)
+  * [gtk-redshift](http://packages.debian.org/stable/gtk-redshift)
+  * [fdpowermon](http://packages.debian.org/testing/fdpowermon)
+  * [radiotray](http://packages.debian.org/stable/radiotray)
+  * [shutter](http://packages.debian.org/stable/shutter)
+  * [yarssr](http://packages.debian.org/stable/yarssr)
+  * [qasmixer](http://packages.debian.org/squeeze-backports/qasmixer) |
+    [volumeicon-alsa](http://packages.debian.org/testing/volumeicon-alsa)
 
 ### Kernel Modules
 
@@ -160,27 +177,34 @@ do not seem to be loaded automatically (write them into `/etc/modules`):
 
 Only used in non-necessary scripts or keybindings:
 
-* dwm-tools >= 31-1 or suckless-tools (for dmenu, tabbed and wmname)
-* openssh-client (for ssh-add and ssh-agent)
-* screen or tmux
-* scrot
-* transset-df
-* xclip
-* colordiff
+* [dwm-tools](http://packages.debian.org/stable/dwm-tools) >= 31-1 or
+  [suckless-tools](http://packages.debian.org/stable/suckless-tools)
+  (for `dmenu`, `tabbed` and `wmname`)
+* [openssh-client](http://packages.debian.org/stable/openssh-client)
+  (for `ssh-add` and `ssh-agent`)
+* [screen](http://packages.debian.org/stable/screen) or [tmux](http://packages.debian.org/stable/tmux)
+* [scrot](http://packages.debian.org/stable/scrot)
+* [transset-df](http://packages.debian.org/stable/transset-df)
+* [xclip](http://packages.debian.org/stable/xclip)
+* [colordiff](http://packages.debian.org/stable/colordiff)
 
 ### Software Packages used in Commented Code
 
 Only in commented code (i.e. currently not used):
 
 * Alternative window and session managers:
-  * i3
-  * flwm
-  * fvwm
-  * lxsession
-  * spectrwm (formerly scrotwm)
-  * stumpwm
-  * tritium
-  * notion
-* loco, ccze, lwatch, or colortail
-* root-tail
-* xcompmgr
+  * [i3](http://packages.debian.org/stable/i3-wm)
+  * [flwm](http://packages.debian.org/stable/flwm)
+  * [fvwm](http://packages.debian.org/stable/fvwm)
+  * [lxsession](http://packages.debian.org/stable/lxsession)
+  * [spectrwm](http://packages.debian.org/testing/spectrewm) (formerly
+    [scrotwm](http://packages.debian.org/stable/scrotwm))
+  * [stumpwm](http://packages.debian.org/stable/stumpwm)
+  * [tritium](http://packages.debian.org/stable/tritium)
+  * [notion](http://packages.debian.org/testing/notion)
+* [loco](http://packages.qa.debian.org/loco),
+  [ccze](http://packages.debian.org/stable/ccze),
+  [lwatch](http://packages.debian.org/stable/lwatch), or
+  [colortail](http://packages.debian.org/stable/colortail)
+* [root-tail](http://packages.debian.org/stable/root-tail)
+* [xcompmgr](http://packages.debian.org/stable/xcompmgr)

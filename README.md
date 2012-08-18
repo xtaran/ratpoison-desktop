@@ -111,6 +111,11 @@ packages) to be installed:
   * for awesome: xdotool
   * for ratpoison: xdotool or nawm (no more in Debian)
 
+The project's subdirectory `abe-desktop` contains a Debian source
+package which can generate a few metapackage .debs which (should)
+contain all the mentioned dependencies. They're usually also available
+via APT from my APT repository at http://noone.org/apt/.
+
 ### Used Fonts
 
 Fonts used for xmobar:

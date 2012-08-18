@@ -1,4 +1,3 @@
-==================================
 Axel's Tiling Window Manager Setup
 ==================================
 
@@ -71,10 +70,10 @@ reside in .ratpoison, some symlinks are necessary where config file
 paths cannot be set via command line options or where it would be to
 tedious to always type them:
 
-~/.gitconfig 				   → gitconfig
-~/.xsession 				   → xsession
-~/.screenrc 				   → screenrc
-~/.colordiffrc 				   → colordiffrc
+    ~/.gitconfig   → gitconfig
+    ~/.xsession    → xsession
+    ~/.screenrc    → screenrc
+    ~/.colordiffrc → colordiffrc
 
 These symbolic links can also be automatically setup by calling
 bin/setup-symlinks.sh from this repository.

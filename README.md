@@ -170,7 +170,7 @@ Only used in non-necessary scripts or keybindings:
 
 ### Software Packages used in Commented Code
 
-Only in commented code (i.e currently not used):
+Only in commented code (i.e. currently not used):
 
 * Alternative window and session managers:
   * i3

@@ -75,8 +75,6 @@ tedious to always type them:
 ~/.xsession 				   → xsession
 ~/.screenrc 				   → screenrc
 ~/.colordiffrc 				   → colordiffrc
-~/bin/xrandr-vga-off.sh			   → bin/xrandr-vga-off.sh
-~/bin/terms				   → bin/terms
 
 Sources available via http://git.noone.org/?p=ratpoison.git,
 http://gitorious.org/abe/ratpoison-desktop, and

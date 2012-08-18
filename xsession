@@ -133,3 +133,4 @@ fi
 #exec scrotwm
 #exec spectrwm
 #exec tritium
+#exec notion

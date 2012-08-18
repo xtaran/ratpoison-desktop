@@ -179,7 +179,8 @@ Only in commented code (i.e. currently not used):
   * lxsession
   * spectrwm (formerly scrotwm)
   * stumpwm
-  * tritium (or not yet packaged: anion3 and notion)
+  * tritium
+  * notion
 * loco, ccze, lwatch, or colortail
 * root-tail
 * xcompmgr

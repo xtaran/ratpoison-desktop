@@ -40,6 +40,11 @@ local hostname = f:read("*all")
 f:close()
 hostname = string.gsub(hostname, '[\n\r]+', '')
 
+-- Different font on c-crosser
+if hostname == "c-crosser" then
+   awesome.font = "mplus_f10b 8"
+end
+
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
 -- If you do not like this or do not have such a key,

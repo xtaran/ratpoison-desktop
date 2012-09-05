@@ -7,7 +7,7 @@ general {
 [ATH0:
 wireless ath0 {
 	# if you use %speed, i3status requires root privileges or netcap
-	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+SID: %bitrate:NATTY+ONEIRIC+SID]"
+	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+WHEEZY+SID: %bitrate:NATTY+ONEIRIC+WHEEZY+SID]"
 	format_down = "W"
 }
 :ATH0]
@@ -15,7 +15,7 @@ wireless ath0 {
 [WLAN0:
 wireless wlan0 {
 	# if you use %speed, i3status requires root privileges or netcap
-	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+SID: %bitrate:NATTY+ONEIRIC+SID]"
+	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+WHEEZY+SID: %bitrate:NATTY+ONEIRIC+WHEEZY+SID]"
 	format_down = "W"
 }
 :WLAN0]
@@ -23,7 +23,7 @@ wireless wlan0 {
 [WLAN1:
 wireless wlan1 {
 	# if you use %speed, i3status requires root privileges or netcap
-	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+SID: %bitrate:NATTY+ONEIRIC+SID]"
+	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+WHEEZY+SID: %bitrate:NATTY+ONEIRIC+WHEEZY+SID]"
 	format_down = "W"
 }
 :WLAN1]
@@ -107,22 +107,22 @@ cpu_temperature 0 {
 :NEMO]
 
 disk "/" {
-	format = "/ %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+SID!:avail:NATTY+ONEIRIC+SID!]"
+	format = "/ %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+WHEEZY+SID!:avail:NATTY+ONEIRIC+WHEEZY+SID!]"
 }
 
 [C_CROSSER+JUMPER+HZ:
 disk "/home" {
-	format = "/home %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+SID!:avail:NATTY+ONEIRIC+SID!]"
+	format = "/home %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+WHEEZY+SID!:avail:NATTY+ONEIRIC+WHEEZY+SID!]"
 }
 :C_CROSSER+JUMPER+HZ]
 
 [SNIDGET:
 disk "/tmp" {
-	format = "/tmp %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+SID!:avail:NATTY+ONEIRIC+SID!]"
+	format = "/tmp %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+WHEEZY+SID!:avail:NATTY+ONEIRIC+WHEEZY+SID!]"
 }
 
 disk "/scratch" {
-	format = "/scratch %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+SID!:avail:NATTY+ONEIRIC+SID!]"
+	format = "/scratch %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+WHEEZY+SID!:avail:NATTY+ONEIRIC+WHEEZY+SID!]"
 }
 :SNIDGET]
 

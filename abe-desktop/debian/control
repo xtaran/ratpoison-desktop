@@ -50,7 +50,8 @@ Recommends: abe-commandline,
             xterm,
             xtrlock,
             zsh
-Suggests: audacious,
+Suggests: abe-gnome,
+          audacious,
           audacious-plugins,
           ccze | loco | lwatch | colortail,
           nvi,
@@ -257,3 +258,15 @@ Architecture: all
 Description: Common Emacs installation on Axel's systems
  This metapackage depends on packages Axel's usually installs where he
  wants Emacs to be usable.
+
+Package: abe-gnome
+Depends: baobab,
+         gucharmap
+Recommends: meld
+Suggests: gnumeric,
+          gparted,
+          liferea
+Architecture: all
+Description: Common GNOME applications on Axel's desktops
+ This metapackage depends on packages Axel's oftens installs when
+ having GNOME libraries installed is not an issue.

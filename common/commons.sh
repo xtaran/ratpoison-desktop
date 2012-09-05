@@ -14,6 +14,7 @@ systray_applets() {
     whee nm-applet
     whee wicd-gtk -t
     whee update-notifier
+    whee smart-notifier
     whee fdpowermon
     whee radiotray
     whe qasmixer -t || whe volumeicon &

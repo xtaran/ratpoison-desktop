@@ -6,6 +6,7 @@ abe-desktop (5) UNRELEASED; urgency=low
   * Add my image viewer preferences to abe-desktop-common
   * Add smart-notifier to Recommends of abe-desktop-awesome
   * Add some typical emacs lisp packages to Recommends
+  * Honor that scrotwm has been renamed to spectrwm
   * Honor that dnsutils is used by iplet
   * Remove anion from Suggests
   * Apply wrap-and-sort to the package

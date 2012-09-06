@@ -106,7 +106,7 @@ Depends: abe-desktop-awesome,
 Recommends: flwm,
             i3-wm,
             lxsession,
-            scrotwm,
+            spectrwm | scrotwm,
             stumpwm
 Suggests: clfswm,
           fvwm,

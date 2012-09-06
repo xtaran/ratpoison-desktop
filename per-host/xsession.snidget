@@ -50,7 +50,7 @@ systray_applets
 ############################
 
 export DISPLAY=:0.2
-chromium-browser &
+conkeror -P monitoring &
 uxterm -fn fixed -geometry 60x14+810+1261 &
 $HOME/bin/ircstart.sh -geometry 130x25+0+1261
 yeahconsole &

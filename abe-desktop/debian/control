@@ -266,7 +266,8 @@ Depends: baobab,
 Recommends: meld
 Suggests: gnumeric,
           gparted,
-          liferea
+          liferea,
+          ssh-contact-client
 Architecture: all
 Description: Common GNOME applications on Axel's desktops
  This metapackage depends on packages Axel's oftens installs when

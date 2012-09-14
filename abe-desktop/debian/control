@@ -263,7 +263,8 @@ Description: Common Emacs installation on Axel's systems
 
 Package: abe-gnome
 Depends: baobab,
-         gucharmap
+         gucharmap,
+         mssh
 Recommends: meld
 Suggests: abe-libreoffice,
           gnumeric,

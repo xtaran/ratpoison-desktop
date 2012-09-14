@@ -2,7 +2,7 @@ abe-desktop (5) UNRELEASED; urgency=low
 
   * Convert to a real package instead of having to use equivs plus
     equivs-build-multi
-  * Add packages abe-commandline, abe-emacs and abe-gnome
+  * Add packages abe-commandline, abe-emacs, abe-gnome and abe-office
   * Add my image viewer preferences to abe-desktop-common
   * Add smart-notifier to Recommends of abe-desktop-awesome
   * Add some typical emacs lisp packages to Recommends

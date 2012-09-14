@@ -264,7 +264,8 @@ Package: abe-gnome
 Depends: baobab,
          gucharmap
 Recommends: meld
-Suggests: gnumeric,
+Suggests: abe-libreoffice,
+          gnumeric,
           gparted,
           liferea,
           ssh-contact-client
@@ -272,3 +273,23 @@ Architecture: all
 Description: Common GNOME applications on Axel's desktops
  This metapackage depends on packages Axel's oftens installs when
  having GNOME libraries installed is not an issue.
+
+Package: abe-office
+Depends: catdoc | antiword | wv,
+         libreoffice-calc    | openoffice.org-calc | gnumeric,
+         libreoffice-impress | openoffice.org-impress,
+         libreoffice-writer  | openoffice.org-writer,
+         libpaper-utils
+Recommends: libreoffice-filter-binfilter        | openoffice.org-filter-binfilter,
+            libreoffice-gnome | libreoffice-gtk | openoffice.org-gnome | openoffice.org-gtk,
+            libreoffice-math                    | openoffice.org-math
+Suggests: dia-gnome | dia | xfig,
+          gimp,
+          inkscape | scribus,
+          libreoffice | openoffice.org,
+          mypaint,
+          xlhtml
+Architecture: all
+Description: Common office applications on Axel's desktops
+ This metapackage depends on packages Axel's usually needs when he
+ want's basic office functionality.

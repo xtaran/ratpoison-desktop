@@ -269,8 +269,7 @@ Depends: baobab,
          mssh,
          ${misc:Depends}
 Recommends: meld
-Suggests: abe-libreoffice,
-          gnumeric,
+Suggests: abe-office,
           gparted,
           liferea,
           ssh-contact-client

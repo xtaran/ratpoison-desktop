@@ -32,6 +32,7 @@ binary-indep:
 	dh_testroot
 	dh_installchangelogs
 	dh_installdocs
+	dh_lintian
 	dh_link
 	dh_compress
 	dh_fixperms

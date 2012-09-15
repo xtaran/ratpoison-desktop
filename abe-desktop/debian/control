@@ -99,7 +99,8 @@ Suggests: qasmixer | volumeicon-alsa,
           yarssr
 Architecture: all
 Description: Packages necessary for Axel's awesome desktop
- This metapackage depends on packages common for Axel's awesome based desktop setup.
+ This metapackage depends on packages common for Axel's awesome based
+ desktop setup.
 
 Package: abe-desktop
 Depends: abe-desktop-awesome,
@@ -130,7 +131,6 @@ Depends: autossh,
          colordiff,
          dwdiff | wdiff,
          git,
-         gzip,
          htop,
          inotail,
          libwww-perl,
@@ -266,7 +266,8 @@ Description: Common Emacs installation on Axel's systems
 Package: abe-gnome
 Depends: baobab,
          gucharmap,
-         mssh
+         mssh,
+         ${misc:Depends}
 Recommends: meld
 Suggests: abe-libreoffice,
           gnumeric,
@@ -283,7 +284,8 @@ Depends: catdoc | antiword | wv,
          libreoffice-calc    | openoffice.org-calc | gnumeric,
          libreoffice-impress | openoffice.org-impress,
          libreoffice-writer  | openoffice.org-writer,
-         libpaper-utils
+         libpaper-utils,
+         ${misc:Depends}
 Recommends: libreoffice-filter-binfilter        | openoffice.org-filter-binfilter,
             libreoffice-gnome | libreoffice-gtk | openoffice.org-gnome | openoffice.org-gtk,
             libreoffice-math                    | openoffice.org-math

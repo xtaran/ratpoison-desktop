@@ -1,11 +1,11 @@
-abe-desktop (6) UNRELEASED; urgency=low
+abe-desktop (5.1) unstable; urgency=low
 
   * Make mboxgrep alternative to grepmail
   * Add alternative iputils-arping to arping
   * Fix yaml-el → yaml-mode
   * Prefer lynx-cur over transitional package lynx
 
- -- Axel Beckert <abe@deuxchevaux.org>  Sat, 15 Sep 2012 22:35:07 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Sat, 15 Sep 2012 23:53:03 +0200
 
 abe-desktop (5) unstable; urgency=low
 

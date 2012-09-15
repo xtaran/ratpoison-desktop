@@ -257,7 +257,7 @@ Suggests: oneliner-el,
           quilt-el,
           twittering-mode,
           x-face-el,
-          yaml-el
+          yaml-mode
 Architecture: all
 Description: Common Emacs installation on Axel's systems
  This metapackage depends on packages Axel's usually installs where he

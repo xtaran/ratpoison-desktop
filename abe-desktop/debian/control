@@ -285,8 +285,7 @@ Depends: catdoc | antiword | wv,
          libreoffice-writer  | openoffice.org-writer,
          libpaper-utils,
          ${misc:Depends}
-Recommends: libreoffice-filter-binfilter        | openoffice.org-filter-binfilter,
-            libreoffice-gnome | libreoffice-gtk | openoffice.org-gnome | openoffice.org-gtk,
+Recommends: libreoffice-gnome | libreoffice-gtk | openoffice.org-gnome | openoffice.org-gtk,
             libreoffice-math                    | openoffice.org-math
 Suggests: dia-gnome | dia | xfig,
           gimp,

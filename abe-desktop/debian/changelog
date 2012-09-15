@@ -1,3 +1,9 @@
+abe-desktop (6) UNRELEASED; urgency=low
+
+  * Add alternative mboxgrep to grepmail
+
+ -- Axel Beckert <abe@deuxchevaux.org>  Sat, 15 Sep 2012 22:35:07 +0200
+
 abe-desktop (5) unstable; urgency=low
 
   * Convert to a real package instead of having to use equivs plus

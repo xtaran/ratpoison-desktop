@@ -1,6 +1,7 @@
 abe-desktop (6) UNRELEASED; urgency=low
 
   * Add alternative mboxgrep to grepmail
+  * Add alternative iputils-arping to arping
   * Fix yaml-el → yaml-mode
   * Prefer lynx-cur over transitional package lynx
 

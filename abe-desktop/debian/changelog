@@ -1,3 +1,9 @@
+abe-desktop (6) UNRELEASED; urgency=low
+
+  * abe-commandline: Recommend perl-doc
+
+ -- Axel Beckert <abe@deuxchevaux.org>  Sun, 16 Sep 2012 01:33:27 +0200
+
 abe-desktop (5.1) unstable; urgency=low
 
   * Make mboxgrep alternative to grepmail

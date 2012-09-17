@@ -1,8 +1,9 @@
 abe-desktop (6) UNRELEASED; urgency=low
 
   * abe-commandline: Recommend perl-doc
+  * abe-commandline: Suggest testdisk
 
- -- Axel Beckert <abe@deuxchevaux.org>  Sun, 16 Sep 2012 01:33:27 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Mon, 17 Sep 2012 15:25:49 +0200
 
 abe-desktop (5.1) unstable; urgency=low
 

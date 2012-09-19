@@ -155,7 +155,7 @@ Used if available but except the system tray stuff recommended anyway:
 * [autocutsel](http://packages.debian.org/stable/autocutsel)
 * [emacs-goodies-el](http://packages.debian.org/stable/emacs-goodies-el)
   (for `markdown-mode` and others)
-* [inotail](http://packages.debian.org/stable/inotail)
+* [inotail](http://packages.debian.org/stable/inotail) (Linux only)
 * [keynav](http://packages.debian.org/stable/keynav) >=
   0.20101014.3067
 * [redshift](http://packages.debian.org/stable/redshift)

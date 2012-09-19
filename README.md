@@ -71,8 +71,8 @@ Installation
 ------------
 
 These files are needed to get the setup running. The setup currently
-runs on Debian Sid and Squeeze as well as Ubuntu Natty, Oneiric and
-Precise. It probably also runs on older Ubuntu releases.
+runs on Debian Sid, Wheezy and Squeeze as well as Ubuntu Natty,
+Oneiric and Precise. It probably also runs on older Ubuntu releases.
 
 Since most of the configuration files included are not expected to
 reside in `.ratpoison`, some symlinks are necessary where config file

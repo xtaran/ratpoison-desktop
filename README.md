@@ -133,14 +133,6 @@ packages) to be installed:
   * for ratpoison: [xdotool](http://packages.debian.org/stable/xdotool) or
     [nawm](http://packages.qa.debian.org/nawm) (no more in Debian)
 
-#### Metapackages
-
-The project's subdirectory `abe-desktop` contains a Debian source
-package which generates several `.deb` metapackages which (should)
-contain all the mentioned dependencies plus some more dependencies on
-packages I commonly use, too. Those metapackages are usually also
-available via APT from my APT repository at http://noone.org/apt/.
-
 ### Used Fonts
 
 Fonts used for xmobar:
@@ -227,3 +219,43 @@ Only in commented code (i.e. currently not used):
   [colortail](http://packages.debian.org/stable/colortail)
 * [root-tail](http://packages.debian.org/stable/root-tail)
 * [xcompmgr](http://packages.debian.org/stable/xcompmgr)
+
+Debian Metapackages
+-------------------
+
+The project's subdirectory `abe-desktop` resembles a Debian source
+package which generates several `.deb` metapackages.
+
+### Metapackages for my Desktop Setup
+
+The following metapackages provide all the dependencies mentioned
+above:
+
+* abe-desktop-ratpoison: Contains dependencies for the ratpoison-based
+  desktop
+* abe-desktop-awesome: Contains dependencies for the awesome-based
+  desktop
+* abe-desktop-common: Contains dependencies common to both, the
+  ratpoison-based and the awesome-based desktop.
+* abe-desktop: Contains dependencies on all of the above plus
+  additional window managers mentioned below.
+
+### Other Metapackages
+
+For pure maintenance convenience, additional metapackages are part of
+this repository. They contain dependencies on further packages I
+commonly want installed on my boxes, too:
+
+* abe-commandline: Commandline tools I usually use. Its hard
+  dependencies are also suitable for servers.
+* abe-emacs: Emacs modes and other Emacs add-ons I usually want on all
+  boxes where I install GNU Emacs anyway.
+* abe-gnome: GUI tools and applications I usually install if some
+  GNOME dependencies are ok.
+* abe-office: Depends on the LibreOffice/GnomeOffice applications I
+  prefer.
+
+### APT Repository
+
+All those metapackages are usually also available via APT from
+[my APT repository](http://noone.org/apt/).

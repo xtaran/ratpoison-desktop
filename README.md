@@ -136,10 +136,10 @@ packages) to be installed:
 #### Metapackages
 
 The project's subdirectory `abe-desktop` contains a Debian source
-package which can generate a few metapackage .debs which (should)
-contain all the mentioned dependencies plus some more I commonly want,
-too. They're usually also available via APT from my APT repository at
-http://noone.org/apt/.
+package which generates several `.deb` metapackages which (should)
+contain all the mentioned dependencies plus some more dependencies on
+packages I commonly use, too. Those metapackages are usually also
+available via APT from my APT repository at http://noone.org/apt/.
 
 ### Used Fonts
 

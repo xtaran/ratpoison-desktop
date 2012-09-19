@@ -1,4 +1,4 @@
-abe-desktop (6) UNRELEASED; urgency=low
+abe-desktop (5.2) unstable; urgency=low
 
   * abe-commandline: Recommend perl-doc
   * abe-commandline: Suggest testdisk
@@ -6,7 +6,7 @@ abe-desktop (6) UNRELEASED; urgency=low
   * Add volti as alternative to qasmixer and volumeicon-alsa
   * Use ktrace as strace replacement on kfreebsd
 
- -- Axel Beckert <abe@deuxchevaux.org>  Mon, 17 Sep 2012 15:25:49 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Wed, 19 Sep 2012 22:50:21 +0200
 
 abe-desktop (5.1) unstable; urgency=low
 

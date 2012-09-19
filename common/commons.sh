@@ -18,7 +18,7 @@ systray_applets() {
     whee fdpowermon
     whee radiotray
     whe qasmixer -t || whe volumeicon || whe volti &
-    whee yarssr
+    [ -n "`find $HOME/.yarssr/state -type f`" ] && whee yarssr
     whee shutter --min_at_startup
     # Use redshift if installed
     whe gtk-redshift -l $LOC || whe redshift -l $LOC &

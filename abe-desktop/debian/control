@@ -92,7 +92,7 @@ Recommends: fdpowermon,
             gtk-redshift,
             smart-notifier,
             wicd-gtk | network-manager-gnome
-Suggests: qasmixer | volumeicon-alsa,
+Suggests: qasmixer | volumeicon-alsa | volti,
           radiotray,
           shutter,
           update-notifier,

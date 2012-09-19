@@ -176,7 +176,8 @@ Used if available but except the system tray stuff recommended anyway:
   * [shutter](http://packages.debian.org/stable/shutter)
   * [yarssr](http://packages.debian.org/stable/yarssr)
   * [qasmixer](http://packages.debian.org/squeeze-backports/qasmixer) |
-    [volumeicon-alsa](http://packages.debian.org/testing/volumeicon-alsa)
+    [volumeicon-alsa](http://packages.debian.org/testing/volumeicon-alsa) |
+    [volti](http://packages.debian.org/testing/volti)
   * [smart-notifier](http://packages.debian.org/stable/smart-notifier)
 
 ### Kernel Modules

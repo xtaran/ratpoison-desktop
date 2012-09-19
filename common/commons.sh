@@ -17,7 +17,7 @@ systray_applets() {
     whee smart-notifier
     whee fdpowermon
     whee radiotray
-    whe qasmixer -t || whe volumeicon &
+    whe qasmixer -t || whe volumeicon || whe volti &
     whee yarssr
     whee shutter --min_at_startup
     # Use redshift if installed

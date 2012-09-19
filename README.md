@@ -106,8 +106,7 @@ packages) to be installed:
   web browser
 * [emacs](http://packages.debian.org/stable/emacs) (or emacsen, for
   `emacs` and `emacsclient`)
-* [gnome-keyring](http://packages.debian.org/stable/gnome-keyring) (for
-  `gnome-settings-daemon`)
+* [gnome-keyring](http://packages.debian.org/stable/gnome-keyring)
 * [hsetroot](http://packages.debian.org/stable/hsetroot)
 * [i3status](http://packages.debian.org/stable/i3status) >= 2.2
 * [libfile-slurp-perl](http://packages.debian.org/stable/libfile-slurp-perl)
@@ -150,6 +149,7 @@ Used if available but except the system tray stuff recommended anyway:
 * [autocutsel](http://packages.debian.org/stable/autocutsel)
 * [emacs-goodies-el](http://packages.debian.org/stable/emacs-goodies-el)
   (for `markdown-mode` and others)
+* [gnome-settings-daemon](http://packages.debian.org/stable/gnome-settings-daemon)
 * [inotail](http://packages.debian.org/stable/inotail) (Linux only)
 * [keynav](http://packages.debian.org/stable/keynav) >=
   0.20101014.3067

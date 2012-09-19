@@ -86,7 +86,7 @@ tedious to always type them:
     ~/.emacs       → emacs.el
 
 These symbolic links can also be automatically setup by calling
-bin/setup-symlinks.sh from this repository.
+`bin/setup-symlinks.sh` from this repository.
 
 Sources available via http://git.noone.org/?p=ratpoison.git,
 http://gitorious.org/abe/ratpoison-desktop, and

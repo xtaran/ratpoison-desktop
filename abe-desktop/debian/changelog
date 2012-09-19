@@ -4,6 +4,7 @@ abe-desktop (6) UNRELEASED; urgency=low
   * abe-commandline: Suggest testdisk
   * inotail is not available on non-linux, downgrade to Recommends
   * Add volti as alternative to qasmixer and volumeicon-alsa
+  * Use ktrace as strace replacement on kfreebsd
 
  -- Axel Beckert <abe@deuxchevaux.org>  Mon, 17 Sep 2012 15:25:49 +0200
 

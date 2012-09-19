@@ -133,10 +133,13 @@ packages) to be installed:
   * for ratpoison: [xdotool](http://packages.debian.org/stable/xdotool) or
     [nawm](http://packages.qa.debian.org/nawm) (no more in Debian)
 
+#### Metapackages
+
 The project's subdirectory `abe-desktop` contains a Debian source
 package which can generate a few metapackage .debs which (should)
-contain all the mentioned dependencies. They're usually also available
-via APT from my APT repository at http://noone.org/apt/.
+contain all the mentioned dependencies plus some more I commonly want,
+too. They're usually also available via APT from my APT repository at
+http://noone.org/apt/.
 
 ### Used Fonts
 

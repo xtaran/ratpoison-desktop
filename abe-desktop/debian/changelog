@@ -8,6 +8,7 @@ abe-desktop (5.2+dev) UNRELEASED; urgency=low
   * abe-commandline/abe-gnome: Add the according APT key management tools
   * Remove all dependencies on xcompmgr and transset-df (no more used in
     my setup)
+  * abe-desktop-ratpoison: Recommend dunst or notification-daemon
 
  -- Axel Beckert <abe@deuxchevaux.org>  Thu, 20 Sep 2012 00:28:30 +0200
 

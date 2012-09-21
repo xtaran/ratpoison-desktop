@@ -178,7 +178,8 @@ Used if available but except the system tray stuff recommended anyway:
   * [smart-notifier](http://packages.debian.org/stable/smart-notifier)
   * [amorad-gui](http://packages.debian.org/stable/amora-applet)
 * For use with ratpoison only so far:
-  * [notification-daemon](http://packages.debian.org/stable/notification-daemon)
+  * [dunst](http://packages.debian.org/testing/dunst) |
+    [notification-daemon](http://packages.debian.org/stable/notification-daemon)
 
 ### Kernel Modules
 

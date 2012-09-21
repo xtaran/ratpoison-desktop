@@ -176,6 +176,7 @@ Used if available but except the system tray stuff recommended anyway:
     [volumeicon-alsa](http://packages.debian.org/testing/volumeicon-alsa) |
     [volti](http://packages.debian.org/testing/volti)
   * [smart-notifier](http://packages.debian.org/stable/smart-notifier)
+  * [amora-applet](http://packages.debian.org/stable/amora-applet)
 
 ### Kernel Modules
 

@@ -274,7 +274,8 @@ Depends: baobab,
          gucharmap,
          mssh,
          ${misc:Depends}
-Recommends: meld
+Recommends: gpointing-device-settings,
+	    meld
 Suggests: abe-office,
           gparted,
           liferea,

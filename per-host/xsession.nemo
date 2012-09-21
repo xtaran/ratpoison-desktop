@@ -1,3 +1,5 @@
+# -*- shell-script -*-
+
 xterm -e sudo -i &
 xterm &
 xterm &

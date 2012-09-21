@@ -1,4 +1,4 @@
-#!/bin/sh
+# -*- shell-script -*-
 
 # Set the background image for all available displays
 for d in :0.0 :0.1 :0.2 :0.3 ; do

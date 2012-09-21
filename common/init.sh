@@ -1,3 +1,4 @@
+# -*- shell-script -*-
 # Define some common variables used within my desktop scripts
 PH=$RP/per-host
 BG=$HOME/.backgrounds

@@ -1,3 +1,4 @@
+# -*- shell-script -*-
 # Define some functions
 wh() {
     which "$1" > /dev/null

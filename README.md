@@ -183,8 +183,8 @@ Used if available but except the system tray stuff recommended anyway:
 Linux kernel modules which may be used by some features of xmobar, but
 do not seem to be loaded automatically (write them into `/etc/modules`):
 
-* acpi_cpufreq
-* coretemp
+* `acpi_cpufreq`
+* `coretemp`
 
 ### Software Packages used by Scripts or Keybindings
 

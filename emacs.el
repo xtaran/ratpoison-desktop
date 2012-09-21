@@ -20,7 +20,9 @@
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(tramp-shell-prompt-pattern "\\(?:^\\|\\)[^#$%>→
+]*#?[#$%>→] *\\(\\[[0-9;]*[a-zA-Z] *\\)*"))
 
 (autoload 'markdown-mode "markdown-mode.el"
    "Major mode for editing Markdown files" t)

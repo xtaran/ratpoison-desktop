@@ -14,7 +14,8 @@ done
 export DISPLAY=:0.0
 synergys
 
-# ssh-add is needed at least before mutt tries to connect to wiggis
+# ssh-add is needed at least before mutt tries to make an SSH tunnel
+# to the IMAP server
 ssh-add < /dev/null
 
 # Start xscreensaver logger
@@ -33,9 +34,9 @@ uxterm -fn fixed &
 
 whee gtk-redshift -l $LOC
 
-######################
-### 2. Desktop: RT ###
-######################
+############################
+### 2. Desktop: Web + RT ###
+############################
 
 export DISPLAY=:0.1
 #env OPERA_PLUGIN_PATH=/dev/null opera &
@@ -45,9 +46,9 @@ yeahconsole &
 
 systray_applets
 
-############################
-### 3. Desktop: BB + IRC ###
-############################
+####################################
+### 3. Desktop: Monitoring + IRC ###
+####################################
 
 export DISPLAY=:0.2
 conkeror -P monitoring &

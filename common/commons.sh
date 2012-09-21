@@ -23,3 +23,12 @@ systray_applets() {
     # Use redshift if installed
     whe gtk-redshift -l $LOC || whe redshift -l $LOC &
 }
+
+xsession_per_host() {
+    if [ -e $PH/xsession.$HOSTNAME ]; then
+	sleep 1
+	. $PH/xsession.$HOSTNAME
+    elif [ -n "$*" ]; then
+	"$@"
+    fi &
+}

@@ -64,5 +64,3 @@ whee gtk-redshift -l $LOC
 export DISPLAY=:0.3
 
 whee gtk-redshift -l $LOC
-
-exec awesome

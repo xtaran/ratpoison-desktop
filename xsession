@@ -97,10 +97,6 @@ fi
 #    xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
 #fi
 
-if [ -x $PH/xsession.$HOSTNAME ]; then
-    . $PH/xsession.$HOSTNAME
-fi
-
 # If resolution is less than 1024 pixels wide, then use ratpoison, else awesome
 if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME" = "jumper" ]; then
     # Try several variants to get focus follows mouse with ratpoison
@@ -119,9 +115,12 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME"
     whee redshift -l $LOC
     whee /usr/lib/notification-daemon/notification-daemon
 
+    xsession_per_host
+
     exec ratpoison -f $RP/ratpoisonrc
 else
-    systray_applets
+    xsession_per_host systray_applets
+
     exec awesome -c $RP/awesome/rc.lua
 fi
 

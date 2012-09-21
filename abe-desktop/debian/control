@@ -278,6 +278,7 @@ Depends: baobab,
          mssh,
          ${misc:Depends}
 Recommends: gpointing-device-settings,
+	    gobby | gobby-0.4 | gobby-0.5,
 	    gui-apt-key,
 	    meld
 Suggests: abe-office,

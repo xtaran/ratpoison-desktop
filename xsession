@@ -109,7 +109,7 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME"
 
     # Use redshift and notification-daemon if installed
     whee redshift -l $LOC
-    whee /usr/lib/notification-daemon/notification-daemon
+    whe dunst || whe /usr/lib/notification-daemon/notification-daemon &
 
     xsession_per_host
 

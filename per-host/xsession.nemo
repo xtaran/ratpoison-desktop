@@ -1,0 +1,9 @@
+xterm -e sudo -i &
+xterm &
+xterm &
+xterm -e 'logread -f | ccze -A' &
+emacs &
+ssh-add < /dev/null
+xterm -e 'bin/heustock.sh' &
+$HOME/bin/localhost-socks.sh &
+conkeror &

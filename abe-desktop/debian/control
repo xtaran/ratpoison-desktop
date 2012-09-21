@@ -62,8 +62,7 @@ Suggests: abe-gnome,
 	  curses-apt-key,
           nvi,
           openssh-server | dropbear,
-          screen | tmux,
-          transset-df | xcompmgr
+          screen | tmux
 Architecture: all
 Description: Common packages for all of Axel's desktop setups
  This metapackage depends on packages common for all of Axel's desktop
@@ -79,7 +78,6 @@ Recommends: redshift,
             suckless-tools | dwm-tools (>= 31-1),
             wicd-curses | network-manager (>= 0.8.0.999-1) | cnetworkmanager,
             xclip
-Suggests: transset-df | xcompmgr
 Architecture: all
 Description: Packages necessary for Axel's ratpoison desktop
  This metapackage depends on packages common for Axel's ratpoison

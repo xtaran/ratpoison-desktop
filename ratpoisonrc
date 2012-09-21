@@ -49,8 +49,6 @@ bind C-p cprev
 bind N inext
 bind P iprev
 bind S-tab focusprev
-bind plus exec transset-df -a -m .7 -x .9
-bind C-plus exec transset-df -p -m .7 -x .9
 bind M shrink
 bind z swap
 bind q only

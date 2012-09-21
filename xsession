@@ -93,10 +93,6 @@ fi
   #emacs &
 ) &
 
-#if wh xcompmgr && [ "`hostname`" != 'metisse' ]; then
-#    xcompmgr -O .01 -D 5 -f -r 1 -o .6 -C -F -l 0 -t 0 -o 0 &
-#fi
-
 # If resolution is less than 1024 pixels wide, then use ratpoison, else awesome
 if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME" = "jumper" ]; then
     # Try several variants to get focus follows mouse with ratpoison

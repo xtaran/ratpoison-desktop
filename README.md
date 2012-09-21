@@ -198,7 +198,6 @@ Only used in non-necessary scripts or keybindings:
 * [screen](http://packages.debian.org/stable/screen) or
   [tmux](http://packages.debian.org/stable/tmux)
 * [scrot](http://packages.debian.org/stable/scrot)
-* [transset-df](http://packages.debian.org/stable/transset-df)
 * [xclip](http://packages.debian.org/stable/xclip)
 * [colordiff](http://packages.debian.org/stable/colordiff)
 * [git](http://packages.debian.org/stable/git)
@@ -222,7 +221,6 @@ Only in commented code (i.e. currently not used):
   [lwatch](http://packages.debian.org/stable/lwatch) |
   [colortail](http://packages.debian.org/stable/colortail)
 * [root-tail](http://packages.debian.org/stable/root-tail)
-* [xcompmgr](http://packages.debian.org/stable/xcompmgr)
 
 Debian Metapackages
 -------------------

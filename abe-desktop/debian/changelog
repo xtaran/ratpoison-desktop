@@ -4,6 +4,7 @@ abe-desktop (5.2+dev) UNRELEASED; urgency=low
   * abe-desktop-awesome: Suggest clipit or parcellite
   * abe-desktop*: Suggest amora-cli and amora-applet at some points
   * abe-gnome: Recommend gpointing-device-settings
+  * abe-commandline: Add some APT-related tools
 
  -- Axel Beckert <abe@deuxchevaux.org>  Thu, 20 Sep 2012 00:28:30 +0200
 

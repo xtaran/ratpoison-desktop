@@ -127,7 +127,8 @@ Description: Packages helpful for Axel's desktop setup
  setups.
 
 Package: abe-commandline
-Depends: autossh,
+Depends: aptitude,
+	 autossh,
          bash-completion,
          bzip2,
          ccal,
@@ -158,7 +159,8 @@ Depends: autossh,
          zile,
          zsh,
          ${misc:Depends}
-Recommends: debian-goodies,
+Recommends: apt-show-versions,
+	    debian-goodies,
             dlocate,
             extundelete,
             finger,
@@ -180,7 +182,8 @@ Recommends: debian-goodies,
             unzip,
             whois,
             zutils
-Suggests: 2ping,
+Suggests: apt-file,
+	  2ping,
           abe-emacs,
           acpitail,
           aha,

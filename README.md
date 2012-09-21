@@ -195,7 +195,8 @@ Only used in non-necessary scripts or keybindings:
   (for `dmenu`, `tabbed` and `wmname`)
 * [openssh-client](http://packages.debian.org/stable/openssh-client)
   (for `ssh-add` and `ssh-agent`)
-* [screen](http://packages.debian.org/stable/screen) or [tmux](http://packages.debian.org/stable/tmux)
+* [screen](http://packages.debian.org/stable/screen) or
+  [tmux](http://packages.debian.org/stable/tmux)
 * [scrot](http://packages.debian.org/stable/scrot)
 * [transset-df](http://packages.debian.org/stable/transset-df)
 * [xclip](http://packages.debian.org/stable/xclip)

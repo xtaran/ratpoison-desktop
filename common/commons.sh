@@ -18,6 +18,7 @@ systray_applets() {
     whee smart-notifier
     whee fdpowermon
     whee radiotray
+    whe clipit || whe parcellite &
     whe qasmixer -t || whe volumeicon || whe volti &
     [ -n "`find $HOME/.yarssr/state -type f`" ] && whee yarssr
     whee shutter --min_at_startup

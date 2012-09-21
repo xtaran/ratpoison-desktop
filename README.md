@@ -170,6 +170,8 @@ Used if available but except the system tray stuff recommended anyway:
   * [radiotray](http://packages.debian.org/stable/radiotray)
   * [shutter](http://packages.debian.org/stable/shutter)
   * [yarssr](http://packages.debian.org/stable/yarssr)
+  * [clipit](http://packages.debian.org/testing/clipit) |
+    [parcellite](http://packages.debian.org/stable/parcellite)
   * [qasmixer](http://packages.debian.org/squeeze-backports/qasmixer) |
     [volumeicon-alsa](http://packages.debian.org/testing/volumeicon-alsa) |
     [volti](http://packages.debian.org/testing/volti)

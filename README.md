@@ -162,7 +162,7 @@ Used if available but except the system tray stuff recommended anyway:
   (for `synclient` and `syndaemon`)
 * [yeahconsole](http://packages.debian.org/stable/yeahconsole)
 * System tray applets for use with awesome:
-  * [nm-applet](http://packages.debian.org/stable/nm-applet) |
+  * [nm-applet](http://packages.debian.org/stable/network-manager-gnome) |
     [wicd-gtk](http://packages.debian.org/stable/wicd-gtk)
   * [update-notifier](http://packages.debian.org/stable/update-notifier)
   * [gtk-redshift](http://packages.debian.org/stable/gtk-redshift)
@@ -176,7 +176,7 @@ Used if available but except the system tray stuff recommended anyway:
     [volumeicon-alsa](http://packages.debian.org/testing/volumeicon-alsa) |
     [volti](http://packages.debian.org/testing/volti)
   * [smart-notifier](http://packages.debian.org/stable/smart-notifier)
-  * [amora-applet](http://packages.debian.org/stable/amora-applet)
+  * [amorad-gui](http://packages.debian.org/stable/amora-applet)
 
 ### Kernel Modules
 

@@ -119,7 +119,7 @@ packages) to be installed:
 * [dnsutils](http://packages.debian.org/stable/dnsutils) |
   [wget](http://packages.debian.org/stable/wget) (needed by `iplet`)
 * [x11-utils](http://packages.debian.org/stable/x11-utils) (for
-  `xmessage`) | [gxmessage](http://packages.debian.org/stable/)
+  `xmessage`) | [gxmessage](http://packages.debian.org/stable/gxmessage)
 * [x11-xserver-utils](http://packages.debian.org/stable/x11-xserver-utils)
   (for `xmodmap`, `xrdb`, `xrandr` and `xsetroot`)
 * [xmobar](http://packages.debian.org/stable/xmobar)

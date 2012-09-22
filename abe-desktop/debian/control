@@ -182,11 +182,11 @@ Recommends: apt-show-versions,
             unzip,
             whois,
             zutils
-Suggests: apt-file,
-	  2ping,
+Suggests: 2ping,
           abe-emacs,
           acpitail,
           aha,
+          apt-file,
           arping | iputils-arping,
           buthead,
           cadaver,
@@ -277,8 +277,8 @@ Depends: baobab,
          gucharmap,
          mssh,
          ${misc:Depends}
-Recommends: gpointing-device-settings,
-	    gobby | gobby-0.4 | gobby-0.5,
+Recommends: gobby | gobby-0.4 | gobby-0.5,
+            gpointing-device-settings,
 	    gui-apt-key,
 	    meld
 Suggests: abe-office,
@@ -292,10 +292,10 @@ Description: Common GNOME applications on Axel's desktops
 
 Package: abe-office
 Depends: catdoc | antiword | wv,
+         libpaper-utils,
          libreoffice-calc    | openoffice.org-calc | gnumeric,
          libreoffice-impress | openoffice.org-impress,
          libreoffice-writer  | openoffice.org-writer,
-         libpaper-utils,
          ${misc:Depends}
 Recommends: libreoffice-gnome | libreoffice-gtk | openoffice.org-gnome | openoffice.org-gtk,
             libreoffice-math                    | openoffice.org-math

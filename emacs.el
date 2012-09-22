@@ -30,10 +30,10 @@
 (setq auto-mode-alist
       (append
        (list
-	'("\\.md" . markdown-mode)
-	'("\\.mdwn" . markdown-mode)
-	'("\\.markdown" . markdown-mode)
-	'("\\.mdt" . markdown-mode))
+        '("\\.md" . markdown-mode)
+        '("\\.mdwn" . markdown-mode)
+        '("\\.markdown" . markdown-mode)
+        '("\\.mdt" . markdown-mode))
        auto-mode-alist))
 
 ; Tell mmm-mode about Embperl

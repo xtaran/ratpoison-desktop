@@ -11,6 +11,7 @@
  '(column-number-mode t)
  '(display-battery-mode t)
  '(display-time-mode t)
+ '(indent-tabs-mode nil)
  '(indicate-buffer-boundaries (quote left))
  '(indicate-empty-lines t)
  '(inhibit-startup-screen t)

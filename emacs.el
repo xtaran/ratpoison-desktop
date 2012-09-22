@@ -35,3 +35,40 @@
 	'("\\.markdown" . markdown-mode)
 	'("\\.mdt" . markdown-mode))
        auto-mode-alist))
+
+; Tell mmm-mode about Embperl
+(mmm-add-group
+ 'embperl
+ '((embperl-perl
+    :submode perl
+    :front "\\[\\([-\\+!\\*\\$]\\)"
+    :front-offset -2
+    :back "~1\\]"
+    :back-offset 2
+    :save-matches 1
+    :match-face (("[+" . mmm-output-submode-face)
+                 ("[-" . mmm-code-submode-face)
+                 ("[!" . mmm-init-submode-face)
+                 ("[*" . mmm-code-submode-face)
+                 ("[$" . mmm-special-submode-face))
+    :insert ((?p embperl "Region Type (Character): " @ "[" str
+                 @ " " _ " " @ str "]" @)
+             (?+ embperl+ ?p . "+")
+             (?- embperl- ?p . "-")
+             (?! embperl! ?p . "!")
+             (?* embperl* ?p . "*")
+             (?$ embperl$ ?p . "$")))
+   (embperl-comment
+    :submode text-mode
+    :face mmm-comment-submode-face
+    :front "\\[#"
+    :front-offset -2
+    :back "#\\]"
+    :back-offset 2
+    :insert ((?# embperl-comment nil @ "[#" @ " " _ " " @ "#]" @)))))
+
+(or (assoc "\\.epl?$" auto-mode-alist)
+    (setq auto-mode-alist (cons '("\\.epl?$" . html-mode)
+                                auto-mode-alist)))
+
+(mmm-add-mode-ext-class 'html-mode "\\.epl?$" 'embperl)

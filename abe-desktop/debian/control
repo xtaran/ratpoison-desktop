@@ -181,7 +181,6 @@ Recommends: apt-show-versions,
             prips,
             smartmontools,
             sshfs,
-            sshuttle,
             strace | ktrace,
             sux,
             swaks,
@@ -321,3 +320,53 @@ Architecture: all
 Description: Common office applications on Axel's desktops
  This metapackage depends on packages Axel's usually needs when he
  want's basic office functionality.
+
+Package: abe-laptop
+Depends: abe-commandline,
+         abe-desktop-ratpoison,
+         gpm,
+         hardlink,
+         isc-dhcp-client | udhcpc | dhcp-client,
+         localepurge,
+         miredo | auto6to4 | aiccu,
+         mobile-broadband-provider-info,
+         pm-utils,
+         ppp,
+         sshfs,
+         sshuttle,
+         unburden-home-dir,
+         usb-modeswitch,
+         wicd | network-manager,
+         x11-xserver-utils,
+         ${misc:Depends}
+Recommends: abe-desktop,
+            amora-cli | amora-applet,
+            anacron,
+            arandr | lxrandr,
+            busybox-syslogd
+            fdpowermon,
+            mplayer | mplayer2,
+            mupdf,
+            pkg-mozilla-archive-keyring,
+            synergy,
+            translate,
+            wide-dhcpv6-client | dibbler-client,
+            xserver-xorg-input-synaptics
+Suggests: avahi-autoipd,
+          avahi-discover,
+          dnsmasq-base,
+          iodine,
+          iptables,
+          kismet,
+          gpointing-device-settings,
+          mumble,
+          openvpn | vpnc,
+          quicksynergy,
+          tor,
+          torsocks,
+          wvdial
+Conflicts: debconf-i18n
+Architecture: all
+Description: Metapackage for Axel's laptops and netbooks
+ This metapackage depends on packages Axel's usually needs on his
+ mobile devices.

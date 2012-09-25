@@ -1,5 +1,6 @@
-abe-desktop (5.2+dev) UNRELEASED; urgency=low
+abe-desktop (6~dev) UNRELEASED; urgency=low
 
+  * Add new metapackage abe-laptop
   * Add missing gnome-keyring and gnome-settings-daemon recommendations.
   * abe-desktop-awesome: Suggest clipit or parcellite
   * abe-desktop*: Suggest amora-cli and amora-applet at some points
@@ -16,7 +17,7 @@ abe-desktop (5.2+dev) UNRELEASED; urgency=low
   * abe-commandline: Depend on debsums
   * Move curses-apt-key from abe-desktop-common to abe-commandline
 
- -- Axel Beckert <abe@deuxchevaux.org>  Thu, 20 Sep 2012 00:28:30 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Wed, 26 Sep 2012 00:57:50 +0200
 
 abe-desktop (5.2) unstable; urgency=low
 

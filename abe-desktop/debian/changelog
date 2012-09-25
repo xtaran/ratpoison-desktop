@@ -14,9 +14,9 @@ abe-desktop (6~dev) UNRELEASED; urgency=low
   * abe-commandline:
     + Depend on debsums
     + Recommend one of the common password generators
-    + Recommend pmtools, smartmontools, sux and uptimed
-    + Suggest git-annex, devscripts, debconf-utils, ioping, pflogsumm,
-      recode (or iconv) and sl.
+    + Recommend smartmontools, sux and uptimed
+    + Suggest devscripts, debconf-utils, ioping, pflogsumm, recode (or
+      iconv) and sl.
     + Add some APT-related tools
 
  -- Axel Beckert <abe@deuxchevaux.org>  Wed, 26 Sep 2012 00:57:50 +0200

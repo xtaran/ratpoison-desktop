@@ -12,6 +12,7 @@ abe-desktop (5.2+dev) UNRELEASED; urgency=low
   * abe-commandline: Suggest git-annex, devscripts and debconf-utils
   * abe-commandline: Recommend one of the common password generators
   * abe-commandline: Recommend pmtools
+  * abe-commandline: Depend on debsums
   * Move curses-apt-key from abe-desktop-common to abe-commandline
 
  -- Axel Beckert <abe@deuxchevaux.org>  Thu, 20 Sep 2012 00:28:30 +0200

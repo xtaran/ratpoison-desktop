@@ -342,7 +342,7 @@ Recommends: abe-desktop,
             amora-cli | amora-applet,
             anacron,
             arandr | lxrandr,
-            busybox-syslogd
+            busybox-syslogd,
             fdpowermon,
             mplayer | mplayer2,
             mupdf,

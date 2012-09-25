@@ -9,7 +9,8 @@ abe-desktop (5.2+dev) UNRELEASED; urgency=low
   * Remove all dependencies on xcompmgr and transset-df (no more used in
     my setup)
   * abe-desktop-ratpoison: Recommend dunst or notification-daemon
-  * abe-commandline: Suggest git-annex, devscripts, debconf-utils and ioping
+  * abe-commandline: Suggest git-annex, devscripts, debconf-utils, ioping
+    and pflogsumm
   * abe-commandline: Recommend one of the common password generators
   * abe-commandline: Recommend pmtools, smartmontools, sux and uptimed
   * abe-commandline: Depend on debsums

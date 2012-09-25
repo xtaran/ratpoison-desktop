@@ -1,22 +1,23 @@
 abe-desktop (6~dev) UNRELEASED; urgency=low
 
   * Add new metapackage abe-laptop
-  * Add missing gnome-keyring and gnome-settings-daemon recommendations.
-  * abe-desktop-awesome: Suggest clipit or parcellite
-  * abe-desktop*: Suggest amora-cli and amora-applet at some points
-  * abe-gnome: Recommend gpointing-device-settings and gobby
-  * abe-commandline: Add some APT-related tools
-  * abe-commandline/abe-gnome: Add the according APT key management tools
+  * Make abe-desktop-common depend directly on abe-emacs
+  * Move curses-apt-key from abe-desktop-common to abe-commandline
   * Remove all dependencies on xcompmgr and transset-df (no more used in
     my setup)
+  * Add missing gnome-keyring and gnome-settings-daemon recommendations.
+  * abe-desktop-awesome: Suggest clipit or parcellite
   * abe-desktop-ratpoison: Recommend dunst or notification-daemon
-  * abe-commandline: Suggest git-annex, devscripts, debconf-utils, ioping,
-    pflogsumm, recode (or iconv) and sl.
-  * abe-commandline: Recommend one of the common password generators
-  * abe-commandline: Recommend pmtools, smartmontools, sux and uptimed
-  * abe-commandline: Depend on debsums
-  * Move curses-apt-key from abe-desktop-common to abe-commandline
-  * Make abe-desktop-common depend directly on abe-emacs
+  * abe-desktop*: Suggest amora-cli and amora-applet at some points
+  * abe-gnome: Recommend gpointing-device-settings and gobby
+  * abe-commandline/abe-gnome: Add the according APT key management tools
+  * abe-commandline:
+    + Depend on debsums
+    + Recommend one of the common password generators
+    + Recommend pmtools, smartmontools, sux and uptimed
+    + Suggest git-annex, devscripts, debconf-utils, ioping, pflogsumm,
+      recode (or iconv) and sl.
+    + Add some APT-related tools
 
  -- Axel Beckert <abe@deuxchevaux.org>  Wed, 26 Sep 2012 00:57:50 +0200
 

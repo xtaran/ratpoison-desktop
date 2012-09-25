@@ -186,6 +186,7 @@ Recommends: apt-show-versions,
             sux,
             swaks,
             tsocks,
+            uptimed,
             unzip,
             whois,
             zutils

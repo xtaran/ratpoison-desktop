@@ -4,6 +4,8 @@ abe-desktop (6.1~dev) UNRELEASED; urgency=low
     package.
   * Downgrade unburden-home-dir from Depends to Recommends as it's not
     available everywhere.
+  * Remove conflict with debconf-i18n as ubuntu-minimal depends on
+    it. *sigh*
 
  -- Axel Beckert <abe@deuxchevaux.org>  Sat, 29 Sep 2012 00:59:32 +0200
 

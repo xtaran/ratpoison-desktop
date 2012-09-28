@@ -365,7 +365,6 @@ Suggests: avahi-autoipd,
           tor,
           torsocks,
           wvdial
-Conflicts: debconf-i18n
 Architecture: all
 Description: Metapackage for Axel's laptops and netbooks
  This metapackage depends on packages Axel's usually needs on his

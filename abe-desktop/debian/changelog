@@ -1,4 +1,4 @@
-abe-desktop (6~dev) UNRELEASED; urgency=low
+abe-desktop (6) unstable; urgency=low
 
   * Add new metapackage abe-laptop
   * Make abe-desktop-common depend directly on abe-emacs
@@ -19,7 +19,7 @@ abe-desktop (6~dev) UNRELEASED; urgency=low
       (or iconv) and sl.
     + Add some APT-related tools
 
- -- Axel Beckert <abe@deuxchevaux.org>  Wed, 26 Sep 2012 00:57:50 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Sat, 29 Sep 2012 00:39:19 +0200
 
 abe-desktop (5.2) unstable; urgency=low
 

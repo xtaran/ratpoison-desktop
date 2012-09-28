@@ -335,7 +335,7 @@ Depends: abe-commandline,
          sshuttle,
          unburden-home-dir,
          usb-modeswitch,
-         wicd | network-manager,
+         wicd-curses | wicd-client | network-manager,
          x11-xserver-utils,
          ${misc:Depends}
 Recommends: abe-desktop,

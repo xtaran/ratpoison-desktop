@@ -1,6 +1,7 @@
 abe-desktop (6.1~dev) UNRELEASED; urgency=low
 
   * Add missing dependency to libnotify-bin to abe-desktop-common.
+  * Move acpitail from abe-commandline to abe-laptop.
   * abe-laptop: Depend on debdelta.
   * Remove alternative dependency on iconv, iconv is part of an essential
     package.

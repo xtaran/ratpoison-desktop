@@ -9,7 +9,8 @@ abe-desktop (6.1~dev) UNRELEASED; urgency=low
     available everywhere.
   * Remove conflict with debconf-i18n as ubuntu-minimal depends on
     it. *sigh*
-  * abe-commandline: Recommend scrot, Suggest signing-party
+  * abe-commandline: Recommend scrot, Suggest signing-party and tofrodos or
+    dos2unix.
   * abe-laptop: Recommend mssh and tmpreaper.
   * Order dependencies properly again.
 

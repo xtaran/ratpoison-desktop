@@ -371,6 +371,7 @@ Suggests: avahi-autoipd,
           quicksynergy,
           tor,
           torsocks,
+          tpb,
           wvdial
 Architecture: all
 Description: Metapackage for Axel's laptops and netbooks

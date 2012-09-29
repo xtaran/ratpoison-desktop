@@ -11,6 +11,7 @@ abe-desktop (6.1~dev) UNRELEASED; urgency=low
     it. *sigh*
   * abe-commandline: Recommend scrot, Suggest signing-party and tofrodos or
     dos2unix.
+  * abe-commandline: Add dtrx as additional alternative generic unpacker.
   * abe-laptop: Recommend mssh and tmpreaper.
   * Order dependencies properly again.
 

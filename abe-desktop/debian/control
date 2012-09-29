@@ -325,6 +325,7 @@ Description: Common office applications on Axel's desktops
 Package: abe-laptop
 Depends: abe-commandline,
          abe-desktop-ratpoison | abe-desktop-awesome,
+         debdelta,
          gpm,
          hardlink,
          isc-dhcp-client | udhcpc | dhcp-client,

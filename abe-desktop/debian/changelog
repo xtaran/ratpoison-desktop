@@ -1,4 +1,4 @@
-abe-desktop (6.1~dev) UNRELEASED; urgency=low
+abe-desktop (6.1) unstable; urgency=low
 
   * Add missing dependency to libnotify-bin to abe-desktop-common.
   * Move acpitail from abe-commandline to abe-laptop.
@@ -16,7 +16,7 @@ abe-desktop (6.1~dev) UNRELEASED; urgency=low
   * abe-laptop: Recommend mssh and tmpreaper, Suggest tpb.
   * Order dependencies properly again.
 
- -- Axel Beckert <abe@deuxchevaux.org>  Sat, 29 Sep 2012 00:59:32 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Thu, 04 Oct 2012 01:35:37 +0200
 
 abe-desktop (6) unstable; urgency=low
 

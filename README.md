@@ -10,7 +10,8 @@ laptops, ranging from a first generation ASUS EeePC 701 4G netbook
 over a Sun UltraSparc 10 to a full-fledged multihead workstation from
 [Dalco](http://www.dalco.ch/) at work.
 
-My ASUS EeePC 701 running Debian GNU/Linux Sid was the first box where
+My ASUS EeePC 701 running [Debian GNU/Linux](http://www.debian.org/)
+[Sid](http://www.debian.org/releases/sid/) was the first box where
 I did not use FVWM anymore, because with a resolution of 800x480 on a
 7 inch screen, you a) want to waste as few pixels as possible by title
 bars, borders, … and b) most of the time anything else than

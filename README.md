@@ -259,6 +259,10 @@ commonly want installed on my boxes, too:
   GNOME dependencies are ok.
 * abe-office: Depends on the LibreOffice/GnomeOffice applications I
   prefer.
+* abe-laptop: Packages I commonly need on laptops and netbooks. ACPI
+  stuff, resource saving and monitoring stuff, … Also satisfies some
+  of ubuntu-minimal's hard dependencies to be able to e.g. install a
+  different syslog daemon without removing the metapackage.
 
 ### APT Repository
 

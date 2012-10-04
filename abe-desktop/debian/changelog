@@ -1,8 +1,19 @@
-abe-desktop (6.1+dev) UNRELEASED; urgency=low
+abe-desktop (7~dev) UNRELEASED; urgency=low
 
   * Make sure important alternatives are listed separately, too.
+  * abe-laptop: Satisfy some of Ubuntu's brainsick ubuntu-minimal hard
+    dependencies by providing them.
+    + Provide vim-tiny to be able to remove it. (Who needs vim-tiny if a
+      more complete vim can be installed.)
+    + Provide rsyslog to be able to install other, less resource-hungry
+      syslog daemons instead. Promote busybox-syslogd from Recommends to
+      Depends and add an alternative dependency on system-log-daemon.
+    + Conflict with and provide debconf-i18n again to get rid of
+      it. Depend on debconf (>= 1.5.39) | debconf-english to have
+      debconf-english installed when debconf needs either debconf-i18n or
+      debconf-english.
 
- -- Axel Beckert <abe@deuxchevaux.org>  Thu, 04 Oct 2012 01:49:46 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Thu, 04 Oct 2012 21:39:29 +0200
 
 abe-desktop (6.1) unstable; urgency=low
 

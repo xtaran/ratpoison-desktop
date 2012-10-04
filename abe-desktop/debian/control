@@ -355,7 +355,9 @@ Description: Common office applications on Axel's desktops
 Package: abe-laptop
 Depends: abe-commandline,
          abe-desktop-ratpoison | abe-desktop-awesome,
+         busybox-syslogd | system-log-daemon,
          debdelta,
+         debconf (>= 1.5.39) | debconf-english,
          gpm,
          hardlink,
          isc-dhcp-client | udhcpc | dhcp-client,
@@ -375,7 +377,6 @@ Recommends: abe-desktop,
             amora-cli | amora-applet,
             anacron,
             arandr | lxrandr,
-            busybox-syslogd,
             fdpowermon,
             mplayer | mplayer2,
             mssh,
@@ -407,6 +408,10 @@ Suggests: arandr,
           tpb,
           wide-dhcpv6-client,
           wvdial
+Conflicts: debconf-i18n
+Provides: debconf-i18n,
+          rsyslog,
+          vim-tiny
 Architecture: all
 Description: Metapackage for Axel's laptops and netbooks
  This metapackage depends on packages Axel's usually needs on his

@@ -14,9 +14,9 @@ My ASUS EeePC 701 running [Debian GNU/Linux](http://www.debian.org/)
 [Sid](http://www.debian.org/releases/sid/) was the first box where
 I did not use FVWM anymore, because with a resolution of 800x480 on a
 7 inch screen, you a) want to waste as few pixels as possible by title
-bars, borders, … and b) most of the time anything else than
-fullscreen windows doesn't make sense, moving windows around with the
-mouse makes even less sense.
+bars, borders, … and b) most of the time anything else than fullscreen
+windows doesn't make sense, moving windows around with the mouse makes
+even less sense.
 
 So I've chosen [ratpoison](http://www.nongnu.org/ratpoison/) for the
 EeePC (and still use it on that box) since it makes windows fullscreen

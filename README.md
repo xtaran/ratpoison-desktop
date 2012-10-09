@@ -1,4 +1,4 @@
-Axel's Tiling Window Manager Setup
+Axel’s Tiling Window Manager Setup
 ==================================
 
 History, Background and Reasoning
@@ -12,17 +12,17 @@ over a Sun UltraSparc 10 to a full-fledged multihead workstation from
 
 My ASUS EeePC 701 running [Debian GNU/Linux](http://www.debian.org/)
 [Sid](http://www.debian.org/releases/sid/) was the first box where
-I did not use FVWM anymore, because with a resolution of 800x480 on a
+I did not use FVWM anymore, because with a resolution of 800×480 on a
 7 inch screen, you a) want to waste as few pixels as possible by title
 bars, borders, … and b) most of the time anything else than fullscreen
-windows doesn't make sense, moving windows around with the mouse makes
+windows doesn’t make sense, moving windows around with the mouse makes
 even less sense.
 
-So I've chosen [ratpoison](http://www.nongnu.org/ratpoison/) for the
+So I’ve chosen [ratpoison](http://www.nongnu.org/ratpoison/) for the
 EeePC (and still use it on that box) since it makes windows fullscreen
 by default and the keybindings are nearly identical to
 [GNU Screen](http://www.gnu.org/software/screen/) and therefore easy
-to learn respectively I didn't have to learn anything to use it.
+to learn respectively I didn’t have to learn anything to use it.
 
 After more and more fine tuning involving the
 [xmobar](http://projects.haskell.org/xmobar/) text status bar, filled
@@ -52,8 +52,8 @@ Windows key as window manager meta key. I even configured my ratpoison
 to use that in addition to the original `Ctrl-T` prefix.
 
 You will also find some configuration for [i3](http://i3wm.org/)
-(version 4 and upwards) in the repo as I also experiment with i3's
-tree-based layout to see if I can workaround some of awesome's
+(version 4 and upwards) in the repo as I also experiment with i3’s
+tree-based layout to see if I can workaround some of awesome’s
 shortcomings by using i3 instead.
 
 
@@ -63,7 +63,7 @@ Repository Name and URLs
 So this repository is no more a ratpoison only setup. But since I
 neither want to change the repository name nor any URL I decided that
 I stick with having "ratpoison" in the name. The amount of "rodent"
-usage you need with this setup hasn't changed anyway, so without the
+usage you need with this setup hasn’t changed anyway, so without the
 relation to the window manager of this name, the name is still fitting
 (as it fits to the window manager of that name :-).
 
@@ -109,11 +109,11 @@ packages) to be installed:
   `emacs` and `emacsclient`)
 * [gnome-keyring](http://packages.debian.org/stable/gnome-keyring)
 * [hsetroot](http://packages.debian.org/stable/hsetroot)
-* [i3status](http://packages.debian.org/stable/i3status) >= 2.2
+* [i3status](http://packages.debian.org/stable/i3status) ≥ 2.2
 * [libfile-slurp-perl](http://packages.debian.org/stable/libfile-slurp-perl)
 * [libfile-temp-perl](http://packages.debian.org/stable/libfile-temp-perl)
 * [lsb-release](http://packages.debian.org/stable/lsb-release)
-* [ratmenu](http://packages.debian.org/stable/ratmenu) >= 2.3.20
+* [ratmenu](http://packages.debian.org/stable/ratmenu) ≥ 2.3.20
 * [ratpoison](http://packages.debian.org/stable/ratpoison) or
   [awesome](http://packages.debian.org/stable/awesome) +
   [awesome-extra](http://packages.debian.org/stable/awesome-extras)
@@ -152,7 +152,7 @@ Used if available but except the system tray stuff recommended anyway:
   (for `markdown-mode` and others)
 * [gnome-settings-daemon](http://packages.debian.org/stable/gnome-settings-daemon)
 * [inotail](http://packages.debian.org/stable/inotail) (Linux only)
-* [keynav](http://packages.debian.org/stable/keynav) >=
+* [keynav](http://packages.debian.org/stable/keynav) ≥
   0.20101014.3067
 * [redshift](http://packages.debian.org/stable/redshift)
 * [unclutter](http://packages.debian.org/stable/unclutter)
@@ -194,7 +194,7 @@ do not seem to be loaded automatically (write them into `/etc/modules`):
 
 Only used in non-necessary scripts or keybindings:
 
-* [dwm-tools](http://packages.debian.org/stable/dwm-tools) >= 31-1 or
+* [dwm-tools](http://packages.debian.org/stable/dwm-tools) ≥ 31-1 or
   [suckless-tools](http://packages.debian.org/stable/suckless-tools)
   (for `dmenu`, `tabbed` and `wmname`)
 * [openssh-client](http://packages.debian.org/stable/openssh-client)
@@ -229,7 +229,7 @@ Only in commented code (i.e. currently not used):
 Debian Metapackages
 -------------------
 
-The project's subdirectory `abe-desktop` resembles a Debian source
+The project’s subdirectory `abe-desktop` resembles a Debian source
 package which generates several `.deb` metapackages.
 
 ### Metapackages for my Desktop Setup
@@ -262,7 +262,7 @@ commonly want installed on my boxes, too:
   prefer.
 * abe-laptop: Packages I commonly need on laptops and netbooks. ACPI
   stuff, resource saving and monitoring stuff, … Also satisfies some
-  of ubuntu-minimal's hard dependencies to be able to e.g. install a
+  of ubuntu-minimal’s hard dependencies to be able to e.g. install a
   different syslog daemon without removing the metapackage.
 
 ### APT Repository

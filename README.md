@@ -60,7 +60,7 @@ shortcomings by using i3 instead.
 Repository Name and URLs
 ------------------------
 
-So this repository is no more a ratpoison only setup. But since I
+So this repository is no more a ratpoison-only setup. But since I
 neither want to change the repository name nor any URL I decided that
 I stick with having "ratpoison" in the name. The amount of "rodent"
 usage you need with this setup hasn’t changed anyway, so without the
@@ -108,8 +108,8 @@ packages) to be installed:
   (for `logread`)
 * [conkeror](http://packages.debian.org/stable/conkeror) or some other
   web browser
-* [emacs](http://packages.debian.org/stable/emacs) (or emacsen, for
-  `emacs` and `emacsclient`)
+* [emacs](http://packages.debian.org/stable/emacs) (or any other
+  emacsen, for `emacs` and `emacsclient`)
 * [gnome-keyring](http://packages.debian.org/stable/gnome-keyring)
 * [hsetroot](http://packages.debian.org/stable/hsetroot)
 * [i3status](http://packages.debian.org/stable/i3status) ≥ 2.2
@@ -270,5 +270,5 @@ commonly want installed on my boxes, too:
 
 ### APT Repository
 
-All those metapackages are usually also available via APT from
+All those metapackages are usually also available from
 [my APT repository](http://noone.org/apt/).

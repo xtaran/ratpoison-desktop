@@ -86,7 +86,7 @@ tedious to always type them:
     ~/.colordiffrc → colordiffrc
     ~/.emacs       → emacs.el
 
-These symbolic links can also be automatically setup by calling
+These symbolic links can also be automatically set up by calling
 `bin/setup-symlinks.sh` from this repository.
 
 ### Source Code

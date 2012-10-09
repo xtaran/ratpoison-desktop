@@ -89,6 +89,8 @@ tedious to always type them:
 These symbolic links can also be automatically setup by calling
 `bin/setup-symlinks.sh` from this repository.
 
+### Source Code
+
 Sources available via
 [my own Git server](http://git.noone.org/?p=ratpoison.git),
 [Gitorious](http://gitorious.org/abe/ratpoison-desktop), and

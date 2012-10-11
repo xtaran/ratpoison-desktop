@@ -5,7 +5,7 @@ History, Background and Reasoning
 ---------------------------------
 
 While being a heavy [FVWM](http://www.fvwm.org/) user for nearly 15
-years, I now run tiling window managers on all my "desktops" and
+years, I now run tiling window managers on all my “desktops” and
 laptops, ranging from a first generation ASUS EeePC 701 4G netbook
 over a Sun UltraSparc 10 to a full-fledged multihead workstation from
 [Dalco](http://www.dalco.ch/) at work.
@@ -62,7 +62,7 @@ Repository Name and URLs
 
 So this repository is no more a ratpoison-only setup. But since I
 neither want to change the repository name nor any URL I decided that
-I stick with having "ratpoison" in the name. The amount of "rodent"
+I stick with having “ratpoison” in the name. The amount of “rodent”
 usage you need with this setup hasn’t changed anyway, so without the
 relation to the window manager of this name, the name is still fitting
 (as it fits to the window manager of that name :-).

@@ -4,6 +4,7 @@ ssh-add < /dev/null
 
 systray_applets
 
-uxterm &
+xterm &
+xterm &
 conkeror &
 liferea &

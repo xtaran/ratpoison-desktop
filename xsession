@@ -81,7 +81,7 @@ fi
 
 # Trayer needs to be started after ratpoison
 ( sleep 1; \
-  uxterm &
+  #xterm &
   #urxvt &
   start_bar &
   #sleep 1;

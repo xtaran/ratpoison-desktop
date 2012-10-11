@@ -18,6 +18,8 @@ synergys
 # to the IMAP server
 ssh-add < /dev/null
 
+uxterm -fn fixed &
+
 # Start xscreensaver logger
 xscreensaver-command -watch >> $HOME/.xscreensaver.`uname -n`.log &
 

@@ -32,6 +32,7 @@ xsession_per_host() {
 	sleep 1
 	. $PH/xsession.$HOSTNAME
     elif [ -n "$*" ]; then
+        uxterm &
 	"$@"
     fi &
 }

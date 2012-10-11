@@ -1,0 +1,9 @@
+# -*- shell-script -*-
+
+ssh-add < /dev/null
+
+systray_applets
+
+uxterm &
+conkeror &
+liferea &

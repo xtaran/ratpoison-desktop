@@ -31,7 +31,7 @@ xscreensaver-command -watch >> $HOME/.xscreensaver.`uname -n`.log &
 $HOME/bin/muttstart.sh
 /usr/bin/emacs ~/xchange/note.txt &
 
-uxterm -fn fixed -geometry 32x19+0+835 +sb -T "XScreenSaver Log" -e tail -f $HOME/.xscreensaver.`uname -n`.log &
+uxterm -fn fixed +sb -T "XScreenSaver Log" -e tail -f $HOME/.xscreensaver.`uname -n`.log &
 uxterm -fn fixed &
 
 whee gtk-redshift -l $LOC
@@ -43,8 +43,7 @@ whee gtk-redshift -l $LOC
 export DISPLAY=:0.1
 #env OPERA_PLUGIN_PATH=/dev/null opera &
 conkeror &
-uxterm -fn fixed -geometry 68x7+486+1479 &
-yeahconsole &
+uxterm -fn fixed &
 
 systray_applets
 
@@ -54,8 +53,8 @@ systray_applets
 
 export DISPLAY=:0.2
 conkeror -P monitoring &
-uxterm -fn fixed -geometry 60x14+810+1261 &
-$HOME/bin/ircstart.sh -geometry 130x25+0+1261
+uxterm -fn fixed &
+$HOME/bin/ircstart.sh
 yeahconsole &
 
 whee gtk-redshift -l $LOC

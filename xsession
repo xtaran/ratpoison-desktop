@@ -81,8 +81,8 @@ fi
 
 # Trayer needs to be started after ratpoison
 ( sleep 1; \
-  #xterm &
-  urxvt &
+  uxterm &
+  #urxvt &
   start_bar &
   #sleep 1;
   whee unclutter -keystroke -idle 2

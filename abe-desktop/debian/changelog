@@ -12,6 +12,7 @@ abe-desktop (7~dev) UNRELEASED; urgency=low
       it. Depend on debconf (>= 1.5.39) | debconf-english to have
       debconf-english installed when debconf needs either debconf-i18n or
       debconf-english.
+  * abe-commandline: Suggest chiark-scripts (for random-word)
 
  -- Axel Beckert <abe@deuxchevaux.org>  Thu, 04 Oct 2012 21:39:29 +0200
 

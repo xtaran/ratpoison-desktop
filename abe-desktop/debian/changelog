@@ -1,6 +1,7 @@
 abe-desktop (7~dev) UNRELEASED; urgency=low
 
   * Make sure important alternatives are listed separately, too.
+  * Merge in some dependencies of kiva-base and other kiva-* metapackages.
   * abe-laptop: Satisfy some of Ubuntu's brainsick ubuntu-minimal hard
     dependencies by providing them.
     + Provide vim-tiny to be able to remove it. (Who needs vim-tiny if a

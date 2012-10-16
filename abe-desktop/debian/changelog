@@ -14,6 +14,7 @@ abe-desktop (7~dev) UNRELEASED; urgency=low
       debconf-english installed when debconf needs either debconf-i18n or
       debconf-english.
   * abe-commandline: Suggest chiark-scripts (for random-word) or polygen
+  * abe-office: Suggest at least one Markdown implementation.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Thu, 04 Oct 2012 21:39:29 +0200
 

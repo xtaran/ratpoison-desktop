@@ -1,4 +1,4 @@
-abe-desktop (7~dev) UNRELEASED; urgency=low
+abe-desktop (7) unstable; urgency=low
 
   * Make sure important alternatives are listed separately, too.
   * Merge in some dependencies of kiva-base and other kiva-* metapackages.
@@ -18,7 +18,7 @@ abe-desktop (7~dev) UNRELEASED; urgency=low
     + Promote sipcalc to Recommends. Alternatives are ipcalc and netmask.
   * abe-office: Suggest at least one Markdown implementation.
 
- -- Axel Beckert <abe@deuxchevaux.org>  Thu, 04 Oct 2012 21:39:29 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Wed, 17 Oct 2012 22:09:20 +0200
 
 abe-desktop (6.1) unstable; urgency=low
 

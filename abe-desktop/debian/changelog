@@ -1,3 +1,9 @@
+abe-desktop (7+dev) unstable; urgency=low
+
+  * Fix entry about sipcalc promotion in previous entry.
+
+ -- Axel Beckert <abe@deuxchevaux.org>  Wed, 17 Oct 2012 23:07:58 +0200
+
 abe-desktop (7) unstable; urgency=low
 
   * Make sure important alternatives are listed separately, too.
@@ -15,7 +21,7 @@ abe-desktop (7) unstable; urgency=low
       debconf-english.
   * abe-commandline:
     + Suggest chiark-scripts (for random-word) or polygen
-    + Promote sipcalc to Recommends. Alternatives are ipcalc and netmask.
+    + Promote sipcalc to Depends. Alternatives are ipcalc and netmask.
   * abe-office: Suggest at least one Markdown implementation.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Wed, 17 Oct 2012 22:09:20 +0200

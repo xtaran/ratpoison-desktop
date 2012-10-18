@@ -15,6 +15,7 @@ else
       wget -O- -T2 -q http://v4.showip.spamt.net/ || \
       wget -O- -T2 -q http://showipv6.de/shortv4only || \
       wget -O- -T2 -q http://checkip.dyndns.org/ | sed -e 's|^.*<body>Current IP Address: ||;s|</body>.*$||;s|^500 .*|N/A|;' || \
+      wget -O- -T2 -q http://ente.limmat.ch/myip | fgrep 'Your IP' | sed -e 's|^.*(||;s|).*$||;s|^500 .*|N/A|;' || \
       echo N/A ) | \
       sed -e 's:^$:N/A:'
 fi

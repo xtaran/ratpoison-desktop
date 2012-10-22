@@ -1,7 +1,7 @@
 abe-desktop (7+dev) UNRELEASED; urgency=low
 
   * fail2ban only works with system-log-daemons != busybox-syslogd → add
-    busybox-syslogd as alternative to fail2ban.
+    busybox-syslogd as alternative to fail2ban. (c.f. #691002)
   * Prefer rxvt-unicode-256color over rxvt-unicode
   * Fix entry about sipcalc promotion in previous entry.
 

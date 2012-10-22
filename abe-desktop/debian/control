@@ -440,3 +440,15 @@ Architecture: all
 Description: Metapackage for Axel's laptops and netbooks
  This metapackage depends on packages Axel's usually needs on his
  mobile devices.
+
+Package: abe-monitoring
+Depends: xymon-client | hobbit-client,
+         hobbit-plugins,
+         debsums,
+         ${misc:Depends}
+Recommends: lsof
+Suggests: sudo
+Architecture: all
+Description: Metapackage for computers Axel's wants to be monitored
+ This metapackage depends on packages Axel's usually needs on his
+ those computers he wants to have monitored.

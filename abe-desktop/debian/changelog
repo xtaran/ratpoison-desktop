@@ -1,3 +1,9 @@
+abe-desktop (8~dev) UNRELEASED; urgency=low
+
+  * Add new metapackage abe-monitoring
+
+ -- Axel Beckert <abe@deuxchevaux.org>  Mon, 22 Oct 2012 23:29:43 +0200
+
 abe-desktop (7.1) unstable; urgency=low
 
   * fail2ban only works with system-log-daemons != busybox-syslogd → add

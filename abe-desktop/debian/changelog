@@ -2,6 +2,7 @@ abe-desktop (8~dev) UNRELEASED; urgency=low
 
   * Add new metapackage abe-monitoring
   * abe-commandline: Suggest nvi
+  * abe-desktop-common: Recommend xfce4-volumed
 
  -- Axel Beckert <abe@deuxchevaux.org>  Mon, 22 Oct 2012 23:29:43 +0200
 

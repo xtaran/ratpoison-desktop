@@ -20,6 +20,7 @@ systray_applets() {
     whee radiotray
     whee amora-applet
     whe clipit || whe parcellite &
+    whe xfce4-volumed
     whe qasmixer -t || whe volumeicon || whe volti &
     [ -n "`find $HOME/.yarssr/state -type f`" ] && whee yarssr
     whee shutter --min_at_startup

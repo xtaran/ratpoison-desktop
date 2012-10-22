@@ -18,7 +18,7 @@ synergys
 # to the IMAP server
 ssh-add < /dev/null
 
-uxterm -fn fixed &
+uxterm &
 
 # Start xscreensaver logger
 xscreensaver-command -watch >> $HOME/.xscreensaver.`uname -n`.log &
@@ -31,8 +31,8 @@ xscreensaver-command -watch >> $HOME/.xscreensaver.`uname -n`.log &
 $HOME/bin/muttstart.sh
 /usr/bin/emacs ~/xchange/note.txt &
 
-uxterm -fn fixed +sb -T "XScreenSaver Log" -e tail -f $HOME/.xscreensaver.`uname -n`.log &
-uxterm -fn fixed &
+uxterm +sb -T "XScreenSaver Log" -e tail -f $HOME/.xscreensaver.`uname -n`.log &
+uxterm &
 
 whee gtk-redshift -l $LOC
 
@@ -43,7 +43,7 @@ whee gtk-redshift -l $LOC
 export DISPLAY=:0.1
 #env OPERA_PLUGIN_PATH=/dev/null opera &
 conkeror &
-uxterm -fn fixed &
+uxterm &
 
 systray_applets
 
@@ -53,7 +53,7 @@ systray_applets
 
 export DISPLAY=:0.2
 conkeror -P monitoring &
-uxterm -fn fixed &
+uxterm &
 $HOME/bin/ircstart.sh
 yeahconsole &
 

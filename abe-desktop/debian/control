@@ -459,7 +459,7 @@ Package: abe-laptop-small-disk
 Depends: debconf (>= 1.5.39) | debconf-english,
          ${misc:Depends}
 Suggests: abe-laptop-ubuntu
-Conflicts: debconf-i18n
+Conflicts: debconf-i18n (>= 0)
 Architecture: all
 Description: Keeps some disk-wasting packages off the disk
  This metapackage conflicts with packages Axel considers a waste of

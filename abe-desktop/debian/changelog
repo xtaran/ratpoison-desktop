@@ -2,6 +2,8 @@ abe-desktop (8~dev) UNRELEASED; urgency=low
 
   * Add new metapackage abe-monitoring
   * Split off abe-laptop-ubuntu and abe-small-disk from abe-laptop.
+    + abe-laptop: Downgrade localepurge to Recommends as it's now a hard
+      dependency of abe-small-disk
   * Include /etc/apt/apt.conf.d/98-hardlink-doc in abe-laptop-small-disk
     + Fix debian/rules (merge install target in binary-indep target)
     + abe-laptop-small-disk needs to depend on hardlink

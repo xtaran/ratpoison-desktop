@@ -465,6 +465,8 @@ Recommends: busybox-syslogd,
 Suggests: abe-laptop-ubuntu,
           tmpreaper
 Conflicts: debconf-i18n (>= 0)
+Replaces: abe-laptop-small-disk
+Breaks: abe-laptop-small-disk
 Architecture: all
 Description: Keeps some disk-wasting packages off the disk
  This metapackage conflicts with packages Axel considers a waste of

@@ -1,0 +1,2 @@
+abe-small-disk: extended-description-is-probably-too-short
+abe-small-disk: conflicts-with-version debconf-i18n (>= 0)

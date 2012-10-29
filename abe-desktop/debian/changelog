@@ -1,8 +1,7 @@
 abe-desktop (8~dev) UNRELEASED; urgency=low
 
   * Add new metapackage abe-monitoring
-  * Split up abe-laptop in abe-laptop, abe-laptop-ubuntu, and
-    abe-laptop-small-disk.
+  * Split off abe-laptop-ubuntu and abe-small-disk from abe-laptop.
   * Include /etc/apt/apt.conf.d/98-hardlink-doc in abe-laptop-small-disk
     + Fix debian/rules (merge install target in binary-indep target)
     + abe-laptop-small-disk needs to depend on hardlink

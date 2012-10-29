@@ -412,7 +412,7 @@ Recommends: abe-desktop,
             wide-dhcpv6-client | dibbler-client,
             wireshark,
             xserver-xorg-input-synaptics
-Suggests: abe-laptop-small-disk,
+Suggests: abe-small-disk,
           abe-laptop-ubuntu,
           arandr,
           auto6to4,
@@ -455,7 +455,7 @@ Description: Metapackage to fulfill some hard dependencies of ubuntu-minimal
  It also conflicts with packages, Axel doesn't want to see on any of
  his laptops.
 
-Package: abe-laptop-small-disk
+Package: abe-small-disk
 Depends: debconf (>= 1.5.39) | debconf-english,
          hardlink,
          localepurge,

@@ -460,7 +460,10 @@ Depends: debconf (>= 1.5.39) | debconf-english,
          hardlink,
          localepurge,
          ${misc:Depends}
-Suggests: abe-laptop-ubuntu
+Recommends: busybox-syslogd,
+            unburden-home-dir
+Suggests: abe-laptop-ubuntu,
+          tmpreaper
 Conflicts: debconf-i18n (>= 0)
 Architecture: all
 Description: Keeps some disk-wasting packages off the disk

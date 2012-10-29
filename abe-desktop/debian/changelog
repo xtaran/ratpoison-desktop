@@ -1,6 +1,8 @@
 abe-desktop (8~dev) UNRELEASED; urgency=low
 
   * Add new metapackage abe-monitoring
+  * Split up abe-laptop in abe-laptop, abe-laptop-ubuntu, and
+    abe-laptop-small-disk.
   * abe-commandline: Suggest nvi
   * abe-desktop-common: Recommend xfce4-volumed
   * abe-laptop: Conflict with apmd (needs non-Debian kernel)

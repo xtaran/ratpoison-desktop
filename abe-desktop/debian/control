@@ -379,7 +379,6 @@ Package: abe-laptop
 Depends: abe-commandline,
          abe-desktop-ratpoison | abe-desktop-awesome,
          busybox-syslogd | system-log-daemon,
-         debconf (>= 1.5.39) | debconf-english,
          debdelta,
          gpm,
          hardlink,
@@ -397,6 +396,7 @@ Depends: abe-commandline,
          x11-xserver-utils,
          ${misc:Depends}
 Recommends: abe-desktop,
+            abe-laptop-ubuntu,
             acpitail,
             amora-cli | amora-applet,
             anacron,
@@ -414,7 +414,8 @@ Recommends: abe-desktop,
             wide-dhcpv6-client | dibbler-client,
             wireshark,
             xserver-xorg-input-synaptics
-Suggests: arandr,
+Suggests: abe-laptop-small-disk,
+          arandr,
           auto6to4,
           avahi-autoipd,
           avahi-discover,
@@ -434,15 +435,36 @@ Suggests: arandr,
           tpb,
           wide-dhcpv6-client,
           wvdial
-Conflicts: apmd,
-           debconf-i18n
-Provides: debconf-i18n,
-          rsyslog,
-          vim-tiny
+Conflicts: apmd
 Architecture: all
 Description: Metapackage for Axel's laptops and netbooks
  This metapackage depends on packages Axel's usually needs on his
  mobile devices.
+
+Package: abe-laptop-ubuntu
+Depends: busybox-syslogd | system-log-daemon,
+         debconf (>= 1.5.39) | debconf-english,
+         ${misc:Depends}
+Provides: debconf-i18n,
+          rsyslog,
+          vim-tiny
+Architecture: all
+Description: Metapackage to fulfill some hard dependencies of ubuntu-minimal
+ This metapackage provides a few packages needed by ubuntu-minimal to
+ allow installation of alternatives for the same functionality.
+ .
+ It also conflicts with packages, Axel doesn't want to see on any of
+ his laptops.
+
+Package: abe-laptop-small-disk
+Depends: debconf (>= 1.5.39) | debconf-english,
+         ${misc:Depends}
+Suggests: abe-laptop-ubuntu
+Conflicts: debconf-i18n
+Architecture: all
+Description: Keeps some disk-wasting packages off the disk
+ This metapackage conflicts with packages Axel considers a waste of
+ disk space if disk is sacre.
 
 Package: abe-monitoring
 Depends: xymon-client | hobbit-client,

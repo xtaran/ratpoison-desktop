@@ -18,18 +18,13 @@ clean:
 	dh_testroot
 	dh_clean
 
-install: 
-	dh_testdir
-	dh_testroot
-	dh_prep
-	dh_installdirs
-	dh_install
-
 binary: binary-indep binary-arch
 binary-arch:
 binary-indep:
 	dh_testdir
 	dh_testroot
+	dh_installdirs
+	dh_install
 	dh_installchangelogs
 	dh_installdocs
 	dh_lintian

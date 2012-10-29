@@ -457,6 +457,7 @@ Description: Metapackage to fulfill some hard dependencies of ubuntu-minimal
 
 Package: abe-laptop-small-disk
 Depends: debconf (>= 1.5.39) | debconf-english,
+         hardlink,
          ${misc:Depends}
 Suggests: abe-laptop-ubuntu
 Conflicts: debconf-i18n (>= 0)

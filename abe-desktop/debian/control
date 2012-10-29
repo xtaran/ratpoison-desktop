@@ -434,7 +434,8 @@ Suggests: arandr,
           tpb,
           wide-dhcpv6-client,
           wvdial
-Conflicts: debconf-i18n
+Conflicts: apmd,
+           debconf-i18n
 Provides: debconf-i18n,
           rsyslog,
           vim-tiny

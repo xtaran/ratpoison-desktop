@@ -470,7 +470,8 @@ Breaks: abe-laptop-small-disk
 Architecture: all
 Description: Keeps some disk-wasting packages off the disk
  This metapackage conflicts with packages Axel considers a waste of
- disk space if disk is sacre.
+ disk space if disk is sacre. It also pulls in packages which help to
+ find waste of disk-space.
 
 Package: abe-monitoring
 Depends: xymon-client | hobbit-client,

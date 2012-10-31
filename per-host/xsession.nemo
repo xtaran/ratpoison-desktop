@@ -1,12 +1,12 @@
 # -*- shell-script -*-
 
-xterm -e sudo -i &
-xterm &
+uxterm -e sudo -i &
+uxterm &
 ssh-add < /dev/null
-xterm &
-xterm -e 'logread -f | ccze -A' &
+uxterm &
+uxterm -e 'logread -f | ccze -A' &
 emacs &
-xterm -e 'bin/heustock.sh' &
-xterm &
+uxterm -e 'bin/heustock.sh' &
+uxterm &
 $HOME/bin/localhost-socks.sh &
 conkeror &

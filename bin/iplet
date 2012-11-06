@@ -5,7 +5,7 @@ if [ -n "$1" ]; then
 fi
 
 if [ -x /usr/bin/dig ]; then
-    DNSQUERY=`dig +short myip.opendns.com @resolver1.opendns.com`
+    DNSQUERY=`dig +short myip.opendns.com @resolver1.opendns.com | egrep -v '^;;'`
 fi
 
 if [ -n "$DNSQUERY" ]; then

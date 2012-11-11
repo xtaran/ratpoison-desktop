@@ -355,7 +355,7 @@ Depends: catdoc | antiword | wv,
          ${misc:Depends}
 Recommends: dia-gnome | dia | xfig,
             gnumeric,
-            libreoffice-gnome | libreoffice-gtk | openoffice.org-gnome | openoffice.org-gtk,
+            libreoffice-gnome | libreoffice-gtk | openoffice.org-gnome | openoffice.org-gtk | libreoffice-gtk3,
             libreoffice-math                    | openoffice.org-math
 Suggests: antiword,
           catdoc,

@@ -10,6 +10,7 @@ abe-desktop (8~dev) UNRELEASED; urgency=low
   * abe-desktop-common: Recommend xfce4-volumed
   * abe-laptop: Conflict with apmd (needs non-Debian kernel)
   * abe-commandline: Add free alternatives to lha and prefer them.
+  * abe-office: Support libreoffice-gtk3
 
  -- Axel Beckert <abe@deuxchevaux.org>  Mon, 22 Oct 2012 23:29:43 +0200
 

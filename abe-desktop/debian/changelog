@@ -11,8 +11,9 @@ abe-desktop (8~dev) UNRELEASED; urgency=low
   * abe-laptop: Conflict with apmd (needs non-Debian kernel)
   * abe-commandline: Add free alternatives to lha and prefer them.
   * abe-office: Support libreoffice-gtk3
-  * abe-office: Suggest libreoffice-pdfimport (alternatively
-    openoffice.org-pdfimport)
+  * abe-office: Suggest libreoffice-pdfimport, -presenter-console, and
+    -presentation-minimizer (alternatively their openoffice.org
+    predecessors)
 
  -- Axel Beckert <abe@deuxchevaux.org>  Mon, 22 Oct 2012 23:29:43 +0200
 

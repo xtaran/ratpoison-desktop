@@ -14,7 +14,7 @@ abe-desktop (8~dev) UNRELEASED; urgency=low
   * abe-office: Support libreoffice-gtk3
   * abe-office: Suggest libreoffice-pdfimport, -presenter-console, and
     -presentation-minimizer (alternatively their openoffice.org
-    predecessors) as well as mdpress.
+    predecessors) as well as mdpress or alternatively python-landslide.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Mon, 22 Oct 2012 23:29:43 +0200
 

@@ -4,7 +4,7 @@ uxterm -e sudo -i &
 uxterm &
 ssh-add < /dev/null
 uxterm &
-uxterm -e 'logread -f | ccze -A' &
+uxterm -T 'logread -f | ccze -A' -e 'logread -f | ccze -A' &
 emacs &
 uxterm -e 'bin/heustock.sh' &
 uxterm &

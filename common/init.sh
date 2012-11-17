@@ -17,7 +17,7 @@ export PATH="${PATH}:/sbin:/usr/sbin:${HOME}/${RP}/bin"
 # Locales -- I prefer C.UTF-8, but that's just available on
 # debian-based distros since 2011, so lets first check which of my
 # preferred locales are actually available.
-for $locale in C.UTF-8 en_US.UTF-8 en_US.utf8; do
+for locale in C.UTF-8 en_US.UTF-8 en_US.utf8; do
     if locale -a | fgrep -q $locale ; then
         export LANG=$locale
         break

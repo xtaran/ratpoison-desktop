@@ -15,7 +15,9 @@ abe-desktop (8~dev) UNRELEASED; urgency=low
   * abe-office: Suggest libreoffice-pdfimport, -presenter-console, and
     -presentation-minimizer (alternatively their openoffice.org
     predecessors) as well as mdpress or alternatively python-landslide.
-  * abe-gnome: Recommend cinnamon
+  * abe-gnome: Recommend cinnamon, provide caribou and caribou-antler to
+    allow the use of gnome metapackages or cinnamon without on-screen
+    keyboard.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Mon, 22 Oct 2012 23:29:43 +0200
 

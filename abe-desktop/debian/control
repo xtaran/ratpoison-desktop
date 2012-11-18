@@ -342,6 +342,7 @@ Suggests: abe-office,
           gparted,
           liferea,
           ssh-contact-client
+Provides: caribou, caribou-antler
 Architecture: all
 Description: Common GNOME applications on Axel's desktops
  This metapackage depends on packages Axel's oftens installs when

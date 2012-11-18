@@ -333,7 +333,8 @@ Depends: baobab,
          gucharmap,
          mssh,
          ${misc:Depends}
-Recommends: gobby | gobby-0.4 | gobby-0.5,
+Recommends: cinnamon,
+            gobby | gobby-0.4 | gobby-0.5,
             gpointing-device-settings,
             gui-apt-key,
             meld

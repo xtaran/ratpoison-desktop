@@ -1,1 +1,2 @@
 abe-laptop: extended-description-is-probably-too-short
+abe-laptop: conflicts-with-version apmd (>= 0)

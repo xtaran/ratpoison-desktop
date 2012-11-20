@@ -440,7 +440,7 @@ Suggests: abe-small-disk,
           tpb,
           wide-dhcpv6-client,
           wvdial
-Conflicts: apmd
+Conflicts: apmd (>= 0)
 Architecture: all
 Description: Metapackage for Axel's laptops and netbooks
  This metapackage depends on packages Axel's usually needs on his
@@ -450,13 +450,15 @@ Package: abe-laptop-ubuntu
 Depends: busybox-syslogd | system-log-daemon,
          debconf (>= 1.5.39) | debconf-english,
          ${misc:Depends}
-Provides: debconf-i18n,
+Provides: apmd,
+          debconf-i18n,
           rsyslog,
           vim-tiny
 Architecture: all
 Description: Metapackage to fulfill some hard dependencies of ubuntu-minimal
- This metapackage provides a few packages needed by ubuntu-minimal to
- allow installation of alternatives for the same functionality.
+ This metapackage provides a few packages needed by ubuntu-minimal and
+ other Ubuntu metapackages to allow installation of alternatives for
+ the same functionality or to rip out useless stuff like apmd.
  .
  It also conflicts with packages, Axel doesn't want to see on any of
  his laptops.

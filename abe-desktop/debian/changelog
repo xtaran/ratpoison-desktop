@@ -1,4 +1,4 @@
-abe-desktop (8~dev) UNRELEASED; urgency=low
+abe-desktop (8) unstable; urgency=low
 
   * Add new metapackage abe-monitoring
   * Split off abe-laptop-ubuntu and abe-small-disk from abe-laptop.
@@ -17,7 +17,7 @@ abe-desktop (8~dev) UNRELEASED; urgency=low
     predecessors) as well as mdpress or alternatively python-landslide.
   * abe-gnome: Recommend cinnamon.
 
- -- Axel Beckert <abe@deuxchevaux.org>  Mon, 22 Oct 2012 23:29:43 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Tue, 20 Nov 2012 22:32:37 +0100
 
 abe-desktop (7.1) unstable; urgency=low
 

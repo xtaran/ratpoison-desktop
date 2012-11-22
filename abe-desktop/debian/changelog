@@ -4,6 +4,7 @@ abe-desktop (8.1~dev) UNRELEASED; urgency=low
     on it, but isn't of any use. Make conflict with apmd in abe-laptop
     versioned, so it doesn't catch the metapackages which provide
     apmd. Silence lintian arguing about this.
+  * Replace fuser by psmisc (fuser is no package but part of psmisc)
 
  -- Axel Beckert <abe@deuxchevaux.org>  Tue, 20 Nov 2012 22:54:35 +0100
 

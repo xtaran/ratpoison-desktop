@@ -5,6 +5,9 @@ abe-desktop (8.1~dev) UNRELEASED; urgency=low
     versioned, so it doesn't catch the metapackages which provide
     apmd. Silence lintian arguing about this.
   * Replace fuser by psmisc (fuser is no package but part of psmisc)
+  * abe-commandline now pulls in ncurses-term for consistent $TERM
+    variables inside screen (c.f. #694178). abe-desktop-common suggests
+    it, too.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Tue, 20 Nov 2012 22:54:35 +0100
 

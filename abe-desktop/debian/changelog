@@ -8,6 +8,7 @@ abe-desktop (8.1~dev) UNRELEASED; urgency=low
   * abe-commandline now pulls in ncurses-term for consistent $TERM
     variables inside screen (c.f. #694178). abe-desktop-common suggests
     it, too.
+  * abe-laptop suggests sm.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Tue, 20 Nov 2012 22:54:35 +0100
 

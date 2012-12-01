@@ -123,7 +123,8 @@ Suggests: clfswm,
           fvwm,
           herbstluftwm,
           notion,
-          tritium
+          tritium,
+          grub-imageboot | grml-rescueboot
 Architecture: all
 Description: Packages helpful for Axel's desktop setup
  This metapackage depends on packages common for Axel's desktop

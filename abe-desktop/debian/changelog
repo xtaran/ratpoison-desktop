@@ -1,7 +1,8 @@
 abe-desktop (8.2~dev) UNRELEASED; urgency=low
 
   * abe-desktop suggests grub-imageboot or grml-rescueboot.
-  * abe-commandline recommends cpipe or pipemeter and suggests both.
+  * abe-commandline recommends bar, cpipe or pipemeter and suggests all of
+    them.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Sat, 01 Dec 2012 15:26:01 +0100
 

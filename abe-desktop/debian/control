@@ -112,6 +112,7 @@ Description: Packages necessary for Axel's awesome desktop
 Package: abe-desktop
 Depends: abe-desktop-awesome,
          abe-desktop-ratpoison,
+         wdm | xdm | x-display-manager,
          ${misc:Depends}
 Recommends: flwm,
             i3-wm,

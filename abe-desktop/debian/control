@@ -425,7 +425,8 @@ Recommends: abe-desktop,
             unburden-home-dir,
             wide-dhcpv6-client | dibbler-client,
             wireshark,
-            xserver-xorg-input-synaptics
+            xserver-xorg-input-synaptics,
+            xul-ext-https-everywhere
 Suggests: abe-small-disk,
           abe-laptop-ubuntu,
           arandr,

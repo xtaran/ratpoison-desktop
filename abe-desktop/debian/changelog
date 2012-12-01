@@ -1,4 +1,4 @@
-abe-desktop (8.1~dev) UNRELEASED; urgency=low
+abe-desktop (8.1) unstable; urgency=low
 
   * abe-laptop-ubuntu: Also provide apmd. Ubuntu metapackages depend a lot
     on it, but isn't of any use. Make conflict with apmd in abe-laptop
@@ -11,7 +11,7 @@ abe-desktop (8.1~dev) UNRELEASED; urgency=low
   * abe-laptop suggests sm.
   * abe-desktop: Pull in an X display manager preferably wdm or xdm
 
- -- Axel Beckert <abe@deuxchevaux.org>  Tue, 20 Nov 2012 22:54:35 +0100
+ -- Axel Beckert <abe@deuxchevaux.org>  Sat, 01 Dec 2012 14:51:00 +0100
 
 abe-desktop (8) unstable; urgency=low
 

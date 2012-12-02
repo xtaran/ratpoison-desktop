@@ -110,7 +110,8 @@ Description: Packages necessary for Axel's awesome desktop
  desktop setup.
 
 Package: abe-desktop
-Depends: abe-desktop-awesome,
+Depends: abe-console,
+         abe-desktop-awesome,
          abe-desktop-ratpoison,
          wdm | xdm | x-display-manager,
          ${misc:Depends}
@@ -389,6 +390,7 @@ Description: Common office applications on Axel's desktops
 
 Package: abe-laptop
 Depends: abe-commandline,
+         abe-console,
          abe-desktop-ratpoison | abe-desktop-awesome,
          busybox-syslogd | system-log-daemon,
          debdelta,
@@ -502,3 +504,14 @@ Architecture: all
 Description: Metapackage for computers Axel's wants to be monitored
  This metapackage depends on packages Axel's usually needs on his
  those computers he wants to have monitored.
+
+Package: abe-console
+Depends: console-setup,
+         kbd,
+         linuxlogo,
+         ${misc:Depends}
+Recommends: gpm | moused
+Architecture: all
+Description: Metapackage for computers where Axel works on the console
+ This metapackage depends on packages Axel's usually needs where he
+ also works on the console and not only remote or under X.

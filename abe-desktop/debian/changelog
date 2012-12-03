@@ -2,6 +2,7 @@ abe-desktop (8.2~dev) UNRELEASED; urgency=low
 
   * Add new metapackage abe-console
   * abe-desktop suggests grub-imageboot or grml-rescueboot.
+  * abe-commandline depends on procps.
   * abe-commandline recommends bar, cpipe or pipemeter and suggests all of
     them.
   * abe-laptop recommends xul-ext-https-everywhere.

@@ -427,8 +427,8 @@ Recommends: abe-desktop,
             wireshark,
             xserver-xorg-input-synaptics,
             xul-ext-https-everywhere
-Suggests: abe-small-disk,
-          abe-laptop-ubuntu,
+Suggests: abe-laptop-ubuntu,
+          abe-small-disk,
           arandr,
           auto6to4,
           avahi-autoipd,
@@ -492,9 +492,9 @@ Description: Keeps some disk-wasting packages off the disk
  find waste of disk-space.
 
 Package: abe-monitoring
-Depends: xymon-client | hobbit-client,
+Depends: debsums,
          hobbit-plugins,
-         debsums,
+         xymon-client | hobbit-client,
          ${misc:Depends}
 Recommends: lsof
 Suggests: sudo

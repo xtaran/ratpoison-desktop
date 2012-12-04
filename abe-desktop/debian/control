@@ -115,7 +115,8 @@ Depends: abe-console,
          abe-desktop-ratpoison,
          wdm | xdm | x-display-manager,
          ${misc:Depends}
-Recommends: flwm,
+Recommends: abe-partioning,
+            flwm,
             i3-wm,
             lxsession,
             spectrwm | scrotwm,
@@ -124,8 +125,7 @@ Suggests: clfswm,
           fvwm,
           herbstluftwm,
           notion,
-          tritium,
-          grub-imageboot | grml-rescueboot
+          tritium
 Architecture: all
 Description: Packages helpful for Axel's desktop setup
  This metapackage depends on packages common for Axel's desktop
@@ -179,13 +179,11 @@ Recommends: apt-show-versions,
             debian-goodies,
             dlocate,
             dwdiff,
-            extundelete,
             fail2ban | busybox-syslogd,
             figlet | toilet,
             finger,
             fping,
             git-annex,
-            gnu-fdisk,
             gopher,
             grepcidr,
             grepmail | mboxgrep,
@@ -202,7 +200,6 @@ Recommends: apt-show-versions,
             prips,
             rotix,
             scrot,
-            smartmontools,
             sshfs,
             strace | ktrace,
             sux,
@@ -237,7 +234,6 @@ Suggests: 2ping,
           dtrx,
           duff,
           eatmydata,
-          fatsort,
           fdupes,
           figlet,
           get-flash-videos,
@@ -410,6 +406,7 @@ Depends: abe-commandline,
          x11-xserver-utils,
          ${misc:Depends}
 Recommends: abe-desktop,
+            abe-partitioning,
             acpitail,
             amora-cli | amora-applet,
             anacron,
@@ -512,7 +509,29 @@ Depends: console-setup,
          linuxlogo,
          ${misc:Depends}
 Recommends: gpm | moused
+Suggests: abe-partitioning
 Architecture: all
 Description: Metapackage for computers where Axel works on the console
  This metapackage depends on packages Axel's usually needs where he
  also works on the console and not only remote or under X.
+
+Package: abe-partitioning
+Depends: ${misc:Depends}
+Recommends: extundelete,
+            gdisk,
+            gnud-fdisk,
+            kpartx,
+            parted,
+            smartmontools
+Suggests: fatsort,
+          gpart,
+          gparted,
+          gptsync,
+          grub-imageboot | grml-rescueboot,
+          mtools,
+          smart-notifier
+Architecture: all
+Description: Metapackage for real computers where Axel may access USB devices
+ This metapackage depends on packages Axel's usually needs to
+ partition USB sticks or USB disk, i.e. nearly all his real and local
+ computers.

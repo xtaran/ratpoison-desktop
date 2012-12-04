@@ -1,7 +1,6 @@
 abe-desktop (8.2~dev) UNRELEASED; urgency=low
 
-  * Add new metapackage abe-console
-  * abe-desktop suggests grub-imageboot or grml-rescueboot.
+  * Add new metapackages abe-console and abe-partitioning
   * abe-commandline depends on procps.
   * abe-commandline recommends bar, cpipe or pipemeter and suggests all of
     them.

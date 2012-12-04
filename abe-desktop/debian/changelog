@@ -4,7 +4,7 @@ abe-desktop (8.2~dev) UNRELEASED; urgency=low
   * abe-commandline depends on procps.
   * abe-commandline recommends bar, cpipe or pipemeter and suggests all of
     them.
-  * abe-laptop recommends xul-ext-https-everywhere.
+  * abe-laptop recommends xul-ext-https-everywhere and powertop.
   * Apply wrap-and-sort again.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Sat, 01 Dec 2012 15:26:01 +0100

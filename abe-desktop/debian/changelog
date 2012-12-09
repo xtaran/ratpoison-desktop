@@ -4,7 +4,8 @@ abe-desktop (8.2~dev) UNRELEASED; urgency=low
   * abe-commandline depends on procps.
   * abe-commandline recommends bar, cpipe or pipemeter and suggests all of
     them.
-  * abe-laptop recommends xul-ext-https-everywhere and powertop.
+  * abe-laptop recommends xul-ext-https-everywhere and powertop as well
+    either key-mon or screenkey.
   * Add discus as alternative to dfc.
   * Apply wrap-and-sort again.
 

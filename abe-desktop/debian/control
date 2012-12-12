@@ -78,7 +78,7 @@ Depends: abe-desktop-common,
          ratmenu (>= 2.3.20),
          ratpoison,
          ${misc:Depends}
-Recommends: dunst | notification-daemon,
+Recommends: notification-daemon | dunst,
             redshift,
             suckless-tools | dwm-tools (>= 31-1),
             wicd-curses | network-manager (>= 0.8.0.999-1) | cnetworkmanager,

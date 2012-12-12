@@ -6,6 +6,7 @@ abe-desktop (8.2~dev) UNRELEASED; urgency=low
     them.
   * abe-laptop recommends xul-ext-https-everywhere and powertop as well
     either key-mon or screenkey.
+  * abe-laptop suggests wifite.
   * Add discus as alternative to dfc.
   * Add fonts-roboto as alternative to fonts-droid and prefer it.
   * Prefer notification-daemon over dunst.

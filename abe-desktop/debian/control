@@ -455,6 +455,7 @@ Suggests: abe-laptop-ubuntu,
           torsocks,
           tpb,
           wide-dhcpv6-client,
+          wifite,
           wvdial
 Conflicts: apmd (>= 0)
 Architecture: all

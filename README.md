@@ -163,7 +163,7 @@ Used if available but except the system tray stuff recommended anyway:
   (for `setxkbmap`)
 * [xrootconsole](http://packages.debian.org/stable/xrootconsole)
 * [xserver-xorg-input-synaptics](http://packages.debian.org/stable/xserver-xorg-input-synaptics)
-  (for `synclient` and `syndaemon`)
+  (for `synclient`)
 * [yeahconsole](http://packages.debian.org/stable/yeahconsole)
 * System tray applets for use with awesome:
   * [nm-applet](http://packages.debian.org/stable/network-manager-gnome) |

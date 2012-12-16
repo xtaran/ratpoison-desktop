@@ -109,7 +109,7 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME"
 
     # Use redshift and notification-daemon if installed
     whee redshift -l $LOC
-    whe dunst -fn "$FONT" -nb black -nf orange  -lb black -lf darkorange -cb orange -cf black || whe /usr/lib/notification-daemon/notification-daemon &
+    whe /usr/lib/notification-daemon/notification-daemon || whe dunst -fn "$FONT" -nb black -nf orange  -lb black -lf darkorange -cb orange -cf black &
 
     xsession_per_host
 

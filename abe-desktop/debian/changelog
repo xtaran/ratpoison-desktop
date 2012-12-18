@@ -10,6 +10,7 @@ abe-desktop (8.2~dev) UNRELEASED; urgency=low
   * Add discus as alternative to dfc.
   * Add fonts-roboto as alternative to fonts-droid and prefer it.
   * Prefer notification-daemon over dunst.
+  * Fix typo: gnud-fdisk → gnu-fdisk
   * Apply wrap-and-sort again.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Sat, 01 Dec 2012 15:26:01 +0100

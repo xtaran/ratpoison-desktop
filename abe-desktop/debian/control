@@ -525,7 +525,7 @@ Package: abe-partitioning
 Depends: ${misc:Depends}
 Recommends: extundelete,
             gdisk,
-            gnud-fdisk,
+            gnu-fdisk,
             kpartx,
             parted,
             smartmontools,

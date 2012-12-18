@@ -524,19 +524,19 @@ Description: Metapackage for computers where Axel works on the console
 
 Package: abe-partitioning
 Depends: ${misc:Depends}
-Recommends: ddrescue | myrescue | dc3dd | dcfldd | safecopy,
-            extundelete,
+Recommends: extundelete,
+            gddrescue | myrescue | dc3dd | dcfldd | safecopy | ddrescue,
             gdisk,
             gnu-fdisk,
             kpartx,
             parted,
             smartmontools,
             testdisk
-Suggests: ddrescue,
-          dc3dd,
+Suggests: dc3dd,
           dcfldd,
           fatsort,
           foremost,
+          gddrescue,
           gpart,
           gparted,
           gptsync,

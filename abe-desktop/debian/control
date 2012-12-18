@@ -523,19 +523,25 @@ Description: Metapackage for computers where Axel works on the console
 
 Package: abe-partitioning
 Depends: ${misc:Depends}
-Recommends: extundelete,
+Recommends: ddrescue | myrescue | dc3dd | dcfldd | safecopy,
+            extundelete,
             gdisk,
             gnu-fdisk,
             kpartx,
             parted,
             smartmontools,
             testdisk
-Suggests: fatsort,
+Suggests: ddrescue,
+          dc3dd,
+          dcfldd,
+          fatsort,
           gpart,
           gparted,
           gptsync,
           grub-imageboot | grml-rescueboot,
           mtools,
+          myrescue,
+          safecopy,
           smart-notifier
 Architecture: all
 Description: Metapackage for real computers where Axel may access USB devices

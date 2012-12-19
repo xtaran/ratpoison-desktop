@@ -91,6 +91,7 @@ fi
   #conkeror &
   #sleep 3
   #emacs &
+  whee udev-notify
 ) &
 
 # If resolution is less than 1024 pixels wide, then use ratpoison, else awesome

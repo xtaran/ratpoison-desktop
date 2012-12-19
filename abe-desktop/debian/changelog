@@ -1,6 +1,7 @@
 abe-desktop (8.2~dev) UNRELEASED; urgency=low
 
   * Add new metapackages abe-console and abe-partitioning
+  * abe-desktop-common recommends udev-notify
   * abe-commandline depends on procps.
   * abe-commandline recommends bar, cpipe or pipemeter and suggests all of
     them.

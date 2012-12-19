@@ -158,6 +158,7 @@ Used if available but except the system tray stuff recommended anyway:
 * [keynav](http://packages.debian.org/stable/keynav) ≥
   0.20101014.3067
 * [redshift](http://packages.debian.org/stable/redshift)
+* [udev-notify](http://udev-notify.learnfree.eu/) ([RFP](http://bugs.debian.org/670467))
 * [unclutter](http://packages.debian.org/stable/unclutter)
 * [x11-xkb-utils](http://packages.debian.org/stable/x11-xkb-utils)
   (for `setxkbmap`)

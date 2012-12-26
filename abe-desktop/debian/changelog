@@ -5,6 +5,7 @@ abe-desktop (8.2~dev) UNRELEASED; urgency=low
   * abe-commandline depends on procps.
   * abe-commandline recommends bar, cpipe or pipemeter and suggests all of
     them.
+  * abe-commandline recommends mp3info.
   * abe-laptop recommends confclerk, xul-ext-https-everywhere and powertop
     as well either key-mon or screenkey.
   * abe-laptop suggests wifite.

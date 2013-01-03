@@ -11,6 +11,7 @@ abe-desktop (8.2~dev) UNRELEASED; urgency=low
   * abe-laptop suggests wifite.
   * Add discus as alternative to dfc.
   * Add fonts-roboto as alternative to fonts-droid and prefer it.
+  * Add vidcontrol as kfreebsd alternative to gpm.
   * Prefer notification-daemon over dunst.
   * Fix typo: gnud-fdisk → gnu-fdisk
   * Apply wrap-and-sort again.

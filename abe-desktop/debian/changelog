@@ -1,4 +1,4 @@
-abe-desktop (8.2~dev) UNRELEASED; urgency=low
+abe-desktop (9) unstable; urgency=low
 
   * Add new metapackages abe-console and abe-partitioning
   * abe-desktop-common recommends udev-notify
@@ -16,7 +16,7 @@ abe-desktop (8.2~dev) UNRELEASED; urgency=low
   * Fix typo: gnud-fdisk → gnu-fdisk
   * Apply wrap-and-sort again.
 
- -- Axel Beckert <abe@deuxchevaux.org>  Sat, 01 Dec 2012 15:26:01 +0100
+ -- Axel Beckert <abe@deuxchevaux.org>  Fri, 04 Jan 2013 00:41:03 +0100
 
 abe-desktop (8.1) unstable; urgency=low
 

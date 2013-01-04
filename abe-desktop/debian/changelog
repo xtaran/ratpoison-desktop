@@ -1,3 +1,9 @@
+abe-desktop (9.1~dev) UNRELEASED; urgency=low
+
+  * Only mention gpm and vidcontrol in abe-console.
+
+ -- Axel Beckert <abe@deuxchevaux.org>  Fri, 04 Jan 2013 00:52:53 +0100
+
 abe-desktop (9) unstable; urgency=low
 
   * Add new metapackages abe-console and abe-partitioning

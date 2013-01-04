@@ -513,9 +513,9 @@ Description: Metapackage for computers Axel's wants to be monitored
 
 Package: abe-console
 Depends: console-setup,
-         kbd,
          linuxlogo,
          gpm | vidcontrol,
+         console-tools | kbd-compat | kbd | console-utilities | kbdcontrol,
          ${misc:Depends}
 Suggests: abe-partitioning
 Architecture: all

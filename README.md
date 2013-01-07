@@ -247,6 +247,8 @@ above:
   desktop
 * abe-desktop-common: Contains dependencies common to both, the
   ratpoison-based and the awesome-based desktop.
+* abe-desktop: Contains dependencies on all of the above plus
+  optional dependencies on other common metapackages I maintain.
 
 Some of these packages recommend or suggest other metapackages which
 previously were part of this repository but have been split off into

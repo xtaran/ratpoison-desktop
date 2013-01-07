@@ -5,5 +5,9 @@
 /abe-desktop/*-stamp
 /abe-desktop-*
 /abe-desktop_*
+/abe-desktop/debian/*.debhelper.log
+/abe-desktop/debian/*.substvars
+/abe-desktop/debian/abe-desktop-*/
+/abe-desktop/debian/files
 /abe-*_*.deb
 /abe-metapackages*

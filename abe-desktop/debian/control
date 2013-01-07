@@ -124,7 +124,8 @@ Recommends: abe-partioning,
             lxsession,
             spectrwm | scrotwm,
             stumpwm
-Suggests: clfswm,
+Suggests: abe-commandline-media,
+          clfswm,
           fvwm,
           herbstluftwm,
           notion,
@@ -215,6 +216,7 @@ Recommends: apt-show-versions,
             whois,
             zutils
 Suggests: 2ping,
+          abe-commandline-media,
           abe-emacs,
           aha,
           apt-file,
@@ -261,11 +263,8 @@ Suggests: 2ping,
           mboxgrep,
           mc,
           members,
-          mpg123 | mpg321,
-          mplayer | mplayer2,
           multitail,
           multitee,
-          music123 | gst123,
           ncdt,
           nethogs,
           netmask,
@@ -301,7 +300,6 @@ Suggests: 2ping,
           unaccent,
           units,
           unrar | unrar-nonfree,
-          vorbis-tools,
           wikipedia2text,
           xml-twig-tools,
           xmldiff,
@@ -312,6 +310,25 @@ Architecture: all
 Description: Metapackage of commandline tools Axel usually installs
  This metapackage depends on packages Axel's usually installs in all
  his setups.
+
+Package: abe-commandline-media
+Depends: abe-commandline,
+         mplayer | mplayer2 | gst123,
+         ${misc:Depends}
+Recommends: moc | mp3blaster | orpheus,
+            music123,
+            vorbis-tools
+Suggests: gst123,
+          moc,
+          mp3blaster,
+          mplayer | mplayer2,
+          mpg123 | mpg321,
+          orpheus,
+          xmp
+Architecture: all
+Description: Metapackage for computers where Axel can play music
+ This metapackage depends on packages Axel's usually wants where he
+ can listen to music.
 
 Package: abe-emacs
 Depends: crypt++el,
@@ -407,7 +424,8 @@ Depends: abe-commandline,
          wicd-curses | wicd-client | network-manager,
          x11-xserver-utils,
          ${misc:Depends}
-Recommends: abe-desktop,
+Recommends: abe-commandline-media,
+            abe-desktop,
             abe-partitioning,
             acpitail,
             amora-cli | amora-applet,
@@ -516,8 +534,10 @@ Depends: console-setup,
          gpm | vidcontrol,
          console-tools | kbd-compat | kbd | console-utilities | kbdcontrol,
          ${misc:Depends}
-Recommends: linuxlogo
-Suggests: abe-partitioning
+Recommends: linuxlogo,
+            abe-commandline
+Suggests: abe-partitioning,
+          abe-commandline-media
 Architecture: all
 Description: Metapackage for computers where Axel works on the console
  This metapackage depends on packages Axel's usually needs where he

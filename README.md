@@ -247,27 +247,10 @@ above:
   desktop
 * abe-desktop-common: Contains dependencies common to both, the
   ratpoison-based and the awesome-based desktop.
-* abe-desktop: Contains dependencies on all of the above plus
-  additional window managers mentioned below.
 
-### Other Metapackages
-
-For pure maintenance convenience, additional metapackages are part of
-this repository. They contain dependencies on further packages I
-commonly want installed on my boxes, too:
-
-* abe-commandline: Commandline tools I usually use. Its hard
-  dependencies are also suitable for servers.
-* abe-emacs: Emacs modes and other Emacs add-ons I usually want on all
-  boxes where I install GNU Emacs anyway.
-* abe-gnome: GUI tools and applications I usually install if some
-  GNOME dependencies are ok.
-* abe-office: Depends on the LibreOffice/GnomeOffice applications I
-  prefer.
-* abe-laptop: Packages I commonly need on laptops and netbooks. ACPI
-  stuff, resource saving and monitoring stuff, … Also satisfies some
-  of ubuntu-minimal’s hard dependencies to be able to e.g. install a
-  different syslog daemon without removing the metapackage.
+Some of these packages recommend or suggest other metapackages which
+previously were part of this repository but have been split off into
+[their own git repository](https://github.com/xtaran/abe-metapackages).
 
 ### APT Repository
 

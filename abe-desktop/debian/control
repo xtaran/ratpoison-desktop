@@ -111,3 +111,17 @@ Architecture: all
 Description: Packages necessary for Axel's awesome desktop
  This metapackage depends on packages common for Axel's awesome based
  desktop setup.
+
+Package: abe-desktop
+Depends: abe-console,
+         abe-desktop-awesome,
+         abe-desktop-ratpoison,
+         wdm | xdm | x-display-manager,
+         ${misc:Depends}
+Recommends: abe-partioning
+Suggests: abe-commandline-media,
+          abe-window-managers
+Architecture: all
+Description: Packages helpful for Axel's desktop setup
+ This metapackage depends on packages common for Axel's desktop
+ computers.

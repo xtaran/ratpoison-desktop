@@ -1,6 +1,0 @@
-// Hardlink identical docs, changelogs, copyrights and examples
-
-DPkg
-{
-Post-Invoke {"if [ -x /usr/bin/hardlink ]; then echo 'Running hardlink on /usr/share/doc; this will take a while'; /usr/bin/hardlink -m -t /usr/share/doc; else exit 0; fi";};
-};

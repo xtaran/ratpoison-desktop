@@ -5,6 +5,9 @@ export RP=$(dirname "$(readlink "$0")")
 
 . $RP/common/init.sh
 
+# Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK
+whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps
+
 # Keyboard and X configuration
 if [ -r $PH/xmodmap.$HOSTNAME ]; then
     xmodmap $PH/xmodmap.$HOSTNAME
@@ -13,9 +16,6 @@ if [ -r $PH/Xresources.$HOSTNAME ]; then
     xrdb -merge $PH/Xresources.$HOSTNAME
 fi
 xrdb -merge $RP/Xresources
-
-# Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK
-whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps
 
 # Audio settings
 #xset b 100 1200 240

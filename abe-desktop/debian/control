@@ -120,6 +120,8 @@ Depends: abe-console,
          ${misc:Depends}
 Recommends: abe-partioning
 Suggests: abe-commandline-media,
+          abe-joystick,
+          abe-tablet,
           abe-window-managers
 Architecture: all
 Description: Packages helpful for Axel's desktop setup

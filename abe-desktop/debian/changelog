@@ -1,3 +1,9 @@
+abe-desktop (11~dev) UNRELEASED; urgency=low
+
+  * Suggest abe-tablet and abe-joystick
+
+ -- Axel Beckert <abe@deuxchevaux.org>  Fri, 11 Jan 2013 20:16:04 +0100
+
 abe-desktop (10) unstable; urgency=low
 
   * Split source package into two source packages:

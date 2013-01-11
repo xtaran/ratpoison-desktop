@@ -12,7 +12,6 @@ done
 
 # Switch to main display
 export DISPLAY=:0.0
-synergys
 
 # ssh-add is needed at least before mutt tries to make an SSH tunnel
 # to the IMAP server
@@ -57,6 +56,7 @@ conkeror -P monitoring &
 uxterm &
 $HOME/bin/ircstart.sh
 yeahconsole &
+synergys
 
 whee gtk-redshift -l $LOC
 

@@ -81,6 +81,7 @@ paths cannot be set via command line options or where it would be to
 tedious to always type them:
 
     ~/.gitconfig   → gitconfig
+    ~/.gitignore   → gitignore
     ~/.xsession    → xsession
     ~/.screenrc    → screenrc
     ~/.colordiffrc → colordiffrc

@@ -1,4 +1,5 @@
 ~/.gitconfig 				   → gitconfig
+~/.gitignore 				   → gitignore
 ~/.xsession 				   → xsession
 ~/.screenrc 				   → screenrc
 ~/.colordiffrc 				   → colordiffrc

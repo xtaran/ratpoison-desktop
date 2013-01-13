@@ -3,3 +3,4 @@
 ~/.screenrc 				   → screenrc
 ~/.colordiffrc 				   → colordiffrc
 ~/.emacs 				   → emacs.el
+~/.lintianrc 				   → lintianrc

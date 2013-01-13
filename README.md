@@ -84,6 +84,7 @@ tedious to always type them:
     ~/.xsession    → xsession
     ~/.screenrc    → screenrc
     ~/.colordiffrc → colordiffrc
+    ~/.lintianrc   → lintianrc
     ~/.emacs       → emacs.el
 
 These symbolic links can also be automatically set up by calling

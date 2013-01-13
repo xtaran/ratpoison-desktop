@@ -232,6 +232,22 @@ Only in commented code (i.e. currently not used):
   [colortail](http://packages.debian.org/stable/colortail)
 * [root-tail](http://packages.debian.org/stable/root-tail)
 
+Other Configuration Files
+-------------------------
+
+The repository also contains some configuration files which I usually
+want on every desktop, but which are more or less independent of the
+desktop setup respectively could also be used on non-desktop machines.
+
+* `colordiffrc` for [colordiff](http://packages.debian.org/stable/colordiff)
+* `emacs.el` for [GNU Emacs](http://www.emacswiki.org/)
+* `gitconfig` and `gitignore` for [Git](http://git-scm.org/)
+* `lintianrc` for [lintian](http://packages.debian.org/stable/lintian)
+* `screenrc` for [GNU Screen](http://www.gnu.org/software/screen/)
+
+I'll probably split them off into their separate repository somewhen
+in the future.
+
 Debian Metapackages
 -------------------
 

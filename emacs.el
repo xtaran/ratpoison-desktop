@@ -1,6 +1,7 @@
 (global-font-lock-mode 't)
 (transient-mark-mode 't)
 (which-function-mode 't)
+(cua-selection-mode 't)
 (server-start)
 
 (custom-set-variables

@@ -87,3 +87,7 @@
   (scroll-right wheel-scroll-interval))
 (global-set-key [mouse-6] 'wheel-scroll-left-some-lines)
 (global-set-key [mouse-7] 'wheel-scroll-right-some-lines)
+
+; Occur inside isearch with easier keybinding.
+; Via http://irreal.org/blog/?p=1540
+(define-key isearch-mode-map (kbd "C-o") 'isearch-occur)

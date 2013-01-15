@@ -2,6 +2,7 @@
 (transient-mark-mode 't)
 (which-function-mode 't)
 (cua-selection-mode 't)
+(winner-mode 't)
 (put 'narrow-to-region 'disabled nil)
 (server-start)
 

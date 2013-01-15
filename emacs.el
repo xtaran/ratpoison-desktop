@@ -28,6 +28,7 @@
  '(tramp-shell-prompt-pattern "\\(?:^\\|\\)[^#$%>→
 ]*#?[#$%>→] *\\(\\[[0-9;]*[a-zA-Z] *\\)*"))
 
+; Markdown Mode for .md files
 (autoload 'markdown-mode "markdown-mode.el"
    "Major mode for editing Markdown files" t)
 (setq auto-mode-alist

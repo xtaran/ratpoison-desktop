@@ -93,3 +93,6 @@
 ; Occur inside isearch with easier keybinding.
 ; Via http://irreal.org/blog/?p=1540
 (define-key isearch-mode-map (kbd "C-o") 'isearch-occur)
+
+; magit-status has no keybinding by default
+(global-set-key (kbd "C-x g") 'magit-status)

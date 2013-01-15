@@ -76,3 +76,14 @@
                                 auto-mode-alist)))
 
 (mmm-add-mode-ext-class 'html-mode "\\.epl?$" 'embperl)
+
+; Scroll left and right with the 2D mouse wheel
+(setq wheel-scroll-interval 5)
+(defun wheel-scroll-left-some-lines ()
+  (interactive)
+  (scroll-left wheel-scroll-interval))
+(defun wheel-scroll-right-some-lines ()
+  (interactive)
+  (scroll-right wheel-scroll-interval))
+(global-set-key [mouse-6] 'wheel-scroll-left-some-lines)
+(global-set-key [mouse-7] 'wheel-scroll-right-some-lines)

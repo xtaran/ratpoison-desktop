@@ -1,6 +1,7 @@
 abe-desktop (11~dev) UNRELEASED; urgency=low
 
   * Suggest abe-tablet and abe-joystick
+  * Suggest magit, as magit keybindings are found in emacs.el
 
  -- Axel Beckert <abe@deuxchevaux.org>  Fri, 11 Jan 2013 20:16:04 +0100
 

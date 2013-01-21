@@ -119,8 +119,11 @@ Depends: abe-console,
          wdm | xdm | x-display-manager,
          ${misc:Depends}
 Recommends: abe-partioning
-Suggests: abe-commandline-media,
-          abe-joystick,
+Suggests: abe-archive-tools,
+          abe-commandline-media,
+          abe-fun,
+          abe-games,
+          abe-packages-dev,
           abe-tablet,
           abe-window-managers
 Architecture: all

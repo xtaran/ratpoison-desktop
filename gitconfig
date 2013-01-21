@@ -13,6 +13,7 @@
 	default = matching
 [alias]
 	st = status
+	sts = status -s
 	d = diff
 	dc = diff --cached
 	wd = diff --color-words

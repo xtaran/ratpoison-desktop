@@ -3,6 +3,7 @@ abe-desktop (11~dev) UNRELEASED; urgency=low
   * abe-desktop suggests abe-archive-tools, abe-commandline-media,
     abe-fun, abe-games, abe-packages-dev, abe-tablet, and
     abe-window-managers.
+  * Suggest magit, as magit keybindings are found in emacs.el
 
  -- Axel Beckert <abe@deuxchevaux.org>  Fri, 11 Jan 2013 20:16:04 +0100
 

@@ -159,6 +159,7 @@ Used if available but except the system tray stuff recommended anyway:
 * [inotail](http://packages.debian.org/stable/inotail) (Linux only)
 * [keynav](http://packages.debian.org/stable/keynav) ≥
   0.20101014.3067
+* [magit](http://packages.debian.org/stable/magit) (used in `emacs.el`)
 * [redshift](http://packages.debian.org/stable/redshift)
 * [udev-notify](http://udev-notify.learnfree.eu/) ([RFP](http://bugs.debian.org/670467))
 * [unclutter](http://packages.debian.org/stable/unclutter)

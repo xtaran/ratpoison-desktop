@@ -2,4 +2,4 @@ info = yes
 display-experimental = yes
 display-level = >=pedantic/wild-guess
 color = auto
-show-overrides = yes
+#show-overrides = yes

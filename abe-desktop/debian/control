@@ -119,12 +119,12 @@ Depends: abe-console,
          abe-desktop-ratpoison,
          wdm | xdm | x-display-manager,
          ${misc:Depends}
-Recommends: abe-partioning
+Recommends: abe-partitioning
 Suggests: abe-archive-tools,
           abe-commandline-media,
           abe-fun,
           abe-games,
-          abe-packages-dev,
+          abe-packaging-dev,
           abe-tablet,
           abe-window-managers
 Architecture: all

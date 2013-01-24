@@ -22,7 +22,7 @@
 	ci = commit -v
 	co = checkout
 	undo = reset --hard
-	ls = ls-file
+	ls = ls-files
 	k = !gitk --all
 	ranking = "!git shortlog | egrep -v '^ |^$' | sed -e 's/^\\(.*\\) (\\(.*\\)):/\\2 \\1/' | sort -rn"
 	addremove = "!git add . && git ls-files --deleted | xargs --no-run-if-empty git rm"

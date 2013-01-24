@@ -40,7 +40,7 @@
 	dlog = log --decorate=full
 	slog = log --decorate=full --stat
 	plog = log --decorate=full --patch
-	glog = log --graph
+	glog = log --decorate=full --graph
 	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	logdiff = log -p -U0
 	greplog = log --grep

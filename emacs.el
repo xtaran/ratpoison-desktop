@@ -30,6 +30,9 @@
  '(tramp-shell-prompt-pattern "\\(?:^\\|\\)[^#$%>→
 ]*#?[#$%>→] *\\(\\[[0-9;]*[a-zA-Z] *\\)*"))
 
+; Restore interprogram-{cut,paste}-function's values because
+; mouse-sel-mode resets it to nil and while I want most of
+; mouse-sel-mode's feature, but IMHO resetting these is annoying.
 (setq interprogram-cut-function 'x-set-cut-buffer)
 (setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
 

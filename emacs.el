@@ -30,6 +30,9 @@
  '(tramp-shell-prompt-pattern "\\(?:^\\|\\)[^#$%>→
 ]*#?[#$%>→] *\\(\\[[0-9;]*[a-zA-Z] *\\)*"))
 
+(setq interprogram-cut-function 'x-set-cut-buffer)
+(setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
+
 ; Markdown Mode for .md files
 (autoload 'markdown-mode "markdown-mode.el"
    "Major mode for editing Markdown files" t)

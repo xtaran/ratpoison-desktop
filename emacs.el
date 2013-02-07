@@ -28,7 +28,8 @@
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
  '(tool-bar-mode nil)
  '(tramp-shell-prompt-pattern "\\(?:^\\|\\)[^#$%>→
-]*#?[#$%>→] *\\(\\[[0-9;]*[a-zA-Z] *\\)*"))
+]*#?[#$%>→] *\\(\\[[0-9;]*[a-zA-Z] *\\)*")
+ '(uniquify-buffer-name-style (quote forward) nil (uniquify)))
 
 ; Restore interprogram-{cut,paste}-function's values because
 ; mouse-sel-mode resets it to nil and while I want most of

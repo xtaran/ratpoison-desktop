@@ -74,13 +74,13 @@ ethernet eth3 {
 }
 :ETH3]
 
-[!NEMO:
+[!NEMO+NEMO2:
 ipv6 {
 	# if you use %speed, i3status requires root privileges or netcap
 	format_up = "%ip"
 	format_down = "no IPv6"
 }
-:!NEMO]
+:!NEMO+NEMO2]
 
 [BATTERY0:
 battery 0 {
@@ -100,11 +100,11 @@ load {
 	format = "%1min %5min %15min"
 }
 
-[NEMO:
+[NEMO+NEMO2:
 cpu_temperature 0 {
 	format = "%degrees°C"
 }
-:NEMO]
+:NEMO+NEMO2]
 
 disk "/" {
 	format = "/ %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+WHEEZY+SID!:avail:NATTY+ONEIRIC+WHEEZY+SID!]"
@@ -151,4 +151,4 @@ order += "disk /"
 [C_CROSSER+JUMPER+HZ:order += "disk /home":C_CROSSER+JUMPER+HZ]
 [C_CROSSER+SNIDGET:order += "disk /tmp":C_CROSSER+SNIDGET]
 [SNIDGET:order += "disk /scratch":SNIDGET]
-[!NEMO+JUMPER:order += "ipv6":!NEMO+JUMPER]
+[!NEMO+NEMO2+JUMPER:order += "ipv6":!NEMO+NEMO2+JUMPER]

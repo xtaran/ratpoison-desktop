@@ -2,8 +2,9 @@ Config {
 
 [!NEMO+NEMO2+SNIDGET+METISSE+C_CROSSER+JUMPER+DS3: font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1":!NEMO+NEMO2+SNIDGET+METISSE+C_CROSSER+JUMPER+DS3]
 [METISSE!:				font = "-xos4-terminus-bold-r-*-*-12-120-*-*-*-60-iso10646-1":METISSE!]
-[NEMO+NEMO2!:				font = "xft:Droid-6:normal":NEMO+NEMO2!]
+[NEMO!:					font = "xft:Droid-6:normal":NEMO!]
 [SNIDGET!:				font = "xft:M+ 1p-8:normal":SNIDGET!]
+[NEMO2!:				font = "xft:M+ 1p-7:normal":NEMO2!]
 [JUMPER+C_CROSSER+DS3!:			font = "xft:M+ 1p-6:normal":JUMPER+C_CROSSER+DS3!]
 
        , bgColor = "black"

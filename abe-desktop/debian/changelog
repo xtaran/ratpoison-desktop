@@ -1,4 +1,4 @@
-abe-desktop (11.1~dev) UNRELEASED; urgency=low
+abe-desktop (11.1) unstable; urgency=low
 
   * Fix typos: partioning → partitioning, packages → packaging
   * abe-desktop suggests abe-x-browsers
@@ -6,7 +6,7 @@ abe-desktop (11.1~dev) UNRELEASED; urgency=low
   * Remove no more needed lintian overrides (empty-binary-package and
     extended-description-is-probably-too-short)
 
- -- Axel Beckert <abe@deuxchevaux.org>  Wed, 23 Jan 2013 00:19:10 +0100
+ -- Axel Beckert <abe@deuxchevaux.org>  Sat, 25 May 2013 23:54:32 +0200
 
 abe-desktop (11) unstable; urgency=low
 

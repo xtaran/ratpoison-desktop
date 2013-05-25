@@ -1,2 +1,1 @@
 abe-desktop-common: package-depends-on-an-x-font-package depends: xfonts-terminus
-abe-desktop-common: extended-description-is-probably-too-short

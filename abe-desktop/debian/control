@@ -126,7 +126,8 @@ Suggests: abe-archive-tools,
           abe-games,
           abe-packaging-dev,
           abe-tablet,
-          abe-window-managers
+          abe-window-managers,
+          abe-x-browsers
 Architecture: all
 Description: Packages helpful for Axel's desktop setup
  This metapackage depends on packages common for Axel's desktop

@@ -2,6 +2,7 @@ abe-desktop (11.1~dev) UNRELEASED; urgency=low
 
   * Fix typos: partioning → partitioning, packages → packaging
   * abe-desktop suggests abe-x-browsers
+  * Bump Standards-Version to 3.9.4
 
  -- Axel Beckert <abe@deuxchevaux.org>  Wed, 23 Jan 2013 00:19:10 +0100
 

@@ -5,7 +5,7 @@ Priority: extra
 Homepage: https://github.com/xtaran/ratpoison-desktop#readme
 Vcs-Git: git://github.com/xtaran/ratpoison-desktop.git
 Vcs-Browser: https://github.com/xtaran/ratpoison-desktop
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Build-Depends: debhelper (>= 7)
 
 Package: abe-desktop-common

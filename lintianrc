@@ -1,5 +1,5 @@
-info = yes
+#info = yes
 display-experimental = yes
 display-level = >=pedantic/wild-guess
-color = auto
+color = yes
 #show-overrides = yes

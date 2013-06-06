@@ -11,3 +11,7 @@ Plans for Further Impovements
 * Split off non- or at least not-only commandline stuff (`emacs.el`,
   `gitconfig`, `gitignore`, `lintianrc`, `colordiffrc`, `screenrc`,
   some of the script in `bin/`, ...)  into its own repository
+
+* Make rc.lua work with Awesome 3.4 and 3.5 at the same time.
+  Pointers: http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and
+  http://awesome.naquadah.org/doc/api/modules/awesome.html

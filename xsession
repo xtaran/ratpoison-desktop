@@ -64,7 +64,7 @@ if wh xrootconsole; then
     ( if wh logread; then
         logread | tail -100;
 	logread -f
-      else
+      elif [ -r /var/log/syslog ]; then
         tail -F /var/log/syslog
       fi &
       if wh inotail; then

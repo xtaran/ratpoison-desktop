@@ -49,3 +49,6 @@
 # http://tomster.org/blog/archive/2009/01/12/git-command-aliases und
 # http://git.wiki.kernel.org/index.php/Aliases
 # http://glt11-programm.linuxtage.at/attachments/17_glt11-git-goodies.pdf
+
+[user]
+        signingkey = 95930ede

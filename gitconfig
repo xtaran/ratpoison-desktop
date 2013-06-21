@@ -50,5 +50,8 @@
 # http://git.wiki.kernel.org/index.php/Aliases
 # http://glt11-programm.linuxtage.at/attachments/17_glt11-git-goodies.pdf
 
+[remote-hg]
+	hg-git-compat = true
+
 [user]
         signingkey = 95930ede

@@ -22,7 +22,7 @@ systray_applets() {
     whe clipit || whe parcellite &
     whe xfce4-volumed
     whe qasmixer -t || whe volumeicon || whe volti &
-    [ -d $HOME/.yarssr/state -type f -a -n "`find $HOME/.yarssr/state -type f`" ] && whee yarssr
+    [ -d $HOME/.yarssr/state -a -n "`find $HOME/.yarssr/state -type f`" ] && whee yarssr
     whee shutter --min_at_startup
     # Use redshift if installed
     whe gtk-redshift -l $LOC || whe redshift -l $LOC &

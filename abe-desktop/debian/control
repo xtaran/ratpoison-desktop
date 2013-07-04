@@ -103,6 +103,7 @@ Recommends: fdpowermon,
             wicd-gtk | network-manager-gnome
 Suggests: amora-applet,
           clipit | parcellite,
+          owncloud-client | polybox-client,
           qasmixer | volumeicon-alsa | volti,
           radiotray,
           shutter,

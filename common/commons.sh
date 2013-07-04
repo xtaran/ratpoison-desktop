@@ -26,6 +26,10 @@ systray_applets() {
     whee shutter --min_at_startup
     # Use redshift if installed
     whe gtk-redshift -l $LOC || whe redshift -l $LOC &
+
+    # Owncloud and derivatives
+    whee owncloud
+    whee polybox
 }
 
 xsession_per_host() {

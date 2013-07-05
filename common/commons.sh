@@ -28,8 +28,7 @@ systray_applets() {
     whe gtk-redshift -l $LOC || whe redshift -l $LOC &
 
     # Owncloud and derivatives
-    whee owncloud
-    whee polybox
+    whe owncloud || whe mirall || whe polybox &
 }
 
 xsession_per_host() {

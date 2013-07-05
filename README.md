@@ -185,8 +185,9 @@ Used if available but except the system tray stuff recommended anyway:
     [volti](http://packages.debian.org/testing/volti)
   * [smart-notifier](http://packages.debian.org/stable/smart-notifier)
   * [amorad-gui](http://packages.debian.org/stable/amora-applet)
-  * [owncloud-client](http://packages.debian.org/owncloud-client) or
-    the ETH-Zurich-branded derivative called
+  * [owncloud-client](http://packages.debian.org/owncloud-client),
+    [mirall](http://packages.debian.org/mirall) or the
+    ETH-Zurich-branded derivative called
     [polybox](http://www.id.ethz.ch/services/list/polybox/)
 * For use with ratpoison only so far:
   * [notification-daemon](http://packages.debian.org/stable/notification-daemon) |

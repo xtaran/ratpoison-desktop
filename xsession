@@ -72,11 +72,11 @@ if wh xrootconsole; then
       else
 	  tail -f $HOME/.xsession-errors
       fi ) | \
-#     ( loco || \
-#       ccze -A -o noscroll || \
-#       colortail -k $RP/colortail.conf -q -f /dev/stdin || \
-#       lwatch -i- ) | \
-    xrootconsole -fg white -fn "$FONT" -geometry "${WT}x${HT}+2+1" &
+     ( ccze -A -o noscroll || \
+       colortail -k $RP/colortail.conf -q -f /dev/stdin || \
+       lwatch -i- || \
+       loco ) | \
+    xrootconsole -fg white -fn "$FONT" -geometry "${WT}x${HT}+2+1" --ansi-color &
 fi
 
 # Trayer needs to be started after ratpoison

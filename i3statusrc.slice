@@ -74,13 +74,13 @@ ethernet eth3 {
 }
 :ETH3]
 
-[!NEMO+NEMO2:
+[!NEMO:
 ipv6 {
 	# if you use %speed, i3status requires root privileges or netcap
 	format_up = "%ip"
 	format_down = "no IPv6"
 }
-:!NEMO+NEMO2]
+:!NEMO]
 
 [BATTERY0:
 battery 0 {
@@ -151,4 +151,4 @@ order += "disk /"
 [C_CROSSER+JUMPER+HZ:order += "disk /home":C_CROSSER+JUMPER+HZ]
 [C_CROSSER+SNIDGET:order += "disk /tmp":C_CROSSER+SNIDGET]
 [SNIDGET:order += "disk /scratch":SNIDGET]
-[!NEMO+NEMO2+JUMPER:order += "ipv6":!NEMO+NEMO2+JUMPER]
+[!NEMO+JUMPER:order += "ipv6":!NEMO+JUMPER]

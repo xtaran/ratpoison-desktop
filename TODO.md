@@ -19,3 +19,6 @@ Plans for Further Impovements
 * Make rc.lua work with Awesome 3.4 and 3.5 at the same time.
   Pointers: http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and
   http://awesome.naquadah.org/doc/api/modules/awesome.html
+
+* Maybe use [whiff](https://github.com/rjbs/app-whiff) instead of `whe
+  app1 || whe app2 || whe app3 &` in `xsession`.

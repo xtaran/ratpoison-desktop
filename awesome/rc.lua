@@ -211,8 +211,8 @@ for s = 1, screen.count() do
             layout = awful.widget.layout.horizontal.leftright
         },
         mylayoutbox[s],
-	obvious.battery(),
         mytextclock,
+	obvious.battery(),
         mysystray[s],
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft

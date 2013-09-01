@@ -3,3 +3,5 @@ display-experimental = yes
 display-level = >=pedantic/wild-guess
 color = always
 #show-overrides = yes
+
+LINTIAN_PROFILE=pkg-perl

@@ -45,6 +45,7 @@
 	logdiff = log -p -U0
 	greplog = log --grep
         p = pull --ff-only
+        pu = push
         pp = !git pull --ff-only && git push
 
 # Siehe auch

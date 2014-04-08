@@ -83,7 +83,7 @@ Depends: abe-desktop-common,
 Recommends: notification-daemon | dunst,
             redshift,
             suckless-tools | dwm-tools (>= 31-1),
-            wicd-curses | network-manager (>= 0.8.0.999-1) | cnetworkmanager,
+            wicd-curses | connman-ui | network-manager (>= 0.8.0.999-1) | cnetworkmanager,
             xclip
 Architecture: all
 Description: Packages necessary for Axel's ratpoison desktop

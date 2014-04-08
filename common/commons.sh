@@ -14,6 +14,7 @@ systray_applets() {
     whe wmname awesome
     whee nm-applet
     whee wicd-gtk -t
+    whee connman-ui-gtk
     whee update-notifier
     whee smart-notifier
     whee fdpowermon

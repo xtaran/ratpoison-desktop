@@ -110,7 +110,7 @@ disk "/" {
 	format = "/ %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+WHEEZY+SID!:avail:NATTY+ONEIRIC+WHEEZY+SID!]"
 }
 
-[C_CROSSER+JUMPER+HZ:
+[C_CROSSER+JUMPER+HZ+C_CACTUS:
 disk "/home" {
 	format = "/home %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+WHEEZY+SID!:avail:NATTY+ONEIRIC+WHEEZY+SID!]"
 }
@@ -118,13 +118,13 @@ disk "/home" {
 disk "/var" {
 	format = "/var %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+WHEEZY+SID!:avail:NATTY+ONEIRIC+WHEEZY+SID!]"
 }
-:C_CROSSER+JUMPER+HZ]
+:C_CROSSER+JUMPER+HZ+C_CACTUS]
 
-[C_CROSSER+SNIDGET:
+[C_CROSSER+SNIDGET+C_CACTUS:
 disk "/tmp" {
 	format = "/tmp %[SQUEEZE+LUCID!:free:SQUEEZE+LUCID!][NATTY+ONEIRIC+WHEEZY+SID!:avail:NATTY+ONEIRIC+WHEEZY+SID!]"
 }
-:C_CROSSER+SNIDGET]
+:C_CROSSER+SNIDGET+C_CACTUS]
 
 [SNIDGET:
 disk "/scratch" {
@@ -147,8 +147,8 @@ order = {}
 [NEMO+NEMO2:order += "cpu_temperature 0":NEMO+NEMO2]
 order += "load"
 order += "disk /"
-[C_CROSSER+JUMPER+HZ:order += "disk /var":C_CROSSER+JUMPER+HZ]
-[C_CROSSER+JUMPER+HZ:order += "disk /home":C_CROSSER+JUMPER+HZ]
-[C_CROSSER+SNIDGET:order += "disk /tmp":C_CROSSER+SNIDGET]
+[C_CROSSER+JUMPER+HZ+C_CACTUS:order += "disk /var":C_CROSSER+JUMPER+HZ+C_CACTUS]
+[C_CROSSER+JUMPER+HZ+C_CACTUS:order += "disk /home":C_CROSSER+JUMPER+HZ+C_CACTUS]
+[C_CROSSER+SNIDGET+C_CACTUS:order += "disk /tmp":C_CROSSER+SNIDGET+C_CACTUS]
 [SNIDGET:order += "disk /scratch":SNIDGET]
 [!NEMO+JUMPER:order += "ipv6":!NEMO+JUMPER]

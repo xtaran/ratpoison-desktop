@@ -1,9 +1,9 @@
 Config {
 
-[!NEMO+NEMO2+SNIDGET+METISSE+C_CROSSER+JUMPER+DS3: font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1":!NEMO+NEMO2+SNIDGET+METISSE+C_CROSSER+JUMPER+DS3]
+[!NEMO+NEMO2+SNIDGET+METISSE+C_CROSSER+JUMPER+DS3+C_CACTUS: font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1":!NEMO+NEMO2+SNIDGET+METISSE+C_CROSSER+JUMPER+DS3+C_CACTUS]
 [METISSE!:				font = "-xos4-terminus-bold-r-*-*-12-120-*-*-*-60-iso10646-1":METISSE!]
 [NEMO!:					font = "xft:Droid-6:normal":NEMO!]
-[SNIDGET!:				font = "xft:M+ 1p-8:normal":SNIDGET!]
+[SNIDGET+C_CACTUS!:			font = "xft:M+ 1p-8:normal":SNIDGET+C_CACTUS!]
 [NEMO2!:				font = "xft:M+ 1p-7:normal":NEMO2!]
 [JUMPER+C_CROSSER+DS3!:			font = "xft:M+ 1p-6:normal":JUMPER+C_CROSSER+DS3!]
 
@@ -16,9 +16,10 @@ Config {
 		    , Run StdinReader
 [CORE0+DS3+NEMO2:[!NEMO+C33+EISBAERLI:, Run CoreTemp ["-t","<core0>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:!NEMO+C33+EISBAERLI]:CORE0+DS3+NEMO2]
 [CORE1+JUMPER:[!METISSE+DS3+NEMO2:    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:!METISSE+DS3+NEMO2]:CORE1+JUMPER]
-[CORE3:[!JUMPER:    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C ²<core2>°C ³<core3>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:!JUMPER]:CORE3]
-[C_CROSSER:	    , Run ThermalZone 0 ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1
-		    , Run ThermalZone 1 ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1:C_CROSSER]
+[CORE3:[!JUMPER+C_CACTUS:    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C ²<core2>°C ³<core3>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:!JUMPER+C_CACTUS]:CORE3]
+[C_CACTUS!:    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C ²<core2>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:C_CACTUS!]
+[C_CROSSER+C_CACTUS:, Run ThermalZone 0 ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1
+		    , Run ThermalZone 1 ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1:C_CROSSER+C_CACTUS]
 [EISBAERLI:	    , Run Thermal "THRM" ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1:EISBAERLI]
 [C33:		    , Run Battery ["-t","<left>"] 1:C33]
 [!SNIDGET:	    , Run Com "iplet" ["2"] "" 600:!SNIDGET]

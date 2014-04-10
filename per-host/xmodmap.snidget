@@ -12,3 +12,6 @@
 ! Make Win_R Compose
 keycode 108 = Multi_key
 keycode 134 = Multi_key
+clear Lock
+keycode  66 = Control_L
+add Control = Control_L Control_R

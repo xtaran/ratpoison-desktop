@@ -155,7 +155,6 @@ Used if available but except the system tray stuff recommended anyway:
 * [autocutsel](http://packages.debian.org/stable/autocutsel)
 * [emacs-goodies-el](http://packages.debian.org/stable/emacs-goodies-el)
   (for `markdown-mode` and others)
-* [gnome-settings-daemon](http://packages.debian.org/stable/gnome-settings-daemon)
 * [inotail](http://packages.debian.org/stable/inotail) (Linux only)
 * [keynav](http://packages.debian.org/stable/keynav) ≥
   0.20101014.3067
@@ -237,6 +236,7 @@ Only in commented code (i.e. currently not used):
   [lwatch](http://packages.debian.org/stable/lwatch) |
   [colortail](http://packages.debian.org/stable/colortail)
 * [root-tail](http://packages.debian.org/stable/root-tail)
+* [gnome-settings-daemon](http://packages.debian.org/stable/gnome-settings-daemon)
 
 Other Configuration Files
 -------------------------

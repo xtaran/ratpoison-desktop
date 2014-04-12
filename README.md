@@ -170,8 +170,9 @@ Used if available but except the system tray stuff recommended anyway:
   (for `synclient`)
 * [yeahconsole](http://packages.debian.org/stable/yeahconsole)
 * System tray applets for use with awesome:
-  * [nm-applet](http://packages.debian.org/stable/network-manager-gnome) |
-    [wicd-gtk](http://packages.debian.org/stable/wicd-gtk)
+  * [wicd-gtk](http://packages.debian.org/stable/wicd-gtk) |
+    [connman-ui](http://packages.debian.org/testing/connman-ui) |
+    [nm-applet](http://packages.debian.org/stable/network-manager-gnome)
   * [update-notifier](http://packages.debian.org/stable/update-notifier)
   * [gtk-redshift](http://packages.debian.org/stable/gtk-redshift)
   * [fdpowermon](http://packages.debian.org/testing/fdpowermon)

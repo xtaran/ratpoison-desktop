@@ -83,7 +83,7 @@ Depends: abe-desktop-common,
 Recommends: notification-daemon | dunst,
             redshift,
             suckless-tools | dwm-tools (>= 31-1),
-            wicd-curses | connman-ui | network-manager (>= 0.8.0.999-1) | cnetworkmanager,
+            wicd-curses | connman | network-manager (>= 0.8.0.999-1) | cnetworkmanager,
             xclip
 Architecture: all
 Description: Packages necessary for Axel's ratpoison desktop
@@ -100,7 +100,7 @@ Depends: abe-desktop-common,
 Recommends: fdpowermon,
             gtk-redshift,
             smart-notifier,
-            wicd-gtk | network-manager-gnome
+            wicd-gtk | connman-ui | network-manager-gnome
 Suggests: amora-applet,
           clipit | parcellite,
           owncloud-client | mirall | polybox-client,

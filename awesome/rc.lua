@@ -20,9 +20,6 @@ require("obvious.volume_alsa")
 beautiful.init((os.getenv("RP") or (os.getenv("HOME") .."/.config")) .. "/awesome/theme.lua")
 -- awful.util.spawn("awsetbg -l", false, s)
 
--- Only set bottom padding for screen 1
-awful.screen.padding( screen[1], { bottom = 16 } )
-
 -- This is used later as the default terminal and editor to run.
 terminal = "x-terminal-emulator"
 editor = "emacsclient -a emacs"
@@ -43,6 +40,13 @@ hostname = string.gsub(hostname, '[\n\r]+', '')
 -- Different font on c-crosser
 if hostname == "c-crosser" then
    awesome.font = "mplus_f10b 8"
+end
+
+-- Handle different per-host font sizes in xmobar
+if hostname == "snidget" or hostname == "c-cactus" then
+   awful.screen.padding( screen[1], { bottom = 20 } )
+else
+   awful.screen.padding( screen[1], { bottom = 16 } )
 end
 
 -- Default modkey.

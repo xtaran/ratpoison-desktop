@@ -51,7 +51,7 @@ if [ -r "$HOME/.zsh/zsh.d/60-debian" ]; then
     . "$HOME/.zsh/zsh.d/60-debian"
 fi
 
-# Start some GNOME foo if installed
+# Start some GNOME foo if installed, should be maybe replaced by XFCE foo.
 #whee gnome-settings-daemon
 #whee gnome-power-manager
 

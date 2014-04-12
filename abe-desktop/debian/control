@@ -97,7 +97,7 @@ Depends: abe-desktop-common,
          hsetroot,
          xdotool,
          ${misc:Depends}
-Recommends: fdpowermon,
+Recommends: fdpowermon | xfce4-power-manager,
             gtk-redshift,
             smart-notifier,
             wicd-gtk | connman-ui | network-manager-gnome

@@ -10,5 +10,6 @@
 /abe-desktop/debian/abe-desktop*/
 /abe-desktop/debian/files
 /abe-*_*.deb
+/colord_*_all.deb
 /abe-metapackages*
 /kiva-*.deb

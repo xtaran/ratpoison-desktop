@@ -3,6 +3,7 @@ abe-desktop (11.2~dev) UNRELEASED; urgency=low
   * Downgrade gnome-settings-daemon to Suggests
   * Add connman{,-ui} as wicd/network-manager alternative
   * abe-desktop-awesome suggests owncloud-client, mirall or polybox-client
+  * abe-desktop recommends abe-desktop-extras
 
  -- Axel Beckert <abe@deuxchevaux.org>  Sun, 26 May 2013 17:06:49 +0200
 

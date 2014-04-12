@@ -120,7 +120,8 @@ Depends: abe-console,
          abe-desktop-ratpoison,
          wdm | xdm | x-display-manager,
          ${misc:Depends}
-Recommends: abe-partitioning
+Recommends: abe-desktop-extras,
+            abe-partitioning
 Suggests: abe-archive-tools,
           abe-commandline-media,
           abe-fun,

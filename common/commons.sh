@@ -17,7 +17,7 @@ systray_applets() {
     whee connman-ui-gtk
     whee update-notifier
     whee smart-notifier
-    whe xfce4-power-manager || whee fdpowermon
+    whee fdpowermon
     whee radiotray
     whee amora-applet
     whe clipit || whe parcellite &

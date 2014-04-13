@@ -1,5 +1,7 @@
 # -*- shell-script -*-
 
+whe xfce4-power-manager
+
 . $RP/bin/x240-clickpad.sh
 
 # Normal startup stuff

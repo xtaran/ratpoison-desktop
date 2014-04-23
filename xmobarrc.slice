@@ -18,16 +18,16 @@ Config {
 [CORE1+JUMPER:[!METISSE+DS3+NEMO2:    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:!METISSE+DS3+NEMO2]:CORE1+JUMPER]
 [CORE3:[!JUMPER+C_CACTUS:    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C ²<core2>°C ³<core3>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:!JUMPER+C_CACTUS]:CORE3]
 [C_CACTUS!:    , Run CoreTemp ["-t","⁰<core0>°C ¹<core1>°C ²<core2>°C","-L","50","-H","80", "-l","lightblue", "-n","lightgreen","-h","red"] 1:C_CACTUS!]
-[C_CROSSER+C_CACTUS:, Run ThermalZone 0 ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1
-		    , Run ThermalZone 1 ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1:C_CROSSER+C_CACTUS]
+[C_CROSSER+C_CACTUS:, Run ThermalZone 0 ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 5
+		    , Run ThermalZone 1 ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 5:C_CROSSER+C_CACTUS]
 [EISBAERLI:	    , Run Thermal "THRM" ["-t","<temp>°C","-L","40","-H","55", "-l","lightblue", "-n","lightgreen","-h","red"] 1:EISBAERLI]
-[C33:		    , Run Battery ["-t","<left>"] 1:C33]
+[C33:		    , Run Battery ["-t","<left>"] 10:C33]
 [!SNIDGET:	    , Run Com "iplet" ["2"] "" 600:!SNIDGET]
 [!JUMPER:	    , Run Com "uname" ["-[METISSE+SNIDGET!:s:METISSE+SNIDGET!]r[SNIDGET!:v:SNIDGET!]"] "" 86400:!JUMPER]
 		    , Run Date "[METISSE+SNIDGET!:%a %d-%b-%Y :METISSE+SNIDGET!]%H:%M:%S" "date" 10
-[CORE0+DS3+NEMO2:[!NEMO:	    , Run CpuFreq ["-t","<cpu0>", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!NEMO]:CORE0+DS3+NEMO2]
-[CORE1:[!METISSE+DS3+NEMO2:   , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!METISSE+DS3+NEMO2]:CORE1]
-[CORE3:[!JUMPER:    , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz ²<cpu2> GHz ³<cpu2> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 1:!JUMPER]:CORE3]
+[CORE0+DS3+NEMO2:[!NEMO:	    , Run CpuFreq ["-t","<cpu0>", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 5:!NEMO]:CORE0+DS3+NEMO2]
+[CORE1:[!METISSE+DS3+NEMO2:   , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 5:!METISSE+DS3+NEMO2]:CORE1]
+[CORE3:[!JUMPER:    , Run CpuFreq ["-t","⁰<cpu0> GHz ¹<cpu1> GHz ²<cpu2> GHz ³<cpu2> GHz", "-L","0", "-H","2", "-l","green", "-n","lightblue", "-h","yellow"] 5:!JUMPER]:CORE3]
 		    ]
        , sepChar = "%"
        , alignSep = "}{"

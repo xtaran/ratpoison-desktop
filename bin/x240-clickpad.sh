@@ -10,6 +10,7 @@ synclient ClickFinger3=2
 
 # enable horizontal two-finger scrolling (vertical is enabled by default)
 synclient HorizTwoFingerScroll=1
+synclient VertTwoFingerScroll=1
 
 # Where does the touch pad end to leave the remainder as real buttons
 synclient AreaTopEdge=2000

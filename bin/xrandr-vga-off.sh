@@ -1,4 +1,11 @@
 #!/bin/sh 
 
-xrandr --output LVDS1 --auto
-xrandr --output VGA1 --off
+INTERNAL="`xrandr | fgrep connected | egrep    '^(eDP1|LVDS-?1)' | awk '{print $1}'`"
+EXTERNAL="`xrandr | fgrep connected | egrep -v '^(eDP1|LVDS-?1)' | awk '{print $1}'`"
+
+for output in $INTERNAL; do
+    xrandr --output $output --auto
+done
+for output in $EXTERNAL; do
+    xrandr --output $output --off
+done

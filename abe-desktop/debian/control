@@ -9,7 +9,7 @@ Standards-Version: 3.9.4
 Build-Depends: debhelper (>= 7)
 
 Package: abe-desktop-common
-Depends: busybox-syslogd | system-log-daemon,
+Depends: busybox-syslogd | system-log-daemon | systemd,
          colordiff,
          conkeror | www-browser,
          dnsutils | wget,

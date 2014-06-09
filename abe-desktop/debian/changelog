@@ -5,6 +5,7 @@ abe-desktop (11.2~dev) UNRELEASED; urgency=low
   * abe-desktop-awesome suggests owncloud-client, mirall or polybox-client
   * abe-desktop recommends abe-desktop-extras
   * Allow systemd (i.e. journalctl) as alternative to busybox-syslogd.
+  * Bump Standards-Version to 3.9.5 (no changes)
 
  -- Axel Beckert <abe@deuxchevaux.org>  Sun, 26 May 2013 17:06:49 +0200
 

@@ -33,7 +33,7 @@ $HOME/bin/muttstart.sh
 uxterm +sb -T "XScreenSaver Log" -e tail -f $HOME/.xscreensaver.`uname -n`.log &
 uxterm &
 
-whee gtk-redshift -l $LOC
+whee gtk-redshift -l $LOC -t $RSTEMP
 
 ############################
 ### 2. Desktop: Web + RT ###
@@ -58,7 +58,7 @@ $HOME/bin/ircstart.sh
 yeahconsole &
 synergys
 
-whee gtk-redshift -l $LOC
+whee gtk-redshift -l $LOC -t $RSTEMP
 
 ###########################
 ### 4. Desktop: Nothing ###
@@ -66,6 +66,6 @@ whee gtk-redshift -l $LOC
 
 export DISPLAY=:0.3
 
-whee gtk-redshift -l $LOC
+whee gtk-redshift -l $LOC -t $RSTEMP
 
 yeahconsole &

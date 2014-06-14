@@ -9,7 +9,9 @@ HT=`expr $H / 11 - 1`
 HOSTNAME=`uname -n`
 # Alternative font: -misc-fixed-medium-r-*-*-12-*-*-*-*-60-iso10646-1
 FONT='-xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1'
+# Redshift parameters
 LOC='47.399453:8.507232'
+RSTEMP='5500K:4500K'
 
 # Path
 export PATH="${PATH}:/sbin:/usr/sbin:${HOME}/${RP}/bin"

@@ -2,12 +2,21 @@ XTerm*Font: fixed
 Aterm*font: -xos4-terminus-medium-*-*-*-*-*-*-*-*-60-iso10646-1
 Rxvt*Font:  -xos4-terminus-medium-*-*-*-*-*-*-*-*-60-iso10646-1
 
+XTerm*renderFont: false
+XTerm*faceName: AtariSmall
+XTerm*faceSize1: 4
+XTerm*faceSize2: 5
+XTerm*faceSize3: 6
+XTerm*faceSize4: 8
+XTerm*faceSize5: 12
+XTerm*faceSize6: 24
+
 !XTerm*font: -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1
 XTerm*font1: -misc-fixed-medium-r-*-*-12-*-*-*-*-60-iso10646-1
 XTerm*font2: -misc-fixed-medium-r-*-*-14-*-*-*-*-70-iso10646-1
 XTerm*font3: -misc-fixed-medium-r-*-*-15-*-*-*-*-90-iso10646-1
-XTerm*font4: -misc-fixed-medium-r-*-*-18-*-*-*-*-80-iso10646-1
-XTerm*font5: -misc-fixed-medium-r-*-*-20-*-*-*-*-100-iso10646-1
+XTerm*font4: -misc-fixed-medium-r-*-*-20-*-*-*-*-100-iso10646-1
+XTerm*font5: -xos4-terminus-medium-r-*-*-28-*-*-*-*-*-iso10646-1
 XTerm*font6: -xos4-terminus-medium-r-*-*-32-*-*-*-*-*-iso10646-1
 XTerm*internalBorder: 1
 ! Needed for ratpoison passing Ctrl-T to terminals, but disables

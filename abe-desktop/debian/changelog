@@ -1,3 +1,9 @@
+abe-desktop (11.3) UNRELEASED; urgency=low
+
+  * Add dependency on ttf-atarismall which is used now in Xresources
+
+ -- Axel Beckert <abe@deuxchevaux.org>  Wed, 18 Jun 2014 01:26:22 +0200
+
 abe-desktop (11.2) unstable; urgency=low
 
   * Downgrade gnome-settings-daemon to Suggests

@@ -26,7 +26,7 @@ systray_applets() {
     [ -d $HOME/.yarssr/state ] && [ -n "`find $HOME/.yarssr/state -type f`" ] && whee yarssr
     whee shutter --min_at_startup
     # Use redshift if installed
-    whe gtk-redshift -l $LOC -t $RSTEMP || whe redshift -l $LOC -t $RSTEMP &
+    whe gtk-redshift -l $LOC -t $RSTEMP || whe redshift-gtk -l $LOC -t $RSTEMP || whe redshift -l $LOC -t $RSTEMP &
 
     # Owncloud and derivatives
     whe owncloud || whe mirall || whe polybox &

@@ -33,7 +33,7 @@ $HOME/bin/muttstart.sh
 uxterm +sb -T "XScreenSaver Log" -e tail -f $HOME/.xscreensaver.`uname -n`.log &
 uxterm &
 
-whee gtk-redshift -l $LOC -t $RSTEMP
+whe gtk-redshift -l $LOC -t $RSTEMP || whe redshift-gtk -l $LOC -t $RSTEMP &
 
 ############################
 ### 2. Desktop: Web + RT ###

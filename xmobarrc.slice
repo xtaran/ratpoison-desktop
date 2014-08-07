@@ -1,11 +1,11 @@
 Config {
 
-[!NEMO+NEMO2+SNIDGET+METISSE+C_CROSSER+JUMPER+DS3+C_CACTUS: font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1":!NEMO+NEMO2+SNIDGET+METISSE+C_CROSSER+JUMPER+DS3+C_CACTUS]
+[!NEMO+NEMO2+METISSE+DS3+C_CACTUS: font = "-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1":!NEMO+NEMO2+METISSE+DS3+C_CACTUS]
 [METISSE!:				font = "-xos4-terminus-bold-r-*-*-12-120-*-*-*-60-iso10646-1":METISSE!]
 [NEMO!:					font = "xft:Droid-6:normal":NEMO!]
-[SNIDGET+C_CACTUS!:			font = "xft:M+ 1p-8:normal":SNIDGET+C_CACTUS!]
+[C_CACTUS!:			font = "xft:M+ 1p-8:normal":C_CACTUS!]
 [NEMO2!:				font = "xft:M+ 1p-7:normal":NEMO2!]
-[JUMPER+C_CROSSER+DS3!:			font = "xft:M+ 1p-6:normal":JUMPER+C_CROSSER+DS3!]
+[DS3!:			font = "xft:M+ 1p-6:normal":DS3!]
 
        , bgColor = "black"
        , fgColor = "white"

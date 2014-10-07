@@ -19,7 +19,10 @@
  '(indicate-buffer-boundaries (quote left))
  '(indicate-empty-lines t)
  '(inhibit-startup-screen t)
+ '(kill-do-not-save-duplicates t)
  '(mouse-sel-mode t)
+ '(mouse-yank-at-point t)
+ '(save-interprogram-paste-before-kill t)
  '(save-place t nil (saveplace))
  '(scroll-bar-mode (quote right))
  '(send-mail-function (quote sendmail-send-it))
@@ -29,7 +32,8 @@
  '(tool-bar-mode nil)
  '(tramp-shell-prompt-pattern "\\(?:^\\|\\)[^#$%>→
 ]*#?[#$%>→] *\\(\\[[0-9;]*[a-zA-Z] *\\)*")
- '(uniquify-buffer-name-style (quote forward) nil (uniquify)))
+ '(uniquify-buffer-name-style (quote forward) nil (uniquify))
+ '(x-select-enable-primary t))
 
 ; Restore interprogram-{cut,paste}-function's values because
 ; mouse-sel-mode resets it to nil and while I want most of

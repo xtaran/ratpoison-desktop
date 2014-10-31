@@ -6,9 +6,11 @@ History, Background and Reasoning
 
 While being a heavy [FVWM](http://www.fvwm.org/) user for nearly 15
 years, I now run tiling window managers on all my “desktops” and
-laptops, ranging from a first generation ASUS EeePC 701 4G netbook
-over a Sun UltraSparc 10 to a full-fledged multihead workstation from
-[Dalco](http://www.dalco.ch/) at work.
+laptops, ranging from a first generation 7" ASUS EeePC 701 4G netbook
+(unfortunately died in early 2014, has been replaced by a 9" ASUS
+EeePC 900A) over a Sun UltraSparc 10 to a full-fledged multihead
+workstation from [Dalco](http://www.dalco.ch/) at work and several
+generations of Thinkpads ranging from an A31 over a T61 to an X240.
 
 My ASUS EeePC 701 running [Debian GNU/Linux](https://www.debian.org/)
 [Sid](https://www.debian.org/releases/sid/) was the first box where
@@ -19,8 +21,8 @@ windows doesn’t make sense, moving windows around with the mouse makes
 even less sense.
 
 So I’ve chosen [ratpoison](http://www.nongnu.org/ratpoison/) for the
-EeePC (and still use it on that box) since it makes windows fullscreen
-by default and the keybindings are nearly identical to
+EeePC (and would still use it on that box) since it makes windows
+fullscreen by default and the keybindings are nearly identical to
 [GNU Screen](https://www.gnu.org/software/screen/) and therefore easy
 to learn respectively I didn’t have to learn anything to use it.
 
@@ -38,7 +40,7 @@ clumsy for more complex window arrangements and multiple virtual
 desktops.
 
 So I looked through the other tiling window managers in Debian, trying
-out [i3](http://i3wm.org/), scrotwm (nowadays called
+out [i3](http://i3wm.org/) (3.x versions), scrotwm (nowadays called
 [spectrwm](https://opensource.conformal.com/wiki/spectrwm)),
 [wmii](http://wmii.suckless.org/), [awesome](http://awesome.naquadah.org/)
 and some ion successors ([tritium](http://sf.net/projects/tritium/)
@@ -254,7 +256,7 @@ desktop setup respectively could also be used on non-desktop machines.
 * `screenrc` for [GNU Screen](https://www.gnu.org/software/screen/)
 
 I'll probably split them off into their separate repository somewhen
-in the future.
+in the future, maybe using [vcsh](https://github.com/RichiH/vcsh).
 
 Debian Metapackages
 -------------------
@@ -273,8 +275,10 @@ above:
   desktop
 * abe-desktop-common: Contains dependencies common to both, the
   ratpoison-based and the awesome-based desktop.
-* abe-desktop: Contains dependencies on all of the above plus
-  optional dependencies on other common metapackages I maintain.
+* abe-desktop: Contains dependencies on all of the above plus optional
+  dependencies on
+  [other common metapackages](https://github.com/xtaran/abe-metapackages)
+  I maintain.
 
 Some of these packages recommend or suggest other metapackages which
 previously were part of this repository but have been split off into

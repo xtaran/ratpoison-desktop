@@ -255,7 +255,7 @@ desktop setup respectively could also be used on non-desktop machines.
 * `lintianrc` for [lintian](https://packages.debian.org/stable/lintian)
 * `screenrc` for [GNU Screen](https://www.gnu.org/software/screen/)
 
-I'll probably split them off into their separate repository somewhen
+I’ll probably split them off into their separate repository somewhen
 in the future, maybe using [vcsh](https://github.com/RichiH/vcsh).
 
 Debian Metapackages

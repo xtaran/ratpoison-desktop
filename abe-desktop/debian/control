@@ -104,10 +104,12 @@ Recommends: fdpowermon | xfce4-power-manager,
             wicd-gtk | connman-ui | network-manager-gnome
 Suggests: amora-applet,
           clipit | parcellite,
+          nagstamon,
           owncloud-client | mirall | polybox-client,
           qasmixer | volumeicon-alsa | volti,
           radiotray,
           shutter,
+          specto,
           update-notifier,
           yarssr
 Architecture: all

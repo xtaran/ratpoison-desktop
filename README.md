@@ -189,6 +189,8 @@ Used if available but except the system tray stuff recommended anyway:
     [mirall](http://packages.debian.org/mirall) or the
     ETH-Zurich-branded derivative called
     [polybox](http://www.id.ethz.ch/services/list/polybox/)
+  * [nagstamon](http://packages.debian.org/stable/nagstamon)
+  * [specto](http://packages.debian.org/stable/specto)
 * For use with ratpoison only so far:
   * [notification-daemon](http://packages.debian.org/stable/notification-daemon) |
     [dunst](http://packages.debian.org/testing/dunst)

@@ -20,6 +20,8 @@ systray_applets() {
     whee fdpowermon
     whee radiotray
     whee amora-applet
+    whee nagstamon
+    whee specto
     whe clipit || whe parcellite &
     whe xfce4-volumed
     whe qasmixer -t || whe volumeicon || whe volti &

@@ -95,8 +95,8 @@ These symbolic links can also be automatically set up by calling
 
 Sources available via
 [my own Git server](http://git.noone.org/?p=ratpoison.git),
-[Gitorious](http://gitorious.org/abe/ratpoison-desktop), and
-[GitHub](http://github.com/xtaran/ratpoison-desktop).
+[Gitorious](https://gitorious.org/abe/ratpoison-desktop), and
+[GitHub](https://github.com/xtaran/ratpoison-desktop).
 
 Requirements
 ------------

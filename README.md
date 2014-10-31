@@ -10,8 +10,8 @@ laptops, ranging from a first generation ASUS EeePC 701 4G netbook
 over a Sun UltraSparc 10 to a full-fledged multihead workstation from
 [Dalco](http://www.dalco.ch/) at work.
 
-My ASUS EeePC 701 running [Debian GNU/Linux](http://www.debian.org/)
-[Sid](http://www.debian.org/releases/sid/) was the first box where
+My ASUS EeePC 701 running [Debian GNU/Linux](https://www.debian.org/)
+[Sid](https://www.debian.org/releases/sid/) was the first box where
 I did not use FVWM anymore, because with a resolution of 800×480 on a
 7 inch screen, you a) want to waste as few pixels as possible by title
 bars, borders, … and b) most of the time anything else than fullscreen
@@ -21,7 +21,7 @@ even less sense.
 So I’ve chosen [ratpoison](http://www.nongnu.org/ratpoison/) for the
 EeePC (and still use it on that box) since it makes windows fullscreen
 by default and the keybindings are nearly identical to
-[GNU Screen](http://www.gnu.org/software/screen/) and therefore easy
+[GNU Screen](https://www.gnu.org/software/screen/) and therefore easy
 to learn respectively I didn’t have to learn anything to use it.
 
 After more and more fine tuning involving the
@@ -106,94 +106,94 @@ Requirements
 Needs at least the following Debian packages (besides essential
 packages) to be installed:
 
-* [busybox-syslogd](http://packages.debian.org/stable/busybox-syslogd)
+* [busybox-syslogd](https://packages.debian.org/stable/busybox-syslogd)
   (for `logread`)
-* [conkeror](http://packages.debian.org/stable/conkeror) or some other
+* [conkeror](https://packages.debian.org/stable/conkeror) or some other
   web browser
-* [emacs](http://packages.debian.org/stable/emacs) (or any other
+* [emacs](https://packages.debian.org/stable/emacs) (or any other
   emacsen, for `emacs` and `emacsclient`)
-* [gnome-keyring](http://packages.debian.org/stable/gnome-keyring)
-* [hsetroot](http://packages.debian.org/stable/hsetroot)
-* [i3status](http://packages.debian.org/stable/i3status) ≥ 2.2
-* [libfile-slurp-perl](http://packages.debian.org/stable/libfile-slurp-perl)
-* [libfile-temp-perl](http://packages.debian.org/stable/libfile-temp-perl)
-* [lsb-release](http://packages.debian.org/stable/lsb-release)
-* [ratmenu](http://packages.debian.org/stable/ratmenu) ≥ 2.3.20
-* [ratpoison](http://packages.debian.org/stable/ratpoison) or
-  [awesome](http://packages.debian.org/stable/awesome) +
-  [awesome-extra](http://packages.debian.org/stable/awesome-extras)
-* [dnsutils](http://packages.debian.org/stable/dnsutils) |
-  [wget](http://packages.debian.org/stable/wget) (needed by `iplet`)
-* [x11-utils](http://packages.debian.org/stable/x11-utils) (for
-  `xmessage`) | [gxmessage](http://packages.debian.org/stable/gxmessage)
-* [x11-xserver-utils](http://packages.debian.org/stable/x11-xserver-utils)
+* [gnome-keyring](https://packages.debian.org/stable/gnome-keyring)
+* [hsetroot](https://packages.debian.org/stable/hsetroot)
+* [i3status](https://packages.debian.org/stable/i3status) ≥ 2.2
+* [libfile-slurp-perl](https://packages.debian.org/stable/libfile-slurp-perl)
+* [libfile-temp-perl](https://packages.debian.org/stable/libfile-temp-perl)
+* [lsb-release](https://packages.debian.org/stable/lsb-release)
+* [ratmenu](https://packages.debian.org/stable/ratmenu) ≥ 2.3.20
+* [ratpoison](https://packages.debian.org/stable/ratpoison) or
+  [awesome](https://packages.debian.org/stable/awesome) +
+  [awesome-extra](https://packages.debian.org/stable/awesome-extras)
+* [dnsutils](https://packages.debian.org/stable/dnsutils) |
+  [wget](https://packages.debian.org/stable/wget) (needed by `iplet`)
+* [x11-utils](https://packages.debian.org/stable/x11-utils) (for
+  `xmessage`) | [gxmessage](https://packages.debian.org/stable/gxmessage)
+* [x11-xserver-utils](https://packages.debian.org/stable/x11-xserver-utils)
   (for `xmodmap`, `xrdb`, `xrandr` and `xsetroot`)
-* [xmobar](http://packages.debian.org/stable/xmobar)
-* [xscreensaver](http://packages.debian.org/stable/xscreensaver) or
-  [xtrlock](http://packages.debian.org/stable/xtrlock)
-* [xterm](http://packages.debian.org/stable/xterm) and/or
-  [rxvt-unicode](http://packages.debian.org/stable/rxvt-unicode)
+* [xmobar](https://packages.debian.org/stable/xmobar)
+* [xscreensaver](https://packages.debian.org/stable/xscreensaver) or
+  [xtrlock](https://packages.debian.org/stable/xtrlock)
+* [xterm](https://packages.debian.org/stable/xterm) and/or
+  [rxvt-unicode](https://packages.debian.org/stable/rxvt-unicode)
 * For Focus-Follows-Mouse:
-  * for awesome: [xdotool](http://packages.debian.org/stable/xdotool)
-  * for ratpoison: [xdotool](http://packages.debian.org/stable/xdotool) or
-    [nawm](http://packages.qa.debian.org/nawm) (no more in Debian)
+  * for awesome: [xdotool](https://packages.debian.org/stable/xdotool)
+  * for ratpoison: [xdotool](https://packages.debian.org/stable/xdotool) or
+    [nawm](https://packages.qa.debian.org/nawm) (no more in Debian)
 
 ### Used Fonts
 
 Fonts used for xmobar:
 
-* [ttf-mplus](http://packages.debian.org/stable/ttf-mplus) |
-  [fonts-mplus](http://packages.debian.org/testing/fonts-mplus)
-* [ttf-droid](http://packages.debian.org/squeeze-backports/ttf-droid) |
-  [fonts-droid](http://packages.debian.org/squeeze-backports/fonts-droid)
-* [xfonts-terminus](http://packages.debian.org/stable/xfonts-terminus)
+* [ttf-mplus](https://packages.debian.org/stable/ttf-mplus) |
+  [fonts-mplus](https://packages.debian.org/testing/fonts-mplus)
+* [ttf-droid](https://packages.debian.org/squeeze-backports/ttf-droid) |
+  [fonts-droid](https://packages.debian.org/squeeze-backports/fonts-droid)
+* [xfonts-terminus](https://packages.debian.org/stable/xfonts-terminus)
 
 ### Optional Software Packages
 
 Used if available but except the system tray stuff recommended anyway:
 
-* [autocutsel](http://packages.debian.org/stable/autocutsel)
-* [emacs-goodies-el](http://packages.debian.org/stable/emacs-goodies-el)
+* [autocutsel](https://packages.debian.org/stable/autocutsel)
+* [emacs-goodies-el](https://packages.debian.org/stable/emacs-goodies-el)
   (for `markdown-mode` and others)
-* [inotail](http://packages.debian.org/stable/inotail) (Linux only)
-* [keynav](http://packages.debian.org/stable/keynav) ≥
+* [inotail](https://packages.debian.org/stable/inotail) (Linux only)
+* [keynav](https://packages.debian.org/stable/keynav) ≥
   0.20101014.3067
-* [magit](http://packages.debian.org/stable/magit) (used in `emacs.el`)
-* [redshift](http://packages.debian.org/stable/redshift)
-* [udev-notify](http://udev-notify.learnfree.eu/) ([RFP](http://bugs.debian.org/670467))
-* [unclutter](http://packages.debian.org/stable/unclutter)
-* [x11-xkb-utils](http://packages.debian.org/stable/x11-xkb-utils)
+* [magit](https://packages.debian.org/stable/magit) (used in `emacs.el`)
+* [redshift](https://packages.debian.org/stable/redshift)
+* [udev-notify](http://udev-notify.learnfree.eu/) ([RFP](https://bugs.debian.org/670467))
+* [unclutter](https://packages.debian.org/stable/unclutter)
+* [x11-xkb-utils](https://packages.debian.org/stable/x11-xkb-utils)
   (for `setxkbmap`)
-* [xrootconsole](http://packages.debian.org/stable/xrootconsole)
-* [xserver-xorg-input-synaptics](http://packages.debian.org/stable/xserver-xorg-input-synaptics)
+* [xrootconsole](https://packages.debian.org/stable/xrootconsole)
+* [xserver-xorg-input-synaptics](https://packages.debian.org/stable/xserver-xorg-input-synaptics)
   (for `synclient`)
-* [yeahconsole](http://packages.debian.org/stable/yeahconsole)
+* [yeahconsole](https://packages.debian.org/stable/yeahconsole)
 * System tray applets for use with awesome:
-  * [wicd-gtk](http://packages.debian.org/stable/wicd-gtk) |
-    [connman-ui](http://packages.debian.org/testing/connman-ui) |
-    [nm-applet](http://packages.debian.org/stable/network-manager-gnome)
-  * [update-notifier](http://packages.debian.org/stable/update-notifier)
-  * [gtk-redshift](http://packages.debian.org/stable/gtk-redshift)
-  * [fdpowermon](http://packages.debian.org/testing/fdpowermon)
-  * [radiotray](http://packages.debian.org/stable/radiotray)
-  * [shutter](http://packages.debian.org/stable/shutter)
-  * [yarssr](http://packages.debian.org/stable/yarssr)
-  * [clipit](http://packages.debian.org/testing/clipit) |
-    [parcellite](http://packages.debian.org/stable/parcellite)
-  * [qasmixer](http://packages.debian.org/squeeze-backports/qasmixer) |
-    [volumeicon-alsa](http://packages.debian.org/testing/volumeicon-alsa) |
-    [volti](http://packages.debian.org/testing/volti)
-  * [smart-notifier](http://packages.debian.org/stable/smart-notifier)
-  * [amorad-gui](http://packages.debian.org/stable/amora-applet)
-  * [owncloud-client](http://packages.debian.org/owncloud-client),
-    [mirall](http://packages.debian.org/mirall) or the
+  * [wicd-gtk](https://packages.debian.org/stable/wicd-gtk) |
+    [connman-ui](https://packages.debian.org/testing/connman-ui) |
+    [nm-applet](https://packages.debian.org/stable/network-manager-gnome)
+  * [update-notifier](https://packages.debian.org/stable/update-notifier)
+  * [gtk-redshift](https://packages.debian.org/stable/gtk-redshift)
+  * [fdpowermon](https://packages.debian.org/testing/fdpowermon)
+  * [radiotray](https://packages.debian.org/stable/radiotray)
+  * [shutter](https://packages.debian.org/stable/shutter)
+  * [yarssr](https://packages.debian.org/stable/yarssr)
+  * [clipit](https://packages.debian.org/testing/clipit) |
+    [parcellite](https://packages.debian.org/stable/parcellite)
+  * [qasmixer](https://packages.debian.org/squeeze-backports/qasmixer) |
+    [volumeicon-alsa](https://packages.debian.org/testing/volumeicon-alsa) |
+    [volti](https://packages.debian.org/testing/volti)
+  * [smart-notifier](https://packages.debian.org/stable/smart-notifier)
+  * [amorad-gui](https://packages.debian.org/stable/amora-applet)
+  * [owncloud-client](https://packages.debian.org/owncloud-client),
+    [mirall](https://packages.debian.org/mirall) or the
     ETH-Zurich-branded derivative called
     [polybox](http://www.id.ethz.ch/services/list/polybox/)
-  * [nagstamon](http://packages.debian.org/stable/nagstamon)
-  * [specto](http://packages.debian.org/stable/specto)
+  * [nagstamon](https://packages.debian.org/stable/nagstamon)
+  * [specto](https://packages.debian.org/stable/specto)
 * For use with ratpoison only so far:
-  * [notification-daemon](http://packages.debian.org/stable/notification-daemon) |
-    [dunst](http://packages.debian.org/testing/dunst)
+  * [notification-daemon](https://packages.debian.org/stable/notification-daemon) |
+    [dunst](https://packages.debian.org/testing/dunst)
 
 ### Kernel Modules
 
@@ -207,38 +207,38 @@ do not seem to be loaded automatically (write them into `/etc/modules`):
 
 Only used in non-necessary scripts or keybindings:
 
-* [dwm-tools](http://packages.debian.org/stable/dwm-tools) ≥ 31-1 or
-  [suckless-tools](http://packages.debian.org/stable/suckless-tools)
+* [dwm-tools](https://packages.debian.org/stable/dwm-tools) ≥ 31-1 or
+  [suckless-tools](https://packages.debian.org/stable/suckless-tools)
   (for `dmenu`, `tabbed` and `wmname`)
-* [openssh-client](http://packages.debian.org/stable/openssh-client)
+* [openssh-client](https://packages.debian.org/stable/openssh-client)
   (for `ssh-add` and `ssh-agent`)
-* [screen](http://packages.debian.org/stable/screen) or
-  [tmux](http://packages.debian.org/stable/tmux)
-* [scrot](http://packages.debian.org/stable/scrot)
-* [xclip](http://packages.debian.org/stable/xclip)
-* [colordiff](http://packages.debian.org/stable/colordiff)
-* [git](http://packages.debian.org/stable/git)
+* [screen](https://packages.debian.org/stable/screen) or
+  [tmux](https://packages.debian.org/stable/tmux)
+* [scrot](https://packages.debian.org/stable/scrot)
+* [xclip](https://packages.debian.org/stable/xclip)
+* [colordiff](https://packages.debian.org/stable/colordiff)
+* [git](https://packages.debian.org/stable/git)
 
 ### Software Packages used in Commented Code
 
 Only in commented code (i.e. currently not used):
 
 * Alternative window and session managers:
-  * [i3](http://packages.debian.org/stable/i3-wm)
-  * [flwm](http://packages.debian.org/stable/flwm)
-  * [fvwm](http://packages.debian.org/stable/fvwm)
-  * [lxsession](http://packages.debian.org/stable/lxsession)
-  * [spectrwm](http://packages.debian.org/testing/spectrewm) (formerly
-    [scrotwm](http://packages.debian.org/stable/scrotwm))
-  * [stumpwm](http://packages.debian.org/stable/stumpwm)
-  * [tritium](http://packages.debian.org/stable/tritium)
-  * [notion](http://packages.debian.org/testing/notion)
-* [loco](http://packages.qa.debian.org/loco) (no more in Debian) |
-  [ccze](http://packages.debian.org/stable/ccze) |
-  [lwatch](http://packages.debian.org/stable/lwatch) |
-  [colortail](http://packages.debian.org/stable/colortail)
-* [root-tail](http://packages.debian.org/stable/root-tail)
-* [gnome-settings-daemon](http://packages.debian.org/stable/gnome-settings-daemon)
+  * [i3](https://packages.debian.org/stable/i3-wm)
+  * [flwm](https://packages.debian.org/stable/flwm)
+  * [fvwm](https://packages.debian.org/stable/fvwm)
+  * [lxsession](https://packages.debian.org/stable/lxsession)
+  * [spectrwm](https://packages.debian.org/testing/spectrewm) (formerly
+    [scrotwm](https://packages.debian.org/stable/scrotwm))
+  * [stumpwm](https://packages.debian.org/stable/stumpwm)
+  * [tritium](https://packages.debian.org/stable/tritium)
+  * [notion](https://packages.debian.org/testing/notion)
+* [loco](https://packages.qa.debian.org/loco) (no more in Debian) |
+  [ccze](https://packages.debian.org/stable/ccze) |
+  [lwatch](https://packages.debian.org/stable/lwatch) |
+  [colortail](https://packages.debian.org/stable/colortail)
+* [root-tail](https://packages.debian.org/stable/root-tail)
+* [gnome-settings-daemon](https://packages.debian.org/stable/gnome-settings-daemon)
 
 Other Configuration Files
 -------------------------
@@ -247,11 +247,11 @@ The repository also contains some configuration files which I usually
 want on every desktop, but which are more or less independent of the
 desktop setup respectively could also be used on non-desktop machines.
 
-* `colordiffrc` for [colordiff](http://packages.debian.org/stable/colordiff)
+* `colordiffrc` for [colordiff](https://packages.debian.org/stable/colordiff)
 * `emacs.el` for [GNU Emacs](http://www.emacswiki.org/)
 * `gitconfig` and `gitignore` for [Git](http://git-scm.org/)
-* `lintianrc` for [lintian](http://packages.debian.org/stable/lintian)
-* `screenrc` for [GNU Screen](http://www.gnu.org/software/screen/)
+* `lintianrc` for [lintian](https://packages.debian.org/stable/lintian)
+* `screenrc` for [GNU Screen](https://www.gnu.org/software/screen/)
 
 I'll probably split them off into their separate repository somewhen
 in the future.

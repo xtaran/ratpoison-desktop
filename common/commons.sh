@@ -22,6 +22,7 @@ systray_applets() {
     whee amora-applet
     whee nagstamon
     whee specto
+    whee dnssec-trigger-panel
     whe clipit || whe parcellite &
     whe xfce4-volumed
     whe qasmixer -t || whe volumeicon || whe volti &

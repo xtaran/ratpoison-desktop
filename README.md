@@ -193,6 +193,8 @@ Used if available but except the system tray stuff recommended anyway:
     [polybox](http://www.id.ethz.ch/services/list/polybox/)
   * [nagstamon](https://packages.debian.org/stable/nagstamon)
   * [specto](https://packages.debian.org/stable/specto)
+  * [dnssec-trigger](https://packages.debian.org/testing/dnssec-trigger)
+    (pulls in [unbound](https://packages.debian.org/testing/unbound))
 * For use with ratpoison only so far:
   * [notification-daemon](https://packages.debian.org/stable/notification-daemon) |
     [dunst](https://packages.debian.org/testing/dunst)

@@ -104,6 +104,7 @@ Recommends: fdpowermon | xfce4-power-manager,
             wicd-gtk | connman-ui | network-manager-gnome
 Suggests: amora-applet,
           clipit | parcellite,
+          dnssec-trigger,
           nagstamon,
           owncloud-client | mirall | polybox-client,
           qasmixer | volumeicon-alsa | volti,

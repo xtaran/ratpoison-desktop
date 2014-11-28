@@ -30,7 +30,7 @@ Depends: busybox-syslogd | system-log-daemon | systemd,
          yeahconsole,
          zile,
          ${misc:Depends}
-Recommends: abe-commandline,
+Recommends: abe-commandline-local,
             abe-emacs,
             autocutsel,
             dnsutils,

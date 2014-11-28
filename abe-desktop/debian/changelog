@@ -2,6 +2,7 @@ abe-desktop (11.3) UNRELEASED; urgency=low
 
   * Add dependency on ttf-atarismall which is used now in Xresources
   * Add dnssec-trigger for another opportunistic systray icon
+  * Switch dependencies from abe-commandline to abe-commandline-local.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Wed, 18 Jun 2014 01:26:22 +0200
 

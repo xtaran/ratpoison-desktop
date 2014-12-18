@@ -42,6 +42,10 @@ whee autocutsel
 eval `gnome-keyring-daemon -s -c pkcs11,secrets`
 whee xscreensaver -no-splash
 
+# Not really a systray applet, just yet another daemon needed for
+# printing at ETH.
+whee system-config-printer-applet
+
 # Unlock SSH Keys -- now done ondemand with GNOME Keyring
 #ssh-add
 

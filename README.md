@@ -199,6 +199,11 @@ Used if available but except the system tray stuff recommended anyway:
   * [notification-daemon](https://packages.debian.org/stable/notification-daemon) |
     [dunst](https://packages.debian.org/testing/dunst)
 
+Unfortunately necessary for using ETH's new printing system:
+
+* `system-config-printer-applet` from the package
+  [system-config-printer](https://packages.debian.org/stable/system-config-printer)
+
 ### Kernel Modules
 
 Linux kernel modules which may be used by some features of xmobar, but

@@ -21,7 +21,7 @@
  '(inhibit-startup-screen t)
  '(kill-do-not-save-duplicates t)
  '(mouse-sel-mode t)
- '(mouse-yank-at-point t)
+ '(mouse-yank-at-point nil)
  '(save-interprogram-paste-before-kill t)
  '(save-place t nil (saveplace))
  '(scroll-bar-mode (quote right))

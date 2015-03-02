@@ -41,7 +41,8 @@
    "\\(?:^\\|\\)[^#$%>→
 ]*#?[#$%>→] *\\(\\[[0-9;]*[a-zA-Z] *\\)*")
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
- '(x-select-enable-primary t))
+ '(x-select-enable-primary t)
+ '(xterm-mouse-mode t))
 
 ; Restore interprogram-{cut,paste}-function's values because
 ; mouse-sel-mode resets it to nil and while I want most of

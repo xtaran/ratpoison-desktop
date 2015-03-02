@@ -14,10 +14,10 @@
  '(ansi-color-names-vector
    ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#ad7fa8" "#8cc4ff" "#eeeeec"])
  '(column-number-mode t)
+ '(custom-enabled-themes (quote (wombat)))
  '(debian-changelog-allowed-distributions
    (quote
     ("UNRELEASED" "unstable" "testing" "testing-security" "stable" "stable-security" "oldstable-security" "experimental")))
- '(custom-enabled-themes (quote (wombat)))
  '(display-battery-mode t)
  '(display-time-24hr-format t)
  '(display-time-mode t)

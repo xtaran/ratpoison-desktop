@@ -12,6 +12,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
+ '(debian-changelog-allowed-distributions
+   (quote
+    ("UNRELEASED" "unstable" "testing" "testing-security" "stable" "stable-security" "oldstable-security" "experimental")))
  '(display-battery-mode t)
  '(display-time-24hr-format t)
  '(display-time-mode t)

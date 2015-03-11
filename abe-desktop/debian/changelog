@@ -11,6 +11,8 @@ abe-desktop (11.3) UNRELEASED; urgency=low
     - shutter
     - yarssr
   * Bump Standards-Version to 3.9.6 (no changes)
+  * Convert debian/copyright to machine-readable DEP5 format.
+  * Update copyright years.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Wed, 18 Jun 2014 01:26:22 +0200
 

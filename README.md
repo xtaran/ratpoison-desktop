@@ -177,20 +177,11 @@ Used if available but except the system tray stuff recommended anyway:
   * [update-notifier](https://packages.debian.org/stable/update-notifier)
   * [gtk-redshift](https://packages.debian.org/stable/gtk-redshift)
   * [fdpowermon](https://packages.debian.org/testing/fdpowermon)
-  * [radiotray](https://packages.debian.org/stable/radiotray)
-  * [shutter](https://packages.debian.org/stable/shutter)
-  * [yarssr](https://packages.debian.org/stable/yarssr)
-  * [clipit](https://packages.debian.org/testing/clipit) |
-    [parcellite](https://packages.debian.org/stable/parcellite)
   * [qasmixer](https://packages.debian.org/squeeze-backports/qasmixer) |
     [volumeicon-alsa](https://packages.debian.org/testing/volumeicon-alsa) |
     [volti](https://packages.debian.org/testing/volti)
   * [smart-notifier](https://packages.debian.org/stable/smart-notifier)
   * [amorad-gui](https://packages.debian.org/stable/amora-applet)
-  * [owncloud-client](https://packages.debian.org/owncloud-client),
-    [mirall](https://packages.debian.org/mirall) or the
-    ETH-Zurich-branded derivative called
-    [polybox](http://www.id.ethz.ch/services/list/polybox/)
   * [nagstamon](https://packages.debian.org/stable/nagstamon)
   * [specto](https://packages.debian.org/stable/specto)
   * [dnssec-trigger](https://packages.debian.org/testing/dnssec-trigger)

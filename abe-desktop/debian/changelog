@@ -10,6 +10,7 @@ abe-desktop (11.3) UNRELEASED; urgency=low
     - radiotray
     - shutter
     - yarssr
+  * Bump Standards-Version to 3.9.6 (no changes)
 
  -- Axel Beckert <abe@deuxchevaux.org>  Wed, 18 Jun 2014 01:26:22 +0200
 

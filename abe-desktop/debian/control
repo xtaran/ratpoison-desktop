@@ -104,16 +104,11 @@ Recommends: fdpowermon | xfce4-power-manager,
             smart-notifier,
             wicd-gtk | connman-ui | network-manager-gnome
 Suggests: amora-applet,
-          clipit | parcellite,
           dnssec-trigger,
           nagstamon,
-          owncloud-client | mirall | polybox-client,
           qasmixer | volumeicon-alsa | volti,
-          radiotray,
-          shutter,
           specto,
-          update-notifier,
-          yarssr
+          update-notifier
 Architecture: all
 Description: Packages necessary for Axel's awesome desktop
  This metapackage depends on packages common for Axel's awesome based

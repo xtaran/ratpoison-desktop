@@ -4,6 +4,12 @@ abe-desktop (11.3) UNRELEASED; urgency=low
   * Add dnssec-trigger for another opportunistic systray icon
   * Switch dependencies from abe-commandline to abe-commandline-local.
   * Suggest system-config-printer for system-config-printer-applet.
+  * Remove never really used systray applications:
+    - clipit, parcellite
+    - owncloud-client, mirall, polybox-client
+    - radiotray
+    - shutter
+    - yarssr
 
  -- Axel Beckert <abe@deuxchevaux.org>  Wed, 18 Jun 2014 01:26:22 +0200
 

@@ -18,21 +18,14 @@ systray_applets() {
     whee update-notifier
     whee smart-notifier
     whee fdpowermon
-    whee radiotray
     whee amora-applet
     whee nagstamon
     whee specto
     whee dnssec-trigger-panel
-    whe clipit || whe parcellite &
     whe xfce4-volumed
     whe qasmixer -t || whe volumeicon || whe volti &
-    [ -d $HOME/.yarssr/state ] && [ -n "`find $HOME/.yarssr/state -type f`" ] && whee yarssr
-    whee shutter --min_at_startup
     # Use redshift if installed
     whe gtk-redshift -l $LOC -t $RSTEMP || whe redshift-gtk -l $LOC -t $RSTEMP || whe redshift -l $LOC -t $RSTEMP &
-
-    # Owncloud and derivatives
-    whe owncloud || whe mirall || whe polybox &
 }
 
 xsession_per_host() {

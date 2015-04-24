@@ -43,7 +43,7 @@ if hostname == "c-crosser" then
 end
 
 -- Handle different per-host font sizes in xmobar
-if hostname == "snidget" or hostname == "c-cactus" then
+if hostname == "snidget" or hostname == "c-cactus" or hostname == "c-cactus2" then
    awful.screen.padding( screen[1], { bottom = 20 } )
 else
    awful.screen.padding( screen[1], { bottom = 16 } )

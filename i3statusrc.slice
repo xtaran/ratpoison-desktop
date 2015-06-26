@@ -12,6 +12,14 @@ wireless ath0 {
 }
 :ATH0]
 
+[WLP3S0:
+wireless wlp3s0 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+WHEEZY+SID: %bitrate:NATTY+ONEIRIC+WHEEZY+SID]"
+	format_down = "W"
+}
+:WLP3S0]
+
 [WLAN0:
 wireless wlan0 {
 	# if you use %speed, i3status requires root privileges or netcap
@@ -41,6 +49,14 @@ ethernet re0 {
 	format_down = "E"
 }
 :RE0]
+
+[ENP0S25:
+ethernet enp0s25 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "E: %ip %speed"
+	format_down = "E"
+}
+:ENP0S25]
 
 [ETH0:
 ethernet eth0 {
@@ -135,9 +151,11 @@ disk "/scratch" {
 order = {}
 [SNIDGET+METISSE:order += "run_watch DHCP":SNIDGET+METISSE]
 [ATH0:order += "wireless ath0":ATH0]
+[WLP3S0:order += "wireless wlp3s0":WLP3S0]
 [WLAN0:order += "wireless wlan0":WLAN0]
 [WLAN1:order += "wireless wlan1":WLAN1]
 [RE0:order += "ethernet re0":RE0]
+[ENP0S25:order += "ethernet enp0s25":ENP0S25]
 [ETH0:order += "ethernet eth0":ETH0]
 [ETH1:order += "ethernet eth1":ETH1]
 [ETH2:order += "ethernet eth2":ETH2]

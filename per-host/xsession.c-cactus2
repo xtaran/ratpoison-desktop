@@ -1,1 +1,12 @@
-xsession.c-cactus
+# -*- shell-script -*-
+
+whe xfce4-power-manager
+
+# Normal startup stuff
+ssh-add < /dev/null
+
+systray_applets
+
+uxterm &
+uxterm &
+conkeror &

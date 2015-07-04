@@ -6,7 +6,7 @@
         pager = less -XF
 	excludesfile = ~/.ratpoison/gitignore
 [rerere]
-	enabled = true
+	enabled = yes
 [interactive]
 	singlekey = yes
 [push]

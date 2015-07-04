@@ -49,6 +49,8 @@
         pu = push
         pp = !git pull --ff-only && git push
 	apw = add--interactive-words --patch=stage --
+	stashed = stash list --pretty=format:'%gd: %Cred%h%Creset %Cgreen[%ar]%Creset %s'
+
 # Siehe auch
 # http://tomster.org/blog/archive/2009/01/12/git-command-aliases und
 # http://git.wiki.kernel.org/index.php/Aliases

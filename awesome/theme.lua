@@ -9,7 +9,7 @@ theme.font          = "LucidaSans 8"
 theme.bg_normal     = "black"
 theme.bg_focus      = "orange"
 theme.bg_urgent     = "indianred"
-theme.bg_minimize   = "dimgrey"
+theme.bg_minimize   = "grey52"
 
 theme.fg_normal     = "darkorange"
 theme.fg_focus      = "black"
@@ -17,7 +17,7 @@ theme.fg_urgent     = "black"
 theme.fg_minimize   = "black"
 
 theme.border_width  = "1"
-theme.border_normal = "dimgrey"
+theme.border_normal = "grey52"
 theme.border_focus  = "orange"
 theme.border_marked = "indianred"
 

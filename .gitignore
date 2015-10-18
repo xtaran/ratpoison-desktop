@@ -13,4 +13,6 @@
 /fake-*_*.deb
 /colord_*_all.deb
 /abe-metapackages*
+/abe-fakepackages*
 /kiva-*.deb
+/fake-*.deb

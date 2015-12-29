@@ -9,5 +9,9 @@
 ! may malfunction if it is not.
 !
 
-! Make PrintScreen Compose
+! Make PrintScreen behave as Compose
 keycode 107 =  Multi_key
+
+! Also make the Menu key on my X230ish external Thinkpad USB keyboards
+! behave as Compose
+keycode 135 =  Multi_key

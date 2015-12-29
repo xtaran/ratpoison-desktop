@@ -9,5 +9,5 @@
 ! may malfunction if it is not.
 !
 
-! Make Win_R Compose
+! Make PrintScreen Compose
 keycode 107 =  Multi_key

@@ -80,7 +80,7 @@ Package: abe-desktop-ratpoison
 Depends: abe-desktop-common,
          nawm | xdotool,
          ratmenu (>= 2.3.20),
-         ratpoison,
+         ratpoison | flwm,
          ${misc:Depends}
 Recommends: notification-daemon | dunst,
             redshift,
@@ -94,8 +94,8 @@ Description: Packages necessary for Axel's ratpoison desktop
 
 Package: abe-desktop-awesome
 Depends: abe-desktop-common,
-         awesome (>= 3),
-         awesome-extra,
+         awesome (>= 3) | i3-wm,
+         awesome-extra | i3-wm,
          hsetroot,
          xdotool,
          ${misc:Depends}

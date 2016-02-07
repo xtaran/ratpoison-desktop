@@ -118,11 +118,28 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME"
 
     xsession_per_host
 
-    exec ratpoison -f $RP/ratpoisonrc
+    if wh ratpoison; then
+        exec ratpoison -f $RP/ratpoisonrc
+    elif wh flwm; then
+         exec flwm -g 800x454+0+0 -fg orange -bg black -cfg orange -bfg black
+    fi
 else
     xsession_per_host systray_applets
 
-    exec awesome -c $RP/awesome/rc.lua
+    if wh awesome; then
+        exec awesome -c $RP/awesome/rc.lua
+    elif wh i3; then
+        exec i3 -c $RP/i3/config
+    fi
+fi
+
+# Fallback
+if wh x-window-manager; then
+    exec x-window-manager
+elif wh x-session-manager; then
+    exec x-session-manager
+else
+    exec xmessage No X window manager found
 fi
 
 #exec lxsession -session ratpoison

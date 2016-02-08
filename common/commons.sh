@@ -9,8 +9,16 @@ whe() {
 whee() {
     wh "$1" && exec "$@" &
 }
+waitfor() {
+    until ps x | fgrep -v grep | fgrep -q "$1"; do
+        sleep 1;
+    done
+}
 
 systray_applets() {
+    if [ -n "$1" ]; then
+        waitfor "$1"
+    fi
     whe wmname awesome
     whee nm-applet
     whee wicd-gtk -t

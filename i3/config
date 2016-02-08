@@ -14,12 +14,15 @@ set $mod Mod4
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1
 
+# Window decoration
+new_window pixel 1
+hide_edge_borders none
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # Default Workspace Layout
-
-workspace_layout tabbed
+workspace_layout default
 
 # start a terminal
 bindsym $mod+Return exec /usr/bin/x-terminal-emulator
@@ -29,7 +32,7 @@ bindsym $mod+c exec /usr/bin/x-terminal-emulator
 bindsym $mod+Shift+C kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec /usr/bin/dmenu_run
+bindsym $mod+m exec /usr/bin/dmenu_run
 
 # change focus
 bindsym $mod+h focus left
@@ -38,10 +41,10 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+#bindsym $mod+Left focus left
+#bindsym $mod+Down focus down
+#bindsym $mod+Up focus up
+#bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+J move left
@@ -56,10 +59,11 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+Shift+h split h
+bindsym $mod+minus split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+bar split v
+bindsym $mod+backslash split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen
@@ -67,7 +71,7 @@ bindsym $mod+f fullscreen
 # change container layout (stacked, tabbed, default)
 bindsym $mod+s layout stacking
 bindsym $mod+t layout tabbed
-bindsym $mod+q layout default
+bindsym $mod+d layout default
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -104,6 +108,12 @@ bindsym $mod+F9 workspace 19
 bindsym $mod+F10 workspace 20
 bindsym $mod+F11 workspace 21
 bindsym $mod+F12 workspace 22
+
+bindsym $mod+Right workspace next_on_output
+bindsym $mod+Left  workspace prev_on_output
+
+workspace_auto_back_and_forth yes
+focus_follows_mouse yes
 
 # move focused container to workspace
 bindsym $mod+Shift+exclam move workspace 1
@@ -179,7 +189,7 @@ bindsym $mod+r mode "resize"
 # Colors
 client.focused #FFA500 #FFA500 #000000
 client.focused_inactive #FF8C00 #FF8C00 #000000
-client.unfocused #000000 #000000 #FF8C00
+client.unfocused #858585 #858585 #FF8C00
 client.urgent #9ACD32 #9ACD32 #000000
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -187,5 +197,17 @@ client.urgent #9ACD32 #9ACD32 #000000
 #exec i3status | i3bar -d
 
 bar {
-    status_command i3status -c ~/.ratpoison/i3statusrc
+    mode hide
+    status_command exec i3status -c ~/.ratpoison/i3statusrc
+    position top
+
+    colors {
+        background #000000
+        statusline #ffffff
+
+        focused_workspace  #FF8C00 #000000
+        active_workspace   #FFA500 #000000
+        inactive_workspace #FF8C00 #000000
+        urgent_workspace   #9ACD32 #000000
+    }
 }

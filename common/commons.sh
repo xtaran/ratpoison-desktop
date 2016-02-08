@@ -19,7 +19,6 @@ systray_applets() {
     if [ -n "$1" ]; then
         waitfor "$1"
     fi
-    whe wmname awesome
     whee nm-applet
     whee wicd-gtk -t
     whee connman-ui-gtk

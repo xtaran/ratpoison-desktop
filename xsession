@@ -87,7 +87,6 @@ fi
 ( sleep 1; \
   #xterm &
   #urxvt &
-  start_bar &
   #sleep 1;
   #whee unclutter -keystroke -idle 2
   whe synclient TapButton1=1 HorizTwoFingerScroll=1 VertTwoFingerScroll=1
@@ -116,6 +115,8 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME"
     whee redshift -l $LOC
     whe /usr/lib/notification-daemon/notification-daemon || whe dunst -fn "$FONT" -nb black -nf orange  -lb black -lf darkorange -cb orange -cf black &
 
+    ( sleep 1; start_bar & ) &
+
     xsession_per_host
 
     if wh ratpoison; then
@@ -124,11 +125,14 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME"
          exec flwm -g 800x454+0+0 -fg orange -bg black -cfg orange -bfg black
     fi
 else
-    xsession_per_host systray_applets
-
     if wh awesome; then
+        whe wmname awesome
+        xsession_per_host systray_applets
+        start_bar &
         exec awesome -c $RP/awesome/rc.lua
     elif wh i3; then
+        $RP/bin/slice-config-file.sh $RP/i3statusrc.slice I3BAR > $RP/i3statusrc
+        xsession_per_host systray_applets i3bar
         exec i3 -c $RP/i3/config
     fi
 fi

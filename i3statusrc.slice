@@ -1,5 +1,5 @@
 general {
-	output_format = "xmobar"
+	output_format = "[I3BAR:i3bar:I3BAR][!I3BAR:xmobar:!I3BAR]"
 	colors = true
 	interval = 1
 }
@@ -170,3 +170,20 @@ order += "disk /"
 [C_CROSSER+SNIDGET+C_CACTUS+C_CACTUS2:order += "disk /tmp":C_CROSSER+SNIDGET+C_CACTUS+C_CACTUS2]
 [SNIDGET:order += "disk /scratch":SNIDGET]
 [!NEMO+JUMPER:order += "ipv6":!NEMO+JUMPER]
+
+[I3BAR:
+cpu_temperature 0 {
+    format = "T: %degrees °C"
+}
+order += "cpu_temperature 0"
+
+cpu_usage {
+    format = "CPU: %usage"
+}
+order += "cpu_usage"
+
+time {
+    format = "`uname -r` %Y-%m-%d %H:%M:%S"
+}
+order += "time"
+:I3BAR]

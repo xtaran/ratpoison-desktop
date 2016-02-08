@@ -14,6 +14,7 @@ abe-desktop (12) UNRELEASED; urgency=low
     - yarssr
   * Bump Standards-Version to 3.9.6 (no changes)
   * Convert debian/copyright to machine-readable DEP5 format.
+  * Drop xrootconsole and alternatives, no more used.
   * Update copyright years.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Wed, 18 Jun 2014 01:26:22 +0200

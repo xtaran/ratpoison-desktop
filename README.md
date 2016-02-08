@@ -166,7 +166,6 @@ Used if available but except the system tray stuff recommended anyway:
 * [unclutter](https://packages.debian.org/stable/unclutter)
 * [x11-xkb-utils](https://packages.debian.org/stable/x11-xkb-utils)
   (for `setxkbmap`)
-* [xrootconsole](https://packages.debian.org/stable/xrootconsole)
 * [xserver-xorg-input-synaptics](https://packages.debian.org/stable/xserver-xorg-input-synaptics)
   (for `synclient`)
 * [yeahconsole](https://packages.debian.org/stable/yeahconsole)

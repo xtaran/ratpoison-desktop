@@ -34,4 +34,7 @@ foreach my $slice (@ARGV) {
 }
 $contents =~ s(\[([^!:]+):.*?:\1\])()gs;
 
+# Replace any backtick constructs
+$contents =~ s(\`(.*?)\`)({my $bt=`$1`; chop($bt); $bt})gse;
+
 print $contents;

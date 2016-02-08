@@ -2,6 +2,8 @@
 
 BIN=$(dirname $0)
 TR="tr a-z- A-Z_"
+INPUT="$1"
+shift
 
 . $BIN/../common/commons.sh
 
@@ -21,4 +23,4 @@ CORE=`test -z "$6" && \
     awk '/^processor/ {print "CORE"$3}' /proc/cpuinfo | \
     tail -1 || echo $6`
 
-$BIN/simple-slice.pl $HOSTNAME $DIST $ETHERNET $BATTERY $CORE < $1
+$BIN/simple-slice.pl $HOSTNAME $DIST $ETHERNET $BATTERY $CORE $@ < "$INPUT"

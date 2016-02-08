@@ -114,11 +114,15 @@ battery 1 {
 
 load {
 	format = "%1min %5min %15min"
+	min_width = "100.0 100.0 100.0"
+        align = "left"
 }
 
 [NEMO+NEMO2:
 cpu_temperature 0 {
 	format = "%degrees°C"
+	min_width = "100°C"
+        align = "left"
 }
 :NEMO+NEMO2]
 
@@ -179,6 +183,8 @@ order += "cpu_temperature 0"
 
 cpu_usage {
     format = "CPU: %usage"
+    min_width = "CPU: 100%"
+    align = "left"
 }
 order += "cpu_usage"
 

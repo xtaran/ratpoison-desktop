@@ -2,6 +2,7 @@ abe-desktop (12) UNRELEASED; urgency=low
 
   * Allow i3 as alternative dependency to awesome and flwm as alternative
     dependency to ratpoison.
+  * Require awesome < 3.5. The current setup doesn't work with 3.5.x.
   * Add dependency on ttf-atarismall which is used now in Xresources
   * Add dnssec-trigger for another opportunistic systray icon
   * Switch dependencies from abe-commandline to abe-commandline-local.

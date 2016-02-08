@@ -55,8 +55,14 @@ to use that in addition to the original `Ctrl-T` prefix.
 
 You will also find some configuration for [i3](http://i3wm.org/)
 (version 4 and upwards) in the repo as I also experiment with i3’s
-tree-based layout to see if I can workaround some of awesome’s
+tree-based layout to see if I can workaround some of Awesome’s
 shortcomings by using i3 instead.
+
+Chances are good that i3 becomes a first-class citizen, since the
+current setup only works with Awesome 3.4.x and below and no more
+works with Awesome 3.5 and above (mostly due to Debian's
+[awesome-extra](https://packages.debian.org/stable/awesome-extras)
+package being incompatible with Awesome 3.5).
 
 
 Repository Name and URLs
@@ -122,7 +128,7 @@ packages) to be installed:
 * [lsb-release](https://packages.debian.org/stable/lsb-release)
 * [ratmenu](https://packages.debian.org/stable/ratmenu) ≥ 2.3.20
 * [ratpoison](https://packages.debian.org/stable/ratpoison) or
-  [awesome](https://packages.debian.org/stable/awesome) +
+  [awesome](https://packages.debian.org/stable/awesome) < 3.5 +
   [awesome-extra](https://packages.debian.org/stable/awesome-extras)
 * [dnsutils](https://packages.debian.org/stable/dnsutils) |
   [wget](https://packages.debian.org/stable/wget) (needed by `iplet`)

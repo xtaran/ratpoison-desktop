@@ -94,6 +94,7 @@ Description: Packages necessary for Axel's ratpoison desktop
 Package: abe-desktop-awesome
 Depends: abe-desktop-common,
          awesome (>= 3) | i3-wm,
+         awesome (<< 3.5) | i3-wm,
          awesome-extra | i3-wm,
          hsetroot,
          xdotool,

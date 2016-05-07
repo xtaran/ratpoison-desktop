@@ -114,8 +114,10 @@ battery 1 {
 
 load {
 	format = "%1min %5min %15min"
+[SID+STRETCH:
 	min_width = "100.0 100.0 100.0"
         align = "left"
+:SID+STRETCH]
 }
 
 [NEMO+NEMO2:

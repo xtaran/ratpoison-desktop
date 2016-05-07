@@ -1,4 +1,4 @@
-abe-desktop (12) UNRELEASED; urgency=low
+abe-desktop (12) unstable; urgency=medium
 
   * Allow i3 as alternative dependency to awesome and flwm as alternative
     dependency to ratpoison.
@@ -20,7 +20,7 @@ abe-desktop (12) UNRELEASED; urgency=low
   * Bump debhelper compatibility to 9 as recommended.
   * Switch Vcs-Git header from git:// to https://.
 
- -- Axel Beckert <abe@deuxchevaux.org>  Wed, 18 Jun 2014 01:26:22 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Sat, 07 May 2016 18:39:25 +0200
 
 abe-desktop (11.2) unstable; urgency=low
 

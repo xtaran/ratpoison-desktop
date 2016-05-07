@@ -17,6 +17,7 @@ abe-desktop (12) UNRELEASED; urgency=low
   * Convert debian/copyright to machine-readable DEP5 format.
   * Drop xrootconsole and alternatives, no more used.
   * Update copyright years.
+  * Bump debhelper compatibility to 9 as recommended.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Wed, 18 Jun 2014 01:26:22 +0200
 

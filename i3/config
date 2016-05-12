@@ -35,10 +35,10 @@ bindsym $mod+Shift+C kill
 bindsym $mod+m exec /usr/bin/dmenu_run
 
 # change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 #bindsym $mod+Left focus left

@@ -189,8 +189,8 @@ bindsym $mod+r mode "resize"
 
 # Colors
 client.focused #FFA500 #FFA500 #000000
-client.focused_inactive #FF8C00 #FF8C00 #000000
-client.unfocused #262626 #262626 #FF8C00
+client.focused_inactive #FF6600 #FF6600 #000000
+client.unfocused #262626 #262626 #FF6600
 client.urgent #9ACD32 #9ACD32 #000000
 
 # Start i3bar to display a workspace bar (plus the system information i3status

@@ -17,7 +17,7 @@ font -xos4-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
 
 # Window decoration
 new_window normal 1
-hide_edge_borders none
+hide_edge_borders horizontal
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod

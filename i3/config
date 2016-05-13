@@ -16,7 +16,7 @@ font -xos4-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
 #-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1
 
 # Window decoration
-new_window pixel 1
+new_window normal 1
 hide_edge_borders none
 
 # Use Mouse+$mod to drag floating windows to their wanted position

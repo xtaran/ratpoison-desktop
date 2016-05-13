@@ -188,6 +188,10 @@ bindsym Escape mode "default"
 
 bindsym $mod+r mode "resize"
 
+# Changing border style
+bindsym $mod+w border normal 1
+bindsym $mod+n border pixel 1
+
 # Colors
 client.focused #FFA500 #FFA500 #000000
 client.focused_inactive #FF6600 #FF6600 #000000

@@ -1,6 +1,6 @@
 Net/CursorBlink 1
 Net/EnableInputFeedbackSounds 0
-Gtk/FontName "Cantarell 9"
+Gtk/FontName "Arimo 9"
 Net/DoubleClickTime 400
 Gtk/ShellShowsAppMenu 0
 Xft/Hinting 1

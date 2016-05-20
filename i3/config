@@ -208,7 +208,7 @@ client.urgent #9ACD32 #9ACD32 #000000
 bar {
     mode hide
     status_command exec i3status -c ~/.ratpoison/i3statusrc
-    position bottom
+    position top
 
     colors {
         background #000000

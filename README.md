@@ -4,6 +4,8 @@ Axel’s Tiling Window Manager Setup
 History, Background and Reasoning
 ---------------------------------
 
+### The Early Days: FVWM
+
 While being a heavy [FVWM](http://www.fvwm.org/) user for nearly 15
 years, I now run tiling window managers on all my “desktops” and
 laptops, ranging from a first generation 7" ASUS EeePC 701 4G netbook
@@ -11,6 +13,8 @@ laptops, ranging from a first generation 7" ASUS EeePC 701 4G netbook
 EeePC 900A) over a Sun UltraSparc 10 to a full-fledged multihead
 workstation from [Dalco](http://www.dalco.ch/) at work and several
 generations of Thinkpads ranging from an A31 over a T61 to an X240.
+
+### Tasting Blood with Ratpoison
 
 My ASUS EeePC 701 running [Debian GNU/Linux](https://www.debian.org/)
 [Sid](https://www.debian.org/releases/sid/) was the first box where
@@ -33,6 +37,8 @@ repository to track my own changes, to share the setup with some other
 of my boxes (like the UltraSparc or my bed-side terminal, an older
 ThinkPad A31).
 
+### Advancing to Awesome
+
 Getting used with a fullscreen and tiling setup on the EeePC I more
 and more wanted something for my everyday ThinkPad T61, too. But while
 ratpoison is really perfect for the small EeePC screen, it proved too
@@ -45,7 +51,7 @@ out [i3](http://i3wm.org/) (3.x versions), scrotwm (nowadays called
 [wmii](http://wmii.suckless.org/), [awesome](http://awesome.naquadah.org/)
 and some ion successors ([tritium](http://sf.net/projects/tritium/)
 and [anion3](https://code.google.com/p/anion3/) the latter now being
-superseeded by [notion](http://notion.sourceforge.net/)). I finally
+superseeded by [notion](http://notion.sourceforge.net/)). I eventually
 stuck with awesome, first the 2.x version from Debian 5.0 Lenny, now
 the 3.x version from Debian 6.0 Squeeze and later.
 
@@ -53,17 +59,14 @@ In general I liked the idea of using the — on Linux mostly unused —
 Windows key as window manager meta key. I even configured my ratpoison
 to use that in addition to the original `Ctrl-T` prefix.
 
-You will also find some configuration for [i3](http://i3wm.org/)
-(version 4 and upwards) in the repo as I also experiment with i3’s
-tree-based layout to see if I can workaround some of Awesome’s
-shortcomings by using i3 instead.
+### Dropping Awesome in Favour of i3
 
-Chances are good that i3 becomes a first-class citizen, since the
-current setup only works with Awesome 3.4.x and below and no more
-works with Awesome 3.5 and above (mostly due to Debian's
-[awesome-extra](https://packages.debian.org/stable/awesome-extras)
-package being incompatible with Awesome 3.5).
-
+A few years later I got annoyed by awesome (≥ 3.5) and the
+[awesome-extra widget libraries package](https://packages.debian.org/stable/awesome-extras)
+diverging (by the latter not being updated to awesome 3.5 and hence
+becoming unusable unless you put the awesome package on hold with a
+3.4.x version), so I looked again at [i3](http://i3wm.org/) (now the
+4.x versions) and eventually started migrating to it.
 
 Repository Name and URLs
 ------------------------

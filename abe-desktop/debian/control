@@ -53,6 +53,7 @@ Recommends: abe-commandline-local,
             xfce4-volumed,
             xscreensaver,
             xserver-xorg-input-synaptics,
+            xsettingsd | cinnamon-settings-daemon | gnome-settings-daemon | mate-settings-daemon,
             xterm,
             xtrlock,
             zsh

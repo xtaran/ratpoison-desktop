@@ -1,3 +1,10 @@
+abe-desktop (12.1) UNRELEASED; urgency=medium
+
+  * Use xsettingsd where available; fallback to gnome-, mate-, or
+    cinnamon-settings-daemon else. Add according alternative dependencies.
+
+ -- Axel Beckert <abe@deuxchevaux.org>  Fri, 20 May 2016 14:38:08 +0200
+
 abe-desktop (12) unstable; urgency=medium
 
   * Allow i3 as alternative dependency to awesome and flwm as alternative

@@ -5,3 +5,4 @@
 ~/.colordiffrc 				   → colordiffrc
 ~/.emacs 				   → emacs.el
 ~/.lintianrc 				   → lintianrc
+~/.xsettingsd 				   → xsettingsd

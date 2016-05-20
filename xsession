@@ -105,15 +105,15 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME"
          exec flwm -g 800x454+0+0 -fg orange -bg black -cfg orange -bfg black
     fi
 else
-    if wh awesome; then
+    if wh i3; then
+        $RP/bin/slice-config-file.sh $RP/i3statusrc.slice I3BAR > $RP/i3statusrc
+        xsession_per_host systray_applets i3bar
+        exec i3 -c $RP/i3/config
+    elif wh awesome; then
         whe wmname awesome
         xsession_per_host systray_applets
         start_bar &
         exec awesome -c $RP/awesome/rc.lua
-    elif wh i3; then
-        $RP/bin/slice-config-file.sh $RP/i3statusrc.slice I3BAR > $RP/i3statusrc
-        xsession_per_host systray_applets i3bar
-        exec i3 -c $RP/i3/config
     fi
 fi
 

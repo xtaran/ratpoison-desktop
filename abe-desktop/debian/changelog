@@ -1,5 +1,7 @@
-abe-desktop (12.1) UNRELEASED; urgency=medium
+abe-desktop (13) UNRELEASED; urgency=medium
 
+  * Split up abe-desktop-awesome into abe-desktop-awesome, abe-desktop-i3
+    and abe-desktop-with-systemtray.
   * Use xsettingsd where available; fallback to gnome-, mate-, or
     cinnamon-settings-daemon else. Add according alternative dependencies.
 

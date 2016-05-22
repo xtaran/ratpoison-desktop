@@ -12,8 +12,9 @@
 set $mod Mod4
 
 # font for window titles. ISO 10646 = Unicode
-font -xos4-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+#font -xos4-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
 #-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1
+font pango:Droid Sans Fallback 9,Noto Sans 9,Noto Sans UI 9,Oxygen-Sans 10,Cantarell 10,Arimo 9
 
 # Window decoration
 new_window normal 1

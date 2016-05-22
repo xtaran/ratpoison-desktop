@@ -185,8 +185,10 @@ order += "cpu_temperature 0"
 
 cpu_usage {
     format = "CPU: %usage"
+[SID+STRETCH:
     min_width = "CPU: 100%"
     align = "left"
+:SID+STRETCH]
 }
 order += "cpu_usage"
 

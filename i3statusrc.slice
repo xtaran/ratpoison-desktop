@@ -58,6 +58,14 @@ ethernet enp0s25 {
 }
 :ENP0S25]
 
+[ENP0S31F6:
+ethernet enp0s31f6 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "E: %ip %speed"
+	format_down = "E"
+}
+:ENP0S31F6]
+
 [ETH0:
 ethernet eth0 {
 	# if you use %speed, i3status requires root privileges or netcap
@@ -162,6 +170,7 @@ order = {}
 [WLAN1:order += "wireless wlan1":WLAN1]
 [RE0:order += "ethernet re0":RE0]
 [ENP0S25:order += "ethernet enp0s25":ENP0S25]
+[ENP0S31F6:order += "ethernet enp0s31f6":ENP0S31F6]
 [ETH0:order += "ethernet eth0":ETH0]
 [ETH1:order += "ethernet eth1":ETH1]
 [ETH2:order += "ethernet eth2":ETH2]

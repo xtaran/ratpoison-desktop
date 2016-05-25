@@ -198,7 +198,7 @@ bindsym $mod+x exec /usr/bin/xscreensaver-command -lock
 
 # Colors
 client.focused #FFA500 #FFA500 #000000
-client.focused_inactive #FF6600 #FF6600 #000000
+client.focused_inactive #262626 #262626 #FFA500
 client.unfocused #262626 #262626 #FF6600
 client.urgent #9ACD32 #9ACD32 #000000
 

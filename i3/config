@@ -207,7 +207,7 @@ client.urgent #9ACD32 #9ACD32 #000000
 #exec i3status | i3bar -d
 
 bar {
-    mode hide
+    mode dock
     status_command exec i3status -c ~/.ratpoison/i3statusrc
     position top
 

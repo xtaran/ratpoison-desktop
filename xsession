@@ -3,6 +3,9 @@
 # Define some variables used within this script
 export RP=$(dirname "$(readlink "$0")")
 
+# Export some GUI settings
+export LIBOVERLAY_SCROLLBAR=0
+
 . $RP/common/init.sh
 
 # Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK

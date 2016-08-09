@@ -3,8 +3,9 @@
 # Define some variables used within this script
 export RP=$(dirname "$(readlink "$0")")
 
-# Export some GUI settings
+# Disable overlay scrollbars, be it GTK3 or liboverlay
 export LIBOVERLAY_SCROLLBAR=0
+export GTK_OVERLAY_SCROLLING=0
 
 . $RP/common/init.sh
 

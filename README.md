@@ -177,6 +177,8 @@ Used if available but except the system tray stuff recommended anyway:
   (for `setxkbmap`)
 * [xserver-xorg-input-synaptics](https://packages.debian.org/stable/xserver-xorg-input-synaptics)
   (for `synclient`)
+* [xsettingsd](https://github.com/derat/xsettingsd) (with fallback to
+  other common settings-daemons)
 * [yeahconsole](https://packages.debian.org/stable/yeahconsole)
 * System tray applets for use with awesome:
   * [wicd-gtk](https://packages.debian.org/stable/wicd-gtk) |

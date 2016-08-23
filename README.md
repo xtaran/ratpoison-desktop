@@ -120,8 +120,6 @@ Requirements
 Needs at least the following Debian packages (besides essential
 packages) to be installed:
 
-* [busybox-syslogd](https://packages.debian.org/stable/busybox-syslogd)
-  (for `logread`)
 * [conkeror](https://packages.debian.org/stable/conkeror) or some other
   web browser
 * [emacs](https://packages.debian.org/stable/emacs) (or any other
@@ -220,6 +218,8 @@ do not seem to be loaded automatically (write them into `/etc/modules`):
 
 Only used in non-necessary scripts or keybindings:
 
+* [busybox-syslogd](https://packages.debian.org/stable/busybox-syslogd)
+  (for `logread`)
 * [dwm-tools](https://packages.debian.org/stable/dwm-tools) ≥ 31-1 or
   [suckless-tools](https://packages.debian.org/stable/suckless-tools)
   (for `dmenu`, `tabbed` and `wmname`)

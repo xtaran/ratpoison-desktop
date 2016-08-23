@@ -105,10 +105,12 @@ These symbolic links can also be automatically set up by calling
 
 ### Source Code
 
-Sources available via
-[my own Git server](http://git.noone.org/?p=ratpoison.git),
-[Gitorious](https://gitorious.org/abe/ratpoison-desktop), and
-[GitHub](https://github.com/xtaran/ratpoison-desktop).
+Sources available
+[on my own Git server](http://git.noone.org/?p=ratpoison.git),
+[on GitHub](https://github.com/xtaran/ratpoison-desktop), and
+[on GitLab](https://gitlab.com/xtaran/ratpoison-desktop). (An ancient,
+read-only and no more updated version can also be found
+[on Gitorious](https://gitorious.org/abe/ratpoison-desktop).)
 
 Requirements
 ------------

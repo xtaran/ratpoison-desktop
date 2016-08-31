@@ -119,7 +119,7 @@ Depends: abe-desktop-common,
          xdotool,
          ${misc:Depends}
 Recommends: fdpowermon | xfce4-power-manager,
-            gtk-redshift,
+            redshift-gtk | gtk-redshift,
             smart-notifier,
             wicd-gtk | connman-ui | network-manager-gnome
 Suggests: amora-applet,

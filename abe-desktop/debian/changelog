@@ -1,4 +1,4 @@
-abe-desktop (13) UNRELEASED; urgency=medium
+abe-desktop (13) unstable; urgency=medium
 
   * Split up abe-desktop-awesome into abe-desktop-awesome, abe-desktop-i3
     and abe-desktop-with-systemtray.
@@ -6,7 +6,7 @@ abe-desktop (13) UNRELEASED; urgency=medium
     cinnamon-settings-daemon else. Add according alternative dependencies.
   * Prefer new redshift-gtk over old gtk-redshift.
 
- -- Axel Beckert <abe@deuxchevaux.org>  Fri, 20 May 2016 14:38:08 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Thu, 01 Sep 2016 00:25:01 +0200
 
 abe-desktop (12) unstable; urgency=medium
 

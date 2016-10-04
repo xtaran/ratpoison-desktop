@@ -60,6 +60,7 @@ Recommends: abe-commandline-local,
             zsh
 Suggests: abe-gnome,
           amora-cli | amora-applet,
+          arandr,
           audacious,
           audacious-plugins,
           ccze | loco | lwatch | colortail,

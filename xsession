@@ -13,6 +13,9 @@ export GTK_OVERLAY_SCROLLING=0
 whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps
 
 # Keyboard and X configuration
+if [ -r $PH/screenlayout.$HOSTNAME ]; then
+    . $PH/screenlayout.$HOSTNAME
+fi
 if [ -r $PH/xmodmap.$HOSTNAME ]; then
     xmodmap $PH/xmodmap.$HOSTNAME
 fi

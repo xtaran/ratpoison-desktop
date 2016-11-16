@@ -47,7 +47,13 @@ whee autocutsel
 # gnome-settings-daemon, but not both at the same time, because
 # gnome-settings-daemon starts xscreensaver, too.)
 eval `gnome-keyring-daemon -s -c pkcs11,secrets`
-whee xscreensaver -no-splash
+
+# Prefer lightweight tools over bloaty xscreensaver
+xset s $((BLANK*60)) $((LOCK*60))
+whe xss-lock -- $XLOCK || \
+whe xautolock -time $((BLANK+LOCK)) -locker $XLOCK || \
+whe xidle -timeout $((BLANK*60+LOCK*60)) -program $XLOCK || \
+whe xscreensaver -no-splash &
 
 # Not really a systray applet, just yet another daemon needed for
 # printing at ETH.

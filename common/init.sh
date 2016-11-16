@@ -1,7 +1,10 @@
 # -*- shell-script -*-
 # Define some common variables used within my desktop scripts
+BLANK=2
+LOCK=1
 PH=$RP/per-host
 BG=$HOME/.backgrounds
+XLOCK=$HOME/$RP/bin/xlock
 W=`xwininfo -root | fgrep Width: | awk '{print $2}'`
 H=`xwininfo -root | fgrep Height: | awk '{print $2}'`
 WT=`expr $W / 6`

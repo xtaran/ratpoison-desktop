@@ -27,6 +27,7 @@ Depends: busybox-syslogd | system-log-daemon | systemd,
          xmobar,
          i3lock | xtrlock | slock | xlockmore | xlockmore-gl | xscreensaver,
          xterm | rxvt-unicode-256color | rxvt-unicode,
+         xss-lock | xautolock | xidle,
          yeahconsole,
          zile,
          ${misc:Depends}

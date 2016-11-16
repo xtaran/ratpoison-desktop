@@ -32,13 +32,13 @@ systray_applets() {
     whe xfce4-volumed
     whe qasmixer -t || whe volumeicon || whe volti &
     # Use redshift if installed
-    whe gtk-redshift -l $LOC -t $RSTEMP || whe redshift-gtk -l $LOC -t $RSTEMP || whe redshift -l $LOC -t $RSTEMP &
+    whe gtk-redshift -l "$LOC" -t "$RSTEMP" || whe redshift-gtk -l "$LOC" -t "$RSTEMP" || whe redshift -l "$LOC" -t "$RSTEMP" &
 }
 
 xsession_per_host() {
-    if [ -e $PH/xsession.$HOSTNAME ]; then
+    if [ -e "$PH/xsession.$HOSTNAME" ]; then
 	sleep 1
-	. $PH/xsession.$HOSTNAME
+	. "$PH/xsession.$HOSTNAME"
     elif [ -n "$*" ]; then
         uxterm &
 	"$@"

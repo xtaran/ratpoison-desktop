@@ -7,22 +7,22 @@ export RP=$(dirname "$(readlink "$0")")
 export LIBOVERLAY_SCROLLBAR=0
 export GTK_OVERLAY_SCROLLING=0
 
-. $RP/common/init.sh
+. "$RP/common/init.sh"
 
 # Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK
 whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps
 
 # Keyboard and X configuration
-if [ -r $PH/screenlayout.$HOSTNAME ]; then
-    . $PH/screenlayout.$HOSTNAME
+if [ -r "$PH/screenlayout.$HOSTNAME" ]; then
+    . "$PH/screenlayout.$HOSTNAME"
 fi
-if [ -r $PH/xmodmap.$HOSTNAME ]; then
-    xmodmap $PH/xmodmap.$HOSTNAME
+if [ -r "$PH/xmodmap.$HOSTNAME" ]; then
+    xmodmap "$PH/xmodmap.$HOSTNAME"
 fi
-if [ -r $PH/Xresources.$HOSTNAME ]; then
-    xrdb -merge $PH/Xresources.$HOSTNAME
+if [ -r "$PH/Xresources.$HOSTNAME" ]; then
+    xrdb -merge "$PH/Xresources.$HOSTNAME"
 fi
-xrdb -merge $RP/Xresources
+xrdb -merge "$RP/Xresources"
 
 # Audio settings
 #xset b 100 1200 240
@@ -32,7 +32,7 @@ set_background
 
 # Daemons (ssh-agent started from session management)
 if [ -n "$GPG_AGENT_INFO" ]; then
-    eval `gpg-agent --daemon`
+    eval $(gpg-agent --daemon)
 fi
 
 # Needs ssh around it.
@@ -46,13 +46,13 @@ whee autocutsel
 # Some GNOME stuff I need (use either xscreensaver or
 # gnome-settings-daemon, but not both at the same time, because
 # gnome-settings-daemon starts xscreensaver, too.)
-eval `gnome-keyring-daemon -s -c pkcs11,secrets`
+eval $(gnome-keyring-daemon -s -c pkcs11,secrets)
 
 # Prefer lightweight tools over bloaty xscreensaver
 xset s $((BLANK*60)) $((LOCK*60))
-whe xss-lock -- $XLOCK || \
-whe xautolock -time $((BLANK+LOCK)) -locker $XLOCK || \
-whe xidle -timeout $((BLANK*60+LOCK*60)) -program $XLOCK || \
+whe xss-lock -- "$XLOCK" || \
+whe xautolock -time $((BLANK+LOCK)) -locker "$XLOCK" || \
+whe xidle -timeout $((BLANK*60+LOCK*60)) -program "$XLOCK" || \
 whe xscreensaver -no-splash &
 
 # Not really a systray applet, just yet another daemon needed for
@@ -91,21 +91,21 @@ whee yeahconsole
 ) &
 
 # If resolution is less than 1024 pixels wide, then use ratpoison, else awesome
-if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME" = "jumper" ]; then
+if [ $(xwininfo -root -stats | awk '/Width:/ {print $2}') -lt 1024 -o "$HOSTNAME" = "jumper" ]; then
     # Try several variants to get focus follows mouse with ratpoison
     # 1. system sloppy command
     if [ -x /usr/bin/sloppy ]; then
-	( sleep 2 ; env RATPOISON=`which ratpoison` /usr/bin/sloppy ) &
+	( sleep 2 ; env RATPOISON=$(which ratpoison) /usr/bin/sloppy ) &
     # 2. local sloppy command until http://bugs.debian.org/649523 is fixed
-    elif [ -x $RP/sloppy/sloppy ]; then
-	( sleep 2 ; env RATPOISON=`which ratpoison` $RP/sloppy/sloppy ) &
+    elif [ -x "$RP/sloppy/sloppy" ]; then
+	( sleep 2 ; env RATPOISON=$(which ratpoison) "$RP/sloppy/sloppy" ) &
     # 3. use nawm (if available) else
     else
-	whee nawm -f $RP/nawmrc
+	whee nawm -f "$RP/nawmrc"
     fi
 
     # Use redshift and notification-daemon if installed
-    whee redshift -l $LOC
+    whee redshift -l "$LOC"
     whe /usr/lib/notification-daemon/notification-daemon || whe dunst -fn "$FONT" -nb black -nf orange  -lb black -lf darkorange -cb orange -cf black &
 
     ( sleep 1; start_bar & ) &
@@ -113,20 +113,20 @@ if [ `xwininfo -root -stats | awk '/Width:/ {print $2}'` -lt 1024 -o "$HOSTNAME"
     xsession_per_host
 
     if wh ratpoison; then
-        exec ratpoison -f $RP/ratpoisonrc
+        exec ratpoison -f "$RP/ratpoisonrc"
     elif wh flwm; then
          exec flwm -g 800x454+0+0 -fg orange -bg black -cfg orange -bfg black
     fi
 else
     if wh i3; then
-        $RP/bin/slice-config-file.sh $RP/i3statusrc.slice I3BAR > $RP/i3statusrc
+        "$RP/bin/slice-config-file.sh" "$RP/i3statusrc.slice" I3BAR > "$RP/i3statusrc"
         xsession_per_host systray_applets i3bar
-        exec i3 -c $RP/i3/config
+        exec i3 -c "$RP/i3/config"
     elif wh awesome; then
         whe wmname awesome
         xsession_per_host systray_applets
         start_bar &
-        exec awesome -c $RP/awesome/rc.lua
+        exec awesome -c "$RP/awesome/rc.lua"
     fi
 fi
 

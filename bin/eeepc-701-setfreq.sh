@@ -7,4 +7,4 @@ if [ -z "$1" ]; then
 fi
 
 sudo cpufreq-set -g userspace
-sudo cpufreq-set -f `xargs -n 1 -a $DIR/scaling_available_frequencies | grep ^"$1" | head -1`
+sudo cpufreq-set -f "$(xargs -n 1 -a "$DIR/scaling_available_frequencies" | grep ^"$1" | head -1)"

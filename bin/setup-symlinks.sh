@@ -3,13 +3,13 @@
 # Script to setup all the symbolic links necessary to make this setup
 # work.
 
-cd `dirname $0`
+cd "$(dirname "$0")"
 cd ..
-BASE_PATH=`pwd`
-REL_BASE_PATH=`echo $BASE_PATH | sed -e "s:^${HOME}/::"`
+BASE_PATH="$(pwd)"
+REL_BASE_PATH=$(echo "$BASE_PATH" | sed -e "s:^${HOME}/::")
 
-cat $BASE_PATH/symlinks | while read target arrow source; do
-    target=`echo "$target" | sed -e "s:^~:${HOME}:"`
+cat "$BASE_PATH/symlinks" | while read target arrow source; do
+    target=$(echo "$target" | sed -e "s:^~:${HOME}:")
 
     if [ "$arrow" != "→" -o -z "$target" -o -z "$source" ]; then
 	echo "Warning: Skipping '$target $arrow $source' as I can't parse it"

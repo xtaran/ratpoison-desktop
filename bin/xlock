@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ -x /usr/bin/xscreensaver-command ] && xscreensaver-command -time 2>&1 | fgrep -qv "no screensaver is running"; then
+    xscreensaver-command -lock
+elif [ -x /usr/bin/i3lock ]; then
+    i3lock -d -c FF8C00
+elif [ -x /usr/bin/xtrlock ]; then
+    xtrlock
+elif [ -x /usr/bin/xlock ]; then
+    xlock
+elif [ -x /usr/bin/slock ]; then
+    slock
+fi

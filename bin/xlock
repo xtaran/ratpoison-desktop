@@ -1,13 +1,21 @@
 #!/bin/sh
 
+if [ "`hostname -d`" = "ethz.ch" ]; then
+    printf "LOCK `date --iso-8601=seconds`\n" >> $HOME/.xscreensaver.`uname -n`.log
+fi
+
 if [ -x /usr/bin/xscreensaver-command ] && xscreensaver-command -time 2>&1 | fgrep -qv "no screensaver is running"; then
     xscreensaver-command -lock
 elif [ -x /usr/bin/i3lock ]; then
-    i3lock -d -c FF8C00
+    i3lock -d -c FF8C00 -n
 elif [ -x /usr/bin/xtrlock ]; then
     xtrlock
 elif [ -x /usr/bin/xlock ]; then
     xlock
 elif [ -x /usr/bin/slock ]; then
     slock
+fi
+
+if [ "`hostname -d`" = "ethz.ch" ]; then
+    printf "UNBLANK `date --iso-8601=seconds`\n" >> $HOME/.xscreensaver.`uname -n`.log
 fi

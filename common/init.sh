@@ -1,6 +1,6 @@
 # -*- shell-script -*-
 # Define some common variables used within my desktop scripts
-BLANK=2
+BLANK=5
 LOCK=1
 PH="$RP/per-host"
 BG="$HOME/.backgrounds"

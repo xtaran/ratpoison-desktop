@@ -50,6 +50,9 @@
         pp = !git pull --ff-only && git push
 	apw = add--interactive-words --patch=stage --
 	stashed = stash list --pretty=format:'%gd: %Cred%h%Creset %Cgreen[%ar]%Creset %s'
+        br = branch -vv
+        rso = remote show origin
+        dsl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --decorate --abbrev-commit --date=relative --date-order
 
 # Siehe auch
 # http://tomster.org/blog/archive/2009/01/12/git-command-aliases und

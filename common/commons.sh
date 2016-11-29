@@ -29,6 +29,7 @@ systray_applets() {
     whee nagstamon
     whee specto
     whee dnssec-trigger-panel
+    whee usbguard-applet-qt
     whe xfce4-volumed
     whe qasmixer -t || whe volumeicon || whe volti &
     # Use redshift if installed

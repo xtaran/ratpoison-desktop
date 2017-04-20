@@ -20,6 +20,14 @@ wireless wlp3s0 {
 }
 :WLP3S0]
 
+[WLP58S0:
+wireless wlp58s0 {
+	# if you use %speed, i3status requires root privileges or netcap
+	format_up = "%essid: %ip %quality[NATTY+ONEIRIC+WHEEZY+SID: %bitrate:NATTY+ONEIRIC+WHEEZY+SID]"
+	format_down = "W"
+}
+:WLP58S0]
+
 [WLAN0:
 wireless wlan0 {
 	# if you use %speed, i3status requires root privileges or netcap
@@ -166,6 +174,7 @@ order = {}
 [SNIDGET+METISSE:order += "run_watch DHCP":SNIDGET+METISSE]
 [ATH0:order += "wireless ath0":ATH0]
 [WLP3S0:order += "wireless wlp3s0":WLP3S0]
+[WLP58S0:order += "wireless wlp58s0":WLP58S0]
 [WLAN0:order += "wireless wlan0":WLAN0]
 [WLAN1:order += "wireless wlan1":WLAN1]
 [RE0:order += "ethernet re0":RE0]

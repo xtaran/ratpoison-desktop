@@ -123,7 +123,8 @@ Depends: abe-desktop-common,
 Recommends: fdpowermon | xfce4-power-manager,
             redshift-gtk | gtk-redshift,
             smart-notifier,
-            wicd-gtk | connman-ui | network-manager-gnome
+            wicd-gtk | connman-ui | network-manager-gnome,
+            xfce4-power-manager | mate-power-manager
 Suggests: amora-applet,
           dnssec-trigger,
           nagstamon,

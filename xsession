@@ -68,9 +68,9 @@ if [ -r "$HOME/.zsh/zsh.d/60-debian" ]; then
     . "$HOME/.zsh/zsh.d/60-debian"
 fi
 
-# Start some GNOME foo if installed, should be maybe replaced by XFCE foo.
+# Start some desktop related foo if installed
 whe xsettingsd || whe cinnamon-settings-daemon || whe gnome-settings-daemon || whe mate-settings-daemon &
-#whee gnome-power-manager
+whe xfce4-power-manager || whe mate-power-manager || whe gnome-power-manager
 
 # Yeahconsole with Ctrl-Alt-Z, needs to come after the gnome keyring
 # daemon.

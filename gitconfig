@@ -11,6 +11,8 @@
 	singlekey = yes
 [push]
 	default = matching
+[log]
+        showSignature = true
 [alias]
 	st = status
 	sts = status -s

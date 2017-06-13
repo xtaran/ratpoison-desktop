@@ -8,6 +8,8 @@ abe-desktop (13.1) UNRELEASED; urgency=medium
   * Promote xfce4-power-manager from alternative to fdpowermon to
     recommended and by default started tool. Use mate-power-manager as
     alternative. Needed to make function keys on modern Thinkpads work.
+  * Only disallow awesome ≥ 3.5 if we don't have an according
+    awesome-extra version available.
 
  -- Axel Beckert <abe@debian.org>  Wed, 05 Oct 2016 00:47:29 +0200
 

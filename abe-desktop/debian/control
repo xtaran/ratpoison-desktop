@@ -99,7 +99,7 @@ Description: Packages necessary for Axel's ratpoison desktop
 Package: abe-desktop-awesome
 Depends: abe-desktop-common,
          awesome (>= 3),
-         awesome (<< 3.5),
+         awesome (<< 3.5) || awesome-extra (>> 2016121100),
          awesome-extra,
          ${misc:Depends}
 Architecture: all

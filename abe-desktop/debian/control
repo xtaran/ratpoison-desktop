@@ -73,7 +73,8 @@ Suggests: abe-gnome,
           nvi,
           openssh-server | dropbear,
           screen | tmux,
-          system-config-printer
+          system-config-printer,
+          systray-mdstat
 Architecture: all
 Description: Common packages for all of Axel's desktop setups
  This metapackage depends on packages common for all of Axel's desktop

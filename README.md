@@ -181,7 +181,7 @@ Used if available but except the system tray stuff recommended anyway:
 * [xsettingsd](https://github.com/derat/xsettingsd) (with fallback to
   other common settings-daemons)
 * [yeahconsole](https://packages.debian.org/stable/yeahconsole)
-* System tray applets for use with awesome:
+* System tray applets for use with awesome or i3:
   * [wicd-gtk](https://packages.debian.org/stable/wicd-gtk) |
     [connman-ui](https://packages.debian.org/testing/connman-ui) |
     [nm-applet](https://packages.debian.org/stable/network-manager-gnome)

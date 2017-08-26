@@ -5,3 +5,7 @@ color = always
 #show-overrides = yes
 
 LINTIAN_PROFILE=pkg-perl
+
+# Yay! 2.5.52 supports suppress-tags inside .lintianrc. Let's ignore
+# what I'll like won't fix anyway, because I strongly disagree.
+suppress-tags=debian-news-entry-uses-asterisk,command-in-menu-file-and-desktop-file

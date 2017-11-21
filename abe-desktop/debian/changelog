@@ -10,6 +10,7 @@ abe-desktop (13.1) UNRELEASED; urgency=medium
     alternative. Needed to make function keys on modern Thinkpads work.
   * Only disallow awesome ≥ 3.5 if we don't have an according
     awesome-extra version available.
+  * Prefer fonts-atarismall over ttf-atarismall.
 
  -- Axel Beckert <abe@debian.org>  Wed, 05 Oct 2016 00:47:29 +0200
 

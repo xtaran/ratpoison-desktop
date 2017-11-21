@@ -13,10 +13,10 @@ enter {
     newwin = pointerwindow();
     #put "Enter "+name(newwin)+" ("+name(currentwindow)+")";
     if (name(newwin) != "" && newwin != lastwin && ox == px() && oy == py()) {
-	#grab;
-	#unfocus;
-	raise newwin;
-	sync;
-	#ungrab;
+        #grab;
+        #unfocus;
+        raise newwin;
+        sync;
+        #ungrab;
     }
 }

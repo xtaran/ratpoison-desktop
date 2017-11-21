@@ -14,6 +14,7 @@ abe-desktop (13.1) UNRELEASED; urgency=medium
   * Declare compliance with Debian Policy 4.1.1.
     + Change Priority to optional.
   * Ignore some more recent debhelper build artefacts.
+  * Set "Rules-Requires-Root: no".
 
  -- Axel Beckert <abe@deuxchevaux.org>  Wed, 05 Oct 2016 00:47:29 +0200
 

@@ -12,7 +12,7 @@ Rules-Requires-Root: no
 Package: abe-desktop-common
 Depends: busybox-syslogd | system-log-daemon | systemd,
          colordiff,
-         conkeror | www-browser,
+         conkeror | qutebrowser | www-browser,
          dnsutils | wget,
          git,
          gxmessage | x11-utils,

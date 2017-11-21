@@ -16,6 +16,8 @@ abe-desktop (13.1) UNRELEASED; urgency=medium
   * Ignore some more recent debhelper build artefacts.
   * Set "Rules-Requires-Root: no".
   * Add qutebrowser as alternative to conkeror.
+  * abe-desktop-with-systemtray:
+    + Suggest systray-mdstat
 
  -- Axel Beckert <abe@deuxchevaux.org>  Wed, 05 Oct 2016 00:47:29 +0200
 

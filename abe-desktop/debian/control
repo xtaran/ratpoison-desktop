@@ -74,8 +74,7 @@ Suggests: abe-gnome,
           nvi,
           openssh-server | dropbear,
           screen | tmux,
-          system-config-printer,
-          systray-mdstat
+          system-config-printer
 Architecture: all
 Description: Common packages for all of Axel's desktop setups
  This metapackage depends on packages common for all of Axel's desktop
@@ -133,7 +132,8 @@ Suggests: amora-applet,
           qasmixer | volumeicon-alsa | volti,
           specto,
           update-notifier,
-          usbguard-applet-qt
+          usbguard-applet-qt,
+          systray-mdstat
 Architecture: all
 Description: Packages necessary for Axel's awesome/i3 desktop
  This metapackage depends on packages common for Axel's awesome/i3

@@ -11,8 +11,10 @@ abe-desktop (13.1) UNRELEASED; urgency=medium
   * Only disallow awesome ≥ 3.5 if we don't have an according
     awesome-extra version available.
   * Prefer fonts-atarismall over ttf-atarismall.
+  * Declare compliance with Debian Policy 4.1.1.
+    + Change Priority to optional.
 
- -- Axel Beckert <abe@debian.org>  Wed, 05 Oct 2016 00:47:29 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Wed, 05 Oct 2016 00:47:29 +0200
 
 abe-desktop (13) unstable; urgency=medium
 

@@ -1,11 +1,11 @@
 Source: abe-desktop
 Maintainer: Axel Beckert <abe@deuxchevaux.org>
 Section: metapackages
-Priority: extra
+Priority: optional
 Homepage: https://github.com/xtaran/ratpoison-desktop#readme
 Vcs-Git: https://github.com/xtaran/ratpoison-desktop.git
 Vcs-Browser: https://github.com/xtaran/ratpoison-desktop
-Standards-Version: 3.9.8
+Standards-Version: 4.1.1
 Build-Depends: debhelper (>= 9)
 
 Package: abe-desktop-common

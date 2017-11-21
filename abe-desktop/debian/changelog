@@ -1,4 +1,4 @@
-abe-desktop (13.1) UNRELEASED; urgency=medium
+abe-desktop (13.1) unstable; urgency=medium
 
   * Suggests arandr on all desktops to be able to generate xrandr
     configurations for this setup.
@@ -20,7 +20,7 @@ abe-desktop (13.1) UNRELEASED; urgency=medium
     + Suggest systray-mdstat
     + Suggest solaar.
 
- -- Axel Beckert <abe@deuxchevaux.org>  Wed, 05 Oct 2016 00:47:29 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Tue, 21 Nov 2017 08:37:45 +0100
 
 abe-desktop (13) unstable; urgency=medium
 

@@ -30,6 +30,7 @@ systray_applets() {
     whee nagstamon
     whee specto
     whee dnssec-trigger-panel
+    whee solaar
     whee usbguard-applet-qt
     whe xfce4-volumed
     whe qasmixer -t || whe volumeicon || whe volti &

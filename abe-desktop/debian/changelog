@@ -1,9 +1,9 @@
-abe-desktop (13.1.1) UNRELEASED; urgency=medium
+abe-desktop (13.1.1) unstable; urgency=medium
 
   * Enforce usage of gz instead of xz for .deb archive members as long as
     Wheezy is supported.
 
- -- Axel Beckert <abe@deuxchevaux.org>  Wed, 22 Nov 2017 04:35:52 +0100
+ -- Axel Beckert <abe@deuxchevaux.org>  Wed, 22 Nov 2017 04:41:44 +0100
 
 abe-desktop (13.1) unstable; urgency=medium
 

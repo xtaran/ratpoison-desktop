@@ -10,7 +10,7 @@ export GTK_OVERLAY_SCROLLING=0
 . "$RP/common/init.sh"
 
 # Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK
-whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps -option shift:both_capslock -option compose:menu
+whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps -option shift:both_capslock -option compose:menu -option compose:rwin -option compose:ralt
 
 # Keyboard and X configuration
 if [ -r "$PH/screenlayout.$HOSTNAME" ]; then

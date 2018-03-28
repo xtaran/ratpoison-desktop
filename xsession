@@ -9,7 +9,9 @@ export GTK_OVERLAY_SCROLLING=0
 
 . "$RP/common/init.sh"
 
-# Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK
+# Allow Ctrl-Alt-Backspace to kill the X server and remove CAPS-LOCK.
+# Make both Shift keys together act like CAPS-LOCK. Make the Menu key
+# the Compose key. Details see xkeyboard-config(7).
 whe setxkbmap -option terminate:ctrl_alt_bksp -option ctrl:nocaps -option shift:both_capslock -option compose:menu
 
 # Keyboard and X configuration

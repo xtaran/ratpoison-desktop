@@ -73,8 +73,7 @@ Suggests: abe-gnome,
           nvi,
           openssh-server | dropbear,
           screen | tmux,
-          system-config-printer,
-          xmobar
+          system-config-printer
 Architecture: all
 Description: Common packages for all of Axel's desktop setups
  This metapackage depends on packages common for all of Axel's desktop
@@ -101,6 +100,7 @@ Depends: abe-desktop-common,
          awesome (>= 3),
          awesome (<< 3.5) | awesome-extra (>> 2016121100),
          awesome-extra,
+         xmobar,
          ${misc:Depends}
 Architecture: all
 Description: Packages necessary for Axel's awesome desktop

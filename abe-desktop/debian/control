@@ -25,7 +25,6 @@ Depends: busybox-syslogd | system-log-daemon | systemd,
          fonts-atarismall | ttf-atarismall,
          x11-xserver-utils,
          xfonts-terminus,
-         xmobar,
          i3lock | xtrlock | slock | xlockmore | xlockmore-gl | xscreensaver,
          xterm | rxvt-unicode-256color | rxvt-unicode,
          xss-lock | xautolock | xidle,
@@ -74,7 +73,8 @@ Suggests: abe-gnome,
           nvi,
           openssh-server | dropbear,
           screen | tmux,
-          system-config-printer
+          system-config-printer,
+          xmobar
 Architecture: all
 Description: Common packages for all of Axel's desktop setups
  This metapackage depends on packages common for all of Axel's desktop

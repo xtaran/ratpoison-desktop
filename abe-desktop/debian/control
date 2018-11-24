@@ -25,7 +25,6 @@ Depends: busybox-syslogd | system-log-daemon | systemd,
          fonts-atarismall | ttf-atarismall,
          x11-xserver-utils,
          xfonts-terminus,
-         xmobar,
          i3lock | xtrlock | slock | xlockmore | xlockmore-gl | xscreensaver,
          xterm | rxvt-unicode-256color | rxvt-unicode,
          xss-lock | xautolock | xidle,
@@ -101,6 +100,7 @@ Depends: abe-desktop-common,
          awesome (>= 3),
          awesome (<< 3.5) | awesome-extra (>> 2016121100),
          awesome-extra,
+         xmobar,
          ${misc:Depends}
 Architecture: all
 Description: Packages necessary for Axel's awesome desktop

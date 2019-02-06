@@ -17,7 +17,7 @@ else
       wget -O- -T2 -q http://checkip.dyndns.org/ | sed -e 's|^.*<body>Current IP Address: ||;s|</body>.*$||;s|^500 .*|N/A|;' || \
       wget -O- -T2 -q http://ente.limmat.ch/myip | fgrep 'Your IP' | sed -e 's|^.*(||;s|).*$||;s|^500 .*|N/A|;' || \
       wget -O- -T5 -q http://ifconfig.me/ip || \
-      curl -4 http://canhazip.info/ || \
+      curl -4 http://icanhazip.com/ || \
       echo N/A ) | \
       sed -e 's:^$:N/A:'
 fi

@@ -120,6 +120,8 @@ bindsym $mod+F12 workspace 22
 
 bindsym $mod+Right workspace next_on_output
 bindsym $mod+Left  workspace prev_on_output
+bindsym $mod+KP_Right workspace next_on_output
+bindsym $mod+KP_Left  workspace prev_on_output
 
 workspace_auto_back_and_forth yes
 focus_follows_mouse yes

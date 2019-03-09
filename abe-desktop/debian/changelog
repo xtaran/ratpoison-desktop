@@ -1,6 +1,7 @@
 abe-desktop (13.2) UNRELEASED; urgency=medium
 
   * Move xmobar from abe-desktop-common to abe-desktop-awesome.
+  * Add dhcpcd-gtk as potential tray icon application for Raspbian.
 
  -- Axel Beckert <abe@debian.org>  Sat, 03 Nov 2018 03:18:46 +0100
 

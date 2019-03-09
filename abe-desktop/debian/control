@@ -88,7 +88,7 @@ Depends: abe-desktop-common,
 Recommends: notification-daemon | dunst,
             redshift,
             suckless-tools | dwm-tools (>= 31-1),
-            wicd-curses | connman | network-manager (>= 0.8.0.999-1) | dhcpcd5,
+            wicd-curses | network-manager (>= 0.8.0.999-1) | dhcpcd5 | connman,
             xclip
 Architecture: all
 Description: Packages necessary for Axel's ratpoison desktop
@@ -124,7 +124,7 @@ Depends: abe-desktop-common,
 Recommends: fdpowermon | xfce4-power-manager,
             redshift-gtk | gtk-redshift,
             smart-notifier,
-            wicd-gtk | connman-ui | network-manager-gnome | dhcpcd-gtk,
+            wicd-gtk | network-manager-gnome | dhcpcd-gtk | connman-ui,
             xfce4-power-manager | mate-power-manager
 Suggests: amora-applet,
           dnssec-trigger,

@@ -15,3 +15,5 @@ keycode 134 = Multi_key
 clear Lock
 keycode  66 = Control_L
 add Control = Control_L Control_R
+! Make Shift-Escape to be ~ (helps on 60% keyboards)
+keycode 0x09 =  Escape  asciitilde      Escape

@@ -199,6 +199,7 @@ Used if available but except the system tray stuff recommended anyway:
     (pulls in [unbound](https://packages.debian.org/testing/unbound))
   * [systray-mdstat](https://packages.debian.org/stable/systray-mdstat)
   * [solaar](https://pwr.github.io/Solaar/)
+  * [shadowsocks-qt5](https://github.com/shadowsocks/shadowsocks-qt5)
 * For use with ratpoison only so far:
   * [notification-daemon](https://packages.debian.org/stable/notification-daemon) |
     [dunst](https://packages.debian.org/testing/dunst)

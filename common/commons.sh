@@ -33,6 +33,7 @@ systray_applets() {
     whee solaar
     whee usbguard-applet-qt
     whee ss-qt5
+    whee kernelopps-applet
     whe xfce4-volumed
     whe qasmixer -t || whe volumeicon || whe volti &
     # Use redshift if installed

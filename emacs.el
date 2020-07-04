@@ -29,9 +29,11 @@
  '(kill-do-not-save-duplicates t)
  '(mouse-sel-mode t)
  '(mouse-yank-at-point nil)
+ '(safe-local-variable-values (quote ((eval table-recognize) (truncate-lines . true))))
  '(save-interprogram-paste-before-kill t)
  '(save-place t nil (saveplace))
  '(scroll-bar-mode (quote right))
+ '(select-enable-primary t)
  '(send-mail-function (quote sendmail-send-it))
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -41,7 +43,6 @@
    "\\(?:^\\|\\)[^#$%>→
 ]*#?[#$%>→] *\\(\\[[0-9;]*[a-zA-Z] *\\)*")
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
- '(x-select-enable-primary t)
  '(xterm-mouse-mode t))
 
 ; Restore interprogram-{cut,paste}-function's values because

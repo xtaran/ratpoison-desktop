@@ -22,6 +22,7 @@ systray_applets() {
     whee systray-mdstat
     whee nm-applet
     whee wicd-gtk -t
+    whee dhcpcd-gtk
     whee connman-ui-gtk
     whee update-notifier
     whee smart-notifier

@@ -4,7 +4,7 @@ display-level = >=pedantic
 color = always
 #show-overrides = yes
 
-profile = pkg-perl
+#profile = pkg-perl
 
 # Yay! 2.5.52 supports suppress-tags inside .lintianrc. Let's ignore
 # what I'll likely won't fix anyway, because I strongly disagree.

@@ -17,7 +17,7 @@ set $mod Mod4
 font pango:Droid Sans Fallback 9,Noto Sans 9,Noto Sans UI 9,Oxygen-Sans 10,Cantarell 10,Arimo Bold 9
 
 # Window decoration
-new_window normal 1
+new_window normal 2
 hide_edge_borders horizontal
 
 # Use Mouse+$mod to drag floating windows to their wanted position

@@ -6,6 +6,7 @@ abe-desktop (13.2) UNRELEASED; urgency=medium
   * Make connman the least preferred alternative network manager.
   * Suggest shadowsocks-qt5.
   * Allow i3-gaps as alternative to i3 for Kali Linux.
+  * Remove trailing blank line from debian/changelog.
 
  -- Axel Beckert <abe@debian.org>  Sat, 03 Nov 2018 03:18:46 +0100
 
@@ -322,4 +323,3 @@ abe-desktop (0) unstable; urgency=low
   * Initial package
 
  -- Axel Beckert <abe@deuxchevaux.org>  Sat, 24 Dec 2011 14:32:20 +0100
-

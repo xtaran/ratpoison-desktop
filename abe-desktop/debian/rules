@@ -34,6 +34,6 @@ binary-indep:
 	dh_installdeb
 	dh_gencontrol
 	dh_md5sums
-	dh_builddeb -- -Zgzip
+	dh_builddeb
 
 .PHONY: build clean binary install

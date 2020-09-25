@@ -8,6 +8,7 @@ abe-desktop (13.2) UNRELEASED; urgency=medium
   * Allow i3-gaps as alternative to i3 for Kali Linux.
   * Remove trailing blank line from debian/changelog.
   * Update lintian overrides due to a lot of renamed or updated tags.
+  * Drop enforcement of gzip compression: Was last needed for Wheezy.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Sat, 03 Nov 2018 03:18:46 +0100
 

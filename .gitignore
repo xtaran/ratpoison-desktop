@@ -10,6 +10,7 @@
 /abe-desktop/debian/*.substvars
 /abe-desktop/debian/abe-desktop*/
 /abe-desktop/debian/files
+/abe-desktop/debian/debhelper-build-stamp
 /abe-*_*.deb
 /fake-*_*.deb
 /colord_*_all.deb

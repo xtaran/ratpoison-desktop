@@ -6,7 +6,7 @@ Homepage: https://github.com/xtaran/ratpoison-desktop#readme
 Vcs-Git: https://github.com/xtaran/ratpoison-desktop.git
 Vcs-Browser: https://github.com/xtaran/ratpoison-desktop
 Standards-Version: 4.1.1
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper-compat (= 13)
 Rules-Requires-Root: no
 
 Package: abe-desktop-common

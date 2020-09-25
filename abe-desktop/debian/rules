@@ -1,39 +1,4 @@
 #!/usr/bin/make -f
-# -*- makefile -*-
-# Uncomment this to turn on verbose mode.
-#export DH_VERBOSE=1
 
-# This has to be exported to make some magic below work.
-export DH_OPTIONS
-
-configure:
-build: build-arch build-indep
-build-arch: build-stamp
-build-indep: build-stamp
-build-stamp: configure
-	touch $@
-
-clean:
-	dh_testdir
-	dh_testroot
-	dh_clean
-
-binary: binary-indep binary-arch
-binary-arch:
-binary-indep:
-	dh_testdir
-	dh_testroot
-	dh_installdirs
-	dh_install
-	dh_installchangelogs
-	dh_installdocs
-	dh_lintian
-	dh_link
-	dh_compress
-	dh_fixperms
-	dh_installdeb
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
-
-.PHONY: build clean binary install
+%:
+	dh $@

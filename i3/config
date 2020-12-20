@@ -221,6 +221,9 @@ bar {
     status_command exec i3status -c ~/.ratpoison/i3statusrc
     font pango:Monoid 8,Oxygen-Sans 10,Arimo 10,Cantarell 10,Noto Sans 10,Droid Sans Fallback 9,Noto Sans UI 10,Terminus (TTF) 10,RobotoBold 9
 
+    #status_command exec python3 /usr/share/powerline/bindings/i3/powerline-i3.py
+    #font pango:Monoid 8,Oxygen-Sans 10,Arimo 10,Cantarell 10,Noto Sans 10,Droid Sans Fallback 9,Noto Sans UI 10,Terminus (TTF) 10,RobotoBold 9,Jetbrains Mono 10,Powerline 10
+
     position top
 
     colors {

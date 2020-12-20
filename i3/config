@@ -14,7 +14,9 @@ set $mod Mod4
 # font for window titles. ISO 10646 = Unicode
 #font -xos4-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
 #-misc-fixed-*-*-*-*-7-*-*-*-*-*-iso10646-1
-font pango:Droid Sans Fallback 9,Noto Sans 9,Noto Sans UI 9,Oxygen-Sans 10,Cantarell 10,Arimo Bold 9
+
+# Last match wins!
+font pango:Monoid 7,Oxygen-Sans 9,Arimo 9,Cantarell 9,Noto Sans 9,Droid Sans Fallback 8,Noto Sans UI 9,Terminus (TTF) 9,RobotoBold 8
 
 # Window decoration
 new_window normal 2
@@ -217,6 +219,8 @@ client.urgent #9ACD32 #9ACD32 #000000
 bar {
     mode dock
     status_command exec i3status -c ~/.ratpoison/i3statusrc
+    font pango:Monoid 8,Oxygen-Sans 10,Arimo 10,Cantarell 10,Noto Sans 10,Droid Sans Fallback 9,Noto Sans UI 10,Terminus (TTF) 10,RobotoBold 9
+
     position top
 
     colors {

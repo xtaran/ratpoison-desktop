@@ -21,35 +21,35 @@
  '(ansi-color-names-vector
    ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#ad7fa8" "#8cc4ff" "#eeeeec"])
  '(column-number-mode t)
- '(custom-enabled-themes (quote (wombat)))
+ '(cua-mode t nil (cua-base))
+ '(custom-enabled-themes '(wombat))
  '(debian-changelog-allowed-distributions
-   (quote
-    ("UNRELEASED" "unstable" "testing" "testing-security" "stable" "stable-security" "oldstable-security" "experimental")))
+   '("UNRELEASED" "unstable" "testing" "testing-security" "stable" "stable-security" "oldstable-security" "experimental"))
  '(display-battery-mode t)
  '(display-time-24hr-format t)
  '(display-time-mode t)
  '(focus-follows-mouse t)
  '(indent-tabs-mode nil)
- '(indicate-buffer-boundaries (quote left))
+ '(indicate-buffer-boundaries 'left)
  '(indicate-empty-lines t)
  '(inhibit-startup-screen t)
  '(kill-do-not-save-duplicates t)
  '(mouse-sel-mode t)
  '(mouse-yank-at-point nil)
- '(safe-local-variable-values (quote ((eval table-recognize) (truncate-lines . true))))
+ '(safe-local-variable-values '((eval table-recognize) (truncate-lines . true)))
  '(save-interprogram-paste-before-kill t)
  '(save-place t nil (saveplace))
- '(scroll-bar-mode (quote right))
+ '(scroll-bar-mode 'right)
  '(select-enable-primary t)
- '(send-mail-function (quote sendmail-send-it))
+ '(send-mail-function 'sendmail-send-it)
  '(show-paren-mode t)
  '(size-indication-mode t)
- '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
+ '(text-mode-hook '(turn-on-auto-fill text-mode-hook-identify))
  '(tool-bar-mode nil)
  '(tramp-shell-prompt-pattern
    "\\(?:^\\|\\)[^#$%>→
 ]*#?[#$%>→] *\\(\\[[0-9;]*[a-zA-Z] *\\)*")
- '(uniquify-buffer-name-style (quote forward) nil (uniquify))
+ '(uniquify-buffer-name-style 'forward nil (uniquify))
  '(xterm-mouse-mode t))
 
 ; Restore interprogram-{cut,paste}-function's values because

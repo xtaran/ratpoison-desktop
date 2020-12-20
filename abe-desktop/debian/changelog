@@ -11,7 +11,7 @@ abe-desktop (13.2) UNRELEASED; urgency=medium
   * Drop enforcement of gzip compression: Was last needed for Wheezy.
   * Bump debhelper compatibility level to 13.
     + Build-depend on "debhelper-compat (= 13)" to replace debian/compat.
-  * Declare compliance with Debian Policy 4.5.0.
+  * Declare compliance with Debian Policy 4.5.1.
   * Switch to a minimal dh-based debian/rules file.
   * Pull in fonts I recently started to use in Emacs, i3 and i3bar.
     - Downgrade AtariSmall font to Recommends.

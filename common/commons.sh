@@ -39,6 +39,8 @@ systray_applets() {
     whe qasmixer -t || whe volumeicon || whe volti &
     # Use redshift if installed
     whe gtk-redshift -l "$LOC" -t "$RSTEMP" || whe redshift-gtk -l "$LOC" -t "$RSTEMP" || whe redshift -l "$LOC" -t "$RSTEMP" &
+    # Needed by redshift-gtk at least under systemd
+    which redshift-gtk > /dev/null 2>&1 && test -x /usr/libexec/geoclue-2.0/demos/agent && /usr/libexec/geoclue-2.0/demos/agent &
 }
 
 xsession_per_host() {

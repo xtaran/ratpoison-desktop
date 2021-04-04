@@ -72,7 +72,7 @@ fi
 
 # Start some desktop related foo if installed
 whe xsettingsd || whe cinnamon-settings-daemon || whe gnome-settings-daemon || whe mate-settings-daemon &
-whe xfce4-power-manager || whe mate-power-manager || whe gnome-power-manager
+whe xfce4-power-manager || whe mate-power-manager || whe gnome-power-manager &
 
 # Yeahconsole with Ctrl-Alt-Z, needs to come after the gnome keyring
 # daemon.

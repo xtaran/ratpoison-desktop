@@ -6,8 +6,8 @@ History, Background and Reasoning
 
 ### The Early Days: FVWM
 
-While being a heavy [FVWM](http://www.fvwm.org/) user for nearly 15
-years, I now run tiling window managers on all my “desktops” and
+While having been a heavy [FVWM](http://www.fvwm.org/) user for nearly
+15 years, I now run tiling window managers on all my “desktops” and
 laptops, ranging from a first generation 7" ASUS EeePC 701 4G netbook
 (unfortunately died in early 2014, has been replaced by a 9" ASUS
 EeePC 900A) over a Sun UltraSparc 10 to a full-fledged multihead

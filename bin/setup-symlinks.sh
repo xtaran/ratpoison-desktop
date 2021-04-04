@@ -21,10 +21,20 @@ cat "$BASE_PATH/symlinks" | while read target arrow source; do
 	continue
     fi
 
-    if [ ! -e "$BASE_PATH/$source" ]; then
+    if echo "$source" | egrep -q '^/'; then
+        rel_source="$source"
+        abs_source="$source"
+    else
+        rel_source="$REL_BASE_PATH/$source"
+        abs_source="$BASE_PATH/$source"
+    fi
+
+    target_base_dir="$(dirname "$target")"
+    mkdir -pv "$target_base_dir"
+
+    if [ ! -e "$abs_source" ]; then
 	echo "Error: $source does not exist exist"
 	exit 1
     fi
-
-    ln -vis "$REL_BASE_PATH/$source" "$target"
+    ln -vis "$rel_$source" "$target"
 done

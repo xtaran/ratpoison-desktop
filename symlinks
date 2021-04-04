@@ -6,3 +6,5 @@
 ~/.emacs 				   → emacs.el
 ~/.lintianrc 				   → lintianrc
 ~/.xsettingsd 				   → xsettingsd
+~/.config/systemd/user/redshift.service    → /dev/null
+~/.config/systemd/user/redshift-gtk.service    → /dev/null

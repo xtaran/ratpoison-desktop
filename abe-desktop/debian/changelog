@@ -16,10 +16,6 @@ abe-desktop (13.2) UNRELEASED; urgency=medium
   * Pull in fonts I recently started to use in Emacs, i3 and i3bar.
     - Downgrade AtariSmall font to Recommends.
   * Recommend kitty as it might become my default terminal in the future.
-  * abe-desktop-with-systemtray: Recommend geoclue-2.0 under systemd as it
-    seems to be needed (to avoid annoying and constantly recurring nag
-    screens) by redshift-gtk (under systemd only so far). See
-    https://github.com/jonls/redshift/issues/799 for details.
   * abe-desktop-with-systemtray: Recommend telegram-desktop.
   * abe-desktop-with-systemtray: No more recommend specto.
 

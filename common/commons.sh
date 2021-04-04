@@ -37,8 +37,6 @@ systray_applets() {
     whee kernelopps-applet
     whe xfce4-volumed
     whe qasmixer -t || whe volumeicon || whe volti &
-    # Needed by redshift-gtk at least under systemd
-    which redshift-gtk > /dev/null 2>&1 && test -x /usr/libexec/geoclue-2.0/demos/agent && /usr/libexec/geoclue-2.0/demos/agent &
     # Use redshift if installed
     whe gtk-redshift -l "$LOC" -t "$RSTEMP" || whe redshift-gtk -l "$LOC" -t "$RSTEMP" || whe redshift -l "$LOC" -t "$RSTEMP" &
 }

@@ -127,7 +127,6 @@ Depends: abe-desktop-common,
          ${misc:Depends}
 Recommends: fdpowermon | xfce4-power-manager,
             redshift-gtk | gtk-redshift,
-            geoclue-2.0 | sysvinit-core | openrc,
             smart-notifier,
             wicd-gtk | network-manager-gnome | dhcpcd-gtk | connman-ui,
             xfce4-power-manager | mate-power-manager

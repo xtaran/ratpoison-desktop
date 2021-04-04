@@ -21,6 +21,7 @@ abe-desktop (13.2) UNRELEASED; urgency=medium
     screens) by redshift-gtk (under systemd only so far). See
     https://github.com/jonls/redshift/issues/799 for details.
   * abe-desktop-with-systemtray: Recommend telegram-desktop.
+  * abe-desktop-with-systemtray: No more recommend specto.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Sat, 03 Nov 2018 03:18:46 +0100
 

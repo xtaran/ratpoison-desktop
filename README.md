@@ -194,7 +194,6 @@ Used if available but except the system tray stuff recommended anyway:
   * [smart-notifier](https://packages.debian.org/stable/smart-notifier)
   * [amorad-gui](https://packages.debian.org/stable/amora-applet)
   * [nagstamon](https://packages.debian.org/stable/nagstamon)
-  * [specto](https://packages.debian.org/stable/specto)
   * [dnssec-trigger](https://packages.debian.org/testing/dnssec-trigger)
     (pulls in [unbound](https://packages.debian.org/testing/unbound))
   * [telegram-desktop](https://packages.debian.org/stable/telegram-desktop)

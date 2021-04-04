@@ -29,7 +29,6 @@ systray_applets() {
     whee fdpowermon
     whee amora-applet
     whee nagstamon
-    whee specto
     whee telegram-desktop
     whee dnssec-trigger-panel
     whee solaar

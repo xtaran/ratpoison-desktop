@@ -138,6 +138,7 @@ Suggests: amora-applet,
           qasmixer | volumeicon-alsa | volti,
           shadowsocks-qt5,
           specto,
+          telegram-desktop,
           update-notifier,
           usbguard-applet-qt,
           systray-mdstat

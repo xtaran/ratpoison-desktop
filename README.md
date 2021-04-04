@@ -197,6 +197,7 @@ Used if available but except the system tray stuff recommended anyway:
   * [specto](https://packages.debian.org/stable/specto)
   * [dnssec-trigger](https://packages.debian.org/testing/dnssec-trigger)
     (pulls in [unbound](https://packages.debian.org/testing/unbound))
+  * [telegram-desktop](https://packages.debian.org/stable/telegram-desktop)
   * [systray-mdstat](https://packages.debian.org/stable/systray-mdstat)
   * [solaar](https://pwr.github.io/Solaar/)
   * [shadowsocks-qt5](https://github.com/shadowsocks/shadowsocks-qt5)

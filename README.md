@@ -6,7 +6,7 @@ History, Background and Reasoning
 
 ### The Early Days: FVWM
 
-While having been a heavy [FVWM](http://www.fvwm.org/) user for nearly
+While having been a heavy [FVWM](https://www.fvwm.org/) user for nearly
 15 years, I now run tiling window managers on all my “desktops” and
 laptops, ranging from a first generation 7" ASUS EeePC 701 4G netbook
 (unfortunately died in early 2014, has been replaced by a 9" ASUS
@@ -26,15 +26,15 @@ bars, borders, … and b) most of the time anything else than fullscreen
 windows doesn’t make sense, moving windows around with the mouse makes
 even less sense.
 
-So I’ve chosen [ratpoison](http://www.nongnu.org/ratpoison/) for the
+So I’ve chosen [ratpoison](https://www.nongnu.org/ratpoison/) for the
 EeePC (and would still use it on that box) since it makes windows
 fullscreen by default and the keybindings are nearly identical to
 [GNU Screen](https://www.gnu.org/software/screen/) and therefore easy
 to learn respectively I didn’t have to learn anything to use it.
 
 After more and more fine tuning involving the
-[xmobar](http://projects.haskell.org/xmobar/) text status bar, filled
-with data by [i3status](http://i3wm.org/i3status/), I started this git
+[xmobar](https://xmobar.org/) text status bar, filled
+with data by [i3status](https://i3wm.org/i3status/), I started this git
 repository to track my own changes, to share the setup with some other
 of my boxes (like the UltraSparc or my bed-side terminal, an older
 ThinkPad A31).
@@ -48,14 +48,16 @@ it proved too clumsy for more complex window arrangements and multiple
 virtual desktops.
 
 So I looked through the other tiling window managers in Debian, trying
-out [i3](http://i3wm.org/) (3.x versions), scrotwm (nowadays called
+out [i3](https://i3wm.org/) (3.x versions), scrotwm (nowadays called
 [spectrwm](https://opensource.conformal.com/wiki/spectrwm)),
-[wmii](http://wmii.suckless.org/), [awesome](http://awesome.naquadah.org/)
-and some ion successors ([tritium](http://sf.net/projects/tritium/)
-and [anion3](https://code.google.com/p/anion3/) the latter now being
-superseeded by [notion](http://notion.sourceforge.net/)). I eventually
-stuck with awesome, first the 2.x version from Debian 5.0 Lenny, then
-the 3.x version from Debian 6.0 Squeeze and later.
+[wmii](https://web.archive.org/web/20121016035433/http://wmii.suckless.org/),
+[awesome](https://awesomewm.org/) and some ion successors
+([tritium](https://sf.net/projects/tritium/) and
+[anion3](https://web.archive.org/web/20201026010954if_/https://code.google.com/archive/p/anion3/)
+the latter now being superseeded by
+[notion](https://www.notionwm.net/)). I eventually stuck with awesome,
+first the 2.x version from Debian 5.0 Lenny, then the 3.x version from
+Debian 6.0 Squeeze and later.
 
 In general I liked the idea of using the—on Linux mostly
 unused—Windows key as window manager meta key. I even configured
@@ -67,7 +69,7 @@ A few years later I got annoyed by awesome (≥ 3.5) and the
 [awesome-extra widget libraries package](https://packages.debian.org/stable/awesome-extras)
 diverging (by the latter not being updated to awesome 3.5 and hence
 becoming unusable unless you put the awesome package on hold with a
-3.4.x version), so I looked again at [i3](http://i3wm.org/) (now the
+3.4.x version), so I looked again at [i3](https://i3wm.org/) (now the
 4.x versions) and eventually started migrating to it.
 
 Nowadays I mostly only use i3, except for some Raspberry Pis with tiny
@@ -116,7 +118,7 @@ Sources available
 [on my own Git server](https://git.noone.org/?p=ratpoison.git),
 [on GitHub](https://github.com/xtaran/ratpoison-desktop), and
 [on GitLab](https://gitlab.com/xtaran/ratpoison-desktop). (An ancient,
-read-only and no more updated version can also be found
+read-only and no more updated version could also be found
 [on Gitorious](https://gitorious.org/abe/ratpoison-desktop).)
 
 Requirements
@@ -179,7 +181,7 @@ Used if available but except the system tray stuff recommended anyway:
   0.20101014.3067
 * [magit](https://packages.debian.org/stable/magit) (used in `emacs.el`)
 * [redshift](https://packages.debian.org/stable/redshift)
-* [udev-notify](http://udev-notify.learnfree.eu/) ([RFP](https://bugs.debian.org/670467))
+* [udev-notify](https://launchpad.net/udev-notify) ([RFP](https://bugs.debian.org/670467))
 * [unclutter](https://packages.debian.org/stable/unclutter)
 * [x11-xkb-utils](https://packages.debian.org/stable/x11-xkb-utils)
   (for `setxkbmap`)
@@ -271,8 +273,8 @@ want on every desktop, but which are more or less independent of the
 desktop setup respectively could also be used on non-desktop machines.
 
 * `colordiffrc` for [colordiff](https://packages.debian.org/stable/colordiff)
-* `emacs.el` for [GNU Emacs](http://www.emacswiki.org/)
-* `gitconfig` and `gitignore` for [Git](http://git-scm.org/)
+* `emacs.el` for [GNU Emacs](https://www.emacswiki.org/)
+* `gitconfig` and `gitignore` for [Git](https://git-scm.org/)
 * `lintianrc` for [lintian](https://packages.debian.org/stable/lintian)
 * `screenrc` for [GNU Screen](https://www.gnu.org/software/screen/)
 
@@ -308,4 +310,4 @@ previously were part of this repository but have been split off into
 ### APT Repository
 
 All those metapackages are usually also available from
-[my APT repository](http://noone.org/apt/).
+[my APT repository](https://noone.org/apt/).

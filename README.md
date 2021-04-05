@@ -10,9 +10,11 @@ While having been a heavy [FVWM](http://www.fvwm.org/) user for nearly
 15 years, I now run tiling window managers on all my “desktops” and
 laptops, ranging from a first generation 7" ASUS EeePC 701 4G netbook
 (unfortunately died in early 2014, has been replaced by a 9" ASUS
-EeePC 900A) over a Sun UltraSparc 10 to a full-fledged multihead
-workstation from [Dalco](http://www.dalco.ch/) at work and several
-generations of Thinkpads ranging from an A31 over a T61 to an X240.
+EeePC 900A) and Raspberry Pis over a Sun UltraSparc 10 to a
+full-fledged multihead workstation from [Tuxedo
+Computers](https://www.tuxedocomputers.com/) at home (and a similar
+one from a different brand at work) and several generations of
+Thinkpads ranging from a 760XD over an A31 and T61 to an X250.
 
 ### Tasting Blood with Ratpoison
 
@@ -40,10 +42,10 @@ ThinkPad A31).
 ### Advancing to Awesome
 
 Getting used with a fullscreen and tiling setup on the EeePC I more
-and more wanted something for my everyday ThinkPad T61, too. But while
-ratpoison is really perfect for the small EeePC screen, it proved too
-clumsy for more complex window arrangements and multiple virtual
-desktops.
+and more wanted something for my everyday ThinkPad back then (a T61),
+too. But while ratpoison is really perfect for the small EeePC screen,
+it proved too clumsy for more complex window arrangements and multiple
+virtual desktops.
 
 So I looked through the other tiling window managers in Debian, trying
 out [i3](http://i3wm.org/) (3.x versions), scrotwm (nowadays called
@@ -52,12 +54,12 @@ out [i3](http://i3wm.org/) (3.x versions), scrotwm (nowadays called
 and some ion successors ([tritium](http://sf.net/projects/tritium/)
 and [anion3](https://code.google.com/p/anion3/) the latter now being
 superseeded by [notion](http://notion.sourceforge.net/)). I eventually
-stuck with awesome, first the 2.x version from Debian 5.0 Lenny, now
+stuck with awesome, first the 2.x version from Debian 5.0 Lenny, then
 the 3.x version from Debian 6.0 Squeeze and later.
 
-In general I liked the idea of using the — on Linux mostly unused —
-Windows key as window manager meta key. I even configured my ratpoison
-to use that in addition to the original `Ctrl-T` prefix.
+In general I liked the idea of using the—on Linux mostly
+unused—Windows key as window manager meta key. I even configured
+ratpoison to use that in addition to the original `Ctrl-T` prefix.
 
 ### Dropping Awesome in Favour of i3
 
@@ -67,6 +69,11 @@ diverging (by the latter not being updated to awesome 3.5 and hence
 becoming unusable unless you put the awesome package on hold with a
 3.4.x version), so I looked again at [i3](http://i3wm.org/) (now the
 4.x versions) and eventually started migrating to it.
+
+Nowadays I mostly only use i3, except for some Raspberry Pis with tiny
+screen resolutions. I haven't used awesome for quite some years now
+and the awesome setup files in here likely no more work properly.
+
 
 Repository Name and URLs
 ------------------------

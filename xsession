@@ -42,7 +42,7 @@ fi
 
 # Tools for a better X experience
 whee keynav "loadconfig $RP/keynavrc"
-whee autocutsel
+whee autocutsel -s PRIMARY -buttonup
 #whe syndaemon -i 1 -d
 
 # Some GNOME stuff I need (use either xscreensaver or

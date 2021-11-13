@@ -36,5 +36,5 @@ cat "$BASE_PATH/symlinks" | while read target arrow source; do
 	echo "Error: $source does not exist exist"
 	exit 1
     fi
-    ln -vis "$rel_$source" "$target"
+    ln -vis "$rel_source" "$target"
 done

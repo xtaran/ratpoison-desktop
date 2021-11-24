@@ -37,9 +37,6 @@ if [ -n "$GPG_AGENT_INFO" ]; then
     eval $(gpg-agent --daemon)
 fi
 
-# Needs ssh around it.
-#synergyc snitch
-
 # Tools for a better X experience
 whee keynav "loadconfig $RP/keynavrc"
 whee autocutsel -s PRIMARY -buttonup

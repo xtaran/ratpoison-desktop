@@ -73,3 +73,5 @@
 	defaultBranch = master
 [pull]
 	rebase = false
+[safe]
+	directory = /etc

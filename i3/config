@@ -201,6 +201,7 @@ bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
+bindsym $mod+Control+r exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
 
 # Changing border style
 bindsym $mod+w border normal 1

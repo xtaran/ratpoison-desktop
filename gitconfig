@@ -75,3 +75,5 @@
 	rebase = false
 [annex]
 	synccontent = false
+[safe]
+	directory = /etc

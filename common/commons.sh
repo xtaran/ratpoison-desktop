@@ -33,6 +33,7 @@ systray_applets() {
     whee dnssec-trigger-panel
     whee solaar
     whee usbguard-applet-qt
+    whee usbguard-notifier
     whee ss-qt5
     whee kernelopps-applet
     whe xfce4-volumed

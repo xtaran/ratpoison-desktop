@@ -138,7 +138,7 @@ Suggests: amora-applet,
           shadowsocks-qt5,
           telegram-desktop,
           update-notifier,
-          usbguard-applet-qt,
+          usbguard-notifier | usbguard-applet-qt,
           systray-mdstat
 Architecture: all
 Description: Packages necessary for Axel's awesome/i3 desktop

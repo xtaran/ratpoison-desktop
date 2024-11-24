@@ -19,6 +19,7 @@ abe-desktop (13.2) UNRELEASED; urgency=medium
   * abe-desktop-with-systemtray: Recommend telegram-desktop.
   * abe-desktop-with-systemtray: No more recommend specto.
   * Prefer nsxiv over sxiv where available.
+  * Prefer usbguard-notifier over usbguard-applet-qt.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Sat, 03 Nov 2018 03:18:46 +0100
 

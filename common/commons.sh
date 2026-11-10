@@ -28,7 +28,6 @@ systray_applets() {
     whee smart-notifier
     whee fdpowermon
     whee amora-applet
-    whee nagstamon
     whee telegram-desktop
     whee mattermost-desktop
     whee dnssec-trigger-panel

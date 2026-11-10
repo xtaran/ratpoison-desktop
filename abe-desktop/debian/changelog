@@ -19,6 +19,7 @@ abe-desktop (13.2) UNRELEASED; urgency=medium
   * abe-desktop-with-systemtray: Suggest telegram-desktop and
     mattermost-desktop.
   * abe-desktop-with-systemtray: No more recommend specto.
+  * abe-desktop-with-systemtray: No more suggest nagstamon.
   * Prefer nsxiv over sxiv where available.
   * Prefer usbguard-notifier over usbguard-applet-qt.
 

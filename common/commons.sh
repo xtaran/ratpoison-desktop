@@ -30,6 +30,7 @@ systray_applets() {
     whee amora-applet
     whee nagstamon
     whee telegram-desktop
+    whee mattermost-desktop
     whee dnssec-trigger-panel
     whee solaar
     whee usbguard-applet-qt
